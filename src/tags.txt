@@ -1,0 +1,13 @@
+code
+dev
+response
+linux
+de
+tiling
+wm
+coding
+linux
+nixos
+vim
+nix
+devenv
