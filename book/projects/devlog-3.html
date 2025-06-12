@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Projects - CameronDugan.com</title>
+        <title>Devlog 3 - CameronDugan.com</title>
 
 
         <!-- Custom HTML head -->
@@ -12,33 +12,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
-            const path_to_root = "";
+            const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="../toc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -102,7 +102,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
             </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -137,13 +137,13 @@
                     <h1 class="menu-title">CameronDugan.com</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/camerondugan/camerondugan.book" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/projects.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/projects/devlog-3.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -172,19 +172,42 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="projects"><a class="header" href="#projects">Projects</a></h1>
-<h2 id="idea---plan---reality"><a class="header" href="#idea---plan---reality">Idea -&gt; Plan -&gt; Reality</a></h2>
-<p>These posts are specifically about the things that took me more than one day to create.</p>
+                        <!-- 2021-06-09- -->
+<h1 id="dev-log-3"><a class="header" href="#dev-log-3">Dev Log 3</a></h1>
+<p>Another Devlog for My Unnamed Game.</p>
+<p><a href="/assets/gifs/devlog/space_1.gif"><img src="/assets/gifs/devlog/space_1.gif" alt="missing gif :{" /></a></p>
+<p>I want to talk about what I did yesterday for the game.</p>
+<p>What I wanted to get done:</p>
+<ol>
+<li>Make the creatures move in different ways when player moves.</li>
+<li>Start making some starting rooms that will make it into the final game.</li>
+</ol>
+<p>What I actually got done:</p>
+<ol>
+<li>I fixed a major bug with activating dialogue with NPCs.</li>
+</ol>
+<ul>
+<li>For NPCs that are bigger than one tile, it failed to recognize anything other than bumping into the top left-most tile.</li>
+</ul>
+<ol>
+<li>I created more rooms and realized where the fun of the game is: movement and puzzles. I know that sounds dumb, of course the fun is in moving around and doing things, but seriously, I forgot and was putting way too much focus on dialogue and other ridiculous stuff.</li>
+<li>I also changed the color palate based on how far the player was in the game.</li>
+</ol>
+<p><a href="/assets/gifs/devlog/space_1.gif"><img src="/assets/gifs/devlog/space_2.gif" alt="missing gif" /></a></p>
+<p>What I want to do with the game from here:</p>
+<p>I think the game could be quite interesting with a time mechanic tied into the corruption mechanic.</p>
+<p>My idea is to have corruption stay if the player doesn’t finish the room in a certain amount of time. Otherwise, the corruption will get reset by “the system”. This should allow for some nuance between completing the rooms fast and strategizing when to slow down.</p>
+<p>I also plan to have more rooms added into the game.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="contact.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../projects/arbidor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="projects/wizard-workshop-part-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../projects/devlog-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -194,11 +217,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="contact.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../projects/arbidor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="projects/wizard-workshop-part-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../projects/devlog-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -213,13 +236,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Projects - CameronDugan.com</title>
+        <title>Devenv - CameronDugan.com</title>
 
 
         <!-- Custom HTML head -->
@@ -12,33 +12,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
-            const path_to_root = "";
+            const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="../toc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -102,7 +102,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
             </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -137,13 +137,13 @@
                     <h1 class="menu-title">CameronDugan.com</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/camerondugan/camerondugan.book" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/projects.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/blog/devenv.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -172,19 +172,58 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="projects"><a class="header" href="#projects">Projects</a></h1>
-<h2 id="idea---plan---reality"><a class="header" href="#idea---plan---reality">Idea -&gt; Plan -&gt; Reality</a></h2>
-<p>These posts are specifically about the things that took me more than one day to create.</p>
+                        <!-- 2024-09-24- -->
+<h1 id="devenv-is-awesome"><a class="header" href="#devenv-is-awesome">Devenv is Awesome!</a></h1>
+<p>Why devenv will change the way you think about developing software.</p>
+<p>I’m finding that I’m using <a href="https://devenv.sh" title="" target="_blank">devenv</a> far more often in my
+projects, including my blog!</p>
+<p>Devenv allows me to reliably build my projects across my Linux computers. I get
+to declare which command line tools the project expects. Once I’ve setup devenv,
+all my tools are in one spot. I don’t have to have everything for every project
+installed on my computers, I need to have <a href="https://nixos.org" title="" target="_blank">nix</a> and devenv.</p>
+<h2 id="devenv-is-nix"><a class="header" href="#devenv-is-nix">Devenv is nix</a></h2>
+<p>If you are familiar with shell.nix, then you will be familiar with devenv.
+Devenv uses nix to create declarative shells, but with the bonus of hiding the
+complexity of nix flakes. Devenv uses nix flakes as a back-end, and if you run a
+Linux system that isn’t nix with flakes, you could greatly enjoy reproducible
+developer environments, specifically if you come back to projects years later.</p>
+<h2 id="direnv-is-magic"><a class="header" href="#direnv-is-magic">Direnv is magic</a></h2>
+<p>Devenv is integrated with <a href="https://direnv.net/" title="" target="_blank">direnv</a>, which can
+automatically activate your devenv when you enter your project folder.
+In short, <code>cd project_folder</code> and having all of the project specific tools
+there is awesome.</p>
+<h2 id="jekyll-example"><a class="header" href="#jekyll-example">Jekyll Example</a></h2>
+<pre><code class="language-nix">{ pkgs, lib, config, inputs, ... }:
+{
+  # https://devenv.sh/packages/
+  packages = with pkgs; [
+    git
+    optipng
+    jpegoptim
+  ];
+  # https://devenv.sh/languages/
+  languages.ruby.enable = true;
+  languages.ruby.version = "3.2";
+}
+</code></pre>
+<p>The above example defines the environment I use for this blog. I use Jekyll
+which runs on ruby. I need ruby version 3.2 or greater, 3.1 doesn’t work
+anymore. And switching between theses is as easy as changing 3.2 to 3.1 and
+reloading the env.</p>
+<h2 id="getting-started"><a class="header" href="#getting-started">Getting started</a></h2>
+<p>If you found this interesting, you can find everything I used to get started at
+<a href="https://devenv.sh/getting-started" title="" target="_blank">devenv.sh/getting-started</a>. There’s more to
+devenv than just getting software, but I’ll leave that for another day.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="contact.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../blog/keyd.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="projects/wizard-workshop-part-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../blog/cosmic-desktop-is-awesome.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -194,11 +233,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="contact.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../blog/keyd.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="projects/wizard-workshop-part-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../blog/cosmic-desktop-is-awesome.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -213,13 +252,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 

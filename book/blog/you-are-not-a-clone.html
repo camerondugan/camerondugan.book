@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Projects - CameronDugan.com</title>
+        <title>You Are Not A Clone - CameronDugan.com</title>
 
 
         <!-- Custom HTML head -->
@@ -12,33 +12,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
-            const path_to_root = "";
+            const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="../toc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -102,7 +102,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
             </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -137,13 +137,13 @@
                     <h1 class="menu-title">CameronDugan.com</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/camerondugan/camerondugan.book" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/projects.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/blog/you-are-not-a-clone.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -172,19 +172,35 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="projects"><a class="header" href="#projects">Projects</a></h1>
-<h2 id="idea---plan---reality"><a class="header" href="#idea---plan---reality">Idea -&gt; Plan -&gt; Reality</a></h2>
-<p>These posts are specifically about the things that took me more than one day to create.</p>
+                        <!-- 2023-02-22- -->
+<h1 id="game-jams"><a class="header" href="#game-jams">Game Jams</a></h1>
+<p>What I Did During My Last Game Jam</p>
+<p>Game jams are events where you make a game in a limited amount of time with a small team or alone. Usually game jams are pretty stressful unless you really know what you are doing. There’s plenty that happen all of the time. Usually they happen on the weekends, but some last weeks or even a whole month.</p>
+<h2 id="my-most-recent-experience"><a class="header" href="#my-most-recent-experience">My Most Recent Experience</a></h2>
+<p>Last weekend I did a game jam with 3 random people in person, and it was a much better experience than the times I went solo. Much more creative brainstorming happened. We were forced to use the theme <strong>Companion</strong>, and we decided on using clones and a <del>companion cube</del> friend cube to fit the theme in a puzzle platformer.</p>
+<h2 id="implementation"><a class="header" href="#implementation">Implementation</a></h2>
+<p>We used Godot and for the puzzling mechanics we coded up some area2D sensors as buttons, some RigidBody2D spheres as our friend cube, and a KinematicBody2D as our slime main character.</p>
+<p>Our first real problem was that our cube failed to stay within the walls of the game, which is particularly bad for a puzzle platformer where you would need the cube to activate things later. Our player was capable of pushing the cube as though the walls were not there, which isn’t good. We found a setting in the move-and-slide function to turn off infinite inertia, which solved the problem, but made it so that the player couldn’t push the cube.</p>
+<p>One of my teammates found a tutorial online on how to make the player push the cube by coding the forces to be applied by hand.</p>
+<h2 id="play-testing"><a class="header" href="#play-testing">Play testing</a></h2>
+<p>Play testing is super important, you have no idea if you are heading in the right direction with the changes you are making unless you play the game frequently. Because we were playtesting along the way, we noticed that our cube wasn’t fun to interact with and would frequently get stuck to walls. I wasn’t particularly looking for a solution for this, but I was playing around with the physics material for the cube. I added bounciness to the cube, and suddenly you could push the cube out of a corner by making it bounce out, very cool, plus it was more fun to interact with so… double win there.</p>
+<p>Originally our cube was square shaped, which was great, but this would make our cube get caught on corners and push the player in weird ways. We switched it out to be a sphere and added a square image on top and added some code to remove the image’s ability to rotate with the ball cube. This created an illusion that the cube was still a cube, without having the extra clunkiness.</p>
+<h2 id="play-the-games"><a class="header" href="#play-the-games">Play the Games:</a></h2>
+<p>Here’s a link to the game my team made in 48 hours:
+<a href="https://sire-inc.itch.io/you-are-not-a-clone" title="" target="_blank">You Are Not A Clone</a></p>
+<p>And here’s the links to the games other teams made:
+<a href="https://itch.io/jam/wgdc-spring-game-jam/entries" title="" target="_blank">Game Jam</a></p>
+<p>If you want to participate in a game jam yourself, there’s always game jams happening, and I encourage pretty much anyone interested to at least try it once. Here’s a list of featured game jams coming up soon: <a href="https://itch.io/jams/upcoming/sort-date/featured" title="" target="_blank">Itch Featured Jams</a>.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="contact.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../blog/the-slow-road.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="projects/wizard-workshop-part-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../blog/android-setup-2023.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -194,11 +210,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="contact.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../blog/the-slow-road.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="projects/wizard-workshop-part-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../blog/android-setup-2023.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -213,13 +229,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 

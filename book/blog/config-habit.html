@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Projects - CameronDugan.com</title>
+        <title>Config Habit - CameronDugan.com</title>
 
 
         <!-- Custom HTML head -->
@@ -12,33 +12,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
-            const path_to_root = "";
+            const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="../toc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -102,7 +102,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
             </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -137,13 +137,13 @@
                     <h1 class="menu-title">CameronDugan.com</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/camerondugan/camerondugan.book" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/projects.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/blog/config-habit.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -172,19 +172,63 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="projects"><a class="header" href="#projects">Projects</a></h1>
-<h2 id="idea---plan---reality"><a class="header" href="#idea---plan---reality">Idea -&gt; Plan -&gt; Reality</a></h2>
-<p>These posts are specifically about the things that took me more than one day to create.</p>
+                        <!-- 2024-04-23- -->
+<h1 id="baking-configs"><a class="header" href="#baking-configs">Baking Configs</a></h1>
+<p>I can’t stop changing my configs (help me)</p>
+<h2 id="cooking-system-configs"><a class="header" href="#cooking-system-configs">Cooking System Configs</a></h2>
+<p>Here’s how my day goes. I sit down at my computer, and if I’m not working I’m
+dragged back into config land. I’ve got years of experience messing around with
+configurations at this point, and I want to share how not to do things.</p>
+<p><img src="/assets/images/cool-graphics/config-habit2.jpg" alt="A cyberpunk guy at a computer" /></p>
+<h2 id="burnt"><a class="header" href="#burnt">Burnt</a></h2>
+<p>Nothing beats the rush of changing files that your computer needs to work. Grub
+and fstab(file system tab) are some of the files I would touch on a weekly
+basis to try to make my computer run the way I want it to run. Some of you
+might already see what goes wrong: Computer works fine, then I reboot, and now
+the bios can’t find the OS anymore. Best of all, I didn’t keep any kind of
+backup ;). This was frustrating at the time, I have since learned
+how to avoid this kind of issue. (It’s backups and always will be)</p>
+<h2 id="toasted"><a class="header" href="#toasted">Toasted</a></h2>
+<p>After a year or so of changing files manually in nano, I grow up a little and
+start to backup the files I change before rebooting so in the worst case
+scenario, I could boot up an install USB, gain access to the os and swap out
+the problem file with it’s backup. This experience is terrible compared to
+my current solution.</p>
+<h2 id="edible"><a class="header" href="#edible">Edible</a></h2>
+<p>After some more months of editing configs, I’m realizing I can use other
+text editors than nano, get some syntax highlighting for configs that use
+standards like, json and yaml. Or for files that made their own standards like
+dockerfile but are also popular enough to get IDE support. If you are editing
+your system critical files manually. I recommend using your favorite IDE you
+use for other coding tasks and sudo cp file_system_uses file_system_uses.bak,
+then sudo cp file_you_edit file_system_uses.</p>
+<p><img src="/assets/images/cool-graphics/config-habit1.jpg" alt="Another cyberpunk guy at a computer" /></p>
+<h2 id="tasty"><a class="header" href="#tasty">Tasty</a></h2>
+<p>As some people might have realized by now, what if I forget to make a .bak?
+Some more time passes and I also started using distros with backups selectable
+at boot. This makes me far less anxious about changing most configs. Still
+worried when changing settings in grub/Systemd-boot. Now what if I told you
+that making .baks isn’t the best idea ever? And what if I told you that you can
+use git as a backup?</p>
+<h2 id="delicious"><a class="header" href="#delicious">Delicious</a></h2>
+<p>There are special kinds of git repos that you can use for managing files in
+different folders. I don’t use those, I write a bash script that
+copy the files from my git repo into the right spots on my system.</p>
+<p>I also started using <a href="https://nixos.org/" title="" target="_blank">NixOS</a>, which is perfect for making
+sure my configurations do what I expect. My workflow is more about editing my
+one <a href="https://nixos.org/" title="" target="_blank">NixOS</a> repo to configure my configs. It’s nifty when
+editing configs that are more complex than helpful because <a href="https://nixos.org" title="" target="_blank">NixOS</a>
+has a lot of great defaults you can toggle.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="contact.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../blog/the-point-of-formatters.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="projects/wizard-workshop-part-2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../blog/neovim.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -194,11 +238,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="contact.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../blog/the-point-of-formatters.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="projects/wizard-workshop-part-2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../blog/neovim.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -213,13 +257,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 
