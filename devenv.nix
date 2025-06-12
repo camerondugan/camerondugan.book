@@ -1,17 +1,22 @@
-{ pkgs, lib, config, inputs, ... }:
+{ pkgs, ... }:
 
 {
   # https://devenv.sh/basics/
+  # this is terrible i know, but we don't have crates in nix and idk how to specify versions
+  enterShell = ''
+    cargo install mdbook
+    cargo install mdbook-external-links
+  '';
 
   # https://devenv.sh/packages/
   packages = with pkgs; [
     git
-    mdbook
   ];
 
   # https://devenv.sh/languages/
 
   # https://devenv.sh/processes/
+  processes.mdbook.exec = "mdbook serve";
 
   # https://devenv.sh/services/
 

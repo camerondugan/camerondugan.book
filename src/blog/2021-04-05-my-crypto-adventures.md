@@ -1,10 +1,6 @@
----
-title: My Crypto Adventures
-description: Misadventures in Crypto
-layout: post
-category: blog
-tags: crypto bitcoin etherium
----
+# My Crypto Adventures
+
+Misadventures in Crypto
 
 Hello and welcome to my second ever blog post...
 

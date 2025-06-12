@@ -3,3 +3,9 @@ authors = ["Cameron Dugan"]
 language = "en"
 src = "src"
 title = "CameronDugan.com"
+
+[preprocessor.external-links]
+
+[output.html]
+git-repository-url = "https://github.com/camerondugan/camerondugan.book"
+edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main/{path}"
