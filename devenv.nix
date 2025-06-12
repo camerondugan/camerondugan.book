@@ -28,6 +28,13 @@
 
   # https://devenv.sh/git-hooks/
   git-hooks.hooks.shellcheck.enable = true;
+  git-hooks.hooks.build-mdbook = {
+    name = "Build MDBook";
+    enable = true;
+    entry = "mdbook build";
+    pass_filenames = false;
+    files = "src/*";
+  };
 
   # See full reference at https://devenv.sh/reference/options/
 }
