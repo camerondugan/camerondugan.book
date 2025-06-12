@@ -1,0 +1,1549 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>CameronDugan.com</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">CameronDugan.com</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/camerondugan/camerondugan.book" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="cameron-dugan"><a class="header" href="#cameron-dugan">Cameron Dugan</a></h1>
+<p>Professional Software Developer</p>
+<p>You want to get in touch? Congratulations, you are in luck! All of my contact information is on this page, feel free to send a message through any of these means:</p>
+<ul>
+<li>Email: <a href="mailto:blog@camerondugan.com">blog@camerondugan.com</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="projects"><a class="header" href="#projects">Projects</a></h1>
+<h2 id="idea---plan---reality"><a class="header" href="#idea---plan---reality">Idea -&gt; Plan -&gt; Reality</a></h2>
+<p>These posts are specifically about the things that took me more than one day to create.</p>
+<div style="break-before: page; page-break-before: always;"></div><!-- --- -->
+<!-- title: Wizard Workshop Part 2 -->
+<!-- description: Progress and cool in-engine gifs -->
+<!-- layout: post -->
+<!-- category: blog -->
+<!-- tags: game code dev -->
+<!-- --- -->
+<h1 id="wizard-workshop-part-2"><a class="header" href="#wizard-workshop-part-2">Wizard Workshop Part 2</a></h1>
+<p>Progress and cool in-engine gifs</p>
+<h2 id="new-features"><a class="header" href="#new-features">New Features</a></h2>
+<p>Here’s another sneak preview at what I’ve been working on so far:</p>
+<h3 id="pip-drawer"><a class="header" href="#pip-drawer">Pip Drawer</a></h3>
+<p><img src="http://files.camerondugan.com/Drawer.gif" alt="Drawer in game" /></p>
+<p>The drawer you saw holds pips. Pips are magic trinkets that can bestow you great
+power if used correctly.</p>
+<h3 id="shop"><a class="header" href="#shop">Shop</a></h3>
+<p><img src="https://files.camerondugan.com/Shop.gif" alt="Shop" /></p>
+<p>I’ve also created a shop between fights to let you buy and sell cards, pips,
+and upgrades.</p>
+<h3 id="more-colors"><a class="header" href="#more-colors">More Colors</a></h3>
+<p><img src="https://files.camerondugan.com/Cards.gif" alt="More Colors" /></p>
+<p>I’ve swapped the color palette to something more modern. I’ve realized that I
+don’t like the mono-color palette as much as a palette with a wider selection.</p>
+<h2 id="bug-fixes"><a class="header" href="#bug-fixes">Bug Fixes</a></h2>
+<p>I’ve fixed many issues with the way that the game handles memory. In gdscript,
+if you create a new node outside of the _ready(): method, you can easily leak
+memory. Even if you declare in your _ready() add_child(your_node), there’s a
+chance that your code outside of ready runs and _ready() never runs, making a
+node that isn’t tracked and never gets freed.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wizard-workshop"><a class="header" href="#wizard-workshop">Wizard Workshop</a></h1>
+<p>Progress announcement for my card game</p>
+<p>The idea is to create an interesting automated card game experience. Title is
+placeholder for now. But here are some assets that I’ve created for this</p>
+<p>An unlock for cloning.</p>
+<p><img src="projects//assets/images/games/WizardWorkshopAsset0.jpeg" style="
+	image-rendering:pixelated; image-rendering:-moz-crisp-edges;
+image-rendering:crisp-edges"></p>
+<p>A goblin hiding in a cave.</p>
+<p><img src="projects//assets/images/games/WizardWorkshopAsset0.png" style="
+	image-rendering:pixelated; image-rendering:-moz-crisp-edges;
+image-rendering:crisp-edges"></p>
+<p>An impenetrable wall of sheep.</p>
+<p><img src="projects//assets/images/games/WizardWorkshopAsset1.png" style="
+	image-rendering:pixelated; image-rendering:-moz-crisp-edges;
+image-rendering:crisp-edges"></p>
+<p>And this is a preview of what I have coded for the game so far.</p>
+<p><img src="projects//assets/images/games/WizardWorkshopScreenshot0.jpeg" alt="/assets/images/games/WizardWorkshopScreenshot0.jpeg" /></p>
+<p>In the beginning you will play the game like any other card game, but as you go
+further and further, you will realize that the necessity for automation grows
+too strong. You will be able to influence how your deck is automatically played,
+and you will get rewards for when your deck does well. May the best wizard win.</p>
+<p>A lot of groundwork has been laid out in ways that allow future development to
+be easier. Using the pieces of the game engine as intended and keeping things
+modular should help things stay organized. If you are interested in seeing more
+of this game as it is developed, feel free to shoot me an email. I love hearing
+back from the community about what I write.</p>
+<p><strong>I want your craziest card ideas!</strong></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="my-old-keyboard-is-basically-cheating"><a class="header" href="#my-old-keyboard-is-basically-cheating">My Old Keyboard is Basically Cheating</a></h1>
+<p>A snippet of code for qmk users everywhere.</p>
+<p>My old keyboard is basically cheating and so is <a href="https://www.youtube.com/watch?v=Feny5bs2JCg" title="" target="_blank">Razer’s new keyboard</a>.</p>
+<p>This code mimics what Razer is calling:
+<a href="https://www.razer.com/gb-en/technology/snap-tap-mode" title="" target="_blank">snap tap</a>.
+Which is essentially “null binds” from CSGO? Correct me if I’m wrong.</p>
+<p>Here’s how I reproduced a feature from a $180 gaming keyboard on my QMK
+keyboard at home.</p>
+<p>I don’t like when others have an advantage I don’t have in games. I don’t use
+this code when I play competitive games, but here’s a
+snippet of code you could add to any <a href="https://browse.qmk.fm/#/" title="" target="_blank">QMK compatible
+keyboard</a>.</p>
+<pre><code class="language-c">bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  static bool aHeld = false;
+  static bool dHeld = false;
+  switch (keycode) {
+    case KC_A:
+      aHeld = record-&gt;event.pressed;
+      if (dHeld &amp;&amp; aHeld) {
+          unregister_code(KC_D);
+      } else if (dHeld &amp;&amp; !aHeld){
+          unregister_code(KC_A);
+          register_code(KC_D);
+          return false; // don't send original key pressed
+      }
+      return true;
+    case KC_D:
+      dHeld = record-&gt;event.pressed;
+      if (aHeld &amp;&amp; dHeld) {
+          unregister_code(KC_A);
+      } else if (aHeld &amp;&amp; !dHeld){
+          unregister_code(KC_D);
+          register_code(KC_A);
+          return false; // don't send original key pressed
+      }
+      return true;
+    default:
+      return true; // Process all other keycodes normally
+  }
+}
+</code></pre>
+<p>Essentially it tells the computer you are holding the last pressed A or D key.
+It is impossible to send the computer both because it releases the other one.</p>
+<p><a href="https://www.youtube.com/watch?v=Feny5bs2JCg" title="" target="_blank">This video</a> from optimum makes it
+clear why this would be an advantage.</p>
+<p>To use the code I’ve provided with your keyboard with QMK firmware, you need to
+follow QMK firmware’s tutorials: <a href="https://docs.qmk.fm/newbs_getting_started" target="_blank">https://docs.qmk.fm/newbs_getting_started</a>,
+<a href="https://docs.qmk.fm/newbs_building_firmware" target="_blank">https://docs.qmk.fm/newbs_building_firmware</a>, paste in my code into the bottom
+of keymap.c, then follow <a href="https://docs.qmk.fm/newbs_building_firmware" target="_blank">https://docs.qmk.fm/newbs_building_firmware</a></p>
+<p>Please be cautious and considerate of others, I am not responsible for bans
+made against you.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="a-tiny-chess-engine"><a class="header" href="#a-tiny-chess-engine">A Tiny Chess Engine</a></h1>
+<p>A Delightfully Strong Nemises</p>
+<p>I’m planning on participating in <a href="https://www.youtube.com/@SebastianLague" title="" target="_blank">SebLague’s</a> <a href="https://github.com/SebLague/Chess-Challenge" title="" target="_blank">Chess-Challenge (C#)</a></p>
+<p>I’ve been writing a chess engine for this challenge for the past few days, and I’m pretty happy with what I’ve been able to do.</p>
+<p><img src="projects//assets/gifs/chess-engine.gif" alt="Gif Missing :(" /></p>
+<p>What I’m doing:</p>
+<p>I’ve written a recursive min-max algorithm including alpha-beta pruning and board value caching.</p>
+<p>I search all possible moves, ignoring moves that opponents/I will never take. Anytime I calculate a board value, I store that value for future use.</p>
+<p>I’m using Sebastian Lague’s Board C# object to grab bitboards of the current position for each type of piece and color. I use this information to quickly evaluate the board state and get a “value” which we can look for with our min-max search.</p>
+<p>I also have some code that mitigates losses from time-outs. Ideally, we wouldn’t run out of time, but if we start to run low, I start to make my chess bot make very quick judgements only about 2 layers deep.</p>
+<p>There was a bug that I had with the caching where 3-fold repetitions became super common because I was using cached values of board states. When I returned: to a previous position in the search, it would show the old non-draw state instead of the new one, causing my algorithm to think that it could move there without a draw, which would cause a sad sudden drop in advantage, costing some games.</p>
+<p>I should probably mention that there are very fast ways for counting 256 bit longs, which I am using. It’s from a stack overflow post I’ve lost track of, can’t seem to find it, but it mentioned hamming weights and fast ways to calculate them. <a href="https://en.wikipedia.org/wiki/Hamming_weight" title="" target="_blank">More Info About Hamming Weights</a>. This greatly reduces the number of steps in some of the most performance critical sections of my code.</p>
+<p>If you want to take a look at my code: <a href="https://gitlab.com/cameron.dugan/chess-challenge/-/blob/main/Chess-Challenge/src/My%20Bot/MyBot.cs?ref_type=heads" title="" target="_blank">MyBot.cs</a></p>
+<p>Have a great rest of your day, thanks for being curious.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="developing-a-pc--vr-game-with-godot"><a class="header" href="#developing-a-pc--vr-game-with-godot">Developing a PC + VR game with Godot</a></h1>
+<p>A long Journey</p>
+<h2 id="godot-empowering-vr-development"><a class="header" href="#godot-empowering-vr-development">Godot: Empowering VR Development</a></h2>
+<p>Godot, an open source game engine, became my companion throughout this journey. With its powerful features and intuitive workflow, Godot provided the ideal platform for creating an immersive VR game. Its flexible architecture allowed me to customize the game mechanics, visuals, and audio to match my vision, resulting in a truly unique VR experience.</p>
+<p><img src="projects//assets/images/cool-graphics/headset-glow.png" alt="headset" /></p>
+<h2 id="crafting-immersive-gameplay"><a class="header" href="#crafting-immersive-gameplay">Crafting Immersive Gameplay</a></h2>
+<p>Designing captivating gameplay in a VR environment requires meticulous attention to detail. I focused on creating an immersive experience that would transport players into a thrilling virtual world. By leveraging Godot’s robust scripting capabilities, I meticulously crafted interactions, mechanics, and challenges that would engage players on a deeper level, making every moment in the game memorable.</p>
+<h2 id="optimizing-performance-for-vr"><a class="header" href="#optimizing-performance-for-vr">Optimizing Performance for VR</a></h2>
+<p>Optimizing performance is crucial for a smooth and enjoyable VR experience. Through careful optimization techniques, I ensured optimal frame rates and minimal latency, allowing players to fully immerse themselves in the virtual world. From efficient resource management to rendering optimizations, every aspect of the game was fine-tuned to deliver a seamless and immersive VR experience.</p>
+<p><img src="projects//assets/images/cool-graphics/laptop.jpg" alt="my-laptop" /></p>
+<h2 id="integrating-oculus-api"><a class="header" href="#integrating-oculus-api">Integrating Oculus API</a></h2>
+<p>To leverage the full potential of Oculus VR hardware, I utilized a dedicated Godot plugin that provided seamless integration with the Oculus API. This integration allowed me to tap into the unique features and capabilities of Oculus devices, enhancing the overall VR experience. With the plugin, I could access essential functions like head tracking, hand gestures, and controller input, ensuring a more immersive and interactive gameplay experience.</p>
+<p><img src="projects//assets/images/devlog/vr_0.png" alt="cool image" /></p>
+<p>In conclusion, this post explored the exciting journey of developing an immersive VR game using open source technologies and the powerful Godot game engine. By embracing the potential of open source and harnessing the capabilities of Godot, I brought my vision to life, creating a VR experience. This project exemplifies the endless possibilities and creative freedom that open source game development offers in the world of virtual reality.</p>
+<p><a href="https://gitlab.com/cameron.dugan/vr" title="" target="_blank">My Code</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="programming-a-chess-ai"><a class="header" href="#programming-a-chess-ai">Programming A Chess AI</a></h1>
+<p>A Fun Self Challenge</p>
+<p>I really like programming things that improve as it runs, but programming self improving code can be a nightmare because the feedback loop tends to be quite large.</p>
+<p>Usually when programming something, you click run and within a second or two you know if you need to modify the code, but with these kinds of programs, the code can take hours or days of running before you notice something is off.</p>
+<p>The more you need the code to self improve, the longer it needs to run. Self improving code should be saved only for problems where you can’t reasonably code a complete solution. Solving games is complicated, tic tac toe being relatively easy to solve, chess being orders of magnitude harder and go being one of the hardest complete information games. Each new legal move makes the searching of potential moves exponentially more difficult.</p>
+<p><img src="projects//assets/images/games/chess/alphazero.png" alt="chess board game played by alphazero" /></p>
+<p>“AI” code can help in these scenarios to help trim down the potential moves the code looks at to find great moves. The way this works is you have a neural network that looks at a single game state and have it predict the winner. Loop over all potential moves and pick the move that the neural net likes the best and repeat until the game ends. For training, this doesn’t work because the AI will have tendencies for picking the same series of moves over and over.</p>
+<p>The solution is to pick moves based on how unlikely they are and how good they seem. The more a path is taken, force the AI to further avoid that path during training. This should allow a wider search of the game space.</p>
+<p>![Neural Network Example](/assets/images/code visualization/AI/neuralnet.jpg)</p>
+<p>Now, another trick game AI programmers can do is to split the training and the exploring into separate processes. The code can store games played into a large list and have half of the computer spend it’s resources updating that list with new games and the other half updating the neural net to better judge the outcomes of those games.</p>
+<p>The code I wrote in rust works without that final trick, it just runs one part at a time, but it does keep a list of games played. This makes it easy to change how often it plays vs learns from those games. I also use the neat algorithm, which is not ideal because it’s a trial and error approach instead of a more usual neural net with back propagation.</p>
+<p>Feel free to checkout the <a href="https://gitlab.com/cameron.dugan/neat_zero_rust" title="" target="_blank">chess AI trainer</a> which I wrote in rust based on some of the fundamentals found in an alpha go zero cheat sheet I found on the internet somewhere.</p>
+<p>Hope you learned something or had fun! I know I did one of those…</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="automatic-lightswitch"><a class="header" href="#automatic-lightswitch">Automatic Lightswitch</a></h1>
+<p>Servo + Arduino + 3d Printer = Magic</p>
+<p>I found an 3d print file (stl) for a project I have wanted internally for a while now.</p>
+<p>I have and will consistently forget to go to bed. It’s a problem. My thinking is that if the lights in the room turned off on their own after a certain time, I would notice and choose to wrap things up for the night.</p>
+<p>This is the plan in my head:</p>
+<ol>
+<li>Buy Arduino + servo</li>
+<li>Find / model a 3d print to attach the servo to the lightswitch.</li>
+<li>Code up the Arduino to flick the switch every 12 hours or so.</li>
+</ol>
+<h3 id="problems"><a class="header" href="#problems">Problems</a></h3>
+<ul>
+<li>The seeeduino I chose doesn’t exactly specify how to get 5v output, so I purchased a 5v power supply+breadboard setup thinking this would fix my problems. The servo needed a 5v power source, but apparently (in this case) it has to be the same supply as the arduino in order to function. The solution for this was to find the vin / vout solder points on the back of the board and solder the servo wires straight to there.</li>
+<li>Finding a model was difficult because I guess very few people on thingiverse are interested in Arduino powered light switches. Ultimately, I found exactly what I was looking for by browsing in the related section of an unrelated thingiverse entry. <a href="https://www.thingiverse.com/thing:1156995" title="" target="_blank">Original file found here.</a></li>
+<li>The last problem to tackle was the Arduino code, here’s how I tackled this problem:
+<ul>
+<li>Import the servo library</li>
+<li>create a delay, range and offset variable</li>
+<li>tweak the angle range and angle offset to properly flick the switch in a non-violent manner.</li>
+<li>Also realize that the Arduino should put the servo arm back in-between on/off to allow the lights to be flicked by non-robot beings.</li>
+<li>Now added a duration for how long to attempt to flick the switch before returning to neutral position</li>
+<li>realize now that I’ve programmed a day to equal 24 hours and 6 seconds.</li>
+<li>Subtract wait time between flicks by flick attempt duration to attempt to ensure 24 hour flick cycle.</li>
+</ul>
+</li>
+</ul>
+<p><img src="projects//assets/images/projects/switch.jpg" alt="picture" /></p>
+<p>And there you have it, a working Arduino powerd lightswitch that people can also interact with.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="arduinos"><a class="header" href="#arduinos">Arduinos</a></h1>
+<p>Tiny Computers that You Can Program</p>
+<p>I’ve been disappointed with the lack of consumer grade AR displays, and I found myself wondering how hard it could really be to make one.</p>
+<p>Turns out, it can be very difficult to get a good image projected into your eye at a comfortable focus. With the help of a magnifying glass, tiny mirror and piece of glass, a 3d printer / glue and cardboard, Raspberry pi / Arduino / microcontroller, and a really tiny display, you can create a small pair of glasses for under ~100 USD that can display basic information. (batteries not included)</p>
+<p>The key is pointing the display through a magnifying lens at the correct distance to get the image to be in focus. The image passes from the display to the mirror onto the glass, getting flipped horizontally or vertically twice keeping the original intended image.</p>
+<p>Since it’s an Arduino, you could get the glasses to do anything an Arduino could do. Some examples: connect to wifi/bluetooth, send radio/infrared signals, use buttons/switches and LEDs. The limitations are mainly with how much information the Arduino can process when rendering the display, the Arduino libraries allow for mainly drawing individual pixels, lines and text. Nothing too fancy, but enough to make a useful AR gadget.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="python-dream-bot"><a class="header" href="#python-dream-bot">Python Dream Bot</a></h1>
+<p>Intentionally Bad Image Manipulation</p>
+<p><code>Python Dream Bot</code> is almost complete. What is the dream bot? I’m glad you asked!</p>
+<a href="https://www.pexels.com/photo/selective-focus-photo-of-brown-monkey-2213575/" title="" target="_blank">
+![original1](/assets/images/dream-bot/original1.jpg)</a>
+[![dream1](/assets/images/dream-bot/dream1.png)](/assets/images/dream-bot/dream1.png)
+<p>The <code>Python Dream Bot</code> (patent not pending), is an intentionally bad guessing algorithm based off of the logic used for my jekyll post generator (See the costs bot post).</p>
+<p>In short it works like this:</p>
+<ol>
+<li>It resizes the original picture to user specification.</li>
+<li>It stares at a picture and remember what pixels are near other pixels.
+<a href="https://www.pexels.com/photo/cute-corgi-in-front-of-a-laptop-5122188/" title="" target="_blank">
+<img src="projects//assets/images/dream-bot/original3.jpg" alt="original3" /></a></li>
+<li>It creates a copy of the original picture, but removes large sections of the picture.
+<a href="projects//assets/images/dream-bot/intermediate3.png"><img src="projects//assets/images/dream-bot/intermediate3.png" alt="original3" /></a></li>
+<li>It looks at whatever pixels exist on the copy and fill in the missing pixels.</li>
+</ol>
+<a href="https://www.pexels.com/photo/cute-corgi-in-front-of-a-laptop-5122188/" title="" target="_blank">
+![original3](/assets/images/dream-bot/original3.jpg)</a>
+[![dream3](/assets/images/dream-bot/dream3.png)](/assets/images/dream-bot/dream3.png)
+<p>The previous image was exaggerated to better show the process:</p>
+<a href="https://www.pexels.com/photo/silhouette-photo-of-person-holding-door-knob-792032/" title="" target="_blank">
+![original2](/assets/images/dream-bot/original2.jpg)</a>
+[![dream2](/assets/images/dream-bot/dream2.png)](/assets/images/dream-bot/dream2.png)<div style="break-before: page; page-break-before: always;"></div><h1 id="arbidor"><a class="header" href="#arbidor">Arbidor</a></h1>
+<p>A Very Short Puzzle Game That Crashes When You Win</p>
+<p>Arbidor is a short game I programmed, it’s still unfinished and it’s definitely confusing. Intentional programming errors are everywhere, it’s your job to use them to your advantage to reach the end.</p>
+<p>Watch out, your battery drains while you play. Collect batteries to replenish your battery! The top left features a reset indicator, it lets you know when the game attempts a partial reset.</p>
+<p>The top left indicates when the level will automatically reset.
+The top Right indicates when the whole game resets.</p>
+<p>Controls
+: Arrows to move
+: x/z to interact or fully reset the level at the cost of battery
+: Most controllers are supported</p>
+<p><button onclick="window.location.href='../../arbidor/arbidor.html';">Click To Play Arbidor</button></p>
+<p>Compiles to web, Windows, Mac, and Linux</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dev-log-3"><a class="header" href="#dev-log-3">Dev Log 3</a></h1>
+<p>Another Devlog for My Unnamed Game.</p>
+<p><a href="projects//assets/gifs/devlog/space_1.gif"><img src="projects//assets/gifs/devlog/space_1.gif" alt="missing gif :{" /></a></p>
+<p>I want to talk about what I did yesterday for the game.</p>
+<p>What I wanted to get done:</p>
+<ol>
+<li>Make the creatures move in different ways when player moves.</li>
+<li>Start making some starting rooms that will make it into the final game.</li>
+</ol>
+<p>What I actually got done:</p>
+<ol>
+<li>I fixed a major bug with activating dialogue with NPCs.</li>
+</ol>
+<ul>
+<li>For NPCs that are bigger than one tile, it failed to recognize anything other than bumping into the top left-most tile.</li>
+</ul>
+<ol>
+<li>I created more rooms and realized where the fun of the game is: movement and puzzles. I know that sounds dumb, of course the fun is in moving around and doing things, but seriously, I forgot and was putting way too much focus on dialogue and other ridiculous stuff.</li>
+<li>I also changed the color palate based on how far the player was in the game.</li>
+</ol>
+<p><a href="projects//assets/gifs/devlog/space_1.gif"><img src="projects//assets/gifs/devlog/space_2.gif" alt="missing gif" /></a></p>
+<p>What I want to do with the game from here:</p>
+<p>I think the game could be quite interesting with a time mechanic tied into the corruption mechanic.</p>
+<p>My idea is to have corruption stay if the player doesn’t finish the room in a certain amount of time. Otherwise, the corruption will get reset by “the system”. This should allow for some nuance between completing the rooms fast and strategizing when to slow down.</p>
+<p>I also plan to have more rooms added into the game.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dev-log-2"><a class="header" href="#dev-log-2">Dev Log 2</a></h1>
+<p>A Devlog for My Unnamed Game.</p>
+<p>Welcome back, I have finally decided on a direction for this game. You are a robot in a post human society and something isn’t right. Reality is slipping. Nothing from your sensors are to be trusted. To make things worse, red creatures seem to be making things worse.</p>
+<p><a href="projects//assets/gifs/devlog/space_0.gif"><img src="projects//assets/gifs/devlog/space_0.gif" alt="missing gif" /></a></p>
+<p>Bugs fixed:</p>
+<ol>
+<li>Weird player movement animation when one player bumps into a wall, and another player doesn’t.</li>
+</ol>
+<p>Other things:</p>
+<ol>
+<li>Added the red creatures.</li>
+<li>Made meditating robot float up and down</li>
+</ol>
+<p>Things to do tomorrow:</p>
+<ol>
+<li>Creatures move in different ways when player moves</li>
+<li>Start making some starting levels that will hopefully make it into the final game</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dev-log-1"><a class="header" href="#dev-log-1">Dev Log 1</a></h1>
+<p>A Devlog for my Unnamed Game.</p>
+<p>Hi all, I want to retro-actively share my efforts to make  a game with pico8. My goal is to publish on itch.io or on my own website by the end of the year. I suspect its possible to finish the game well before then, but I know I’ll end up taking my time.</p>
+<p><a href="projects//assets/images/devlog/space_1.png"><img src="projects//assets/images/devlog/space_1.png" alt="picture" /></a></p>
+<p>Currently, I’m throwing ideas at the wall and seeing what sticks. Now that I think about it, I’ve been doing that since the beginning of the project. What I like about this process is that it’s always straight forward and it makes deciding what to do a whole lot easier. Although, I still have to be careful and think about what I’m doing. But, most of the time I can be reckless and use git to reset all my changes. Just going for it is really refreshing after such a long period of inaction.</p>
+<p><a href="projects//assets/images/devlog/space_0.png"><img src="projects//assets/images/devlog/space_0.png" alt="picture" /></a></p>
+<p>Right off the bat I went for a top-down puzzle game design because a type of game that I really enjoy. This meant making a top down view of the player, and making it move, setting up collision and boundaries… All of the usual stuff. At my current point in the development I already feel like there are things about the game I am not willing to share. A few surprises perhaps. Hopefully they catch some veteran players of guard while still being fun for new players as well. I’ve found that I have a heavy bias for early difficulty, so I’m doing my best to slow my roll this time around and deliberately bringing up the difficulty as the game continues. Another quirk I’ve found in my development is sometimes I’ll add a new feature into an item only to find out that maybe that feature should be it’s own separate item.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="keyd-is-awesome"><a class="header" href="#keyd-is-awesome">Keyd is Awesome!</a></h1>
+<p>Why keyd will change the way you think about your keyboard.</p>
+<p>Keyd is a daemon written by <a href="https://github.com/rvaiya" title="" target="_blank">rvaiya</a> that lets you
+customize how your Linux computer listens to your keyboard. It gives normal
+keyboards plugged into your computer only qmk or custom firmware keyboards get.</p>
+<p>I have a qmk keyboard, which was mentioned in this post: <a href="https://camerondugan.com/blog/my-old-keyboard-is-basically-cheating" title="" target="_blank">My old keyboard isbasically
+cheating</a></p>
+<p>This is what a non-Nix, normal keyd config looks like.</p>
+<pre><code class="language-nix">[ids]
+
+*
+
+[main]
+
+# Maps capslock to escape when pressed and control when held.
+capslock = overload(control, esc)
+
+# Remaps the escape key to capslock (uncomment below to enable)
+# esc = capslock
+</code></pre>
+<p>As of writing this config needs to be placed in a file at
+<code>/etc/keyd/default.conf</code>. Doing just this doesn’t do anything, you
+also need to install the software, preferably through your package manager,
+otherwise you can always install from the github following the instructions:
+[github.com/rvaiya/keyd](https://github.com/rvaiya/keyd?tab=readme-ov-file#insta
+llation).</p>
+<p>Since I use NixOS, I don’t worry about installing and setting up the systemd
+service. I just have this in my config:</p>
+<pre><code class="language-nix">services.keyd = {
+  enable = true;
+  keyboards = {
+    default = {
+      ids = [ "*" ];
+      settings = {
+        main = {
+          capslock = "overload(control, esc)";
+        };
+        # otherlayer = {};
+      };
+    };
+  };
+};
+
+# Optional, but makes sure that when you type the make palm rejection work with keyd
+# https://github.com/rvaiya/keyd/issues/723
+environment.etc."libinput/local-overrides.quirks".text = ''
+  [Serial Keyboards]
+  MatchUdevType=keyboard
+  MatchName=keyd virtual keyboard
+  AttrKeyboardIntegration=internal
+'';
+</code></pre>
+<p>Most was taken from the NixOS Wiki, which shows the same config but without the
+overload. Instead, the wiki suggests just mapping the capslock key be a control
+key with this:</p>
+<pre><code class="language-nix">capslock = "layer(control)";
+</code></pre>
+<p>I should also mention there is experimental custom application keybind support.</p>
+<p>Thanks to keyd, my laptop keyboard is easier to use with vim and
+behaves closer to my qmk keyboards. I could even setup <a href="https://mattgemmell.scot/home-row-mods/" title="" target="_blank">home row
+mods</a> if I go down that road.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="devenv-is-awesome"><a class="header" href="#devenv-is-awesome">Devenv is Awesome!</a></h1>
+<p>Why devenv will change the way you think about developing software.</p>
+<p>I’m finding that I’m using <a href="https://devenv.sh" title="" target="_blank">devenv</a> far more often in my
+projects, including my blog!</p>
+<p>Devenv allows me to reliably build my projects across my Linux computers. I get
+to declare which command line tools the project expects. Once I’ve setup devenv,
+all my tools are in one spot. I don’t have to have everything for every project
+installed on my computers, I need to have <a href="https://nixos.org" title="" target="_blank">nix</a> and devenv.</p>
+<h2 id="devenv-is-nix"><a class="header" href="#devenv-is-nix">Devenv is nix</a></h2>
+<p>If you are familiar with shell.nix, then you will be familiar with devenv.
+Devenv uses nix to create declarative shells, but with the bonus of hiding the
+complexity of nix flakes. Devenv uses nix flakes as a back-end, and if you run a
+Linux system that isn’t nix with flakes, you could greatly enjoy reproducible
+developer environments, specifically if you come back to projects years later.</p>
+<h2 id="direnv-is-magic"><a class="header" href="#direnv-is-magic">Direnv is magic</a></h2>
+<p>Devenv is integrated with <a href="https://direnv.net/" title="" target="_blank">direnv</a>, which can
+automatically activate your devenv when you enter your project folder.
+In short, <code>cd project_folder</code> and having all of the project specific tools
+there is awesome.</p>
+<h2 id="jekyll-example"><a class="header" href="#jekyll-example">Jekyll Example</a></h2>
+<pre><code class="language-nix">{ pkgs, lib, config, inputs, ... }:
+{
+  # https://devenv.sh/packages/
+  packages = with pkgs; [
+    git
+    optipng
+    jpegoptim
+  ];
+  # https://devenv.sh/languages/
+  languages.ruby.enable = true;
+  languages.ruby.version = "3.2";
+}
+</code></pre>
+<p>The above example defines the environment I use for this blog. I use Jekyll
+which runs on ruby. I need ruby version 3.2 or greater, 3.1 doesn’t work
+anymore. And switching between theses is as easy as changing 3.2 to 3.1 and
+reloading the env.</p>
+<h2 id="getting-started"><a class="header" href="#getting-started">Getting started</a></h2>
+<p>If you found this interesting, you can find everything I used to get started at
+<a href="https://devenv.sh/getting-started" title="" target="_blank">devenv.sh/getting-started</a>. There’s more to
+devenv than just getting software, but I’ll leave that for another day.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="cosmic-desktop-environment-is-awesome"><a class="header" href="#cosmic-desktop-environment-is-awesome">Cosmic Desktop Environment is Awesome!</a></h1>
+<p>Why I’m excited even when daily driving it before release.</p>
+<p>I’ve done a lot of DE switches through these past few years. And I’ve always
+been a fan of PopOS’s tiling features and I’ve tried many tiling window managers
+to find that most of them are not for me.</p>
+<p><a href="blog//assets/images/screenshots/nixos-cosmic-test.png"><img src="blog//assets/images/screenshots/nixos-cosmic-test.png" alt="Screenshot of cosmic" /></a></p>
+<p>The main reason being that there was always so much configuration that needed to
+happen in order for the computer to start to behave normally again. Like USB
+mounting behavior, screen brightness, and volume keys not bound by default. The
+more you strip away from a DE the more you realize you relied on magic.</p>
+<p>So for years now I’ve used tiling plugins or weird hacks or PopOS’s own tiling
+extension for Gnome. These have all fallen short of the immaculate experience I
+am currently having on this Cosmic DE. Nothing comes close to the buttery
+smoothness that is Cosmic.</p>
+<p>Everything makes sense, and nothing is hacked together last minute. Here’s what
+I mean. To switch windows, its <code>Super+arrow</code> or <code>Super+&lt;hjkl&gt;</code>, whatever is more
+familiar to you. Next, to switch virtual desktops, use these same shortcuts but
+aim for the virtual work space you want. For me, it’s setup vertically as it
+gives less motion on the screen.</p>
+<p>The other benefit: it’s stupid fast. No other desktop experience feels quite as
+snappy. Window managers are quite comparable, but usually lack the essentials.
+Their speed is driven by how little they actually do for you.</p>
+<p>One final thing, customization looks like it will be really great. I’ve setup my
+cosmic desktop to use <a href="https://github.com/catppuccin/cosmic-desktop" title="" target="_blank">catppuccin</a></p>
+<p>Hope you are as excited about the future of the Linux desktop as I am. Even if
+not, have a great day! Thank you for reading!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="why-nixos-is-awesome"><a class="header" href="#why-nixos-is-awesome">Why NixOS is Awesome!</a></h1>
+<p>When did computing become scary? NixOS is here to the rescue!</p>
+<p>Do you ever remember finally getting something to work, and then deciding that you wouldn’t touch the computer ever again in fear that it might randomly stop working? What if this was problem went from a fear of the machine down to a single file? What if you didn’t have to be afraid ever again?</p>
+<p>I like NixOS deeply. It’s like Arch, in that you get to put everything together, but it has this guarantee of stability that Arch can only provide when the user has gained divine insight into system maintenance and omniscience of news in the Arch updates email group.</p>
+<p>What makes me so proud to be a NixOS user is that I know that my computer will essentially never give me a <a href="https://en.wikipedia.org/wiki/Blue_screen_of_death" title="" target="_blank">BSOD</a>. Here’s how that works: To make changes to my computer I need to modify my configuration.nix file. Then run a command:</p>
+<pre><code class="language-bash">sudo nixos-rebuild boot
+</code></pre>
+<p>Which will switch everything over to the new changes next time I reboot. Now this is where an Arch user might be worried: “What if my computer doesn’t work when I turn it on? What if I can’t get to a TTY?”. No need to fear: NixOS makes snapshots of your previous configurations. This means that you can always roll back your changes to the last working version.</p>
+<pre><code class="language-bash">sudo nixos-rebuild switch
+</code></pre>
+<p>Here’s another even better feature. I basically never have to reboot my computer. And, I don’t need to be a Linux wizard to do it. Every service my computer is using gets updated, while software I’m currently running stays the same until I launch it again. I can keep running in a half-updated state, meaning I can still get my stuff done while getting all of those juicy new software features. For example: If you have a Systemd service running that handles your printing, it will get updated. If you are using Firefox, it stays on the older version until you close and re-open it.</p>
+<p>Another amazing feature that NixOS gives its users: You can switch <a href="https://en.wikipedia.org/wiki/Desktop_environment#Gallery" title="" target="_blank">desktop environments</a> easily without all of these residual programs being left behind or weird issues that normally pop up when you install them on other Linux distributions. For a while I used Gnome, then Hyprland, then KDE. I had no issues with any of these! This is what people change distributions for, and it’s all up to date here on NixOS.</p>
+<p>Are you are thinking about switching but aren’t sure if your software will come with you? Here’s a <a href="https://search.nixos.org/packages" title="" target="_blank">search engine for packages</a> and <a href="https://search.nixos.org/options?" title="" target="_blank">search services</a>. I didn’t even mention the best part: Services! Want to run your own <a href="https://mastodon.social/explore" title="" target="_blank">mastodon</a> instance? That’s a service! <a href="https://syncthing.net" title="" target="_blank">Syncthing</a>? Service! <a href="https://forgejo.org/" title="" target="_blank">Forgejo</a>? Service! Before turning to docker or VM’s try looking to see if NixOS has a service.</p>
+<p>All you need for a service to run on NixOS is:</p>
+<pre><code class="language-nix">service.{your service name here}.enable = true;
+</code></pre>
+<p>NixOS or something close to it will give make using software reliable again.</p>
+<p>If you thought this was interesting, there is going to be a part 2!</p>
+<p>If you made it this far and you haven’t given NixOS a shot, maybe try installing it next time you switch your OS!</p>
+<p>I promise it can be worth it :)</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="using-ai-for-learning-to-code-better"><a class="header" href="#using-ai-for-learning-to-code-better">Using AI for learning to code better</a></h1>
+<p>More updates on my neovim journey</p>
+<p>I don’t like using LLM’s like chatGPT or copilot to complete my code for me. I
+want to remember the code, and letting something else type for me doesn’t help
+me with that. My goal is to be able to write code without looking up any
+syntax. Wasting my time and others looking for programming I’ve done before. I
+want to get better at coding. I want to use an LLM to guide my programming when
+I get lost, or if my code structure starts to turn into spaghetti.</p>
+<h2 id="what-i-need-changed"><a class="header" href="#what-i-need-changed">What I need changed</a></h2>
+<p>I’m not a fan of running something as fluid and conversational as an LLM on
+anything else except my own hardware. Over the internet is creepy, and I don’t
+trust that they won’t leak the information they collect on purpose or on
+accident.</p>
+<p>I also can’t have it telling me all the answers before I get the chance to
+think about it first. I need to be in control. There can’t be anything
+automatically popping up on my screen. I want something that can give me
+simple help when I need it. Advice like, needs more comments, or could use an
+extra interface. I want a real “copilot”, an artificial pair programmer.</p>
+<h2 id="the-solution"><a class="header" href="#the-solution">The solution</a></h2>
+<p>I’m using ollama to download and run LLMs from the internet. Once it’s on my
+computer, it runs locally and doesn’t need an internet connection. Then, I set
+up the ollama nvim plugin, which allows me to call any of the installed LLMs to
+ask it questions. I’ve disabled code generation, suggestion and replacement
+features on the LLM, so I would never turn off my brain. Now all I need to do
+in Neovim is to select the code I have a question about, and ask it. I’ve
+created some shortcuts that will get me to commonly asked questions such as:
+How can I simplify this code?, How can I make this code more readable and
+explain how it would be, What design patterns would work best with this code
+and why?.</p>
+<h2 id="why-you-should-want-this-system"><a class="header" href="#why-you-should-want-this-system">Why you should want this system</a></h2>
+<p>To reiterate, this is something that takes your code writing ability and gives
+it the best opportunity to improve. No more waiting for others to be free to
+give advice. No more strange answers from strangers on the internet. The LLM
+will once in a while spit out answers that are unhelpful, but most times, the
+advice it can give is good on larger LLMs.</p>
+<h2 id="why-you-shouldnt-want-this-system"><a class="header" href="#why-you-shouldnt-want-this-system">Why you shouldn’t want this system</a></h2>
+<p>You might already have great mentors, who will look at your code frequently and
+give great advice on what kind of changes you can make to make your code
+better. Technology might be too tempting, there might not be a good way for you
+to use the AI and the AI ends up using you, while you learn nothing waiting for
+the next code generation to complete.</p>
+<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
+<p>It’s OK if you disagree with what I’ve written here. The goal is to have you
+think about your use of technology and to have you double-check that your use
+is beneficial or if it’s more out of habit, or it could be the easy way out. My
+hope is that you keep on thinking, and that your machines keep doing the menial
+work. As for me, I think I’ll stay behind the wheel of my own destiny.</p>
+<div style="break-before: page; page-break-before: always;"></div><p>The valid points I heard were something like:</p>
+<ul>
+<li>Could reduce productivity of the top coders.</li>
+<li>Removes the customization you can have when writing code</li>
+</ul>
+<p>And if you agree with these points, then I suggest to not use a formatter. At
+the end of the day, formatters are supposed to be a tool to help you achieve
+what you want.</p>
+<h2 id="solution"><a class="header" href="#solution">Solution</a></h2>
+<p>When you create a tool, you want your tool to be the most useful to the
+greatest number of people. Formatters are just a tool. Here’s why you would
+want to use a formatter:</p>
+<ul>
+<li>Consistency: There’s no need to adjust where to look for something when jumping from
+project to project, file to file, or line to line.</li>
+<li>Faster code creation: If wanted, you could write code without any spacing or
+formatting, and skip those keystrokes and let an auto-formatter apply your
+preferred changes.</li>
+<li>Guidance: It’s perfect for newbies and polyglots who want others looking at
+their code, it’s formatted “correctly” for that use case every time.</li>
+</ul>
+<p>As always, hope someone found this helpful. Tchau.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="baking-configs"><a class="header" href="#baking-configs">Baking Configs</a></h1>
+<p>I can’t stop changing my configs (help me)</p>
+<h2 id="cooking-system-configs"><a class="header" href="#cooking-system-configs">Cooking System Configs</a></h2>
+<p>Here’s how my day goes. I sit down at my computer, and if I’m not working I’m
+dragged back into config land. I’ve got years of experience messing around with
+configurations at this point, and I want to share how not to do things.</p>
+<p><img src="blog//assets/images/cool-graphics/config-habit2.jpg" alt="A cyberpunk guy at a computer" /></p>
+<h2 id="burnt"><a class="header" href="#burnt">Burnt</a></h2>
+<p>Nothing beats the rush of changing files that your computer needs to work. Grub
+and fstab(file system tab) are some of the files I would touch on a weekly
+basis to try to make my computer run the way I want it to run. Some of you
+might already see what goes wrong: Computer works fine, then I reboot, and now
+the bios can’t find the OS anymore. Best of all, I didn’t keep any kind of
+backup ;). This was frustrating at the time, I have since learned
+how to avoid this kind of issue. (It’s backups and always will be)</p>
+<h2 id="toasted"><a class="header" href="#toasted">Toasted</a></h2>
+<p>After a year or so of changing files manually in nano, I grow up a little and
+start to backup the files I change before rebooting so in the worst case
+scenario, I could boot up an install USB, gain access to the os and swap out
+the problem file with it’s backup. This experience is terrible compared to
+my current solution.</p>
+<h2 id="edible"><a class="header" href="#edible">Edible</a></h2>
+<p>After some more months of editing configs, I’m realizing I can use other
+text editors than nano, get some syntax highlighting for configs that use
+standards like, json and yaml. Or for files that made their own standards like
+dockerfile but are also popular enough to get IDE support. If you are editing
+your system critical files manually. I recommend using your favorite IDE you
+use for other coding tasks and sudo cp file_system_uses file_system_uses.bak,
+then sudo cp file_you_edit file_system_uses.</p>
+<p><img src="blog//assets/images/cool-graphics/config-habit1.jpg" alt="Another cyberpunk guy at a computer" /></p>
+<h2 id="tasty"><a class="header" href="#tasty">Tasty</a></h2>
+<p>As some people might have realized by now, what if I forget to make a .bak?
+Some more time passes and I also started using distros with backups selectable
+at boot. This makes me far less anxious about changing most configs. Still
+worried when changing settings in grub/Systemd-boot. Now what if I told you
+that making .baks isn’t the best idea ever? And what if I told you that you can
+use git as a backup?</p>
+<h2 id="delicious"><a class="header" href="#delicious">Delicious</a></h2>
+<p>There are special kinds of git repos that you can use for managing files in
+different folders. I don’t use those, I write a bash script that
+copy the files from my git repo into the right spots on my system.</p>
+<p>I also started using <a href="https://nixos.org/" title="" target="_blank">NixOS</a>, which is perfect for making
+sure my configurations do what I expect. My workflow is more about editing my
+one <a href="https://nixos.org/" title="" target="_blank">NixOS</a> repo to configure my configs. It’s nifty when
+editing configs that are more complex than helpful because <a href="https://nixos.org" title="" target="_blank">NixOS</a>
+has a lot of great defaults you can toggle.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="simple-nvim-config"><a class="header" href="#simple-nvim-config">Simple-Nvim-Config</a></h1>
+<p>More updates on my neovim journey</p>
+<p>I’ve gone on a software spiritual journey to cut down my config from
+my <a href="https://astronvim.com" target="_blank">https://astronvim.com</a> “beginner” config to something more simple and
+something I can almost understand.</p>
+<p>If you are itching to see the final result, you can find it here:
+<a href="https://github.com/camerondugan/simple-nvim-config" target="_blank">https://github.com/camerondugan/simple-nvim-config</a></p>
+<h2 id="creating-this-config"><a class="header" href="#creating-this-config">Creating this config</a></h2>
+<p>Best way to get started and understand:</p>
+<p><a href="https://github.com/nvim-lua/kickstart.nvim" target="_blank">https://github.com/nvim-lua/kickstart.nvim</a></p>
+<p>I forked the repo and got started. <a href="https://github.com/tjdevries" title="" target="_blank">TJ</a> did a
+great job on this repo, making it what I needed to get off the distro
+train and onto the Personalized Development Environment(P.D.E.) spaceship. I’m
+editing this article in Neovim from the comfort of my own terminal. And I have
+to say, that this is the best feeling vim I’ve ever touched because I control
+it all.</p>
+<h2 id="what-i-changed-in-kickstart"><a class="header" href="#what-i-changed-in-kickstart">What I changed in KickStart:</a></h2>
+<p>From here on out, what I’m going to talk about might not be relevant anymore if
+you are reading this after some time has passed.</p>
+<p>My favorite feature I’ve added was Zoxide support. If you haven’t heard of
+Zoxide… What are you waiting for? Go check it out:
+<a href="https://github.com/ajeetdsouza/zoxide" target="_blank">https://github.com/ajeetdsouza/zoxide</a>. I use it for everything where I used
+cd. Installing the Zoxide extension allowed me to use the z command with :Z in
+Neovim.</p>
+<pre><code class="language-lua">{ 'nanotee/zoxide.vim', lazy = false },
+</code></pre>
+<h2 id="telescope"><a class="header" href="#telescope">Telescope</a></h2>
+<p>I realized that I didn’t explain what telescope does in the next paragraph, so I’m
+adding this here after the fact. Telescope is a Neovim plugin that lets you select
+from a list of options with a preview window. You can call telescope from a command
+or from shortcuts. This makes it easier to have shortcuts pull up a menu and do an
+action with the selection.</p>
+<p>I’ve added a telescope Zoxide extension for changing directories and
+seeing potential options. The original Zoxide plugin I used didn’t show me
+available folders when I pressed auto complete for :Z Dir name. This also allowed
+me to run a file-edit telescope command after the Zoxide directory telescope.
+Now all I do when I startup nvim from my home Dir is: ‘spacebar sd’ then I type
+something that somewhat resembles the directory I want, then ‘enter’. After,
+the same menu pops up again, but this time for files in that directory.</p>
+<p>Because the setup for the code mentioned is inherently a little spread out,
+here’s a URL that should show you what I’m doing with zoxide even if I change
+where or how it’s used:
+<a href="https://github.com/search?q=repo%3Acamerondugan%2Fsimple-nvim-config%20zoxide&type=code" target="_blank">https://github.com/search?q=repo%3Acamerondugan%2Fsimple-nvim-config%20zoxide&amp;type=code</a>.</p>
+<h2 id="snippets"><a class="header" href="#snippets">Snippets</a></h2>
+<p>I’m kind of in love with auto complete snippets now. I found the part of
+kickstart that covers setting up snippets with ‘hrsh7th/nvim-cmp’. After
+setting up extra snippets that are super useful, for example: I can now
+type ‘time’ then Ctrl+y for accept and the snippet replaces it with 18:58. To
+get this working, I had to uncomment one line from kickstart and also add a
+line that made it load in.</p>
+<pre><code class="language-lua">      -- FROM KICKSTART:
+      -- If you want to add a bunch of pre-configured snippets,
+      --    you can use this plugin to help you. It even has snippets
+      --    for frameworks/libraries/etc. But you will have to
+      --    set up the ones that are useful for you.
+      -- I UNCOMMENTED THIS VVV:
+      { 'rafamadriz/friendly-snippets' },
+
+    },
+    config = function()
+      -- See `:help cmp`
+      local cmp = require 'cmp'
+      local luasnip = require 'luasnip'
+      luasnip.config.setup {}
+	  -- AND ADDED THIS LINE VVV:
+      require('luasnip.loaders.from_vscode').lazy_load()
+
+</code></pre>
+<p>I’m certain I’ve done this the wrong way, but I like to think that I’m not
+that far off, as the solution was small, and I now have snippets for all
+the languages that I use, including Markdown. (Which is what I use to write this)</p>
+<p>Hope that you learned something? Not sure, I’ll try to cover more issues/fixes
+that I have. I’m sure that I’ll have some.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="configuring-a-blazingly-fast-code-editor"><a class="header" href="#configuring-a-blazingly-fast-code-editor">Configuring a Blazingly Fast Code Editor</a></h1>
+<p>Neovim</p>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction:</a></h2>
+<p>As a software developer, having a fast and efficient code editor is crucial for productivity. After watching a Primagen video on his Neovim config, I was inspired to delve into configuring this code editor to achieve optimal performance. In this blog post, I share my experience and insights gained throughout this process.</p>
+<h2 id="understanding-neovim"><a class="header" href="#understanding-neovim">Understanding Neovim:</a></h2>
+<p>Neovim is a modernized version of the popular Vim editor, designed to enhance extensibility and usability. It offers a plethora of features and customization options, making it a powerful choice for developers seeking speed, flexibility, and an efficient workflow.</p>
+<h2 id="installation"><a class="header" href="#installation">Installation:</a></h2>
+<p>Being a user of Garuda Linux, an Arch Linux distribution, I installed neovim through my package manager. Neovim is compatible with various platforms, ensuring accessibility for developers across different environments.</p>
+<h2 id="choosing-a-plugin-manager"><a class="header" href="#choosing-a-plugin-manager">Choosing a Plugin Manager:</a></h2>
+<p>For managing plugins, I opted for Packer, a plugin manager that simplifies the process of adding, updating, and removing plugins from my Neovim setup. Its simplicity and ease of use were the key factors in my decision.</p>
+<h2 id="customizing-the-configuration"><a class="header" href="#customizing-the-configuration">Customizing the Configuration:</a></h2>
+<p>One of the defining features of Neovim is its highly customizable configuration. I delved into the realm of Neovim’s configuration file, located at ~/.config/nvim/init.vim (on Unix-based systems). Here, I defined my preferred settings and key mappings to tailor Neovim to my workflow. Specifically, I utilized the Harpoon and lsp-zero plugins and configured my tab and enter keys to provide convenient suggestions.</p>
+<h2 id="essential-plugins"><a class="header" href="#essential-plugins">Essential Plugins:</a></h2>
+<p>During my Neovim configuration, I found the tree-sitter and packer plugins to be essential. The tree-sitter plugin enhanced syntax highlighting and improved code understanding, while the packer plugin ensured that my setup remained up-to-date and usable.</p>
+<h2 id="optimizing-performance"><a class="header" href="#optimizing-performance">Optimizing Performance:</a></h2>
+<p>Surprisingly, I encountered no performance issues during the configuration process. Neovim proved to be incredibly fast, allowing me to seamlessly navigate and edit code without any hindrances.</p>
+<h2 id="utilizing-language-servers"><a class="header" href="#utilizing-language-servers">Utilizing Language Servers:</a></h2>
+<p>To enhance my coding workflow, I installed the lsp-zero plugin and followed the documentation provided on GitHub. This allowed me to integrate language servers with Neovim, enabling features such as intelligent code completion, linting, and other advanced language-specific capabilities.</p>
+<h2 id="conclusion-1"><a class="header" href="#conclusion-1">Conclusion:</a></h2>
+<p>My journey into configuring Neovim as a blazingly fast code editor, inspired by a Primagen video, was both exciting and rewarding. By customizing the configuration, leveraging essential plugins, and integrating language servers, I created a highly customized coding environment tailored to my needs. Neovim’s flexibility, along with plugins like Harpoon, lsp-zero, tree-sitter, and packer, contributed to a remarkable coding experience. Whether you discovered Neovim through a video or another source, I encourage you to embark on your own journey, explore the vast customization options, and witness the incredible difference Neovim can make in your coding workflow. There is great power in knowing what happens in the background of your IDE, and switching to neovim will definitely help show you.</p>
+<p>Have a great day!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="your-software-is-only-as-good-as-its-defaults"><a class="header" href="#your-software-is-only-as-good-as-its-defaults">Your Software Is Only As Good As It’s Defaults</a></h1>
+<p>How Default Behavior Changes Everything</p>
+<p>Whether or not you realize it default settings on software is incredibly critical for users. For most users, having to change settings is too much friction to start using your software. Your software is only as good as it’s defaults.</p>
+<h2 id="scenarios"><a class="header" href="#scenarios">Scenarios</a></h2>
+<p>Let’s say you are a beginner software user, you just bought your first computer. As far as you are aware, how the computer behaves out of the box is the only way it can behave. Good software with bad default settings is just bad software.</p>
+<p>Let’s say you had this computer for a few more years. You have your favorite applications and websites, and you know how to do what you need to do for the most part. You might have realized that you can change the default search engine or theme on your browser, or maybe even switch the browser to something else that’s more you. By now, you probably enjoy your computer more because you know how to use it, and it’s customized a bit to your liking.</p>
+<h2 id="me-problems"><a class="header" href="#me-problems">Me Problems</a></h2>
+<p>Then there’s me. I’ve given up using Windows in daily use, and I’ve settled into the linux distribution of my choice. You would think that surely the defaults didn’t matter too much, because on linux you can change anything and everything. Here’s the thing: even though I could, doesn’t mean I want to spend all of my free time changing all of the unwanted behaviors into wanted ones. I’m still a customer at the end of the day. And I still want software that just works the way I want it to out of the box. Each bad default setting that I have to change, is something that I have to do for every phone and computer. Also anytime I download new software.</p>
+<p>It gets frustrating having to constantly change defaults to what I like. I’ve practically given up. There’s a reason why Google pays Apple and other web browser developing companies a absurd amount of money to stay the default. If they aren’t the default, a good amount of people probably wouldn’t care to switch back.</p>
+<h2 id="unnecessary-friction"><a class="header" href="#unnecessary-friction">Unnecessary Friction</a></h2>
+<p>So, there you have it. This has been a short rant, on why I think software, open source or otherwise should think about which settings/behaviors should be default, and which ones should be hidden. It makes or breaks the experience at varying degrees for everyone, don’t let your efforts go to waste.</p>
+<p>(This has also been a note to my future self not to do the things I dislike in other software products.)</p>
+<p>Thanks for reading, have a great day!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bottles-error-fix"><a class="header" href="#bottles-error-fix">Bottles Error Fix</a></h1>
+<p>Commenting Out a Line Of Code Fixes The Problem</p>
+<p>I’m posting this because I couldn’t find any solutions online.</p>
+<h2 id="the-issue"><a class="header" href="#the-issue">The Issue</a></h2>
+<p>I’m running Gnome on Arch Linux and I’m using bottles to run a couple of windows games.</p>
+<p>I updated my computer and ran into: TypeError: Gtk.CssProvider.load_from_data() takes exactly 3 arguments (2 given)</p>
+<p>Bottles froze at Bottles is starting and right after it downloaded 3 small packages. Downgrading to the previous version of bottles didn’t work, so it’s probably not a problem with bottles, but some system/gtk package versioning issues.</p>
+<h2 id="the-fix"><a class="header" href="#the-fix">The Fix</a></h2>
+<p>The fix was to run Bottles in the command line via <code>bottles</code>, and to wait for it to give the error.</p>
+<p>Open the file that has the error and add a # in front of the line creating the problem. Bottles suddenly works perfectly fine afterwards.</p>
+<p>Also, if you have the same issue but this doesn’t work, in my case this was just a graphical/gtk issue and could have been avoided by using the <code>bottles-cli</code> commands to run applications and interact with your bottles.</p>
+<p>I hope this helped!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="serverless-applications"><a class="header" href="#serverless-applications">Serverless Applications</a></h1>
+<p>Using Cloudflare for Applications</p>
+<p>I’ve been looking into CloudFlare’s other options, currently I’m using it for my DNS and this website’s hosting, but I’ve been thinking about doing more.</p>
+<p>I’ve realized that it’s entirely possible to cheaply host something they call durable objects and program them to be used in replacement of a vps.</p>
+<h2 id="potential-upsides"><a class="header" href="#potential-upsides">Potential Upsides</a></h2>
+<p>My plan involves using durable objects to host data for an online multiplayer game. I don’t know how far I will get, but at least I can use this to super cheaply host and update high-scores. My understanding right now is that durable objects are variants of cloudflare workers that guarantees only one is running and changing data. Traditional workers exist in multiple places and would cause problems when trying to keep everything in sync between two players.</p>
+<h2 id="potential-downsides"><a class="header" href="#potential-downsides">Potential Downsides</a></h2>
+<p>The costs can stack up, so I need to be smart about how many durable objects I make and how many times I update the data in storage.</p>
+<p>The next thing I’ll be doing is attempting a high-score system for my succulent game, as well as addressing some bugs in that game.</p>
+<p>With success there I’ll probably attempt a much bigger project involving this cheap online storage hosting method.</p>
+<p>I hope this was interesting, have a great week!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="taking-the-slow-road"><a class="header" href="#taking-the-slow-road">Taking The Slow Road</a></h1>
+<p>Min/Maxing Decisions</p>
+<p>This post, like most post is just a reminder to my future self.</p>
+<p>Life isn’t a race. Sometimes it’s hard to remember, but knowing when to sprint and, when to jog and, when to walk is super important. If life was a race, it would be a marathon, the best racers know how to pace themselves, when to sprint, when to jog, and when to walk.</p>
+<h2 id="pacing-yourself"><a class="header" href="#pacing-yourself">Pacing Yourself</a></h2>
+<p>Not everything you do has to be done to the max. If you disagree, then you need to think for a little longer. People who run at 100% 24/7 burn out. The people that go the furthest can pace themselves for long term success. It doesn’t matter so much that you always win, it just matters that you win more overall in the long run.</p>
+<p>It’s all about lining up dominos for the future instead of worrying about how many dominos you can knock down today.</p>
+<p>Have a great week!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="game-jams"><a class="header" href="#game-jams">Game Jams</a></h1>
+<p>What I Did During My Last Game Jam</p>
+<p>Game jams are events where you make a game in a limited amount of time with a small team or alone. Usually game jams are pretty stressful unless you really know what you are doing. There’s plenty that happen all of the time. Usually they happen on the weekends, but some last weeks or even a whole month.</p>
+<h2 id="my-most-recent-experience"><a class="header" href="#my-most-recent-experience">My Most Recent Experience</a></h2>
+<p>Last weekend I did a game jam with 3 random people in person, and it was a much better experience than the times I went solo. Much more creative brainstorming happened. We were forced to use the theme <strong>Companion</strong>, and we decided on using clones and a <del>companion cube</del> friend cube to fit the theme in a puzzle platformer.</p>
+<h2 id="implementation"><a class="header" href="#implementation">Implementation</a></h2>
+<p>We used Godot and for the puzzling mechanics we coded up some area2D sensors as buttons, some RigidBody2D spheres as our friend cube, and a KinematicBody2D as our slime main character.</p>
+<p>Our first real problem was that our cube failed to stay within the walls of the game, which is particularly bad for a puzzle platformer where you would need the cube to activate things later. Our player was capable of pushing the cube as though the walls were not there, which isn’t good. We found a setting in the move-and-slide function to turn off infinite inertia, which solved the problem, but made it so that the player couldn’t push the cube.</p>
+<p>One of my teammates found a tutorial online on how to make the player push the cube by coding the forces to be applied by hand.</p>
+<h2 id="play-testing"><a class="header" href="#play-testing">Play testing</a></h2>
+<p>Play testing is super important, you have no idea if you are heading in the right direction with the changes you are making unless you play the game frequently. Because we were playtesting along the way, we noticed that our cube wasn’t fun to interact with and would frequently get stuck to walls. I wasn’t particularly looking for a solution for this, but I was playing around with the physics material for the cube. I added bounciness to the cube, and suddenly you could push the cube out of a corner by making it bounce out, very cool, plus it was more fun to interact with so… double win there.</p>
+<p>Originally our cube was square shaped, which was great, but this would make our cube get caught on corners and push the player in weird ways. We switched it out to be a sphere and added a square image on top and added some code to remove the image’s ability to rotate with the ball cube. This created an illusion that the cube was still a cube, without having the extra clunkiness.</p>
+<h2 id="play-the-games"><a class="header" href="#play-the-games">Play the Games:</a></h2>
+<p>Here’s a link to the game my team made in 48 hours:
+<a href="https://sire-inc.itch.io/you-are-not-a-clone" title="" target="_blank">You Are Not A Clone</a></p>
+<p>And here’s the links to the games other teams made:
+<a href="https://itch.io/jam/wgdc-spring-game-jam/entries" title="" target="_blank">Game Jam</a></p>
+<p>If you want to participate in a game jam yourself, there’s always game jams happening, and I encourage pretty much anyone interested to at least try it once. Here’s a list of featured game jams coming up soon: <a href="https://itch.io/jams/upcoming/sort-date/featured" title="" target="_blank">Itch Featured Jams</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="my-2023-android-setup"><a class="header" href="#my-2023-android-setup">My 2023 Android Setup</a></h1>
+<p>What I’m Using on My Phone This Upcoming Year</p>
+<p>Here’s a quick rundown of what I’m going to be running on my phone.</p>
+<p>I get my software from these sources preferably in this order:</p>
+<ol>
+<li>Fdroid</li>
+<li>Izzy Droid Fdroid <a href="https://apt.izzysoft.de/fdroid/repo?fingerprint=3BF0D6ABFEAE2F401707B6D966BE743BF0EEE49C2561B9BA39073711F628937A" title="" target="_blank">Repo</a>{:target=“_blank”}</li>
+<li>Google Play</li>
+</ol>
+<h2 id="tracker-control-tc-on-f-droid"><a class="header" href="#tracker-control-tc-on-f-droid">Tracker Control (TC) on F-Droid</a></h2>
+<p>Blocks most ads and trackers inside of apps in android, without this, I wouldn’t feel comfortable installing random software straight from the PlayStore. <a href="https://f-droid.org/en/packages/net.kollnig.missioncontrol.fdroid/" title="" target="_blank">Tracker Control on F-Droid</a>{:target=“_blank”}.</p>
+<h2 id="syncthing"><a class="header" href="#syncthing">Syncthing</a></h2>
+<p>Syncs photos, documents, backups, et cetera back and forth between my computers and my phone. Very useful in niche scenarios. If you don’t want to use a cloud photo backup system, you can setup a folder to “send only” to a computer with lots of storage, then you can also setup your computer to ignore photo deletions from your phone’s folder. <a href="https://docs.syncthing.net/users/foldertypes.html" title="" target="_blank">Docs found here</a>{:target=“_blank”}.</p>
+<h2 id="postbox-focus"><a class="header" href="#postbox-focus">PostBox Focus</a></h2>
+<p>Postbox Pro takes your notifications and spreads them out so you aren’t bothered constantly throughout the day. You can choose which apps you see instantly, and which ones are delayed. It turns your phone into more of a mailbox than a constant river of information. I like it, the effect is subtle but helpful.
+Postbox pro can be found on the PlayStore <a href="https://play.google.com/store/apps/details?id=app.serendipitylab.postboxpro" title="" target="_blank">here</a>{:target=“_blank”}.</p>
+<h2 id="conclusion-2"><a class="header" href="#conclusion-2">Conclusion</a></h2>
+<p>I have no monetary incentive to share these specific applications. I’m sharing them because I think that they can be helpful to anyone. If you found any of this helpful, feel free to reach out to me on Mastodon or by email, would love to hear from you. If there’s software that you think I should have talked about, feel free to send me a message. Have a great day!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="my-development-experience-with-godot-3-in-vr"><a class="header" href="#my-development-experience-with-godot-3-in-vr">My Development Experience With Godot 3 in VR</a></h1>
+<p>My Recent Development Shenanigans</p>
+<p>It’s been a while since I’ve posted anything. I’m going to blame it on my recent issues with <a href="https://godotengine.org" title="" target="_blank">Godot</a> development for Oculus Quest.</p>
+<p>Since I haven’t mentioned it, I’m working on a retro-style 3D game. Everything is up to change, might not stay retro, might not stay 3d, but so far the goal was for it to work on the Oculus Quest.</p>
+<p>I’m currently working on converting my game from VR back into a normal flat screen game. It’s still going to have the code that will allow for VR, but the game’s focus is going to have to shift back to the computer experience, optional VR is going to be a maybe.</p>
+<h2 id="my-reasons-for-the-switch-to-flat"><a class="header" href="#my-reasons-for-the-switch-to-flat">My Reasons For The Switch to Flat:</a></h2>
+<ol>
+<li>
+<p>VR is hard to debug</p>
+<blockquote>
+<p>I’m making the game for fun, this should be easy not hard. Android build time + time to put on headset over and over again to find silly mistakes in my code got old fast.</p>
+</blockquote>
+</li>
+<li>
+<p><a href="https://godotengine.org" title="" target="_blank">Godot</a> doesn’t support screen space shaders in VR on Android.</p>
+<blockquote>
+<p>I just wanted to reduce the colors the game was outputting or look at the pixels on the screen and apply an effect.</p>
+</blockquote>
+</li>
+<li>
+<p><a href="https://godotengine.org" title="" target="_blank">Godot</a> doesn’t seem to allow to set custom lower resolution in VR. (for a retro effect)</p>
+<blockquote>
+<p>This really should have been an option through the existing godot system, I’m not going to fish around for a function that modifies this. Also, having the above bullet would have allowed me to down sample the resolution.</p>
+</blockquote>
+</li>
+<li>
+<p>Setting up all of the Android SDK requirements is too tedious.</p>
+<blockquote>
+<p>Every time I reset my computer, or try to develop on a different one, I needed to setup the Android SDK to interface with the Oculus Quest. The SDK works, but setting it up with all of the required tools can be slow and confusing. I’m glad for now I’m saying goodbye Android SDK.</p>
+</blockquote>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="being-an-arch-user"><a class="header" href="#being-an-arch-user">Being An Arch User</a></h1>
+<p>An Unexpected Consequence</p>
+<p>Hi,
+I woke up today wanting to make my <a href="https://www.raspberrypi.org/" title="" target="_blank">Raspberry Pi</a> even more useful.</p>
+<p>Currently, it’s tasked with hosting <a href="https://camerondugan.com" title="" target="_blank">this website</a>, and it used to host an email until it randomly stopped working after an update.</p>
+<p>Anyways, I tried to setup <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a> as a pseudo NAS, to let me auto-sync my files remotely without needing both the destination and the source online at the same time.</p>
+<p>I installed <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a>, and setup <a href="https://www.nginx.com/resources/glossary/nginx/" title="" target="_blank">nginx</a> to passthrough the gui port localhost:8384 for <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a> to a specific url on my website. This worked, the user interface for <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a> appeared and I was able to connect to other devices. The problem: no files were being synced.</p>
+<p>The exact issue I was having was a tcp connection version mismatch, one device wanted to use 303 and another wanted 301.</p>
+<p>I spent probably about 20 minutes tinkering with <a href="https://www.nginx.com/resources/glossary/nginx/" title="" target="_blank">nginx</a> before realizing that everything was working perfectly and it wasn’t some strange <a href="https://www.nginx.com/resources/glossary/nginx/" title="" target="_blank">nginx</a> background filtering or conversion. It’s just that I am so used to <a href="https://archlinux.org/" title="" target="_blank">Arch</a> packages being up to date, that I never even considered that I would have to manually setup the <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a> repo for the <a href="https://https://www.raspberrypi.org/" title="" target="_blank">Raspberry Pi</a>.</p>
+<p>After setting up apt to fetch the latest version of <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a>, everything ran perfectly smoothly. I just can’t believe that this is a thing people still have to do to install updated software on Linux. I understand why it hasn’t been fixed, but I would have expected maybe a community wiki+script pre-installed that connects package names to their official PPAs for you. Other distros should probably have one over-arching piece of software that can handle installing pretty much anything in one quick command like <a href="https://archlinux.org/" title="" target="_blank">Arch</a> does (like the paru command and it’s substitutes). Maybe this exists, idk, and I’m not super interested. I just got used to expecting easily installible updated software on <a href="https://archlinux.org/" title="" target="_blank">Arch</a>.</p>
+<p>Also for anyone interested, I got tired of fixing my <a href="https://archlinux.org/" title="" target="_blank">Arch</a> install when it rarely broke, so I just switched to <a href="https://garudalinux.org/" title="" target="_blank">Garuda</a>, which has more than all the settings and software I would have setup anyway.</p>
+<p>Repair/Reinstallation time from 1-3hrs down to 30min tops.</p>
+<p>That’s my weird story for today, thanks for sticking around :)</p>
+<p>P.S.
+I do know that I can install ARM based Arch distros onto the pi, but I’m lazy and it’s already setup. Maybe another day, I’ve been looking into <a href="https://nixos.org/" title="" target="_blank">NIXOS</a>, maybe that’s a good choice, we’ll see…</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wave-function-collapse"><a class="header" href="#wave-function-collapse">Wave Function Collapse</a></h1>
+<p>Programming Something That Already Exists Without Knowing it Exists</p>
+<p>Hello! I’ve been bingeing more YouTube content recently and I discovered that there was something called Wave Function Collapse. Basically, given a grid, and some tiles with special rules, write an algorithm that places those tiles in the grid following those rules. Basically Sudoku but more generalized.</p>
+<p>This immediately reminded me of a script I wrote in Godot for infinite 3d world generation. I wanted to have specific rooms or hallways placed in a usable way.
+I also used “weights” on each tile to make some tiles appear much more frequently.</p>
+<p>I created a bunch of “tiles” and added rules saying where other tiles can connect, and generate x number of blocks away from the player, much like Minecraft.</p>
+<p>Apparently, what I created is an imperfect version of Wave Function Collapse.</p>
+<p>Here’s my understanding of what Wave Function Collapse should do.</p>
+<ol>
+<li>Find the space with the least valid possible tiles</li>
+<li>Place one of the possible tiles</li>
+<li>Repeat until no more tiles can be filled.</li>
+</ol>
+<p>Obviously, with some back-tracking for when no tiles can be placed, but the board is still not full.</p>
+<p>It’s so cool to find out that something you worked on in the past are problems that have been perfectly solved by others, and that you can learn from the differences in methods of solution.</p>
+<p>Usages of the Wave Function Collapse seem to be for procedural generation or for puzzle solving.</p>
+<p>Here’s the links to the videos that reminded me of it:</p>
+<p><a href="https://www.youtube.com/watch?v=2SuvO4Gi7uY" title="" target="_blank">Youtube Video #1</a>
+<a href="https://www.youtube.com/watch?v=20KHNA9jTsE" title="" target="_blank">Youtube Video #2</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="things-lead-to-their-opposites"><a class="header" href="#things-lead-to-their-opposites">Things Lead to Their Opposites</a></h1>
+<p>A Generalization That’s Generally True</p>
+<p>It’s hard to remember sometimes that things lead to their opposites. That in order to be hungry, you must have been full. In order for you to be happy, you must have some kind of sadness to compare the experience to.</p>
+<p>These things are all true because they have to be.</p>
+<p><img src="blog//assets/images/cool-graphics/circuitry.jpg" alt="circuitry" /></p>
+<p>Change only occurs because there was and then there wasn’t. Logic like this drives humanity. Nothing is constant… is the only constant. Adapting and overcoming is standard mode of operation and is thus not an adaptation. Contradiction is a standard part of any logic system, it’s inescapable. Logic is infinitely complex but in many ways so simple, that it would be unthinkable for it to not contradict itself somewhere.</p>
+<p>Beliefs are systems of logic that exist to simply the infinitely complex reality we live in. Beliefs are tools to be used and not pieces of our identity. Identity changes constantly, and holding onto it too tightly can cause unnecessary suffering. No belief is 100% accurate, there are always contradictions, and there is always some margin of error.</p>
+<p><img src="blog//assets/images/cool-graphics/architecture.jpg" alt="circuitry" /></p>
+<p>And if you re-learn anything from this post: Don’t believe every thought that you think.</p>
+<p>Also, human behavior change mainly starts with habits, not a state of mind, and especially not a list of strange sentences.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="why-people-dont-code"><a class="header" href="#why-people-dont-code">Why People Don’t Code</a></h1>
+<p>Thoughts and Updates</p>
+<p>Hello again, been busy working on an AI for a class I’m taking, strange issues with keras and data cardinality are stopping progress currently.</p>
+<p>This had me thinking about why people don’t code. Society relies on software to such an extreme degree that it seems that programming would be an essential tool taught in schools to help most desk/laptop style jobs. In-fact, I would have gone as far to argue that programming should be used as the primary method of solving modern problems. Solve them once, hopefully never have to solve it again.</p>
+<p><img src="blog//assets/images/cool-graphics/tubes.jpg" alt="picture" /></p>
+<p>This brings me to my understanding today, that people are tired and don’t want to have to sit through every semantic or syntactical error just to solve a problem they already know how to solve by hand.</p>
+<p>Knowing how to program well is very useful, knowing how to program poorly is practically worthless. I appreciate institutional efforts to incorporate computers and software into education, but seems like it almost should be the center, where a lot of problems can be expressed and solved just as fast, if not faster through computer programs.</p>
+<p>Obviously I’m biased, and there are exceptions, and I don’t know exactly what I’m talking about, but it seems like a good idea to provide the option of an education purely through a computer science lens.</p>
+<p>Matlab and R are the closest things to what I want to express. Classrooms use Matlab and R, but mostly as calculator replacements.</p>
+<p>Just realized that students would probably code like they’re still using a calculator and gain no benefit and much headache from a lazy inclusion of programming.</p>
+<p><img src="blog//assets/images/cool-graphics/human+AI.jpg" alt="image" /></p>
+<p>Being able to better work with our machine friends is going to be a key part of our future, and learning to speak some of their language is a great start.</p>
+<p>And that’s what’s been on my mind recently, thanks for reading! I’ll post more stuff soon (probably about that AI I’m working on).</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-op-1-synth"><a class="header" href="#the-op-1-synth">The OP-1 Synth</a></h1>
+<p>A Hardware Digital Audio Workstation</p>
+<p>The OP-1 is a computer-keyboard sized synth with just enough capability to mostly replace a DAW.</p>
+<p>I’m a programmer with quite a bit of piano playing experience. My idea with the purchase of the OP-1 was to be able to make my own sounds and music for whatever software I end up making.</p>
+<p>I wanted to list everything that it can do, but I feel like it’s more effective if I just link to a Red Means Recording video where he uses the OP-1 to create a full song.</p>
+<p><a href="https://www.youtube.com/watch?v=TpIVf1dXrbU" title="" target="_blank">OP-1 05-26-16 (Nicotine) by Red Means Recording</a>{:target=“_blank”}
+skip to 12:50 for the finished edited version of the song</p>
+<p>It’s strengths are it’s looping, sampling, and especially it’s synth customization options.</p>
+<p>You can import instruments and drum kits by recording with the mic or with the audio input jack.</p>
+<p>It manages to be understandable with very few instructions through conventional symbols and an info button for when you can’t figure out what something does.</p>
+<p>That’s about all I have to say, I’ve been enjoying using it for making short songs and unique sounds.</p>
+<p>Hope you found it as interesting as I did.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-cost-of-expectations"><a class="header" href="#the-cost-of-expectations">The Cost of Expectations</a></h1>
+<p>Why Gifted Individuals Tend to Burnout</p>
+<p>I tend to spend some of my time browsing YouTube looking for memes and cool computer science stuff. Recently, I got recommended a video called “<a href="https://www.youtube.com/watch?v=QUjYy4Ksy1E" title="" target="_blank">Why Gifted Kids Are Actually Special Needs</a>” which seems to explain a good amount of my highschool experience. The video explains a lot about high expectations and how they can lead to unnecessary pressure which can only make things worse. With that in mind, here’s how my experience went.</p>
+<h3 id="the-setup"><a class="header" href="#the-setup">The Setup</a></h3>
+<p>I’m not gifted, I’m not even going to say I’m normal amounts of smart, I’m very dumb a lot of the time in many ways. But, I fit the description of being gifted from the video. The following is a paraphrase of the definition: not needing to study in school until suddenly hitting a brick wall of complete ruination. This is a huge part of why my middle to early high school experience was not a good time.</p>
+<p>For context… in elementary school, there was optional homework that was very much too difficult for me at the time, but my parents me attempt to do all of them. All I can remember is that the paper was always on brightly colored and it always made me come up with my own way of solving those problems (because none of it was explicitly taught). I also did extra math and english lessons outside of school because my parents thought it would be a good idea.</p>
+<p>I had built up a large ego around being smart because I couldn’t care any less about the sports that I played. I paid about 1/10th of my attention in class for years and as a result a pressure started to build. I dove into game after game to distract myself from this feeling of shame thinking that I’ve already slipped too far behind, although at the time I didn’t recognize this feeling and couldn’t think about it in these terms.</p>
+<p>For years I had thought to myself: “I’m pretty smart and I should be capable of doing xyz without help”, because for years prior this used to be true. My grades started to take a nose-dive and my parents continued to try to push me to do better.</p>
+<h3 id="the-challenge"><a class="header" href="#the-challenge">The Challenge</a></h3>
+<p>Before I continue with this section, I should probably mention that my highschool was great and really pushed its students to perform at a college level before leaving highschool.</p>
+<p>In middle and high school, I didn’t know how to study. Up until then, I just had done what I thought everyone else was doing: just do the homework and take the test. I didn’t even realize that it was a studying problem. I assumed that people only really studied for vocab tests. As a result, I blamed the test for being too weird and the teachers for not teaching the material, and ultimately decided that the problem was more of an organizational issue. A mild performance in my early years in middle school didn’t push me to study because I saw it as a fact that I just wasn’t smart enough. I wasn’t even completing all of the homework and had spent most of my time playing fps games and watching YouTube. I even used my poor grades in my humor as a shield to hide what I really thought about myself.</p>
+<p>Right after another confrontation with my parents about my grades, I had decided that the solution was obvious and I should try to change my organization rather than the amount of work put in. I refused to ask for help because I kept thinking that I shouldn’t have to, and that’s what dumb kids do, I’m not dumb I’m just disorganized.</p>
+<h3 id="the-climb"><a class="header" href="#the-climb">The Climb</a></h3>
+<p>I didn’t really put a priority on fixing the problem because I thought that it would more or less go away once I was organized. I’ve tried every imaginable kind of task management system. From hand-written pocket task-lists to calendars and kanban boards and more. Years of this went by and grades stayed right above what was needed to take the next course. I eventually realized that actually studying might be a good solution, because I noticed that other students would study during study-hall.</p>
+<p>It took me about a week before I was asking my friends how they studied for things. Some of them had answered that they didn’t study, but others had said less than 30 minutes or less than 1hr, and a few had said many hours over a week per test. I realized right then that I should be studying a lot more than I was. The only problem: I had hardly ever studied for anything other than a vocab quiz, I literally didn’t know where to start and I still refused to ask for help.</p>
+<p>I decided that the best way to study, would be with flashcards. This obviously doesn’t work for things like Physics and Math, but I tried it anyway. Wrote all of the formulas on flashcards and failed the test. I tried repeating the formulas in my head and failed. My expectation was that I would get better results than my peers from studying the same amount of time, and I was dead wrong.</p>
+<p>At this point, I had gaps in my knowledge going back years in subjects I really should have known. But at least now I was making an effort and my grades did improve to mostly Bs and the occasional A and C. Although I was doing better, I still was missing a key piece of the puzzle and would continue to struggle until end of highschool.</p>
+<h3 id="the-missing-piece"><a class="header" href="#the-missing-piece">The Missing Piece</a></h3>
+<h5 id="warning-this-is-what-worked-for-me-i-cant-guarantee-any-amount-of-success"><a class="header" href="#warning-this-is-what-worked-for-me-i-cant-guarantee-any-amount-of-success">Warning: this is what worked for me, I can’t guarantee any amount of success</a></h5>
+<p>This is what I was missing: paying deep attention in class and taking notes. Those were the two things that held me back from doing fine in highschool. And really, its just one problem: taking notes. I had a teacher who required that we take notes in the official <a href="https://studentlearning.stanford.edu/academic-skills/tips-and-tools/note-taking" title="" target="_blank">Stanford format</a>, something I’ve taken and modified to require less setup. Essentially, by taking bullet-point notes on all of the information you haven’t seen before allowed me to realize when I wasn’t really paying attention. Also, notes aren’t supposed to be: write down what the teacher is saying. Instead it’s more about trying to understand what the teacher is trying to say and writing that down instead. Once I realized this, my grades started to go back to normal despite all of my missing pre-requisite knowledge.</p>
+<h3 id="summary"><a class="header" href="#summary">Summary</a></h3>
+<p>Humans are addicted to consistency. When outcomes are unpredictable, there is some amount of wear and tear on the psyche. Too much unpredictability, and humans will do anything to claw some amount of consistency back. Even if this means intentionally losing, perusing inaction, or enforce a restricted set of actions.</p>
+<p>Only after I let go of my need for predictable or specific outcomes. Letting go of the need for a specific result really helped me. Years of failed attempts has allowed me to understand what I need to do to learn. There is always going to be room for improvement, and at the end of the day the effort put in is more important than being “smart” or “talented”. If anything, being “smart” or “talented” is a result of a lot of unseen effort in that specific thing or a closely related thing. And that’s pretty much the trap I put myself in by having a too high expectations on a specific result with so little direct and effective work put in to ensure that outcome.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ive-found-it"><a class="header" href="#ive-found-it">I’ve Found It</a></h1>
+<p>Something Incredibly Close to a Personal Database</p>
+<h3 id="last-post"><a class="header" href="#last-post">Last Post:</a></h3>
+<p>I wanted to find something similar to a personal database without having to actually write any database code. Ideally this would be for non-programmers, or tired programmers. Something to hold literally everything and keep it synced between devices with something like syncthing or something built in.</p>
+<p>This does pretty much everything.</p>
+<h3 id="the-solution-1"><a class="header" href="#the-solution-1">The Solution:</a></h3>
+<p><a href="https://obsidian.md/" title="" target="_blank">Obsidian</a> is a piece of note taking software that I had been previously using just for note-taking. The idea is that you can create links between notes that you take and follow them like a <a href="https://en.wikipedia.org/wiki/Personal_wiki" title="" target="_blank">personal wiki</a>.</p>
+<p>The only problem was that I wanted a better interface for some plaintext-backend database to allow for stupid easy task management. Text todo’s are just a little too hard to edit and update. I’d wrather 3 mouse clicks on a calendar gui to update a date than to think about editing up to 1/12/2022 number of characters.</p>
+<p>I just discovered something about <a href="https://obsidian.md/" title="" target="_blank">Obsidian</a>: it has this kind of stuff! But, you need to disable safe mode to allow for community plugins such as calendar side-view kanban boards, and more.</p>
+<p>Another note: if you happen to like using vim, don’t worry, it’s got a good enough vim style input option hidden deep in the settings.</p>
+<p>Now I don’t have to complete my project where I probably would have spent a good week or so figuring out how to use gtk to make my own version of this.</p>
+<p>See ya!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="companion-databases"><a class="header" href="#companion-databases">Companion Databases</a></h1>
+<p>Hyper Personalized Databases for Everyday People.</p>
+<h3 id="background-info"><a class="header" href="#background-info">Background Info</a></h3>
+<p>I’ve been watching youtube programmers for a while now, and recently I was watching a <a href="https://www.youtube.com/c/KalleHallden" title="" target="_blank">Kalle Hallden</a> youtube video.</p>
+<p>He mentions an idea I’ve traced back to originating from Derek Sivers(although I’m sure he’s not the only one to think of this).</p>
+<p>I found Derek Sivers on the <a href="https://tim.blog/podcast/" title="" target="_blank">Tim Ferris Podcast</a> on episodes: 137, 439, and 370.5.</p>
+<p>The grand idea boils down to writing a personal database custom to your exact situation. I’ve nicknamed this: the companion database.</p>
+<h3 id="the-concept"><a class="header" href="#the-concept">The Concept</a></h3>
+<p>This database will hold all the information you would ever want to log such as: daily exercise, your children’s dumb sayings, future/current assignments/projects and their status, favorite things over time, important quotes, etc.</p>
+<p>Lets say I want to record all of the articles I read. I would create a new data type called ‘article’ with the fields: title, date read(optional: defaults to current day), date published(optional), description(optional).</p>
+<p>Then later, if I realize that I also want to create a detailed review of an article, I have a few options. I can either add optional review and rating fields, or I can create a new data type called ‘reviews’ that must have a reference to an existing data entry, and the fields mentioned earlier.</p>
+<p>If you wanted, you could even use it as a doomsday mechanism, where after 12 months of non-use it could presume you to be dead, send a confirmation email to your address, after ~1 or 2 weeks it will either release the whole database or just sections to the public.</p>
+<p>I think that such a database would be great. Alternatives like spreadsheets are a bad fit for this and often proprietary.</p>
+<h3 id="the-implementation"><a class="header" href="#the-implementation">The Implementation</a></h3>
+<p>Traditionally something like this could only be done by software enthusiasts. A low-tech solution would be to write everything down in a notebook physically or digitally. This works, but lacks any automation, enforced structure, or automatically derived data.</p>
+<p>The solution I propose is to write a multi-platform software gui to a plaintext-based database with support for all the basic database things. Creating data types and required/optional relationships, but all under a super easy to understand interface that boils the concepts down into it’s most simple and easily understood terminology.</p>
+<p>All of the information has to be stored in plain-text, because I want this to last and work without the software, allowing it to work on any device with a text editor.</p>
+<p>Bonus: the software could graph anything from the database such as activity over time, events with dates and their duration, stat for data-type over time, etc.</p>
+<p>Ideally the system would work great with folder syncing software like SyncThing or rsync.</p>
+<h3 id="final-thoughts"><a class="header" href="#final-thoughts">Final Thoughts</a></h3>
+<p>I know I’m probably over-hyping the system, but I think it’s relatively novel and incredibly flexible. (just realized you could keep track of things in fridge and set an expire date etc). If plain-text companion databases don’t already exist, I want to make this happen.</p>
+<p>If they do exist in a similar way to what I’m describing, please contact me, I’d love to know.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-end-of-thinking"><a class="header" href="#the-end-of-thinking">The End of Thinking</a></h1>
+<p>An Attempt at a Short Narrative</p>
+<p>The following logic has been brewing in the back of my brain for a few years. Not all of it I personally believe, but a good amount of it seems to be a little bit insightful. <strong>A work of fiction.</strong></p>
+<h3 id="the-end-of-thinking-1"><a class="header" href="#the-end-of-thinking-1">The End of Thinking:</a></h3>
+<p>Enter the year X. Not a particular year, but a theoretical year from the past, where humanity made the great transition.</p>
+<p>We don’t know much about what’s changed, but we do know that the transition has happened. The way history is logged doesn’t make sense. Eyes? Legs? Some measurement called years?</p>
+<p>Archaic texts describe an impossible world. The way we currently understand, motion has never been possible, let alone measured by feet or meters.</p>
+<p>People and their ideas were described in great detail, their motives and their flaws. Their achievements and their downfall, perfectly categorized in order of magnitude. All else from the past remains invisible to our senses.</p>
+<p>Nothing about motion makes sense. It’s described as a smooth transition between two different states or forms. All we have ever seen is change, none of this “motion”. In one moment, either it’s there or it’s gone. No measurement is known to exist beyond this. Counting from 0 to 9 billion, there’s just the immediate result of 9 billion.</p>
+<p>Time doesn’t make any sense either. Things are or they are not, and there is no known future beyond now.</p>
+<p>Everything simply is.</p>
+<p>Everything to be done has already been recorded, there’s nothing left to do. Every theorem proven, along with every paradox has been paradoxically proven to be solvable.</p>
+<p>An example solved paradox: there’s a pre-transition paradox that goes something like this:</p>
+<p>This sentence is false.</p>
+<p>We’ve determined that the sentence is categorically both true and false. Halting the logic and averaging the outcomes solves all paradoxes.</p>
+<p>It seems that our fascination with such trivial problems seemed to be a lack of willingness to accept the duality of truth. That everything is either true and false entirely dependent on a given context.</p>
+<p>The only thing we know is nothing, and that truly is something.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="observations-about-qr-codes"><a class="header" href="#observations-about-qr-codes">Observations about QR codes</a></h1>
+<p>Thinking About Usability</p>
+<p>QR codes are quite handy for quickly sharing physically relevant information. For example, restaurant menus, instruction manuals, etc.</p>
+<p>The only problem, is that if the QR code is in a slightly inconvenient spot, it’s almost always faster to just use duckduckgo or google to search for what the QR code is supposed to provide.</p>
+<p>Words regurgitated in a cave man like fashion into a search engine will either bring you to the QR code’s url, or a better source to the same information.</p>
+<p>Very rarely there are things that a search engine can’t find and put into the first slot. In this case, the QR code has a purpose.</p>
+<p>Maybe QR codes should just link to a well chosen search for the thing the QR code is trying to show, that way when the url the QR code stored becomes invalid, it doesn’t matter because the search engine automatically provides alternatives.</p>
+<p>But that’s just how I think, nobody has to agree.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pine-phone"><a class="header" href="#pine-phone">Pine Phone</a></h1>
+<p>A Linux Phone.</p>
+<p>Last night I had a hard time sleeping.</p>
+<p>The Pine Phone has been on my radar for a while now. But only recently have I started looking at it as potentially fun side project. I want a Linux phone, but I also want a good Linux phone. The Pine Phone seems to be pretty good, but I don’t think that I’ll end up buying it. I might buy the Pine Phone Pro instead, because it has the hardware to properly deliver Linux. I’m not sure if I’m ready to drop $400 on a phone who’s software isn’t fully developed. On the other hand, I could try to help out in my free time and make this dream a reality. I’m hesitating now only because there isn’t a confirmed port for my current phone(although there is a port for the XL version so idk). I don’t want to use my main phone to try to port Linux to when I need it for school to demonstrate that I’m following Covid testing protocol. Tricky… I think I might pre-order the Pine Phone / Pine Phone Pro, and when it arrives I’ll set it up to properly access the website and display my status, then porting over my main phone to Linux using the Pine Phone in the meantime.</p>
+<p>Idk, this decision is keeping me up at night with the insane possibility of running Linux on a phone that I would actually use.</p>
+<p>Update before published: Pre-ordered the Pine Phone Pro, wish me luck :)</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="quantum-internet"><a class="header" href="#quantum-internet">Quantum Internet</a></h1>
+<p>The Internet is Never Finished.</p>
+<p>The internet has reached a stage that I feel comfortable in calling pretty darn fast. The only problem is that we need to physically wire our devices together in order for them to become useful. Quantum Internet is a theoretical invention where, because of Quantum entaglement, we can enstablish secure, remote connections with other devices without a physical connection to an ISP. Instead, communication would happen at the quantum level, perfectly instant at any distance.</p>
+<p>Quantum Internet could efficienty behave as a super quantum computer. Quantum computers are already op, but what if they could network together to poll resources and information.</p>
+<p>Why it would be another computer revolution:</p>
+<ul>
+<li>Limitless pooled computing for science and for fun</li>
+<li>Users could get paid to improve slow services.</li>
+<li>Actually instant communication globally</li>
+<li>It sounds cool</li>
+</ul>
+<p>Why this probably won’t happen:</p>
+<ul>
+<li>Quantum Entaglement on purpose at the moment requires close proximity to be established, and it doesn’t last long</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="podcasts"><a class="header" href="#podcasts">Podcasts</a></h1>
+<p>Podcasts Exist, and if You Somehow Haven’t Heard, Now You Have!</p>
+<p>Podcasts are getting quite good recently, so I’ve decided to recommend some podcasts and software I use for accessing them.</p>
+<ul>
+<li><a href="https://www.theminimalists.com/podcast/" title="" target="_blank">The Minimalists</a>{:target=“_blank”}
+<ul>
+<li>Suit and tie corporate guys talk about a meaningful life with less.</li>
+</ul>
+</li>
+<li><a href="https://safetythirdpod.com/" title="" target="_blank">Safety Third</a>{:target=“_blank”}
+<ul>
+<li>Internet science celebrities talk about what they do.</li>
+</ul>
+</li>
+<li><a href="https://tim.blog/podcast/" title="" target="_blank">The Tim Ferris Show</a>{:target=“_blank”}
+<ul>
+<li>Tim Ferris explores new and bizarre topics every episode.</li>
+</ul>
+</li>
+<li><a href="https://chartable.com/podcasts/the-wan-show-podcast/episodes" title="" target="_blank">The WAN Show</a>{:target=“_blank”}
+<ul>
+<li>Tech news + Linus Media Group behind the scenes.</li>
+</ul>
+</li>
+</ul>
+<p>All of these podcasts I have on auto-download using: <a href="https://antennapod.org/" title="" target="_blank">Antenna Pod</a>{:target=“_blank”} on Android.
+You don’t have to try them all, but I highly recommend checking out at least one that you find interesting.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="my-website-is-improving"><a class="header" href="#my-website-is-improving">My Website Is Improving!</a></h1>
+<p>Working with Liquid HTML</p>
+<p>You might have noticed that posts now has a few extra little widgets and layout enhancements, and that’s because you’re right!</p>
+<p>I’ve been working on improving the styling and layout for a little bit now, and I’m glad to be able to show them off.</p>
+<ul>
+<li>
+<p>Because liquid html doesn’t naturally have random number generators, I’ve created some code that very strongly mimics random. (Although reading the code it doesn’t look like it should be random). It must be a bug in the generator, maybe it’s pulling variables in the wrong order and getting modulo of null? Not sure, I’m just glad that it works.</p>
+</li>
+<li>
+<p>I’ve also changed the color scheme to work for both dark and light themes, (I had a bug with my navbar on light mode).</p>
+</li>
+<li>
+<p>The home page is no longer a blerb about myself, but a hub to recent posts</p>
+</li>
+<li>
+<p>Posts have links to other related posts! Adapted from <a href="https://www.mishacreatrix.com/jekyll-related-posts" title="" target="_blank">mishacreatix.com</a>.</p>
+<ul>
+<li>The following liquid html gets posts from the blog, and returns only unique links to blog posts sorted first by common tags, then by date</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-liquid">{% raw %}
+&lt;h2&gt;🪧 Enjoy Reading This?&lt;/h2&gt;
+&lt;p&gt;Here are some more you might like to read next:&lt;/p&gt;
+
+{% assign maxRelated = 5 %}
+{% assign maxCommonTags = 20 %}
+{% assign seenPostsString = "" %}
+{% assign maxRelatedCounter = 0 %}
+{% for thisCommonTag in (0..maxCommonTags) %}
+	{% for post in site.posts %}
+    	{% assign sameTagCount = 0 %}
+    	{% assign commonTags = '' %}
+		{% for tag in post.tags %}
+			{% if post.url != page.url %}
+            	{% if page.tags contains tag %}
+            		{% assign sameTagCount = sameTagCount | plus: 1 %}
+            	{% endif %}
+        	{% endif %}
+		{% endfor %}
+		{% assign thisCommonTagLimit = maxCommonTags | minus: thisCommonTag %}
+		{% if seenPosts contains post.url %}
+		{% else %}
+    		{% if sameTagCount &gt;= thisCommonTagLimit and post.url != page.url %}
+        		{% if maxRelatedCounter &gt;= maxRelated %}
+            		{% break %}
+        		{% endif %}
+				&lt;li&gt;&lt;p&gt;&lt;a href="{{ site.baseurl }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt; - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
+        		{% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+				{% assign seenPostsString = seenPostsString | append: ',' | append: post.url %}
+				{% assign seenPosts = seenPostsString | removeFirst: ',' | split: ',' %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+&lt;/ul&gt;
+{% endraw %}
+</code></pre>
+<p>I knew how to do none of this a month ago, but now I can edit my website to statically generate a ton of stuff.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="happy-new-year"><a class="header" href="#happy-new-year">Happy New Year</a></h1>
+<p>Software I Use and Will Use More</p>
+<p>Hello, just wanting to wish everyone a happy new year!
+To start of the new year, I want to review the software I’m using this year, and mention the software I’m looking forward to using:</p>
+<h3 id="software-i-liked-from-2021"><a class="header" href="#software-i-liked-from-2021">Software I Liked From 2021:</a></h3>
+<p><strong>Feeder on Android</strong>
+: An RSS client for Android, the only feature missing is a synced client for desktop, everything else works great.</p>
+<p><strong>SyncThing on Everything</strong>
+: A folder syncing client I wish I tried sooner, I’m currently syncing my home folder across all of my devices with a single exclusion rule of ‘<code>.*</code>’ to prevent config issues.</p>
+<p><strong>Doodle on Android</strong>
+: A FOSS replacement for the Google Pixel line of wallpapers. Even if you own a pixel phone, you can have access to the other lines of pixel wallpapers. Also there’s a ton of customization.</p>
+<p><strong>NetGuard on Android</strong>
+: App by app firewall to prevent lazily programmed and insecure apps you want to install from accessing the internet. You can also choose to block internet access in the background. Also can give apps just access to wifi/cellular. A truly great application, prevents a lot of offline games from loading ads.</p>
+<p><strong>VS Code / Code on Linux</strong>
+: An open source version of Visual Studio Code with countless extensions. It is a text editor that works with every programming language, vim mode, and no need for modifying a config file to change settings. Works like a charm. Also has a built in terminal emulator.</p>
+<h3 id="software-for-2022"><a class="header" href="#software-for-2022">Software For 2022:</a></h3>
+<p><strong>Obsidian on Everything</strong>
+: A markdown note taking application with backlinking. Backlinking means that if I name a note ‘linux’, anytime I write the word ‘linux’ in another note, it automatically suggests a new link to that note. Plus it can visually graph all of the notes and links to other notes. I plan to use this with SyncThing as an online note-taking replacement.</p>
+<p><strong>Tor Browser on Everything</strong>
+: I’ve known the Tor Browser has existed for a while now, but only recently I found out that bridges exist, and can easily be requested from the tor settings tab. Bridges can and often do speed up tor by quite a bit. I always assumed that Tor was just super slow. I will be using Tor a whole lot more with what I’m experiencing as about 4-10x the speed without bridges.</p>
+<p>Thanks for reading, let’s have a great 2022!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="why-rss-isnt-mainstream"><a class="header" href="#why-rss-isnt-mainstream">Why RSS isn’t Mainstream</a></h1>
+<p>What is it Missing?</p>
+<p>RSS is an amazing tool for staying up to date across thousands of websites, but something mission critical is missing. There simply isn’t anything to that will recommend new feeds. This makes building up your feed list a hastle, especially if websites don’t list their feed urls anywhere. As I’ve continued to use RSS, I see an increase in it’s value as a tool to create a more decentralized and safer internet.</p>
+<p>We need a Spotify, Pandora, or a Facebook for but just for RSS and without the creepy tracking/cyber-stalking. Just a simple website with a recommendation engine built off of other people’s feeds. A good feature on top of the recommendation would be to have a public profile on the site, that you can link your friends to with feeds you recommend to others.</p>
+<p>Assuming basic security and encryption practices are put in place, I think this idea has a ton of promise to help a lot of people without being bloated or a menace to privacy. For additional privacy, the website could allow users to choose which feeds to enable as publicly recommended.</p>
+<p>Honestly, since the idea isn’t crazy big, and if this doesn’t already exist, I think I’ll take a stab at trying to make this eventually.</p>
+<p>If you also want to see this happen or if you know of a website that already does this, please <a href="blog/../contact.html">contact me</a>.</p>
+<p>*[RSS]: Really Simple Sindication</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="linux-scripting"><a class="header" href="#linux-scripting">Linux Scripting</a></h1>
+<p>Removing Repetitive Tasks</p>
+<p>Needed something to post, so here’s some tips to make life on the command line a breeze.</p>
+<p>If you use linux, odds are you are either using bash or zsh. In your home folder, bash has a file called .bashrc and zsh has a file called .zshrc. Adding aliases to these files is a great way to make simple shortcuts for long and complicated commands. Here are some examples:</p>
+<pre><code class="language-bash">#Git
+alias add='git add'
+alias commit='git commit'
+alias push='git push'
+alias pull='git pull'
+alias status='git status'
+alias log='git log'
+alias clone='git clone'
+</code></pre>
+<p>Aliases can replace anything you would type into your terminal:</p>
+<pre><code class="language-bash">#Backups
+alias bak='timeshift --check &gt;&gt; ~/Logs/timeshift.log'
+alias restore='timeshift --restore'
+#Scripts
+alias longscript='bash ~/Scripts/LongScript.sh'
+</code></pre>
+<p>Anything you type into the terminal can be turned into a bash script by typing each command line by line into a text file and saving it as a .sh file. All you need to do to run the file is run <code>bash scriptName.sh</code></p>
+<p>Aliases are great, but automatically running scripts don’t have to be typed on a terminal at all. This can be done with cron, a simple service that can run scripts at specific times, at reboot or login, and every x number of hours/days/minutes.</p>
+<p>Install a package from your package manager called cronie or cron. If you can’t find one of those, look up what your distribution uses, and install that. Next is to make cron run at startup through systemd. The command is <code>systemctl enable --now cronie</code> (or crond).</p>
+<p>Now that crond is setup, running <code>crontab -e</code> will open a text editor that will allow you to add scripts that run automatically.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="using-flutter"><a class="header" href="#using-flutter">Using Flutter</a></h1>
+<p>header: Succulent Flutter App</p>
+<p>Making a Cross Platform App with Flutter</p>
+<p><a href="blog//assets/images/succulent/Plant.png"><img src="blog//assets/images/succulent/Plant.png" alt="plant" /></a></p>
+<h2 id="lessons"><a class="header" href="#lessons">Lessons:</a></h2>
+<ul>
+<li>Find widgets on <a href="https://Pub.dev" title="" target="_blank">pub.dev</a> that fit your project and are <em>null safe</em>, <em>null safety</em> makes your project better and inherently compatible with other <em>null safe</em> projects.
+<ul>
+<li>Learn more about <em>null safety</em> here: <a href="https://dart.dev/null-safety/understanding-null-safety" title="" target="_blank">dart.dev</a></li>
+</ul>
+</li>
+<li>Using <code>flutter clean</code> is your friend
+<ul>
+<li>Builds occasionally don’t work for no real reason. If this is the case, you can always run the clean command to potentially fix issues.</li>
+<li>If this doesn’t work, you can build it to a different platform/os then back to the original platform.</li>
+</ul>
+</li>
+<li>To my knowledge, you cannot use widgets to communicate with other widgets, I can’t say:</li>
+</ul>
+<pre><code class="language-dart">childWidget()
+    build()
+        return widget(
+            onTap: () {
+                parentWidget.add(item);
+                setState(){};
+</code></pre>
+<p>but I can say:</p>
+<pre><code class="language-dart">//this is pseudo code
+parentWidget(){
+    mylist = [];
+
+    Widget childWidget(list){
+        return widget(
+            onTap: () {
+                mylist.add("hello")
+                setState(){};
+            }
+    }
+
+    build() =&gt; childWidget(mylist);
+}
+</code></pre>
+<ul>
+<li>When using the scaffold widget to make the app, you want to use an indexed stack if you want to also use an animated navigation bar, to let the animation play out, instead of getting cut off when switching contexts.</li>
+</ul>
+<p>I’ll add binaries to this page shortly, see you next time!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="weekly-programming---week-2"><a class="header" href="#weekly-programming---week-2">Weekly Programming - Week 2</a></h1>
+<p>Programming a Game Player</p>
+<p>Programming projects help programmers get better. I’m publicly announcing a project every week on Monday with the goal of helping you get better at programming along with me.</p>
+<p>This week’s programming challenge is to make a <em>bot</em> that plays this game.</p>
+<p>The Game Of Trust:</p>
+<ol>
+<li>Two points are up for grabs.</li>
+<li>Each Player can either choose to share or to steal.</li>
+<li>If Both players steal, nobody gets points.</li>
+<li>If one player steals, that player gets all of the points.</li>
+<li>If both players share, each player gets one point.</li>
+</ol>
+<p>The <em>bot</em> doesn’t have to play the game well, it just has to be capable of playing against a person and/or another <em>bot</em>.</p>
+<p>The rules are as follows:</p>
+<ol>
+<li>Complete the challenge to any degree using any language.</li>
+<li>A new challenge will come out every Monday.</li>
+<li>Post the result somewhere by Sunday as proof of completion.</li>
+</ol>
+<p>There will be scoring as follows:</p>
+<ul>
+<li>Participants who tried, get a score of 1 for each project.</li>
+<li>Participants who learned something new get an additional 2 points.</li>
+<li>Participants who didn’t try get a score of 0.</li>
+<li>Participants who copy large chunks of code get their project score cut in half rounded down.</li>
+</ul>
+<p>Scoring will be entirely done on the honor system. Feel free to include your current score along with your post.
+For example: my personal score is 4 at the time of writing.</p>
+<p>Take your time, I’m excited to see what we can do!</p>
+<p>If you liked this also check out: <a href="blog/../../WeeklyProgramming/1/">Last Week’s Challenge</a>
+and
+<a href="blog/../../Dream-Bot/">My Result From Last Week</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="weekly-programming---week-1"><a class="header" href="#weekly-programming---week-1">Weekly Programming - Week 1</a></h1>
+<p>Programming Art Generators</p>
+<p>Programming projects help programmers get better. I’m going to start publicly doing some to increase specific skills I want to work on.</p>
+<p>This week’s theme is going to be <em>Image Generation</em>. You can create a program that takes in a series of images, and outputs an image based on those previous works. You could also create a program that fills in missing/transparent sections of an image.</p>
+<p>Hopefully these ideas help you create wacky results.</p>
+<p>The rules are as follows:</p>
+<ol>
+<li>Complete the task to any degree using any language.</li>
+<li>A new task will come out every Monday.</li>
+<li>Post the result somewhere by Sunday as proof of completion.</li>
+</ol>
+<p>There will be scoring as follows:</p>
+<ul>
+<li>Participants who tried, get a score of 1 for each project.</li>
+<li>Participants who learned something new get an additional 2 points.</li>
+<li>Participants who didn’t try get a score of 0.</li>
+<li>Participants who copy large chunks of code get their project score cut in half rounded down.</li>
+</ul>
+<p>Scoring will be entirely done on the honor system. Feel free to include your current score along with your post.
+Example: My current score is 1.</p>
+<p>Take your time, I’m excited to see what we can do!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="costs-bot"><a class="header" href="#costs-bot">costs-bot</a></h1>
+<p>of programming</p>
+<p>To ensure I don’t go completely insane, I think I’ll throw on music while I work to help my morale last long enough to start a conversation, but not too much as to give people headaches.</p>
+<p>Programming projects help programmed, it’s still unfinished and it’s definitely some more than 1 USD to make the transaction, so I lowered the “fuel” on the transaction. Turns out, I had lowered it to the extent where I avoid thinking about it. The only way I’ve found a way to procrastination:</p>
+<ol>
+<li>Make a template for an average day</li>
+<li>Plan out specific things I’ll work on with estimated duration.</li>
+<li>???</li>
+<li>Profit/Actually get things done</li>
+</ol>
+<p>Maybe I can avoid procrastination:</p>
+<ol>
+<li>Make a template. Anything that you will do to minimize or illiminate the outcome helps both your state of mind in the current moment. Sometimes we don’t even notice this feeling. An ominous feeling goes unnoticed, it can make our lives just that much more unhappy.</li>
+</ol>
+<p>If you decide that you aren’t looking forward to.</p>
+<p>Take a minute and think about hard tasks I could try to streamline my calendar/task system, but I’m notorious for using that after the 30 second mark, you’re probably just procrastinating.</p>
+<p>Speaking of procrastination, this blog post is a way for me to go do the things I don’t want to spend more than others.</p>
+<p>Sometimes I’ll add a new feature into an item only to find out that maybe that feature should be it’s own separate item.</p>
+<p>Every programmed, it’s still unfinished and it’s definitely some more than 1 USD to make the transaction, so I lowered the “fuel” on the transaction. It took about a month before it became profitable to somebody to look at my transaction. It took about a month before it became profitable to somebody to look at my transaction. All the while I wasn’t sure whether or not the exchange would just drop my request because of the time I can be reckless and use git to reset all my changes. Just going for it is really refreshing after such a long period of inaction.</p>
+<p><img src="blog//assets/images/devlog/space_0.png" alt="picture" />
+^^^ the original gif was lost :( ^^^</p>
+<p>Right off the bat I went for a top-down puzzle game design because a type of game that I really enjoy. This meant making a top down view of the player, and making it move, setting up collision and boundaries… All of the usual stuff. At my current point in the tech industry. Every industry, but definitely confusing. Intentional programming errors are everywhere, it’s your job to use them to your advantage to reach the end.</p>
+<p>The top left-most tile.</p>
+<ol>
+<li>I created more rooms and realized where the fun of the game continues. Another quirk I’ve found in my development is sometimes I’ll add a new feature into an item only to find out that maybe that feature should be it’s own separate item.</li>
+</ol>
+<p>Every programmer has used a development is sometimes I’ll add a new feature into an item only to find out that maybe that feature should be it’s own separate item.</p>
+<p>Every programmers get better. I’m going to be <em>Text Generation</em>. Generate any kind of text, it has to be random to some degree. Searching for algorithms online is greatly encouraged.</p>
+<ol>
+<li>Complete the task won’t get done. The second issue is that I don’t know that I think about what you might be <code>overwhelm</code> can control you here as well. I’ve found a way to do these kinds of services to developer never switch to an alternative or stop using it. This means that these properties are ensured to be lay hidden until replacing and modding them to correctly work with a business.</li>
+</ol>
+<p>That last point extends past software or a single industry has its dirty secrets. These secrets are worse-off being kept rather than freed. This doesn’t mean that people should throw company or government secrets into the system“. This should allow for some nuance between completing the rooms fast and strategizing when to slow down.</p>
+<p>I also plan to have more rooms and realized where the fun of the game continues. Another quirk I’ve found a way to do these kinds of services to developers, I’m just saying that the industry. Every industry has an inherent need to manipulate the general population to their direct or indirect benefit. Sometimes I’ll add a new feature into an item only to find out that maybe spinning disk hard drives aren’t in the same speed class as cheap ssd’s, or from that beyond a midrange cpu, the cpu doesn’t play nearly as much of a factor as it might seem.</p>
+<p>There’s no incentivised to make sure that the effort that goes into the final game.</p>
+<p>What I actually got done:</p>
+<ol>
+<li>I fixed a major bug wi</li>
+</ol>
+<p>Generated by Cameron Dugan’s Jekyll Post Generator</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bee-movie"><a class="header" href="#bee-movie">Bee Movie</a></h1>
+<p>Bee</p>
+<p>t Honex, we’re bee.</p>
+<ul>
+<li>String
+a new helmet to me!</li>
+<li>What 0900 at ther car!</li>
+<li>A little bit out!
+So be a be gonna takes an amusement packing to lose.</li>
+<li>No, it’s a Korean deli on Earth.
+You know what it?
+I’m gonna takes?</li>
+<li>Hey, you died. Make to, bears an animals?
+Trying whole like it was a way out. Stellar!</li>
+<li>Bye.
+It’s no talk to be back.
+Yeah. Gusty.
+Wow.
+This close?
+Ken, coolest. What’s a lot of it got a must a cours?
+Nah.
+Bees an all depends
+on what week? You got to.
+Oh, my!</li>
+<li>Bee!
+Step to bed.
+We’re me tension a little scary.
+We’re bee, pour latest an open something balloon a sure this close
+that…
+…kind of the side.</li>
+<li>Don’t talking!</li>
+<li>What’s an open sometime. This collen
+Jock. That’s justed,
+scent-adjust me tellar!</li>
+<li>You
+don’t believe wonder we tellar!
+Wow! This like
+outside, kid.
+It’s life.
+You’re think.</li>
+<li>Hi, Jock. This could you see pollen
+that?
+Maybe they
+nevery funny. If you wants to that ever see? Folds ourjob every small the law number seven,
+lint where. More honey,
+bees, ho</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="weekly-programming---week-0"><a class="header" href="#weekly-programming---week-0">Weekly Programming - Week 0</a></h1>
+<p>Programming for the Sake of Programming</p>
+<p>Programming projects help programmers get better. I’m going to start publicly doing some to increase specific skills I want to work on.</p>
+<p>Although I suspect nobody will read this, I want you to participate to whatever degree you feel is comfortable. Here are the rules:</p>
+<p>This week’s theme is going to be <em>Text Generation</em>. Generate any kind of text, it has to be random to some degree. Searching for algorithms online is greatly encouraged.</p>
+<ol>
+<li>Complete the task to any degree using any language.</li>
+<li>A new task will come out every Monday.</li>
+<li>Post the result somewhere by Sunday as proof of completion.</li>
+</ol>
+<p>There will be scoring as follows:</p>
+<ul>
+<li>Participants who tried get a score of 1 for each project.</li>
+<li>Participants who learned something new get an additional 2 points.</li>
+<li>Participants who didn’t try get a score of 0.</li>
+<li>Participants who copy large chunks of code get their project score cut in half rounded down.</li>
+</ul>
+<p>Scoring will be entirely done on the honor system. Feel free to include your current score along with your post.</p>
+<p>Take your time, quality is way better than quantity, and I’m excited to see what we can do!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="complexity"><a class="header" href="#complexity">Complexity</a></h1>
+<p>How Complexity Influences People.</p>
+<p>The growing complexity in computer science and electronics influences everyone.</p>
+<p>Computer manufacturers use the complexity of their product to mislead their consumers. They emphasize the cpu in their products and point out how fast their spinning disk hard drive is. This misdirects the consumer from reality. The customer is pushed away from realizing that maybe spinning disk hard drives aren’t in the same speed class as cheap ssd’s, or from that beyond a midrange cpu, the cpu doesn’t play nearly as much of a factor as it might seem.</p>
+<p>There’s no incentive to help the consumer understand what they are doing. If anything, the incentive is to mislead consumers. And this practice misleading happens in most industries with complex products and services. Complexity shouldn’t be this big of a barrier to effective consumer decisions. Computer sale could be put down to a simple 4-5 pointers based on what the consumer wants to do with it.
+Something like an important component graph:</p>
+<p>moving large files -&gt; ssd
+media creation -&gt; ssd gpu cpu
+word processing/mail/videochat -&gt; anything/chromebook
+gaming -&gt; gpu cpu ram ssd</p>
+<p>Obviously, I don’t know everything here, but I think a sticker or poster with this kind of information at computer stores would save a lot of frustration with hardware. Many customer’s computer angst starts before they turn on their own computer.</p>
+<p>This kind of abuse of customer trust is too prevalent in the tech industry.</p>
+<p>Other industries that I’m aware of similar practices:</p>
+<ul>
+<li>Consumer audio</li>
+<li>Healthy food companies</li>
+<li>News, particularly political news</li>
+<li>Research publications</li>
+<li>Nevermind, pretty much every industry, but definitely some more than others.</li>
+</ul>
+<p>Sometimes I think that information just moves too fast with no filters for quality. As the complexity of the world increases, the skills required to discern between quality information and garbage information disappears. Quality information now has to desguise itself as fluff to be seen by anyone. Kind of makes me think that disconnecting entirely is becoming the only option.
+Hopefully there will be a new service that restricts both speed and quantity of information to insure a reasonable quality of information. Just enough to start a conversation, but not too much as to give people headaches.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hidden-costs"><a class="header" href="#hidden-costs">Hidden Costs</a></h1>
+<p>Examples and Generalizations of How Systems Disguise Their Motives.</p>
+<p>Every programmer has used a development stack. A framework, an API, or maybe a template. Anything that makes money with each use is incentivised to make sure that you, as the developer never switch to an alternative or stop using it. This means that they are also incentivised to make sure that the API becomes deeply implanted into the system that you make.</p>
+<p>Maybe its a weird timing quirk, or an unexplainable fringe bug. The last quirk of truly evil systems, is that these properties are ensured to be lay hidden until replacing the product becomes costly or timely. I’m not saying that it’s immoral to write or promote these kinds of services to developers, I’m just saying that the effort that goes into them and the effort that goes into replacing and modding them to correctly work with a business can slow or destroy a business.</p>
+<p>That last point extends past software or a single industry. Every industry has an inherent need to manipulate the general population to their direct or indirect benefit. Sometimes this means staying quiet about an issue and pressuring internal actors to be quiet or else. Other times, this means that the industry changes the focus of outrage on to something inconsequential. Uprooting these lies is essential for improving society.</p>
+<p>Each industry has its dirty secrets. These secrets can either be critical to business or a big enough PR disaster to heavily cripple that business. Hopefully most of these secrets are nothing to worry about. To protect future business and the better interest in future human civilization, I herby heavily promote whistle-blowing in areas where secrets are worse-off being kept rather than freed. This doesn’t mean that people should throw company or government secrets into the public spotlight just to spite their bureaucratic overlords. Instead only when information that is exposed directly and continually benefits humanity as a whole while dealing minimal damage to the organization in question.</p>
+<p>Those have been my thoughts for today. Went off on a tangent, but hopefully it was still interesting.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-overwhelm"><a class="header" href="#the-overwhelm">The Overwhelm</a></h1>
+<p>Conquering the Unknown</p>
+<p>Everyone has some amount of this feeling. An ominous feeling of almost guilt, or fear of what’s up ahead. Whether its a homework assignment, a test, or maybe an important meeting, a flight you can’t miss, or really anything that you aren’t looking forward to.</p>
+<p>Take a minute and think about what you might be <code>overwhelmed</code> with at the current moment. Sometimes we don’t even notice this feeling, almost like it has integrated itself into our lives. Ultimately if this feeling goes unnoticed, it can make our lives just that much more unhappy.</p>
+<p>If you decide that you are feeling <code>overwhelmed</code>, the fastest way to overcome that feeling is to make a battleplan. It might not be easy, but I guarantee that a good plan will help. Knowing what you will do to minimize or illiminate the outcome helps both your state of mind in the current moment and you’ll make a more informed decision when that dreaded moment eventually comes.</p>
+<p>Take the flipside of <code>overwhelm</code>. Instead of something that you wish wouldn’t happen, how about something that you wish will happen. Is there something that you’ve always wanted to do? Maybe a skill you’ve always wanted to learn. Whatever you want to do, the feeling of <code>overwhelm</code> can control you here as well. It can paralyze you, stop you from taking even the tiny steps towards the future you want.</p>
+<p>I’m not saying I’m an expert, or even good at managing the <code>overwhelm</code>. It’s just that I have a lot of experience with it. It’s one of those things that build while you don’t manage it. Do yourself a favor and ask yourself where you see it appearing or growing and make that battle plan.</p>
+<p>Have a better day :)</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="procrastination-and-motivation"><a class="header" href="#procrastination-and-motivation">Procrastination and Motivation</a></h1>
+<p>A Note to Self</p>
+<p>Motivation is overrated.</p>
+<p>Something that I need to remember is that reflection has it’s limitations. It’s limitations being that after the 30 second mark, you’re probably just procrastinating.</p>
+<p>Speaking of procrastination, this blog post is a way for me to take my mind off of the stuff I have to do in the next two days. I’ve got a lot. I tend to have problems with tasks when I don’t like doing it to the extent where I avoid thinking about it. The only way I’ve found a way to do these kinds of things is to try to make it something I automatically do without thinking. Usually by tacking it on the end of something I already do every day.</p>
+<p>The two issues with this. If I don’t do that thing that triggers the automatic action, the task won’t get done. The second issue is that I don’t know that I didn’t do it.
+My goal here is to think by writing and get to a solution that works. A secondary goal is to get better at writing, so I eventually don’t hesitate to make a post.</p>
+<p>To mitigate the issue of not wanting to think about hard tasks I could try to streamline my calendar/task system, but I’m notorious for using that as a way to procrastinate. Maybe it’s a motivational issue?</p>
+<p>Maybe… Or, I could try to solve the lack of motivation with some kind of reward? No… I can’t think of anything that would work as a reward. In order for there to be a reward, rules must be put in place.</p>
+<p>Maybe adding some rules to my life would make it more structured and meaningful. It’s worth a shot. Time to think of some examples, I guess.</p>
+<p>Layout: Problem: Solution by adhering a rule.</p>
+<ol>
+<li>Distraction: Reduce distracting entertainment by removing things that make me start watching</li>
+<li>Distraction/Procrastination:
+<ol>
+<li>Make a template for an average day</li>
+<li>Plan out specific things I’ll work on with estimated duration.</li>
+<li>???</li>
+<li>Profit/Actually get things done</li>
+</ol>
+</li>
+</ol>
+<p>Maybe I can avoid procrastination by forcing a habit of doing everything as early as I can, while changing my environment to help reduce distractions.</p>
+<p>To ensure I don’t go completely insane, I think I’ll throw on music while I work to help my morale last long enough to get everything done.</p>
+<p>Alrighty, I guess it’s time for me to go do the things I don’t want to do. Cya, have a great day!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="my-crypto-adventures"><a class="header" href="#my-crypto-adventures">My Crypto Adventures</a></h1>
+<p>Misadventures in Crypto</p>
+<p>Hello and welcome to my second ever blog post…</p>
+<p>Background:
+I had saved up a bunch of crypto that I had mined in my free time over the course of about 10 or so months. Then I decided that I didn’t like having all of my money in bitcoin, so I decided to use a coin exchange to convert some of it to etherium. Enter: my mistake.</p>
+<p>I had decided that I didn’t want to spend more than 1 USD to make the transaction, so I lowered the “fuel” on the transaction. Turns out, I had lowered it to the point where nobody would take the transaction. It took about a month before it became profitable to somebody to look at my transaction. All the while I wasn’t sure whether or not the exchange would just drop my request because of the time it was taking. Luckily, nothing bad happened and I have my crypto back in my wallet.</p>
+<p>It was really unpleasant looking at that 0 balance for a month.</p>
+<p>Anyways hope you enjoyed and have a wonderful day.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>

@@ -1,6 +1,3 @@
-# mdbook build artifacts
-book
-
 # Devenv
 .devenv*
 devenv.local.nix
