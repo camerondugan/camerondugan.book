@@ -1,4 +1,5 @@
 <!-- 2024-03-03- -->
+
 # Simple-Nvim-Config
 
 More updates on my neovim journey

@@ -1,4 +1,5 @@
 <!-- 2021-08-09- -->
+
 # Weekly Programming - Week 0
 
 Programming for the Sake of Programming
@@ -14,10 +15,11 @@ This week's theme is going to be *Text Generation*. Generate any kind of text, i
 1. Post the result somewhere by Sunday as proof of completion.
 
 There will be scoring as follows:
-* Participants who tried get a score of 1 for each project.
-* Participants who learned something new get an additional 2 points.
-* Participants who didn't try get a score of 0.
-* Participants who copy large chunks of code get their project score cut in half rounded down.
+
+- Participants who tried get a score of 1 for each project.
+- Participants who learned something new get an additional 2 points.
+- Participants who didn't try get a score of 0.
+- Participants who copy large chunks of code get their project score cut in half rounded down.
 
 Scoring will be entirely done on the honor system. Feel free to include your current score along with your post.
 

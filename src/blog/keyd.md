@@ -1,4 +1,5 @@
 <!-- 2024-10-20- -->
+
 # Keyd is Awesome!
 
 Why keyd will change the way you think about your keyboard.
@@ -27,16 +28,16 @@ capslock = overload(control, esc)
 ```
 
 As of writing this config needs to be placed in a file at
-```/etc/keyd/default.conf```. Doing just this doesn't do anything, you
+`/etc/keyd/default.conf`. Doing just this doesn't do anything, you
 also need to install the software, preferably through your package manager,
 otherwise you can always install from the github following the instructions:
-[github.com/rvaiya/keyd](https://github.com/rvaiya/keyd?tab=readme-ov-file#insta
+\[github.com/rvaiya/keyd\](https://github.com/rvaiya/keyd?tab=readme-ov-file#insta
 llation).
 
 Since I use NixOS, I don't worry about installing and setting up the systemd
 service. I just have this in my config:
 
-```nix 
+```nix
 services.keyd = {
   enable = true;
   keyboards = {
@@ -65,6 +66,7 @@ environment.etc."libinput/local-overrides.quirks".text = ''
 Most was taken from the NixOS Wiki, which shows the same config but without the
 overload. Instead, the wiki suggests just mapping the capslock key be a control
 key with this:
+
 ```nix
 capslock = "layer(control)";
 ```

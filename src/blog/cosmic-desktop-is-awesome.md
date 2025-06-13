@@ -1,4 +1,5 @@
 <!-- 2024-07-24- -->
+
 # Cosmic Desktop Environment is Awesome!
 
 Why I'm excited even when daily driving it before release.

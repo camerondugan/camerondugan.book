@@ -1,4 +1,5 @@
 <!-- 2021-05-21- -->
+
 # Hidden Costs
 
 Examples and Generalizations of How Systems Disguise Their Motives.

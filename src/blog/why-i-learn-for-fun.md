@@ -1,13 +1,9 @@
----
-layout: post
-title: Why I learn for fun :)
-date: "2024-04-29 19:43:04"
-categories: blog
-tags: dev reflection blog
----
+<!-- 2024-04-29- -->
+
+# Why I learn for fun :)
+
 Learning is hard. Anyone who tells you otherwise is lying. This post is more of
 a reminder to myself about why challenging yourself is important.
-
 
 ## Learning a new language
 

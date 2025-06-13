@@ -1,4 +1,5 @@
 <!-- 2022-04-28- -->
+
 # Wave Function Collapse
 
 Programming Something That Already Exists Without Knowing it Exists
@@ -15,8 +16,8 @@ Apparently, what I created is an imperfect version of Wave Function Collapse.
 Here's my understanding of what Wave Function Collapse should do.
 
 1. Find the space with the least valid possible tiles
-2. Place one of the possible tiles
-3. Repeat until no more tiles can be filled.
+1. Place one of the possible tiles
+1. Repeat until no more tiles can be filled.
 
 Obviously, with some back-tracking for when no tiles can be placed, but the board is still not full.
 
@@ -28,4 +29,3 @@ Here's the links to the videos that reminded me of it:
 
 [Youtube Video #1](https://www.youtube.com/watch?v=2SuvO4Gi7uY)
 [Youtube Video #2](https://www.youtube.com/watch?v=20KHNA9jTsE)
-

@@ -1,4 +1,5 @@
 <!-- 2023-03-05- -->
+
 # Taking The Slow Road
 
 Min/Maxing Decisions
@@ -14,4 +15,3 @@ Not everything you do has to be done to the max. If you disagree, then you need 
 It's all about lining up dominos for the future instead of worrying about how many dominos you can knock down today.
 
 Have a great week!
-

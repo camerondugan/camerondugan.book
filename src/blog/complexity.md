@@ -1,4 +1,5 @@
 <!-- 2021-05-22- -->
+
 # Complexity
 
 How Complexity Influences People.
@@ -20,11 +21,12 @@ Obviously, I don't know everything here, but I think a sticker or poster with th
 This kind of abuse of customer trust is too prevalent in the tech industry.
 
 Other industries that I'm aware of similar practices:
- - Consumer audio
- - Healthy food companies
- - News, particularly political news
- - Research publications
- - Nevermind, pretty much every industry, but definitely some more than others.
+
+- Consumer audio
+- Healthy food companies
+- News, particularly political news
+- Research publications
+- Nevermind, pretty much every industry, but definitely some more than others.
 
 Sometimes I think that information just moves too fast with no filters for quality. As the complexity of the world increases, the skills required to discern between quality information and garbage information disappears. Quality information now has to desguise itself as fluff to be seen by anyone. Kind of makes me think that disconnecting entirely is becoming the only option.
 Hopefully there will be a new service that restricts both speed and quantity of information to insure a reasonable quality of information. Just enough to start a conversation, but not too much as to give people headaches.

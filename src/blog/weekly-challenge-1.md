@@ -1,4 +1,5 @@
 <!-- 2021-08-16- -->
+
 # Weekly Programming - Week 1
 
 Programming Art Generators
@@ -16,10 +17,11 @@ The rules are as follows:
 1. Post the result somewhere by Sunday as proof of completion.
 
 There will be scoring as follows:
-* Participants who tried, get a score of 1 for each project.
-* Participants who learned something new get an additional 2 points.
-* Participants who didn't try get a score of 0.
-* Participants who copy large chunks of code get their project score cut in half rounded down.
+
+- Participants who tried, get a score of 1 for each project.
+- Participants who learned something new get an additional 2 points.
+- Participants who didn't try get a score of 0.
+- Participants who copy large chunks of code get their project score cut in half rounded down.
 
 Scoring will be entirely done on the honor system. Feel free to include your current score along with your post.
 Example: My current score is 1.

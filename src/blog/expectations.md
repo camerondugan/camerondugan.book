@@ -1,4 +1,5 @@
 <!-- 2022-02-19- -->
+
 # The Cost of Expectations
 
 Why Gifted Individuals Tend to Burnout
@@ -44,4 +45,3 @@ This is what I was missing: paying deep attention in class and taking notes. Tho
 Humans are addicted to consistency. When outcomes are unpredictable, there is some amount of wear and tear on the psyche. Too much unpredictability, and humans will do anything to claw some amount of consistency back. Even if this means intentionally losing, perusing inaction, or enforce a restricted set of actions.
 
 Only after I let go of my need for predictable or specific outcomes. Letting go of the need for a specific result really helped me. Years of failed attempts has allowed me to understand what I need to do to learn. There is always going to be room for improvement, and at the end of the day the effort put in is more important than being "smart" or "talented". If anything, being "smart" or "talented" is a result of a lot of unseen effort in that specific thing or a closely related thing. And that's pretty much the trap I put myself in by having a too high expectations on a specific result with so little direct and effective work put in to ensure that outcome.
-

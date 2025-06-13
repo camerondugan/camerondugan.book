@@ -1,9 +1,11 @@
 <!-- 2022-02-12- -->
+
 # I've Found It
 
 Something Incredibly Close to a Personal Database
 
 ### Last Post:
+
 I wanted to find something similar to a personal database without having to actually write any database code. Ideally this would be for non-programmers, or tired programmers. Something to hold literally everything and keep it synced between devices with something like syncthing or something built in.
 
 This does pretty much everything.
@@ -21,4 +23,3 @@ Another note: if you happen to like using vim, don't worry, it's got a good enou
 Now I don't have to complete my project where I probably would have spent a good week or so figuring out how to use gtk to make my own version of this.
 
 See ya!
-

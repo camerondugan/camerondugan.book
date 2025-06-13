@@ -1,10 +1,7 @@
 <!-- 2024-05-01- -->
 
-
-
-
-
 The valid points I heard were something like:
+
 - Could reduce productivity of the top coders.
 - Removes the customization you can have when writing code
 
@@ -17,12 +14,13 @@ what you want.
 When you create a tool, you want your tool to be the most useful to the
 greatest number of people. Formatters are just a tool. Here's why you would
 want to use a formatter:
+
 - Consistency: There's no need to adjust where to look for something when jumping from
-project to project, file to file, or line to line.
+  project to project, file to file, or line to line.
 - Faster code creation: If wanted, you could write code without any spacing or
-formatting, and skip those keystrokes and let an auto-formatter apply your
-preferred changes.
+  formatting, and skip those keystrokes and let an auto-formatter apply your
+  preferred changes.
 - Guidance: It's perfect for newbies and polyglots who want others looking at
-their code, it's formatted "correctly" for that use case every time.
+  their code, it's formatted "correctly" for that use case every time.
 
 As always, hope someone found this helpful. Tchau.

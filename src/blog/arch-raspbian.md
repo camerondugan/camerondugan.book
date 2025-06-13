@@ -1,4 +1,5 @@
 <!-- 2022-05-02- -->
+
 # Being An Arch User
 
 An Unexpected Consequence
@@ -26,4 +27,3 @@ That's my weird story for today, thanks for sticking around :)
 
 P.S.
 I do know that I can install ARM based Arch distros onto the pi, but I'm lazy and it's already setup. Maybe another day, I've been looking into [NIXOS](https://nixos.org/), maybe that's a good choice, we'll see...
-

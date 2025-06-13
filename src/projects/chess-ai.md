@@ -1,4 +1,5 @@
 <!-- 2022-11-21- -->
+
 # Programming A Chess AI
 
 A Fun Self Challenge
@@ -15,7 +16,7 @@ The more you need the code to self improve, the longer it needs to run. Self imp
 
 The solution is to pick moves based on how unlikely they are and how good they seem. The more a path is taken, force the AI to further avoid that path during training. This should allow a wider search of the game space.
 
-![Neural Network Example](/assets/images/code visualization/AI/neuralnet.jpg)
+!\[Neural Network Example\](/assets/images/code visualization/AI/neuralnet.jpg)
 
 Now, another trick game AI programmers can do is to split the training and the exploring into separate processes. The code can store games played into a large list and have half of the computer spend it's resources updating that list with new games and the other half updating the neural net to better judge the outcomes of those games.
 
@@ -24,4 +25,3 @@ The code I wrote in rust works without that final trick, it just runs one part a
 Feel free to checkout the [chess AI trainer](https://gitlab.com/cameron.dugan/neat_zero_rust) which I wrote in rust based on some of the fundamentals found in an alpha go zero cheat sheet I found on the internet somewhere.
 
 Hope you learned something or had fun! I know I did one of those...
-

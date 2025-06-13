@@ -1,4 +1,5 @@
 <!-- 2024-09-24- -->
+
 # Devenv is Awesome!
 
 Why devenv will change the way you think about developing software.
@@ -23,10 +24,11 @@ developer environments, specifically if you come back to projects years later.
 
 Devenv is integrated with [direnv](https://direnv.net/), which can
 automatically activate your devenv when you enter your project folder.
-In short, ```cd project_folder``` and having all of the project specific tools
+In short, `cd project_folder` and having all of the project specific tools
 there is awesome.
 
 ## Jekyll Example
+
 ```nix
 { pkgs, lib, config, inputs, ... }:
 {

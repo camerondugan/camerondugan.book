@@ -1,4 +1,5 @@
 <!-- 2022-03-29- -->
+
 # Why People Don't Code
 
 Thoughts and Updates
@@ -24,4 +25,3 @@ Just realized that students would probably code like they're still using a calcu
 Being able to better work with our machine friends is going to be a key part of our future, and learning to speak some of their language is a great start.
 
 And that's what's been on my mind recently, thanks for reading! I'll post more stuff soon (probably about that AI I'm working on).
-

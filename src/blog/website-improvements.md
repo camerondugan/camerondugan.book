@@ -1,4 +1,5 @@
 <!-- 2022-01-16- -->
+
 # My Website Is Improving!
 
 Working with Liquid HTML
@@ -7,15 +8,15 @@ You might have noticed that posts now has a few extra little widgets and layout 
 
 I've been working on improving the styling and layout for a little bit now, and I'm glad to be able to show them off.
 
-* Because liquid html doesn't naturally have random number generators, I've created some code that very strongly mimics random. (Although reading the code it doesn't look like it should be random). It must be a bug in the generator, maybe it's pulling variables in the wrong order and getting modulo of null? Not sure, I'm just glad that it works.
+- Because liquid html doesn't naturally have random number generators, I've created some code that very strongly mimics random. (Although reading the code it doesn't look like it should be random). It must be a bug in the generator, maybe it's pulling variables in the wrong order and getting modulo of null? Not sure, I'm just glad that it works.
 
-* I've also changed the color scheme to work for both dark and light themes, (I had a bug with my navbar on light mode).
+- I've also changed the color scheme to work for both dark and light themes, (I had a bug with my navbar on light mode).
 
-* The home page is no longer a blerb about myself, but a hub to recent posts
+- The home page is no longer a blerb about myself, but a hub to recent posts
 
-* Posts have links to other related posts! Adapted from [mishacreatix.com](https://www.mishacreatrix.com/jekyll-related-posts).
+- Posts have links to other related posts! Adapted from [mishacreatix.com](https://www.mishacreatrix.com/jekyll-related-posts).
 
-    * The following liquid html gets posts from the blog, and returns only unique links to blog posts sorted first by common tags, then by date
+  - The following liquid html gets posts from the blog, and returns only unique links to blog posts sorted first by common tags, then by date
 
 ```liquid
 {% raw %}
@@ -57,4 +58,3 @@ I've been working on improving the styling and layout for a little bit now, and 
 ```
 
 I knew how to do none of this a month ago, but now I can edit my website to statically generate a ton of stuff.
-

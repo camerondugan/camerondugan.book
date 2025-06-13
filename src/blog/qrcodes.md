@@ -1,4 +1,5 @@
 <!-- 2022-01-23- -->
+
 # Observations about QR codes
 
 Thinking About Usability

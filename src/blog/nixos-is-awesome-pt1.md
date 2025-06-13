@@ -1,4 +1,5 @@
 <!-- 2024-07-21- -->
+
 # Why NixOS is Awesome!
 
 When did computing become scary? NixOS is here to the rescue!

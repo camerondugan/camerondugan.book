@@ -1,4 +1,5 @@
 <!-- 2021-04-17- -->
+
 # Procrastination and Motivation
 
 A Note to Self
@@ -22,10 +23,10 @@ Layout: Problem: Solution by adhering a rule.
 
 1. Distraction: Reduce distracting entertainment by removing things that make me start watching
 1. Distraction/Procrastination:
-	1. Make a template for an average day
-	1. Plan out specific things I'll work on with estimated duration.
-	1. ???
-	1. Profit/Actually get things done
+   1. Make a template for an average day
+   1. Plan out specific things I'll work on with estimated duration.
+   1. ???
+   1. Profit/Actually get things done
 
 Maybe I can avoid procrastination by forcing a habit of doing everything as early as I can, while changing my environment to help reduce distractions.
 

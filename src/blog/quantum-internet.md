@@ -1,4 +1,5 @@
 <!-- 2022-01-21- -->
+
 # Quantum Internet
 
 The Internet is Never Finished.
@@ -8,11 +9,12 @@ The internet has reached a stage that I feel comfortable in calling pretty darn 
 Quantum Internet could efficienty behave as a super quantum computer. Quantum computers are already op, but what if they could network together to poll resources and information.
 
 Why it would be another computer revolution:
-+ Limitless pooled computing for science and for fun
-+ Users could get paid to improve slow services.
-+ Actually instant communication globally
-+ It sounds cool
+
+- Limitless pooled computing for science and for fun
+- Users could get paid to improve slow services.
+- Actually instant communication globally
+- It sounds cool
 
 Why this probably won't happen:
-+ Quantum Entaglement on purpose at the moment requires close proximity to be established, and it doesn't last long
 
+- Quantum Entaglement on purpose at the moment requires close proximity to be established, and it doesn't last long

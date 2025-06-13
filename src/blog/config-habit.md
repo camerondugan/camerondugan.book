@@ -1,9 +1,11 @@
 <!-- 2024-04-23- -->
+
 # Baking Configs
 
 I can't stop changing my configs (help me)
 
 ## Cooking System Configs
+
 Here's how my day goes. I sit down at my computer, and if I'm not working I'm
 dragged back into config land. I've got years of experience messing around with
 configurations at this point, and I want to share how not to do things.
