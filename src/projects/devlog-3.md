@@ -4,7 +4,7 @@
 
 Another Devlog for My Unnamed Game.
 
-[![missing gif :{](/assets/gifs/devlog/space_1.gif)](/assets/gifs/devlog/space_1.gif)
+I lost this gif :{
 
 I want to talk about what I did yesterday for the game.
 
@@ -22,7 +22,7 @@ What I actually got done:
 1. I created more rooms and realized where the fun of the game is: movement and puzzles. I know that sounds dumb, of course the fun is in moving around and doing things, but seriously, I forgot and was putting way too much focus on dialogue and other ridiculous stuff.
 1. I also changed the color palate based on how far the player was in the game.
 
-[![missing gif](/assets/gifs/devlog/space_2.gif)](/assets/gifs/devlog/space_1.gif)
+missing gif
 
 What I want to do with the game from here:
 

@@ -6,7 +6,7 @@ header: Succulent Flutter App
 
 Making a Cross Platform App with Flutter
 
-[![plant](/assets/images/succulent/Plant.png)](/assets/images/succulent/Plant.png)
+[![plant](../assets/images/succulent/Plant.png)](../assets/images/succulent/Plant.png)
 
 ## Lessons:
 

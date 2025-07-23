@@ -10,7 +10,7 @@ Here's how my day goes. I sit down at my computer, and if I'm not working I'm
 dragged back into config land. I've got years of experience messing around with
 configurations at this point, and I want to share how not to do things.
 
-![A cyberpunk guy at a computer](/assets/images/cool-graphics/config-habit2.jpg)
+![A cyberpunk guy at a computer](../assets/images/cool-graphics/config-habit2.jpg)
 
 ## Burnt
 
@@ -40,7 +40,7 @@ your system critical files manually. I recommend using your favorite IDE you
 use for other coding tasks and sudo cp file_system_uses file_system_uses.bak,
 then sudo cp file_you_edit file_system_uses.
 
-![Another cyberpunk guy at a computer](/assets/images/cool-graphics/config-habit1.jpg)
+![Another cyberpunk guy at a computer](../assets/images/cool-graphics/config-habit1.jpg)
 
 ## Tasty
 

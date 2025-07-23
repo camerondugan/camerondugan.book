@@ -8,7 +8,7 @@ I've done a lot of DE switches through these past few years. And I've always
 been a fan of PopOS's tiling features and I've tried many tiling window managers
 to find that most of them are not for me.
 
-[![Screenshot of cosmic](/assets/images/screenshots/nixos-cosmic-test.png)](/assets/images/screenshots/nixos-cosmic-test.png)
+[![Screenshot of cosmic](../assets/images/screenshots/nixos-cosmic-test.png)](../assets/images/screenshots/nixos-cosmic-test.png)
 
 The main reason being that there was always so much configuration that needed to
 happen in order for the computer to start to behave normally again. Like USB

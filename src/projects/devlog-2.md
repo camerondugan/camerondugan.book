@@ -6,7 +6,7 @@ A Devlog for My Unnamed Game.
 
 Welcome back, I have finally decided on a direction for this game. You are a robot in a post human society and something isn't right. Reality is slipping. Nothing from your sensors are to be trusted. To make things worse, red creatures seem to be making things worse.
 
-[![missing gif](/assets/gifs/devlog/space_0.gif)](/assets/gifs/devlog/space_0.gif)
+missing gif
 
 Bugs fixed:
 

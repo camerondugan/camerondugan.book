@@ -10,13 +10,13 @@ Usually when programming something, you click run and within a second or two you
 
 The more you need the code to self improve, the longer it needs to run. Self improving code should be saved only for problems where you can't reasonably code a complete solution. Solving games is complicated, tic tac toe being relatively easy to solve, chess being orders of magnitude harder and go being one of the hardest complete information games. Each new legal move makes the searching of potential moves exponentially more difficult.
 
-![chess board game played by alphazero](/assets/images/games/chess/alphazero.png)
+![chess board game played by alphazero](../assets/images/games/chess/alphazero.png)
 
 "AI" code can help in these scenarios to help trim down the potential moves the code looks at to find great moves. The way this works is you have a neural network that looks at a single game state and have it predict the winner. Loop over all potential moves and pick the move that the neural net likes the best and repeat until the game ends. For training, this doesn't work because the AI will have tendencies for picking the same series of moves over and over.
 
 The solution is to pick moves based on how unlikely they are and how good they seem. The more a path is taken, force the AI to further avoid that path during training. This should allow a wider search of the game space.
 
-!\[Neural Network Example\](/assets/images/code visualization/AI/neuralnet.jpg)
+!\[Neural Network Example\](../assets/images/code visualization/AI/neuralnet.jpg)
 
 Now, another trick game AI programmers can do is to split the training and the exploring into separate processes. The code can store games played into a large list and have half of the computer spend it's resources updating that list with new games and the other half updating the neural net to better judge the outcomes of those games.
 

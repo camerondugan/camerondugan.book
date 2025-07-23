@@ -36,6 +36,6 @@ For example: my personal score is 4 at the time of writing.
 
 Take your time, I'm excited to see what we can do!
 
-If you liked this also check out: [Last Week's Challenge](../../WeeklyProgramming/1/)
+If you liked this also check out: [Last Week's Challenge](./weekly-challenge-1.md)
 and
-[My Result From Last Week](../../Dream-Bot/)
+[My Result From Last Week](../projects/dream-bot.md)

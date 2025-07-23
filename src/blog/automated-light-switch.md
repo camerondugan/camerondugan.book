@@ -25,6 +25,6 @@ This is the plan in my head:
   - realize now that I've programmed a day to equal 24 hours and 6 seconds.
   - Subtract wait time between flicks by flick attempt duration to attempt to ensure 24 hour flick cycle.
 
-![picture](/assets/images/projects/switch.jpg)
+![picture](../assets/images/projects/switch.jpg)
 
 And there you have it, a working Arduino powerd lightswitch that people can also interact with.

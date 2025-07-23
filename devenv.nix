@@ -4,6 +4,7 @@
   enterShell = ''
     cargo install mdbook
     cargo install mdbook-external-links
+    cargo install mdbook-linkcheck
   '';
 
   # https://devenv.sh/packages/
@@ -36,11 +37,9 @@
     nil.enable = true;
     alejandra.enable = true;
     statix.enable = true;
-    trim-trailing-whitespace.enable = true;
     detect-private-keys.enable = true;
     deadnix.enable = true;
     check-case-conflicts.enable = true;
-    check-added-large-files.enable = true;
     build-mdbook = {
       name = "Build MDBook";
       enable = true;

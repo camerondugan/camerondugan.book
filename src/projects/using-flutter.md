@@ -2,7 +2,7 @@ ______________________________________________________________________
 
 ## title: Using Flutter header: Succulent Flutter App description: Making a Cross Platform App with Flutter category: blog layout: post tags: project website code
 
-[![plant](/assets/images/succulent/Plant.png)](/assets/images/succulent/Plant.png)
+[![plant](../assets/images/succulent/Plant.png)](../assets/images/succulent/Plant.png)
 
 ## Lessons:
 

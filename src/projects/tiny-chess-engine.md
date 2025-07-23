@@ -8,7 +8,7 @@ I'm planning on participating in [SebLague's](https://www.youtube.com/@Sebastian
 
 I've been writing a chess engine for this challenge for the past few days, and I'm pretty happy with what I've been able to do.
 
-![Gif Missing :(](/assets/gifs/chess-engine.gif)
+Gif Missing :(
 
 What I'm doing:
 

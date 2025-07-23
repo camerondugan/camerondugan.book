@@ -6,6 +6,13 @@ title = "CameronDugan.com"
 
 [preprocessor.external-links]
 
+[build]
+create-missing = false
+
+[output.linkcheck]
+
 [output.html]
+preferred-dark-theme = "ayu"
+no-section-label = true
 git-repository-url = "https://github.com/camerondugan/camerondugan.book"
 edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main/{path}"
