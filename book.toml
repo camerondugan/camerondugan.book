@@ -15,4 +15,4 @@ create-missing = false
 preferred-dark-theme = "ayu"
 no-section-label = true
 git-repository-url = "https://github.com/camerondugan/camerondugan.book"
-edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main/{path}"
+# edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main/{path}"
