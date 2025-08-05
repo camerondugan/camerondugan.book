@@ -9,7 +9,7 @@ title = "CameronDugan.com"
 [build]
 create-missing = false
 
-[output.linkcheck]
+# [output.linkcheck]
 
 [output.html]
 preferred-dark-theme = "ayu"
