@@ -4,6 +4,7 @@
 
 - [Projects](projects.md)
 
+  - [Gleaderboard](projects/gleaderboard.md)
   - [Wizard Workshop Part 2](projects/wizard-workshop-part-2.md)
   - [Wizard Workshop](projects/wizard-workshop.md)
   - [My Old Keyboard Is Basically Cheating](projects/my-old-keyboard-is-basically-cheating.md)
