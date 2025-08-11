@@ -1,6 +1,8 @@
-______________________________________________________________________
+---
+pub_date: Sat, 29 Jan 2022 00:00:00 -0500
+---
 
-## title: Using Flutter header: Succulent Flutter App description: Making a Cross Platform App with Flutter category: blog layout: post tags: project website code
+## Using Flutter
 
 [![plant](../assets/images/succulent/Plant.png)](../assets/images/succulent/Plant.png)
 

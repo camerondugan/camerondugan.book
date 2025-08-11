@@ -1,4 +1,6 @@
-<!-- 2021-08-09- -->
+---
+pub_date: Mon, 09 Aug 2021 00:00:00 -0400
+---
 
 # Weekly Programming - Week 0
 

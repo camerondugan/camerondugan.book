@@ -3,8 +3,12 @@ authors = ["Cameron Dugan"]
 language = "en"
 src = "src"
 title = "CameronDugan.com"
+description = "A Personal Website by Cameron Dugan"
 
-[preprocessor.external-links]
+# [preprocessor.external-links]
+[preprocessor.rss]
+files-glob = "*/*.md" # blog/*.md or projects/*.md
+url-base = "https://camerondugan.com/"
 
 [build]
 create-missing = false

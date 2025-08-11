@@ -1,3 +1,7 @@
+---
+pub_date: Tue, 15 Jul 2025 00:00:00 -0400
+---
+
 # Savage Worlds
 
 Have you ever played D&D? No?

@@ -1,4 +1,6 @@
-<!-- 2023-05-24- -->
+---
+pub_date: Wed, 24 May 2023 00:00:00 -0400
+---
 
 # Configuring a Blazingly Fast Code Editor
 

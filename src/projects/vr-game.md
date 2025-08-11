@@ -1,4 +1,6 @@
-<!-- 2023-06-01- -->
+---
+pub_date: Thu, 01 Jun 2023 00:00:00 -0400
+---
 
 # Developing a PC + VR game with Godot
 

@@ -1,4 +1,6 @@
-<!-- 2021-08-23- -->
+---
+pub_date: Mon, 23 Aug 2021 00:00:00 -0400
+---
 
 # Weekly Programming - Week 2
 

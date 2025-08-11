@@ -1,4 +1,6 @@
-<!-- 2022-05-02- -->
+---
+pub_date: Mon, 02 May 2022 00:00:00 -0400
+---
 
 # Being An Arch User
 

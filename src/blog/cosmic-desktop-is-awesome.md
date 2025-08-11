@@ -1,4 +1,6 @@
-<!-- 2024-07-24- -->
+---
+pub_date: Wed, 24 Jul 2024 00:00:00 -0400
+---
 
 # Cosmic Desktop Environment is Awesome!
 

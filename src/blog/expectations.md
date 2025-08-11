@@ -1,4 +1,6 @@
-<!-- 2022-02-19- -->
+---
+pub_date: Sat, 19 Feb 2022 00:00:00 -0500
+---
 
 # The Cost of Expectations
 

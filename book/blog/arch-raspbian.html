@@ -8,7 +8,7 @@
 
         <!-- Custom HTML head -->
 
-        <meta name="description" content="">
+        <meta name="description" content="A Personal Website by Cameron Dugan">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -178,22 +178,21 @@
 
                 <div id="content" class="content">
                     <main>
-                        <!-- 2022-05-02- -->
-<h1 id="being-an-arch-user"><a class="header" href="#being-an-arch-user">Being An Arch User</a></h1>
+                        <h1 id="being-an-arch-user"><a class="header" href="#being-an-arch-user">Being An Arch User</a></h1>
 <p>An Unexpected Consequence</p>
 <p>Hi,
-I woke up today wanting to make my <a href="https://www.raspberrypi.org/" title="" target="_blank">Raspberry Pi</a> even more useful.</p>
-<p>Currently, it’s tasked with hosting <a href="https://camerondugan.com" title="" target="_blank">this website</a>, and it used to host an email until it randomly stopped working after an update.</p>
-<p>Anyways, I tried to setup <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a> as a pseudo NAS, to let me auto-sync my files remotely without needing both the destination and the source online at the same time.</p>
-<p>I installed <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a>, and setup <a href="https://www.nginx.com/resources/glossary/nginx/" title="" target="_blank">nginx</a> to passthrough the gui port localhost:8384 for <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a> to a specific url on my website. This worked, the user interface for <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a> appeared and I was able to connect to other devices. The problem: no files were being synced.</p>
+I woke up today wanting to make my <a href="https://www.raspberrypi.org/">Raspberry Pi</a> even more useful.</p>
+<p>Currently, it's tasked with hosting <a href="https://camerondugan.com">this website</a>, and it used to host an email until it randomly stopped working after an update.</p>
+<p>Anyways, I tried to setup <a href="https://syncthing.net/">Syncthing</a> as a pseudo NAS, to let me auto-sync my files remotely without needing both the destination and the source online at the same time.</p>
+<p>I installed <a href="https://syncthing.net/">Syncthing</a>, and setup <a href="https://www.nginx.com/resources/glossary/nginx/">nginx</a> to passthrough the gui port localhost:8384 for <a href="https://syncthing.net/">Syncthing</a> to a specific url on my website. This worked, the user interface for <a href="https://syncthing.net/">Syncthing</a> appeared and I was able to connect to other devices. The problem: no files were being synced.</p>
 <p>The exact issue I was having was a tcp connection version mismatch, one device wanted to use 303 and another wanted 301.</p>
-<p>I spent probably about 20 minutes tinkering with <a href="https://www.nginx.com/resources/glossary/nginx/" title="" target="_blank">nginx</a> before realizing that everything was working perfectly and it wasn’t some strange <a href="https://www.nginx.com/resources/glossary/nginx/" title="" target="_blank">nginx</a> background filtering or conversion. It’s just that I am so used to <a href="https://archlinux.org/" title="" target="_blank">Arch</a> packages being up to date, that I never even considered that I would have to manually setup the <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a> repo for the <a href="https://https://www.raspberrypi.org/" title="" target="_blank">Raspberry Pi</a>.</p>
-<p>After setting up apt to fetch the latest version of <a href="https://syncthing.net/" title="" target="_blank">Syncthing</a>, everything ran perfectly smoothly. I just can’t believe that this is a thing people still have to do to install updated software on Linux. I understand why it hasn’t been fixed, but I would have expected maybe a community wiki+script pre-installed that connects package names to their official PPAs for you. Other distros should probably have one over-arching piece of software that can handle installing pretty much anything in one quick command like <a href="https://archlinux.org/" title="" target="_blank">Arch</a> does (like the paru command and it’s substitutes). Maybe this exists, idk, and I’m not super interested. I just got used to expecting easily installible updated software on <a href="https://archlinux.org/" title="" target="_blank">Arch</a>.</p>
-<p>Also for anyone interested, I got tired of fixing my <a href="https://archlinux.org/" title="" target="_blank">Arch</a> install when it rarely broke, so I just switched to <a href="https://garudalinux.org/" title="" target="_blank">Garuda</a>, which has more than all the settings and software I would have setup anyway.</p>
+<p>I spent probably about 20 minutes tinkering with <a href="https://www.nginx.com/resources/glossary/nginx/">nginx</a> before realizing that everything was working perfectly and it wasn't some strange <a href="https://www.nginx.com/resources/glossary/nginx/">nginx</a> background filtering or conversion. It's just that I am so used to <a href="https://archlinux.org/">Arch</a> packages being up to date, that I never even considered that I would have to manually setup the <a href="https://syncthing.net/">Syncthing</a> repo for the <a href="https://https://www.raspberrypi.org/">Raspberry Pi</a>.</p>
+<p>After setting up apt to fetch the latest version of <a href="https://syncthing.net/">Syncthing</a>, everything ran perfectly smoothly. I just can't believe that this is a thing people still have to do to install updated software on Linux. I understand why it hasn't been fixed, but I would have expected maybe a community wiki+script pre-installed that connects package names to their official PPAs for you. Other distros should probably have one over-arching piece of software that can handle installing pretty much anything in one quick command like <a href="https://archlinux.org/">Arch</a> does (like the paru command and it's substitutes). Maybe this exists, idk, and I'm not super interested. I just got used to expecting easily installible updated software on <a href="https://archlinux.org/">Arch</a>.</p>
+<p>Also for anyone interested, I got tired of fixing my <a href="https://archlinux.org/">Arch</a> install when it rarely broke, so I just switched to <a href="https://garudalinux.org/">Garuda</a>, which has more than all the settings and software I would have setup anyway.</p>
 <p>Repair/Reinstallation time from 1-3hrs down to 30min tops.</p>
-<p>That’s my weird story for today, thanks for sticking around :)</p>
+<p>That's my weird story for today, thanks for sticking around :)</p>
 <p>P.S.
-I do know that I can install ARM based Arch distros onto the pi, but I’m lazy and it’s already setup. Maybe another day, I’ve been looking into <a href="https://nixos.org/" title="" target="_blank">NIXOS</a>, maybe that’s a good choice, we’ll see…</p>
+I do know that I can install ARM based Arch distros onto the pi, but I'm lazy and it's already setup. Maybe another day, I've been looking into <a href="https://nixos.org/">NIXOS</a>, maybe that's a good choice, we'll see...</p>
 
                     </main>
 

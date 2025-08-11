@@ -1,4 +1,6 @@
-<!-- 2023-03-11- -->
+---
+pub_date: Sat, 11 Mar 2023 00:00:00 -0500
+---
 
 # Serverless Applications
 

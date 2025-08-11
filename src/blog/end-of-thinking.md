@@ -1,4 +1,6 @@
-<!-- 2022-01-25- -->
+---
+pub_date: Tue, 25 Jan 2022 00:00:00 -0500
+---
 
 # The End of Thinking
 

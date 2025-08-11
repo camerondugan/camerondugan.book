@@ -1,4 +1,6 @@
-<!-- 2022-03-29- -->
+---
+pub_date: Tue, 29 Mar 2022 00:00:00 -0400
+---
 
 # Why People Don't Code
 

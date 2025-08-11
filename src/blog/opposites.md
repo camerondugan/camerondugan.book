@@ -1,4 +1,6 @@
-<!-- 2022-04-02- -->
+---
+pub_date: Sat, 02 Apr 2022 00:00:00 -0400
+---
 
 # Things Lead to Their Opposites
 

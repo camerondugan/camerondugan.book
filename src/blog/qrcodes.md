@@ -1,4 +1,6 @@
-<!-- 2022-01-23- -->
+---
+pub_date: Sun, 23 Jan 2022 00:00:00 -0500
+---
 
 # Observations about QR codes
 

@@ -1,4 +1,6 @@
-<!-- 2023-07-29- -->
+---
+pub_date: Sat, 29 Jul 2023 00:00:00 -0400
+---
 
 # A Tiny Chess Engine
 

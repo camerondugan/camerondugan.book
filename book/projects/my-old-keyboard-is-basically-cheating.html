@@ -8,7 +8,7 @@
 
         <!-- Custom HTML head -->
 
-        <meta name="description" content="">
+        <meta name="description" content="A Personal Website by Cameron Dugan">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -178,18 +178,17 @@
 
                 <div id="content" class="content">
                     <main>
-                        <!-- 2024-07-21- -->
-<h1 id="my-old-keyboard-is-basically-cheating"><a class="header" href="#my-old-keyboard-is-basically-cheating">My Old Keyboard is Basically Cheating</a></h1>
+                        <h1 id="my-old-keyboard-is-basically-cheating"><a class="header" href="#my-old-keyboard-is-basically-cheating">My Old Keyboard is Basically Cheating</a></h1>
 <p>A snippet of code for qmk users everywhere.</p>
-<p>My old keyboard is basically cheating and so is <a href="https://www.youtube.com/watch?v=Feny5bs2JCg" title="" target="_blank">Razer’s new keyboard</a>.</p>
+<p>My old keyboard is basically cheating and so is <a href="https://www.youtube.com/watch?v=Feny5bs2JCg">Razer's new keyboard</a>.</p>
 <p>This code mimics what Razer is calling:
-<a href="https://www.razer.com/gb-en/technology/snap-tap-mode" title="" target="_blank">snap tap</a>.
-Which is essentially “null binds” from CSGO? Correct me if I’m wrong.</p>
-<p>Here’s how I reproduced a feature from a $180 gaming keyboard on my QMK
+<a href="https://www.razer.com/gb-en/technology/snap-tap-mode">snap tap</a>.
+Which is essentially "null binds" from CSGO? Correct me if I'm wrong.</p>
+<p>Here's how I reproduced a feature from a $180 gaming keyboard on my QMK
 keyboard at home.</p>
-<p>I don’t like when others have an advantage I don’t have in games. I don’t use
-this code when I play competitive games, but here’s a
-snippet of code you could add to any <a href="https://browse.qmk.fm/#/" title="" target="_blank">QMK compatible
+<p>I don't like when others have an advantage I don't have in games. I don't use
+this code when I play competitive games, but here's a
+snippet of code you could add to any <a href="https://browse.qmk.fm/#/">QMK compatible
 keyboard</a>.</p>
 <pre><code class="language-c">bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   static bool aHeld = false;
@@ -222,12 +221,12 @@ keyboard</a>.</p>
 </code></pre>
 <p>Essentially it tells the computer you are holding the last pressed A or D key.
 It is impossible to send the computer both because it releases the other one.</p>
-<p><a href="https://www.youtube.com/watch?v=Feny5bs2JCg" title="" target="_blank">This video</a> from optimum makes it
+<p><a href="https://www.youtube.com/watch?v=Feny5bs2JCg">This video</a> from optimum makes it
 clear why this would be an advantage.</p>
-<p>To use the code I’ve provided with your keyboard with QMK firmware, you need to
-follow QMK firmware’s tutorials: <a href="https://docs.qmk.fm/newbs_getting_started" target="_blank">https://docs.qmk.fm/newbs_getting_started</a>,
-<a href="https://docs.qmk.fm/newbs_building_firmware" target="_blank">https://docs.qmk.fm/newbs_building_firmware</a>, paste in my code into the bottom
-of keymap.c, then follow <a href="https://docs.qmk.fm/newbs_building_firmware" target="_blank">https://docs.qmk.fm/newbs_building_firmware</a></p>
+<p>To use the code I've provided with your keyboard with QMK firmware, you need to
+follow QMK firmware's tutorials: <a href="https://docs.qmk.fm/newbs_getting_started">https://docs.qmk.fm/newbs_getting_started</a>,
+<a href="https://docs.qmk.fm/newbs_building_firmware">https://docs.qmk.fm/newbs_building_firmware</a>, paste in my code into the bottom
+of keymap.c, then follow <a href="https://docs.qmk.fm/newbs_building_firmware">https://docs.qmk.fm/newbs_building_firmware</a></p>
 <p>Please be cautious and considerate of others, I am not responsible for bans
 made against you.</p>
 

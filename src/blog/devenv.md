@@ -1,4 +1,6 @@
-<!-- 2024-09-24- -->
+---
+pub_date: Tue, 24 Sep 2024 00:00:00 -0400
+---
 
 # Devenv is Awesome!
 

@@ -3,6 +3,7 @@
   # this is terrible i know, but we don't have crates in nix and idk how to specify versions
   enterShell = ''
     cargo install mdbook
+    cargo install mdbook-rss
     cargo install mdbook-external-links
     cargo install mdbook-linkcheck
   '';
@@ -30,16 +31,6 @@
   # https://devenv.sh/reference/options/#git-hooks
   git-hooks.hooks = {
     shellcheck.enable = true;
-    shfmt.enable = true;
-    commitizen.enable = true;
-    flake-checker.enable = true;
-    mdformat.enable = true;
-    nil.enable = true;
-    alejandra.enable = true;
-    statix.enable = true;
-    detect-private-keys.enable = true;
-    deadnix.enable = true;
-    check-case-conflicts.enable = true;
     build-mdbook = {
       name = "Build MDBook";
       enable = true;

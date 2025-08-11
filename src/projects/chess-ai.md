@@ -1,4 +1,6 @@
-<!-- 2022-11-21- -->
+---
+pub_date: Mon, 21 Nov 2022 00:00:00 -0500
+---
 
 # Programming A Chess AI
 

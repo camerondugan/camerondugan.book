@@ -1,4 +1,6 @@
-<!-- 2022-02-01- -->
+---
+pub_date: Tue, 01 Feb 2022 00:00:00 -0500
+---
 
 # Companion Databases
 

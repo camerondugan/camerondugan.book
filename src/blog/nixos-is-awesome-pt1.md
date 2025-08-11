@@ -1,4 +1,6 @@
-<!-- 2024-07-21- -->
+---
+pub_date: Sun, 21 Jul 2024 00:00:00 -0400
+---
 
 # Why NixOS is Awesome!
 

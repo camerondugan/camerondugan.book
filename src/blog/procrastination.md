@@ -1,4 +1,6 @@
-<!-- 2021-04-17- -->
+---
+pub_date: Sat, 17 Apr 2021 00:00:00 -0400
+---
 
 # Procrastination and Motivation
 

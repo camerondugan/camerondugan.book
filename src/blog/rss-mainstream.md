@@ -1,4 +1,6 @@
-<!-- 2021-12-26- -->
+---
+pub_date: Sun, 26 Dec 2021 00:00:00 -0500
+---
 
 # Why RSS isn't Mainstream
 

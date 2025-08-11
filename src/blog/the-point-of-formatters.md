@@ -1,4 +1,6 @@
-<!-- 2024-05-01- -->
+---
+pub_date: Wed, 01 May 2024 00:00:00 -0400
+---
 
 The valid points I heard were something like:
 

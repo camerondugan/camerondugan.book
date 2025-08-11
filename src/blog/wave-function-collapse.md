@@ -1,4 +1,6 @@
-<!-- 2022-04-28- -->
+---
+pub_date: Thu, 28 Apr 2022 00:00:00 -0400
+---
 
 # Wave Function Collapse
 

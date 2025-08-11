@@ -1,4 +1,6 @@
-<!-- 2023-04-30- -->
+---
+pub_date: Sun, 30 Apr 2023 00:00:00 -0400
+---
 
 # Your Software Is Only As Good As It's Defaults
 

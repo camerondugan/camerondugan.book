@@ -1,4 +1,6 @@
-<!-- 2022-01-21- -->
+---
+pub_date: Fri, 21 Jan 2022 00:00:00 -0500
+---
 
 # Quantum Internet
 

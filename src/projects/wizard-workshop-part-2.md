@@ -1,4 +1,6 @@
-<!-- 2024-10-24 -->
+---
+pub_date: Wed, 02 Oct 2024 00:00:00 -0400
+---
 
 # Wizard Workshop Part 2
 

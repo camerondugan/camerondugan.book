@@ -1,4 +1,6 @@
-<!-- 2022-08-16- -->
+---
+pub_date: Tue, 16 Aug 2022 00:00:00 -0400
+---
 
 # My Development Experience With Godot 3 in VR
 

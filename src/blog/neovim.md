@@ -1,4 +1,6 @@
-<!-- 2024-03-03- -->
+---
+pub_date: Sun, 03 Mar 2024 00:00:00 -0500
+---
 
 # Simple-Nvim-Config
 

@@ -1,4 +1,6 @@
-<!-- 2022-01-29- -->
+---
+pub_date: Sat, 29 Jan 2022 00:00:00 -0500
+---
 
 # Automatic Lightswitch
 

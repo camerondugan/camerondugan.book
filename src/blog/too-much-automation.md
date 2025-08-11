@@ -1,4 +1,6 @@
-<!-- 2024-06-23- -->
+---
+pub_date: Sun, 23 Jun 2024 00:00:00 -0400
+---
 
 # Using AI for learning to code better
 
