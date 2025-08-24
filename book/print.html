@@ -192,17 +192,16 @@ means:</p>
 <p>These posts are specifically about the things that took me more than one day to create.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gleaderboard"><a class="header" href="#gleaderboard">Gleaderboard</a></h1>
 <p>Over this past weekend I created an online real time multiplayer "leader-board" over ssh in gleam.</p>
-<p>It was a very pleasant step back from spending my time in complex and heavily abstracted systems. On the contrast,
-building this in a scalable and fault tolerant way was easy, considering that I've never written
+<p>It was a very pleasant step back from spending my time in complex and interconnected systems. On the contrast,
+building this in a scalable and fault tolerant way was easy, considering that I've never used
 gleam before.</p>
-<p>Here's how I got here. Since people keep telling me that the way I spend my free time is questionable at best.</p>
+<h2 id="heres-how-i-got-here"><a class="header" href="#heres-how-i-got-here">Here's how I got here.</a></h2>
+<p>Since people keep telling me that the way I spend my free time is questionable at best.</p>
 <ol>
 <li>Spend most of this past week watching YouTube.</li>
 <li>Get reminded that BEAM exists</li>
-<li>Get sad that all the languages are all functional.</li>
-<li>A little sadder that most are not type safe.</li>
-<li>Vaguely remember something about a pink star promising to also compile to JS.</li>
-<li>Reread the docs, to realize its still functional, but at least it's type safe.</li>
+<li>Get sad that all the BEAM languages are all functional.</li>
+<li>Realize Gleam is my favorite among the others.</li>
 <li>Look through the available options for libraries.</li>
 <li>Discover shore, a library that lets you write tui from gleam.</li>
 <li>And finally, discover beach. A library for serving that tui over ssh.</li>
@@ -210,6 +209,14 @@ gleam before.</p>
 <p>And now we have the perfect recipe for serving an unreasonable number of requests :)</p>
 <p>I'll update this with more details later. Until then star the <a href="https://github.com/bgwdotdev/shore">shore</a> and <a href="https://github.com/bgwdotdev/beach">beach</a> libraries!
 And take a look at <a href="https://gleam.run/">gleam</a>!</p>
+<h2 id="later-on"><a class="header" href="#later-on">Later on...</a></h2>
+<p>I've tried to setup a way of hosting this without spending a monthly subscription.</p>
+<p>What should be of no surprise is that CloudFlare tunnels really don't like to have
+ssh connections incoming from the open web...</p>
+<p>So...</p>
+<p>You can also check out the code on github.</p>
+<p>Known limitations:</p>
+<p>My implementation of the server state updates synchronously because actors are designed that way.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="wizard-workshop-part-2"><a class="header" href="#wizard-workshop-part-2">Wizard Workshop Part 2</a></h1>
 <p>Progress and cool in-engine gifs</p>
 <h2 id="new-features"><a class="header" href="#new-features">New Features</a></h2>
@@ -469,7 +476,7 @@ The top Right indicates when the whole game resets.</p>
 <p>Currently, I'm throwing ideas at the wall and seeing what sticks. Now that I think about it, I've been doing that since the beginning of the project. What I like about this process is that it's always straight forward and it makes deciding what to do a whole lot easier. Although, I still have to be careful and think about what I'm doing. But, most of the time I can be reckless and use git to reset all my changes. Just going for it is really refreshing after such a long period of inaction.</p>
 <p><a href="projects/../assets/images/devlog/space_0.png"><img src="projects/../assets/images/devlog/space_0.png" alt="picture" /></a></p>
 <p>Right off the bat I went for a top-down puzzle game design because a type of game that I really enjoy. This meant making a top down view of the player, and making it move, setting up collision and boundaries... All of the usual stuff. At my current point in the development I already feel like there are things about the game I am not willing to share. A few surprises perhaps. Hopefully they catch some veteran players of guard while still being fun for new players as well. I've found that I have a heavy bias for early difficulty, so I'm doing my best to slow my roll this time around and deliberately bringing up the difficulty as the game continues. Another quirk I've found in my development is sometimes I'll add a new feature into an item only to find out that maybe that feature should be it's own separate item.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="savage-worlds"><a class="header" href="#savage-worlds">Savage Worlds</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="savage-worlds"><a class="header" href="#savage-worlds">Savage Worlds</a></h1>
 <p>Have you ever played D&amp;D? No?</p>
 <p>If not, are you worried that you would spend the whole adventure reading rules, explanations, and other customization options?
 Hardly an issue for most Savage World Players.</p>
@@ -712,7 +719,9 @@ think about your use of technology and to have you double-check that your use
 is beneficial or if it's more out of habit, or it could be the easy way out. My
 hope is that you keep on thinking, and that your machines keep doing the menial
 work. As for me, I think I'll stay behind the wheel of my own destiny.</p>
-<div style="break-before: page; page-break-before: always;"></div><p>The valid points I heard were something like:</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="the-point-of-formatters"><a class="header" href="#the-point-of-formatters">The Point of Formatters</a></h1>
+<h2 id="concerns"><a class="header" href="#concerns">Concerns</a></h2>
+<p>The valid points I heard were something like:</p>
 <ul>
 <li>Could reduce productivity of the top coders.</li>
 <li>Removes the customization you can have when writing code</li>
@@ -880,6 +889,15 @@ that far off, as the solution was small, and I now have snippets for all
 the languages that I use, including Markdown. (Which is what I use to write this)</p>
 <p>Hope that you learned something? Not sure, I'll try to cover more issues/fixes
 that I have. I'm sure that I'll have some.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2023"><a class="header" href="#2023">2023</a></h1>
+<ul>
+<li>Third year of college.</li>
+<li>Showed the game made for a Game Jam: <a href="blog/you-are-not-a-clone.html">You are not a clone</a></li>
+<li>Left <a href="blog/the-slow-road.html">a note to my future self</a></li>
+<li>Talked about importance of <a href="blog/defaults.html">defaults</a></li>
+<li><a href="blog/neovim-setup.html">Explored Neovim's Setup</a></li>
+</ul>
+<p>For other events that happened in this year, see <a href="https://en.wikipedia.org/wiki/2023">https://en.wikipedia.org/wiki/2023</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="configuring-a-blazingly-fast-code-editor"><a class="header" href="#configuring-a-blazingly-fast-code-editor">Configuring a Blazingly Fast Code Editor</a></h1>
 <p>Neovim</p>
 <h2 id="introduction"><a class="header" href="#introduction">Introduction:</a></h2>
@@ -963,6 +981,16 @@ that I have. I'm sure that I'll have some.</p>
 <p>And here's the links to the games other teams made:
 <a href="https://itch.io/jam/wgdc-spring-game-jam/entries">Game Jam</a></p>
 <p>If you want to participate in a game jam yourself, there's always game jams happening, and I encourage pretty much anyone interested to at least try it once. Here's a list of featured game jams coming up soon: <a href="https://itch.io/jams/upcoming/sort-date/featured">Itch Featured Jams</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2022"><a class="header" href="#2022">2022</a></h1>
+<ul>
+<li>Second year of college in Boston.</li>
+<li><a href="blog/happy-new-year.html">Happy new year!</a></li>
+<li><a href="blog/podcasts.html">Podcasts I listened to</a></li>
+<li>I have <a href="blog/qrcodes.html">observations about QR Codes</a></li>
+<li><a href="blog/companion-databases.html">Personal Databases</a> and <a href="blog/i-found-it.html">where I found mine</a></li>
+<li>I include random pictures in <a href="blog/people-dont-code.html">Why people don't code</a> and <a href="blog/opposites.html">Things Lead to Their Opposites</a></li>
+</ul>
+<p>For other events that happened in this year, see <a href="https://en.wikipedia.org/wiki/2022">https://en.wikipedia.org/wiki/2022</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="my-2023-android-setup"><a class="header" href="#my-2023-android-setup">My 2023 Android Setup</a></h1>
 <p>What I'm Using on My Phone This Upcoming Year</p>
 <p>Here's a quick rundown of what I'm going to be running on my phone.</p>
@@ -1189,28 +1217,28 @@ skip to 12:50 for the finished edited version of the song</p>
 <p>Podcasts Exist, and if You Somehow Haven't Heard, Now You Have!</p>
 <p>Podcasts are getting quite good recently, so I've decided to recommend some podcasts and software I use for accessing them.</p>
 <ul>
-<li><a href="https://www.theminimalists.com/podcast/">The Minimalists</a>{:target="_blank"}
+<li><a href="https://www.theminimalists.com/podcast/">The Minimalists</a>
 <ul>
 <li>Suit and tie corporate guys talk about a meaningful life with less.</li>
 </ul>
 </li>
-<li><a href="https://safetythirdpod.com/">Safety Third</a>{:target="_blank"}
+<li><a href="https://safetythirdpod.com/">Safety Third</a>
 <ul>
 <li>Internet science celebrities talk about what they do.</li>
 </ul>
 </li>
-<li><a href="https://tim.blog/podcast/">The Tim Ferris Show</a>{:target="_blank"}
+<li><a href="https://tim.blog/podcast/">The Tim Ferris Show</a>
 <ul>
 <li>Tim Ferris explores new and bizarre topics every episode.</li>
 </ul>
 </li>
-<li><a href="https://chartable.com/podcasts/the-wan-show-podcast/episodes">The WAN Show</a>{:target="_blank"}
+<li><a href="https://chartable.com/podcasts/the-wan-show-podcast/episodes">The WAN Show</a>
 <ul>
 <li>Tech news + Linus Media Group behind the scenes.</li>
 </ul>
 </li>
 </ul>
-<p>All of these podcasts I have on auto-download using: <a href="https://antennapod.org/">Antenna Pod</a>{:target="_blank"} on Android.
+<p>All of these podcasts I have on auto-download using: <a href="https://antennapod.org/">Antenna Pod</a> on Android.
 You don't have to try them all, but I highly recommend checking out at least one that you find interesting.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="my-website-is-improving"><a class="header" href="#my-website-is-improving">My Website Is Improving!</a></h1>
 <p>Working with Liquid HTML</p>
@@ -1292,6 +1320,19 @@ To start of the new year, I want to review the software I'm using this year, and
 <p><strong>Tor Browser on Everything</strong>
 : I've known the Tor Browser has existed for a while now, but only recently I found out that bridges exist, and can easily be requested from the tor settings tab. Bridges can and often do speed up tor by quite a bit. I always assumed that Tor was just super slow. I will be using Tor a whole lot more with what I'm experiencing as about 4-10x the speed without bridges.</p>
 <p>Thanks for reading, let's have a great 2022!</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2021"><a class="header" href="#2021">2021</a></h1>
+<ul>
+<li>First year of college in Boston.</li>
+<li>Blogged about <a href="blog/procrastination.html">procrastination</a>, <a href="blog/overwhelm.html">overwhelm</a>, and <a href="blog/complexity.html">complexity</a></li>
+<li>Wrote a text prediction engine I believe in python based on a Java high school programming assignment and it wrote <a href="blog/costs-bot.html">costs-bot</a> and <a href="blog/bee.html">bee</a>
+<ul>
+<li>It memorizes text in chunks and tries to predict the most likely next character until it finishes generation.</li>
+</ul>
+</li>
+<li><a href="blog/using-flutter.html">Tried out Flutter</a> to make a plant app.</li>
+<li>I thought about <a href="blog/rss-mainstream.html">why rss isn't mainstream</a></li>
+</ul>
+<p>For other events that happened in this year, see <a href="https://en.wikipedia.org/wiki/2021">https://en.wikipedia.org/wiki/2021</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="why-rss-isnt-mainstream"><a class="header" href="#why-rss-isnt-mainstream">Why RSS isn't Mainstream</a></h1>
 <p>What is it Missing?</p>
 <p>RSS is an amazing tool for staying up to date across thousands of websites, but something mission critical is missing. There simply isn't anything to that will recommend new feeds. This makes building up your feed list a hastle, especially if websites don't list their feed urls anywhere. As I've continued to use RSS, I see an increase in it's value as a tool to create a more decentralized and safer internet.</p>
@@ -1325,7 +1366,6 @@ alias longscript='bash ~/Scripts/LongScript.sh'
 <p>Install a package from your package manager called cronie or cron. If you can't find one of those, look up what your distribution uses, and install that. Next is to make cron run at startup through systemd. The command is <code>systemctl enable --now cronie</code> (or crond).</p>
 <p>Now that crond is setup, running <code>crontab -e</code> will open a text editor that will allow you to add scripts that run automatically.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="using-flutter"><a class="header" href="#using-flutter">Using Flutter</a></h1>
-<p>header: Succulent Flutter App</p>
 <p>Making a Cross Platform App with Flutter</p>
 <p><a href="blog/../assets/images/succulent/Plant.png"><img src="blog/../assets/images/succulent/Plant.png" alt="plant" /></a></p>
 <h2 id="lessons"><a class="header" href="#lessons">Lessons:</a></h2>

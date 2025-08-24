@@ -2,22 +2,20 @@
 
 <p>Over this past weekend I created an online real time multiplayer &quot;leader-board&quot; over ssh in gleam.</p>
 
-<p>It was a very pleasant step back from spending my time in complex and heavily abstracted systems. On the contrast, building this in a scalable and fault tolerant way was easy, considering that I&#8217;ve never written gleam before.</p>
+<p>It was a very pleasant step back from spending my time in complex and interconnected systems. On the contrast, building this in a scalable and fault tolerant way was easy, considering that I&#8217;ve never used gleam before.</p>
 
-<p>Here&#8217;s how I got here. Since people keep telling me that the way I spend my free time is questionable at best.</p>
+<h2 id='here's_how_i_got_here.'>Here&#8217;s how I got here.</h2>
+
+<p>Since people keep telling me that the way I spend my free time is questionable at best.</p>
 
 <ol type="1">
 <li>Spend most of this past week watching YouTube.</li>
 
 <li>Get reminded that BEAM exists</li>
 
-<li>Get sad that all the languages are all functional.</li>
+<li>Get sad that all the BEAM languages are all functional.</li>
 
-<li>A little sadder that most are not type safe.</li>
-
-<li>Vaguely remember something about a pink star promising to also compile to JS.</li>
-
-<li>Reread the docs, to realize its still functional, but at least it&#8217;s type safe.</li>
+<li>Realize Gleam is my favorite among the others.</li>
 
 <li>Look through the available options for libraries.</li>
 
@@ -29,6 +27,20 @@
 <p>And now we have the perfect recipe for serving an unreasonable number of requests :)</p>
 
 <p>I&#8217;ll update this with more details later. Until then star the <a href='https://github.com/bgwdotdev/shore'>shore</a> and <a href='https://github.com/bgwdotdev/beach'>beach</a> libraries! And take a look at <a href='https://gleam.run/'>gleam</a>!</p>
+
+<h2 id='later_on...'>Later on...</h2>
+
+<p>I&#8217;ve tried to setup a way of hosting this without spending a monthly subscription.</p>
+
+<p>What should be of no surprise is that CloudFlare tunnels really don&#8217;t like to have ssh connections incoming from the open web...</p>
+
+<p>So...</p>
+
+<p>You can also check out the code on github.</p>
+
+<p>Known limitations:</p>
+
+<p>My implementation of the server state updates synchronously because actors are designed that way.</p>
 ]]></content:encoded></item><item><title>Wizard Workshop Part 2</title><link>https://camerondugan.com/projects/wizard-workshop-part-2.html</link><author>Cameron Dugan</author><pubDate>Wed, 02 Oct 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='wizard_workshop_part_2'>Wizard Workshop Part 2</h1>
 
 <p>Progress and cool in-engine gifs</p>
@@ -650,7 +662,11 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <h2 id='conclusion'>Conclusion</h2>
 
 <p>It&#8217;s OK if you disagree with what I&#8217;ve written here. The goal is to have you think about your use of technology and to have you double-check that your use is beneficial or if it&#8217;s more out of habit, or it could be the easy way out. My hope is that you keep on thinking, and that your machines keep doing the menial work. As for me, I think I&#8217;ll stay behind the wheel of my own destiny.</p>
-]]></content:encoded></item><item><title>The Point Of Formatters</title><link>https://camerondugan.com/blog/the-point-of-formatters.html</link><author>Cameron Dugan</author><pubDate>Wed, 01 May 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>The valid points I heard were something like:</p>
+]]></content:encoded></item><item><title>The Point Of Formatters</title><link>https://camerondugan.com/blog/the-point-of-formatters.html</link><author>Cameron Dugan</author><pubDate>Wed, 01 May 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='the_point_of_formatters'>The Point of Formatters</h1>
+
+<h2 id='concerns'>Concerns</h2>
+
+<p>The valid points I heard were something like:</p>
 
 <ul>
 <li>Could reduce productivity of the top coders.</li>
@@ -673,7 +689,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 </ul>
 
 <p>As always, hope someone found this helpful. Tchau.</p>
-]]></content:encoded></item><item><title>Why I Learn For Fun</title><link>https://camerondugan.com/blog/why-i-learn-for-fun.html</link><author>Cameron Dugan</author><pubDate>Mon, 29 Apr 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='why_i_learn_for_fun_:)'>Why I learn for fun :)</h1>
+]]></content:encoded></item><item><title>Why I Learn For Fun :)</title><link>https://camerondugan.com/blog/why-i-learn-for-fun.html</link><author>Cameron Dugan</author><pubDate>Mon, 29 Apr 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='why_i_learn_for_fun_:)'>Why I learn for fun :)</h1>
 
 <p>Learning is hard. Anyone who tells you otherwise is lying. This post is more of a reminder to myself about why challenging yourself is important.</p>
 
@@ -696,7 +712,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>The best skill I have is being able to look past the difficulties of learning and fully appreciate the other feelings that come with it.</p>
 
 <p>Like everything, this too needs a balance. Some things are better not learned, some partially learned, and others fully learned. The important thing is to learn to know the difference. More of the time a broader picture is better, not deeper.</p>
-]]></content:encoded></item><item><title>Config Habit</title><link>https://camerondugan.com/blog/config-habit.html</link><author>Cameron Dugan</author><pubDate>Tue, 23 Apr 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='baking_configs'>Baking Configs</h1>
+]]></content:encoded></item><item><title>Baking Configs</title><link>https://camerondugan.com/blog/config-habit.html</link><author>Cameron Dugan</author><pubDate>Tue, 23 Apr 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='baking_configs'>Baking Configs</h1>
 
 <p>I can&#8217;t stop changing my configs (help me)</p>
 
@@ -729,7 +745,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>There are special kinds of git repos that you can use for managing files in different folders. I don&#8217;t use those, I write a bash script that copy the files from my git repo into the right spots on my system.</p>
 
 <p>I also started using <a href='https://nixos.org/'>NixOS</a>, which is perfect for making sure my configurations do what I expect. My workflow is more about editing my one <a href='https://nixos.org/'>NixOS</a> repo to configure my configs. It&#8217;s nifty when editing configs that are more complex than helpful because <a href='https://nixos.org'>NixOS</a> has a lot of great defaults you can toggle.</p>
-]]></content:encoded></item><item><title>Neovim</title><link>https://camerondugan.com/blog/neovim.html</link><author>Cameron Dugan</author><pubDate>Sun, 03 Mar 2024 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='simple-nvim-config'>Simple-Nvim-Config</h1>
+]]></content:encoded></item><item><title>Simple NeoVim Config</title><link>https://camerondugan.com/blog/neovim.html</link><author>Cameron Dugan</author><pubDate>Sun, 03 Mar 2024 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='simple-nvim-config'>Simple-Nvim-Config</h1>
 
 <p>More updates on my neovim journey</p>
 
@@ -1017,7 +1033,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 </blockquote>
 </li>
 </ol>
-]]></content:encoded></item><item><title>Arch Raspbian</title><link>https://camerondugan.com/blog/arch-raspbian.html</link><author>Cameron Dugan</author><pubDate>Mon, 02 May 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='being_an_arch_user'>Being An Arch User</h1>
+]]></content:encoded></item><item><title>Being An Arch User</title><link>https://camerondugan.com/blog/arch-raspbian.html</link><author>Cameron Dugan</author><pubDate>Mon, 02 May 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='being_an_arch_user'>Being An Arch User</h1>
 
 <p>An Unexpected Consequence</p>
 
@@ -1073,7 +1089,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Here&#8217;s the links to the videos that reminded me of it:</p>
 
 <p><a href='https://www.youtube.com/watch?v=2SuvO4Gi7uY'>Youtube Video #1</a> <a href='https://www.youtube.com/watch?v=20KHNA9jTsE'>Youtube Video #2</a></p>
-]]></content:encoded></item><item><title>Opposites</title><link>https://camerondugan.com/blog/opposites.html</link><author>Cameron Dugan</author><pubDate>Sat, 02 Apr 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='things_lead_to_their_opposites'>Things Lead to Their Opposites</h1>
+]]></content:encoded></item><item><title>Things Lead to Their Opposites</title><link>https://camerondugan.com/blog/opposites.html</link><author>Cameron Dugan</author><pubDate>Sat, 02 Apr 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='things_lead_to_their_opposites'>Things Lead to Their Opposites</h1>
 
 <p>A Generalization That&#8217;s Generally True</p>
 
@@ -1092,7 +1108,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>And if you re-learn anything from this post: Don&#8217;t believe every thought that you think.</p>
 
 <p>Also, human behavior change mainly starts with habits, not a state of mind, and especially not a list of strange sentences.</p>
-]]></content:encoded></item><item><title>People Dont Code</title><link>https://camerondugan.com/blog/people-dont-code.html</link><author>Cameron Dugan</author><pubDate>Tue, 29 Mar 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='why_people_don't_code'>Why People Don&#8217;t Code</h1>
+]]></content:encoded></item><item><title>Why Don&apos;t People Code</title><link>https://camerondugan.com/blog/people-dont-code.html</link><author>Cameron Dugan</author><pubDate>Tue, 29 Mar 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='why_people_don't_code'>Why People Don&#8217;t Code</h1>
 
 <p>Thoughts and Updates</p>
 
@@ -1117,7 +1133,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Being able to better work with our machine friends is going to be a key part of our future, and learning to speak some of their language is a great start.</p>
 
 <p>And that&#8217;s what&#8217;s been on my mind recently, thanks for reading! I&#8217;ll post more stuff soon (probably about that AI I&#8217;m working on).</p>
-]]></content:encoded></item><item><title>Op1</title><link>https://camerondugan.com/blog/op1.html</link><author>Cameron Dugan</author><pubDate>Mon, 28 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='the_op-1_synth'>The OP-1 Synth</h1>
+]]></content:encoded></item><item><title>Op1 Mini Synthesizer</title><link>https://camerondugan.com/blog/op1.html</link><author>Cameron Dugan</author><pubDate>Mon, 28 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='the_op-1_synth'>The OP-1 Synth</h1>
 
 <p>A Hardware Digital Audio Workstation</p>
 
@@ -1183,7 +1199,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Humans are addicted to consistency. When outcomes are unpredictable, there is some amount of wear and tear on the psyche. Too much unpredictability, and humans will do anything to claw some amount of consistency back. Even if this means intentionally losing, perusing inaction, or enforce a restricted set of actions.</p>
 
 <p>Only after I let go of my need for predictable or specific outcomes. Letting go of the need for a specific result really helped me. Years of failed attempts has allowed me to understand what I need to do to learn. There is always going to be room for improvement, and at the end of the day the effort put in is more important than being &quot;smart&quot; or &quot;talented&quot;. If anything, being &quot;smart&quot; or &quot;talented&quot; is a result of a lot of unseen effort in that specific thing or a closely related thing. And that&#8217;s pretty much the trap I put myself in by having a too high expectations on a specific result with so little direct and effective work put in to ensure that outcome.</p>
-]]></content:encoded></item><item><title>I Found It</title><link>https://camerondugan.com/blog/i-found-it.html</link><author>Cameron Dugan</author><pubDate>Sat, 12 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='i've_found_it'>I&#8217;ve Found It</h1>
+]]></content:encoded></item><item><title>I&apos;ve Found It</title><link>https://camerondugan.com/blog/i-found-it.html</link><author>Cameron Dugan</author><pubDate>Sat, 12 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='i've_found_it'>I&#8217;ve Found It</h1>
 
 <p>Something Incredibly Close to a Personal Database</p>
 
@@ -1282,7 +1298,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>It seems that our fascination with such trivial problems seemed to be a lack of willingness to accept the duality of truth. That everything is either true and false entirely dependent on a given context.</p>
 
 <p>The only thing we know is nothing, and that truly is something.</p>
-]]></content:encoded></item><item><title>Qrcodes</title><link>https://camerondugan.com/blog/qrcodes.html</link><author>Cameron Dugan</author><pubDate>Sun, 23 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='observations_about_qr_codes'>Observations about QR codes</h1>
+]]></content:encoded></item><item><title>Qr Codes</title><link>https://camerondugan.com/blog/qrcodes.html</link><author>Cameron Dugan</author><pubDate>Sun, 23 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='observations_about_qr_codes'>Observations about QR codes</h1>
 
 <p>Thinking About Usability</p>
 
@@ -1341,7 +1357,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 
 <ul>
 <li>
-<p><a href='https://www.theminimalists.com/podcast/'>The Minimalists</a>{:target=&quot;\_blank&quot;}</p>
+<p><a href='https://www.theminimalists.com/podcast/'>The Minimalists</a></p>
 
 <ul>
 <li>Suit and tie corporate guys talk about a meaningful life with less.</li>
@@ -1349,7 +1365,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 </li>
 
 <li>
-<p><a href='https://safetythirdpod.com/'>Safety Third</a>{:target=&quot;\_blank&quot;}</p>
+<p><a href='https://safetythirdpod.com/'>Safety Third</a></p>
 
 <ul>
 <li>Internet science celebrities talk about what they do.</li>
@@ -1357,7 +1373,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 </li>
 
 <li>
-<p><a href='https://tim.blog/podcast/'>The Tim Ferris Show</a>{:target=&quot;\_blank&quot;}</p>
+<p><a href='https://tim.blog/podcast/'>The Tim Ferris Show</a></p>
 
 <ul>
 <li>Tim Ferris explores new and bizarre topics every episode.</li>
@@ -1365,7 +1381,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 </li>
 
 <li>
-<p><a href='https://chartable.com/podcasts/the-wan-show-podcast/episodes'>The WAN Show</a>{:target=&quot;\_blank&quot;}</p>
+<p><a href='https://chartable.com/podcasts/the-wan-show-podcast/episodes'>The WAN Show</a></p>
 
 <ul>
 <li>Tech news + Linus Media Group behind the scenes.</li>
@@ -1373,7 +1389,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 </li>
 </ul>
 
-<p>All of these podcasts I have on auto-download using: <a href='https://antennapod.org/'>Antenna Pod</a>{:target=&quot;\_blank&quot;} on Android. You don&#8217;t have to try them all, but I highly recommend checking out at least one that you find interesting.</p>
+<p>All of these podcasts I have on auto-download using: <a href='https://antennapod.org/'>Antenna Pod</a> on Android. You don&#8217;t have to try them all, but I highly recommend checking out at least one that you find interesting.</p>
 ]]></content:encoded></item><item><title>Website Improvements</title><link>https://camerondugan.com/blog/website-improvements.html</link><author>Cameron Dugan</author><pubDate>Sun, 16 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='my_website_is_improving!'>My Website Is Improving!</h1>
 
 <p>Working with Liquid HTML</p>
@@ -1467,7 +1483,7 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p><strong>Tor Browser on Everything</strong> : I&#8217;ve known the Tor Browser has existed for a while now, but only recently I found out that bridges exist, and can easily be requested from the tor settings tab. Bridges can and often do speed up tor by quite a bit. I always assumed that Tor was just super slow. I will be using Tor a whole lot more with what I&#8217;m experiencing as about 4-10x the speed without bridges.</p>
 
 <p>Thanks for reading, let&#8217;s have a great 2022!</p>
-]]></content:encoded></item><item><title>Rss Mainstream</title><link>https://camerondugan.com/blog/rss-mainstream.html</link><author>Cameron Dugan</author><pubDate>Sun, 26 Dec 2021 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='why_rss_isn't_mainstream'>Why RSS isn&#8217;t Mainstream</h1>
+]]></content:encoded></item><item><title>Why isn&apos;t RSS Mainstream</title><link>https://camerondugan.com/blog/rss-mainstream.html</link><author>Cameron Dugan</author><pubDate>Sun, 26 Dec 2021 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='why_rss_isn't_mainstream'>Why RSS isn&#8217;t Mainstream</h1>
 
 <p>What is it Missing?</p>
 
@@ -1515,8 +1531,6 @@ alias longscript=&#8217;bash ~/Scripts/LongScript.sh&#8217;</code></pre>
 
 <p>Now that crond is setup, running <code>crontab -e</code> will open a text editor that will allow you to add scripts that run automatically.</p>
 ]]></content:encoded></item><item><title>Using Flutter</title><link>https://camerondugan.com/blog/using-flutter.html</link><author>Cameron Dugan</author><pubDate>Wed, 29 Sep 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='using_flutter'>Using Flutter</h1>
-
-<p>header: Succulent Flutter App</p>
 
 <p>Making a Cross Platform App with Flutter</p>
 

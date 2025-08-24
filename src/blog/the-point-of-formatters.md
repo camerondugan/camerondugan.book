@@ -2,6 +2,10 @@
 pub_date: Wed, 01 May 2024 00:00:00 -0400
 ---
 
+# The Point of Formatters
+
+## Concerns
+
 The valid points I heard were something like:
 
 - Could reduce productivity of the top coders.

@@ -6,6 +6,7 @@ title = "CameronDugan.com"
 description = "A Personal Website by Cameron Dugan"
 
 # [preprocessor.external-links]
+
 [preprocessor.rss]
 files-glob = "*/*.md" # blog/*.md or projects/*.md
 url-base = "https://camerondugan.com/"
@@ -20,3 +21,5 @@ preferred-dark-theme = "ayu"
 no-section-label = true
 git-repository-url = "https://github.com/camerondugan/camerondugan.book"
 # edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main/{path}"
+
+# [output.html.redirect]

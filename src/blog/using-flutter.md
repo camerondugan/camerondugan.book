@@ -4,8 +4,6 @@ pub_date: Wed, 29 Sep 2021 00:00:00 -0400
 
 # Using Flutter
 
-header: Succulent Flutter App
-
 Making a Cross Platform App with Flutter
 
 [![plant](../assets/images/succulent/Plant.png)](../assets/images/succulent/Plant.png)

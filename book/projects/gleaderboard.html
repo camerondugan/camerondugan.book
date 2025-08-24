@@ -180,17 +180,16 @@
                     <main>
                         <h1 id="gleaderboard"><a class="header" href="#gleaderboard">Gleaderboard</a></h1>
 <p>Over this past weekend I created an online real time multiplayer "leader-board" over ssh in gleam.</p>
-<p>It was a very pleasant step back from spending my time in complex and heavily abstracted systems. On the contrast,
-building this in a scalable and fault tolerant way was easy, considering that I've never written
+<p>It was a very pleasant step back from spending my time in complex and interconnected systems. On the contrast,
+building this in a scalable and fault tolerant way was easy, considering that I've never used
 gleam before.</p>
-<p>Here's how I got here. Since people keep telling me that the way I spend my free time is questionable at best.</p>
+<h2 id="heres-how-i-got-here"><a class="header" href="#heres-how-i-got-here">Here's how I got here.</a></h2>
+<p>Since people keep telling me that the way I spend my free time is questionable at best.</p>
 <ol>
 <li>Spend most of this past week watching YouTube.</li>
 <li>Get reminded that BEAM exists</li>
-<li>Get sad that all the languages are all functional.</li>
-<li>A little sadder that most are not type safe.</li>
-<li>Vaguely remember something about a pink star promising to also compile to JS.</li>
-<li>Reread the docs, to realize its still functional, but at least it's type safe.</li>
+<li>Get sad that all the BEAM languages are all functional.</li>
+<li>Realize Gleam is my favorite among the others.</li>
 <li>Look through the available options for libraries.</li>
 <li>Discover shore, a library that lets you write tui from gleam.</li>
 <li>And finally, discover beach. A library for serving that tui over ssh.</li>
@@ -198,6 +197,14 @@ gleam before.</p>
 <p>And now we have the perfect recipe for serving an unreasonable number of requests :)</p>
 <p>I'll update this with more details later. Until then star the <a href="https://github.com/bgwdotdev/shore">shore</a> and <a href="https://github.com/bgwdotdev/beach">beach</a> libraries!
 And take a look at <a href="https://gleam.run/">gleam</a>!</p>
+<h2 id="later-on"><a class="header" href="#later-on">Later on...</a></h2>
+<p>I've tried to setup a way of hosting this without spending a monthly subscription.</p>
+<p>What should be of no surprise is that CloudFlare tunnels really don't like to have
+ssh connections incoming from the open web...</p>
+<p>So...</p>
+<p>You can also check out the code on github.</p>
+<p>Known limitations:</p>
+<p>My implementation of the server state updates synchronously because actors are designed that way.</p>
 
                     </main>
 
