@@ -29,7 +29,7 @@
 
     - [Savage Worlds](blog/savage-worlds.md)
 
-  - [2024]()
+  - [2024](2024.md)
 
     - [Keyd](blog/keyd.md)
     - [Devenv](blog/devenv.md)

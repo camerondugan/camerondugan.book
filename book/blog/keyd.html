@@ -180,10 +180,10 @@
                     <main>
                         <h1 id="keyd-is-awesome"><a class="header" href="#keyd-is-awesome">Keyd is Awesome!</a></h1>
 <p>Why keyd will change the way you think about your keyboard.</p>
-<p>Keyd is a daemon written by <a href="https://github.com/rvaiya">rvaiya</a> that lets you
+<p>Keyd is a daemon written by <a href="https://github.com/rvaiya" title="" target="_blank">rvaiya</a> that lets you
 customize how your Linux computer listens to your keyboard. It gives normal
 keyboards plugged into your computer only qmk or custom firmware keyboards get.</p>
-<p>I have a qmk keyboard, which was mentioned in this post: <a href="https://camerondugan.com/blog/my-old-keyboard-is-basically-cheating">My old keyboard isbasically
+<p>I have a qmk keyboard, which was mentioned in this post: <a href="https://camerondugan.com/blog/my-old-keyboard-is-basically-cheating" title="" target="_blank">My old keyboard isbasically
 cheating</a></p>
 <p>This is what a non-Nix, normal keyd config looks like.</p>
 <pre><code class="language-nix">[ids]
@@ -199,12 +199,12 @@ capslock = overload(control, esc)
 # esc = capslock
 </code></pre>
 <p>As of writing this config needs to be placed in a file at
-<code>/etc/keyd/default.conf</code>. Doing just this doesn't do anything, you
+<code>/etc/keyd/default.conf</code>. Doing just this doesn’t do anything, you
 also need to install the software, preferably through your package manager,
 otherwise you can always install from the github following the instructions:
 [github.com/rvaiya/keyd](https://github.com/rvaiya/keyd?tab=readme-ov-file#insta
 llation).</p>
-<p>Since I use NixOS, I don't worry about installing and setting up the systemd
+<p>Since I use NixOS, I don’t worry about installing and setting up the systemd
 service. I just have this in my config:</p>
 <pre><code class="language-nix">services.keyd = {
   enable = true;
@@ -237,14 +237,14 @@ key with this:</p>
 </code></pre>
 <p>I should also mention there is experimental custom application keybind support.</p>
 <p>Thanks to keyd, my laptop keyboard is easier to use with vim and
-behaves closer to my qmk keyboards. I could even setup <a href="https://mattgemmell.scot/home-row-mods/">home row
+behaves closer to my qmk keyboards. I could even setup <a href="https://mattgemmell.scot/home-row-mods/" title="" target="_blank">home row
 mods</a> if I go down that road.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../blog/savage-worlds.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../2024.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
@@ -258,7 +258,7 @@ mods</a> if I go down that road.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../blog/savage-worlds.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../2024.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 

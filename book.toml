@@ -5,9 +5,12 @@ src = "src"
 title = "CameronDugan.com"
 description = "A Personal Website by Cameron Dugan"
 
-# [preprocessor.external-links]
+[preprocessor.external-links]
+after = ["rss"]
+renderers = ["html"]
 
 [preprocessor.rss]
+renderers = ["html"]
 files-glob = "*/*.md" # blog/*.md or projects/*.md
 url-base = "https://camerondugan.com/"
 
