@@ -17,7 +17,7 @@ url-base = "https://camerondugan.com/"
 [build]
 create-missing = false
 
-# [output.linkcheck]
+[output.linkcheck]
 
 [output.html]
 preferred-dark-theme = "ayu"
@@ -25,4 +25,4 @@ no-section-label = true
 git-repository-url = "https://github.com/camerondugan/camerondugan.book"
 # edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main/{path}"
 
-# [output.html.redirect]
+[output.html.redirect]
