@@ -2,6 +2,8 @@
 pub_date: Sat, 02 Apr 2022 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Things Lead to Their Opposites
 
 A Generalization That's Generally True
@@ -21,3 +23,5 @@ Beliefs are systems of logic that exist to simply the infinitely complex reality
 And if you re-learn anything from this post: Don't believe every thought that you think.
 
 Also, human behavior change mainly starts with habits, not a state of mind, and especially not a list of strange sentences.
+
+{{#include ../footer.md}}

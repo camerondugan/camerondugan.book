@@ -2,6 +2,8 @@
 pub_date: Thu, 20 Jan 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Podcasts
 
 Podcasts Exist, and if You Somehow Haven't Heard, Now You Have!
@@ -19,3 +21,5 @@ Podcasts are getting quite good recently, so I've decided to recommend some podc
 
 All of these podcasts I have on auto-download using: [Antenna Pod](https://antennapod.org/) on Android.
 You don't have to try them all, but I highly recommend checking out at least one that you find interesting.
+
+{{#include ../footer.md}}

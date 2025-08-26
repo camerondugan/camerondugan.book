@@ -2,6 +2,8 @@
 pub_date: Fri, 21 Jan 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Quantum Internet
 
 The Internet is Never Finished.
@@ -20,3 +22,5 @@ Why it would be another computer revolution:
 Why this probably won't happen:
 
 - Quantum Entaglement on purpose at the moment requires close proximity to be established, and it doesn't last long
+
+{{#include ../footer.md}}

@@ -2,6 +2,8 @@
 pub_date: Tue, 24 Sep 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Devenv is Awesome!
 
 Why devenv will change the way you think about developing software.
@@ -56,3 +58,5 @@ reloading the env.
 If you found this interesting, you can find everything I used to get started at
 [devenv.sh/getting-started](https://devenv.sh/getting-started). There's more to
 devenv than just getting software, but I'll leave that for another day.
+
+{{#include ../footer.md}}

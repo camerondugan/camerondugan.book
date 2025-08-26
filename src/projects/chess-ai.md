@@ -2,6 +2,8 @@
 pub_date: Mon, 21 Nov 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Programming A Chess AI
 
 A Fun Self Challenge
@@ -27,3 +29,5 @@ The code I wrote in rust works without that final trick, it just runs one part a
 Feel free to checkout the [chess AI trainer](https://gitlab.com/cameron.dugan/neat_zero_rust) which I wrote in rust based on some of the fundamentals found in an alpha go zero cheat sheet I found on the internet somewhere.
 
 Hope you learned something or had fun! I know I did one of those...
+
+{{#include ../footer.md}}

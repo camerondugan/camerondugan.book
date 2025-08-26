@@ -2,6 +2,8 @@
 pub_date: Sun, 23 Jan 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Observations about QR codes
 
 Thinking About Usability
@@ -17,3 +19,5 @@ Very rarely there are things that a search engine can't find and put into the fi
 Maybe QR codes should just link to a well chosen search for the thing the QR code is trying to show, that way when the url the QR code stored becomes invalid, it doesn't matter because the search engine automatically provides alternatives.
 
 But that's just how I think, nobody has to agree.
+
+{{#include ../footer.md}}

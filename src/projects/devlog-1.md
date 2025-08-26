@@ -2,6 +2,8 @@
 pub_date: Wed, 02 Jun 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Dev Log 1
 
 A Devlog for my Unnamed Game.
@@ -15,3 +17,5 @@ Currently, I'm throwing ideas at the wall and seeing what sticks. Now that I thi
 [![picture](../assets/images/devlog/space_0.png)](../assets/images/devlog/space_0.png)
 
 Right off the bat I went for a top-down puzzle game design because a type of game that I really enjoy. This meant making a top down view of the player, and making it move, setting up collision and boundaries... All of the usual stuff. At my current point in the development I already feel like there are things about the game I am not willing to share. A few surprises perhaps. Hopefully they catch some veteran players of guard while still being fun for new players as well. I've found that I have a heavy bias for early difficulty, so I'm doing my best to slow my roll this time around and deliberately bringing up the difficulty as the game continues. Another quirk I've found in my development is sometimes I'll add a new feature into an item only to find out that maybe that feature should be it's own separate item.
+
+{{#include ../footer.md}}

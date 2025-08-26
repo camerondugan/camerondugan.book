@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>CameronDugan.com</title><link></link><description>A Personal Website by Cameron Dugan</description><generator>mdbook-rss 0.1.0</generator><item><title>Gleaderboard</title><link>https://camerondugan.com/projects/gleaderboard.html</link><author>Cameron Dugan</author><pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='gleaderboard'>Gleaderboard</h1>
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>CameronDugan.com</title><link></link><description>A Personal Website by Cameron Dugan</description><generator>mdbook-rss 0.1.0</generator><item><title>Gleaderboard</title><link>https://camerondugan.com/projects/gleaderboard.html</link><author>Cameron Dugan</author><pubDate>Mon, 04 Aug 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 289 words</p>
+
+<h1 id='gleaderboard'>Gleaderboard</h1>
 
 <p>Over this past weekend I created an online real time multiplayer &quot;leader-board&quot; over ssh in gleam.</p>
 
@@ -41,7 +43,13 @@
 <p>Known limitations:</p>
 
 <p>My implementation of the server state updates synchronously because actors are designed that way.</p>
-]]></content:encoded></item><item><title>Wizard Workshop Part 2</title><link>https://camerondugan.com/projects/wizard-workshop-part-2.html</link><author>Cameron Dugan</author><pubDate>Wed, 02 Oct 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='wizard_workshop_part_2'>Wizard Workshop Part 2</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Wizard Workshop Part 2</title><link>https://camerondugan.com/projects/wizard-workshop-part-2.html</link><author>Cameron Dugan</author><pubDate>Wed, 02 Oct 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 208 words</p>
+
+<h1 id='wizard_workshop_part_2'>Wizard Workshop Part 2</h1>
 
 <p>Progress and cool in-engine gifs</p>
 
@@ -70,7 +78,13 @@
 <h2 id='bug_fixes'>Bug Fixes</h2>
 
 <p>I&#8217;ve fixed many issues with the way that the game handles memory. In gdscript, if you create a new node outside of the \_ready(): method, you can easily leak memory. Even if you declare in your \<em>ready() add</em>child(your_node), there&#8217;s a chance that your code outside of ready runs and \_ready() never runs, making a node that isn&#8217;t tracked and never gets freed.</p>
-]]></content:encoded></item><item><title>Wizard Workshop</title><link>https://camerondugan.com/projects/wizard-workshop.html</link><author>Cameron Dugan</author><pubDate>Tue, 15 Oct 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='wizard_workshop'>Wizard Workshop</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Wizard Workshop</title><link>https://camerondugan.com/projects/wizard-workshop.html</link><author>Cameron Dugan</author><pubDate>Tue, 15 Oct 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 295 words</p>
+
+<h1 id='wizard_workshop'>Wizard Workshop</h1>
 
 <p>Progress announcement for my card game</p>
 
@@ -97,7 +111,13 @@
 <p>A lot of groundwork has been laid out in ways that allow future development to be easier. Using the pieces of the game engine as intended and keeping things modular should help things stay organized. If you are interested in seeing more of this game as it is developed, feel free to shoot me an email. I love hearing back from the community about what I write.</p>
 
 <p><strong>I want your craziest card ideas!</strong></p>
-]]></content:encoded></item><item><title>My Old Keyboard Is Basically Cheating</title><link>https://camerondugan.com/projects/my-old-keyboard-is-basically-cheating.html</link><author>Cameron Dugan</author><pubDate>Sun, 21 Jul 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='my_old_keyboard_is_basically_cheating'>My Old Keyboard is Basically Cheating</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>My Old Keyboard Is Basically Cheating</title><link>https://camerondugan.com/projects/my-old-keyboard-is-basically-cheating.html</link><author>Cameron Dugan</author><pubDate>Sun, 21 Jul 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 332 words</p>
+
+<h1 id='my_old_keyboard_is_basically_cheating'>My Old Keyboard is Basically Cheating</h1>
 
 <p>A snippet of code for qmk users everywhere.</p>
 
@@ -145,7 +165,13 @@
 <p>To use the code I&#8217;ve provided with your keyboard with QMK firmware, you need to follow QMK firmware&#8217;s tutorials: &lt;https://docs.qmk.fm/newbs<em>getting</em>started&gt;, &lt;https://docs.qmk.fm/newbs<em>building</em>firmware&gt;, paste in my code into the bottom of keymap.c, then follow &lt;https://docs.qmk.fm/newbs<em>building</em>firmware&gt;</p>
 
 <p>Please be cautious and considerate of others, I am not responsible for bans made against you.</p>
-]]></content:encoded></item><item><title>Tiny Chess Engine</title><link>https://camerondugan.com/projects/tiny-chess-engine.html</link><author>Cameron Dugan</author><pubDate>Sat, 29 Jul 2023 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='a_tiny_chess_engine'>A Tiny Chess Engine</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Tiny Chess Engine</title><link>https://camerondugan.com/projects/tiny-chess-engine.html</link><author>Cameron Dugan</author><pubDate>Sat, 29 Jul 2023 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 400 words</p>
+
+<h1 id='a_tiny_chess_engine'>A Tiny Chess Engine</h1>
 
 <p>A Delightfully Strong Nemises</p>
 
@@ -172,7 +198,13 @@
 <p>If you want to take a look at my code: <a href='https://gitlab.com/cameron.dugan/chess-challenge/-/blob/main/Chess-Challenge/src/My%20Bot/MyBot.cs?ref_type=heads'>MyBot.cs</a></p>
 
 <p>Have a great rest of your day, thanks for being curious.</p>
-]]></content:encoded></item><item><title>VR Game</title><link>https://camerondugan.com/projects/vr-game.html</link><author>Cameron Dugan</author><pubDate>Thu, 01 Jun 2023 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='developing_a_pc_+_vr_game_with_godot'>Developing a PC + VR game with Godot</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>VR Game</title><link>https://camerondugan.com/projects/vr-game.html</link><author>Cameron Dugan</author><pubDate>Thu, 01 Jun 2023 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 387 words</p>
+
+<h1 id='developing_a_pc_+_vr_game_with_godot'>Developing a PC + VR game with Godot</h1>
 
 <p>A long Journey</p>
 
@@ -201,7 +233,13 @@
 <p>In conclusion, this post explored the exciting journey of developing an immersive VR game using open source technologies and the powerful Godot game engine. By embracing the potential of open source and harnessing the capabilities of Godot, I brought my vision to life, creating a VR experience. This project exemplifies the endless possibilities and creative freedom that open source game development offers in the world of virtual reality.</p>
 
 <p><a href='https://gitlab.com/cameron.dugan/vr'>My Code</a></p>
-]]></content:encoded></item><item><title>Chess Ai</title><link>https://camerondugan.com/projects/chess-ai.html</link><author>Cameron Dugan</author><pubDate>Mon, 21 Nov 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='programming_a_chess_ai'>Programming A Chess AI</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Chess Ai</title><link>https://camerondugan.com/projects/chess-ai.html</link><author>Cameron Dugan</author><pubDate>Mon, 21 Nov 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 519 words</p>
+
+<h1 id='programming_a_chess_ai'>Programming A Chess AI</h1>
 
 <p>A Fun Self Challenge</p>
 
@@ -226,7 +264,13 @@
 <p>Feel free to checkout the <a href='https://gitlab.com/cameron.dugan/neat_zero_rust'>chess AI trainer</a> which I wrote in rust based on some of the fundamentals found in an alpha go zero cheat sheet I found on the internet somewhere.</p>
 
 <p>Hope you learned something or had fun! I know I did one of those...</p>
-]]></content:encoded></item><item><title>Automated Light Switch</title><link>https://camerondugan.com/projects/automated-light-switch.html</link><author>Cameron Dugan</author><pubDate>Sat, 29 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='automatic_lightswitch'>Automatic Lightswitch</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Automated Light Switch</title><link>https://camerondugan.com/projects/automated-light-switch.html</link><author>Cameron Dugan</author><pubDate>Sat, 29 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 409 words</p>
+
+<h1 id='automatic_lightswitch'>Automatic Lightswitch</h1>
 
 <p>Servo + Arduino + 3d Printer = Magic</p>
 
@@ -275,7 +319,13 @@
 <p><img src='../assets/images/projects/switch.jpg' alt='picture' /></p>
 
 <p>And there you have it, a working Arduino powerd lightswitch that people can also interact with.</p>
-]]></content:encoded></item><item><title>Arduinos</title><link>https://camerondugan.com/projects/arduinos.html</link><author>Cameron Dugan</author><pubDate>Thu, 02 Dec 2021 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='arduinos'>Arduinos</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Arduinos</title><link>https://camerondugan.com/projects/arduinos.html</link><author>Cameron Dugan</author><pubDate>Thu, 02 Dec 2021 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 250 words</p>
+
+<h1 id='arduinos'>Arduinos</h1>
 
 <p>Tiny Computers that You Can Program</p>
 
@@ -286,7 +336,13 @@
 <p>The key is pointing the display through a magnifying lens at the correct distance to get the image to be in focus. The image passes from the display to the mirror onto the glass, getting flipped horizontally or vertically twice keeping the original intended image.</p>
 
 <p>Since it&#8217;s an Arduino, you could get the glasses to do anything an Arduino could do. Some examples: connect to wifi/bluetooth, send radio/infrared signals, use buttons/switches and LEDs. The limitations are mainly with how much information the Arduino can process when rendering the display, the Arduino libraries allow for mainly drawing individual pixels, lines and text. Nothing too fancy, but enough to make a useful AR gadget.</p>
-]]></content:encoded></item><item><title>Dream Bot</title><link>https://camerondugan.com/projects/dream-bot.html</link><author>Cameron Dugan</author><pubDate>Wed, 18 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='python_dream_bot'>Python Dream Bot</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Dream Bot</title><link>https://camerondugan.com/projects/dream-bot.html</link><author>Cameron Dugan</author><pubDate>Wed, 18 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 266 words</p>
+
+<h1 id='python_dream_bot'>Python Dream Bot</h1>
 
 <p>Intentionally Bad Image Manipulation</p>
 
@@ -319,7 +375,13 @@
 <p><a href='../assets/images/dream-bot/original2.jpg'>![original2</a>](../assets/images/dream-bot/original2.jpg)</p>
 
 <p><a href='../assets/images/dream-bot/dream2.png'>![dream2</a>](../assets/images/dream-bot/dream2.png)</p>
-]]></content:encoded></item><item><title>Arbidor</title><link>https://camerondugan.com/projects/arbidor.html</link><author>Cameron Dugan</author><pubDate>Wed, 11 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='arbidor'>Arbidor</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Arbidor</title><link>https://camerondugan.com/projects/arbidor.html</link><author>Cameron Dugan</author><pubDate>Wed, 11 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 0 minutes you can read this article with 168 words</p>
+
+<h1 id='arbidor'>Arbidor</h1>
 
 <p>A Very Short Puzzle Game That Crashes When You Win</p>
 
@@ -334,7 +396,13 @@
 <p>&lt;button onclick=&quot;window.location.href=&#8217;../../arbidor/arbidor.html&#8217;;&quot;&gt;Click To Play Arbidor&lt;/button&gt;</p>
 
 <p>Compiles to web, Windows, Mac, and Linux</p>
-]]></content:encoded></item><item><title>Devlog 3</title><link>https://camerondugan.com/projects/devlog-3.html</link><author>Cameron Dugan</author><pubDate>Wed, 09 Jun 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='dev_log_3'>Dev Log 3</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Devlog 3</title><link>https://camerondugan.com/projects/devlog-3.html</link><author>Cameron Dugan</author><pubDate>Wed, 09 Jun 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 282 words</p>
+
+<h1 id='dev_log_3'>Dev Log 3</h1>
 
 <p>Another Devlog for My Unnamed Game.</p>
 
@@ -375,7 +443,13 @@
 <p>My idea is to have corruption stay if the player doesn&#8217;t finish the room in a certain amount of time. Otherwise, the corruption will get reset by &quot;the system&quot;. This should allow for some nuance between completing the rooms fast and strategizing when to slow down.</p>
 
 <p>I also plan to have more rooms added into the game.</p>
-]]></content:encoded></item><item><title>Devlog 2</title><link>https://camerondugan.com/projects/devlog-2.html</link><author>Cameron Dugan</author><pubDate>Mon, 07 Jun 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='dev_log_2'>Dev Log 2</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Devlog 2</title><link>https://camerondugan.com/projects/devlog-2.html</link><author>Cameron Dugan</author><pubDate>Mon, 07 Jun 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 0 minutes you can read this article with 155 words</p>
+
+<h1 id='dev_log_2'>Dev Log 2</h1>
 
 <p>A Devlog for My Unnamed Game.</p>
 
@@ -404,7 +478,11 @@
 
 <li>Start making some starting levels that will hopefully make it into the final game</li>
 </ol>
-]]></content:encoded></item><item><title>Devlog 1</title><link>https://camerondugan.com/projects/devlog-1.html</link><author>Cameron Dugan</author><pubDate>Wed, 02 Jun 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='dev_log_1'>Dev Log 1</h1>
+
+<hr><p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Devlog 1</title><link>https://camerondugan.com/projects/devlog-1.html</link><author>Cameron Dugan</author><pubDate>Wed, 02 Jun 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 368 words</p>
+
+<h1 id='dev_log_1'>Dev Log 1</h1>
 
 <p>A Devlog for my Unnamed Game.</p>
 
@@ -417,7 +495,13 @@
 <p><a href='../assets/images/devlog/space_0.png'>![picture</a>](../assets/images/devlog/space_0.png)</p>
 
 <p>Right off the bat I went for a top-down puzzle game design because a type of game that I really enjoy. This meant making a top down view of the player, and making it move, setting up collision and boundaries... All of the usual stuff. At my current point in the development I already feel like there are things about the game I am not willing to share. A few surprises perhaps. Hopefully they catch some veteran players of guard while still being fun for new players as well. I&#8217;ve found that I have a heavy bias for early difficulty, so I&#8217;m doing my best to slow my roll this time around and deliberately bringing up the difficulty as the game continues. Another quirk I&#8217;ve found in my development is sometimes I&#8217;ll add a new feature into an item only to find out that maybe that feature should be it&#8217;s own separate item.</p>
-]]></content:encoded></item><item><title>Savage Worlds</title><link>https://camerondugan.com/blog/savage-worlds.html</link><author>Cameron Dugan</author><pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='savage_worlds'>Savage Worlds</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Savage Worlds</title><link>https://camerondugan.com/blog/savage-worlds.html</link><author>Cameron Dugan</author><pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 287 words</p>
+
+<h1 id='savage_worlds'>Savage Worlds</h1>
 
 <p>Have you ever played D&amp;D? No?</p>
 
@@ -490,7 +574,13 @@
 <h2 id='general_game_master_advice'>General Game Master Advice</h2>
 
 <p>Other rules offer ways to simplify/complicate the game, its up to you to choose how/when to apply these extra rules to make the game more fun.</p>
-]]></content:encoded></item><item><title>Keyd</title><link>https://camerondugan.com/blog/keyd.html</link><author>Cameron Dugan</author><pubDate>Sun, 20 Oct 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='keyd_is_awesome!'>Keyd is Awesome!</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Keyd</title><link>https://camerondugan.com/blog/keyd.html</link><author>Cameron Dugan</author><pubDate>Sun, 20 Oct 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 364 words</p>
+
+<h1 id='keyd_is_awesome!'>Keyd is Awesome!</h1>
 
 <p>Why keyd will change the way you think about your keyboard.</p>
 
@@ -547,7 +637,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>I should also mention there is experimental custom application keybind support.</p>
 
 <p>Thanks to keyd, my laptop keyboard is easier to use with vim and behaves closer to my qmk keyboards. I could even setup [home row mods](https://mattgemmell.scot/home-row-mods/) if I go down that road.</p>
-]]></content:encoded></item><item><title>Devenv</title><link>https://camerondugan.com/blog/devenv.html</link><author>Cameron Dugan</author><pubDate>Tue, 24 Sep 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='devenv_is_awesome!'>Devenv is Awesome!</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Devenv</title><link>https://camerondugan.com/blog/devenv.html</link><author>Cameron Dugan</author><pubDate>Tue, 24 Sep 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 336 words</p>
+
+<h1 id='devenv_is_awesome!'>Devenv is Awesome!</h1>
 
 <p>Why devenv will change the way you think about developing software.</p>
 
@@ -583,7 +679,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <h2 id='getting_started'>Getting started</h2>
 
 <p>If you found this interesting, you can find everything I used to get started at <a href='https://devenv.sh/getting-started'>devenv.sh/getting-started</a>. There&#8217;s more to devenv than just getting software, but I&#8217;ll leave that for another day.</p>
-]]></content:encoded></item><item><title>Cosmic Desktop Is Awesome</title><link>https://camerondugan.com/blog/cosmic-desktop-is-awesome.html</link><author>Cameron Dugan</author><pubDate>Wed, 24 Jul 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='cosmic_desktop_environment_is_awesome!'>Cosmic Desktop Environment is Awesome!</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Cosmic Desktop Is Awesome</title><link>https://camerondugan.com/blog/cosmic-desktop-is-awesome.html</link><author>Cameron Dugan</author><pubDate>Wed, 24 Jul 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 350 words</p>
+
+<h1 id='cosmic_desktop_environment_is_awesome!'>Cosmic Desktop Environment is Awesome!</h1>
 
 <p>Why I&#8217;m excited even when daily driving it before release.</p>
 
@@ -602,7 +704,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>One final thing, customization looks like it will be really great. I&#8217;ve setup my cosmic desktop to use <a href='https://github.com/catppuccin/cosmic-desktop'>catppuccin</a></p>
 
 <p>Hope you are as excited about the future of the Linux desktop as I am. Even if not, have a great day! Thank you for reading!</p>
-]]></content:encoded></item><item><title>Nixos Is Awesome Pt1</title><link>https://camerondugan.com/blog/nixos-is-awesome-pt1.html</link><author>Cameron Dugan</author><pubDate>Sun, 21 Jul 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='why_nixos_is_awesome!'>Why NixOS is Awesome!</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Nixos Is Awesome Pt1</title><link>https://camerondugan.com/blog/nixos-is-awesome-pt1.html</link><author>Cameron Dugan</author><pubDate>Sun, 21 Jul 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 3 minutes you can read this article with 614 words</p>
+
+<h1 id='why_nixos_is_awesome!'>Why NixOS is Awesome!</h1>
 
 <p>When did computing become scary? NixOS is here to the rescue!</p>
 
@@ -635,7 +743,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>If you made it this far and you haven&#8217;t given NixOS a shot, maybe try installing it next time you switch your OS!</p>
 
 <p>I promise it can be worth it :)</p>
-]]></content:encoded></item><item><title>Too Much Automation</title><link>https://camerondugan.com/blog/too-much-automation.html</link><author>Cameron Dugan</author><pubDate>Sun, 23 Jun 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='using_ai_for_learning_to_code_better'>Using AI for learning to code better</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Too Much Automation</title><link>https://camerondugan.com/blog/too-much-automation.html</link><author>Cameron Dugan</author><pubDate>Sun, 23 Jun 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 3 minutes you can read this article with 611 words</p>
+
+<h1 id='using_ai_for_learning_to_code_better'>Using AI for learning to code better</h1>
 
 <p>More updates on my neovim journey</p>
 
@@ -662,7 +776,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <h2 id='conclusion'>Conclusion</h2>
 
 <p>It&#8217;s OK if you disagree with what I&#8217;ve written here. The goal is to have you think about your use of technology and to have you double-check that your use is beneficial or if it&#8217;s more out of habit, or it could be the easy way out. My hope is that you keep on thinking, and that your machines keep doing the menial work. As for me, I think I&#8217;ll stay behind the wheel of my own destiny.</p>
-]]></content:encoded></item><item><title>The Point Of Formatters</title><link>https://camerondugan.com/blog/the-point-of-formatters.html</link><author>Cameron Dugan</author><pubDate>Wed, 01 May 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='the_point_of_formatters'>The Point of Formatters</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>The Point Of Formatters</title><link>https://camerondugan.com/blog/the-point-of-formatters.html</link><author>Cameron Dugan</author><pubDate>Wed, 01 May 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 216 words</p>
+
+<h1 id='the_point_of_formatters'>The Point of Formatters</h1>
 
 <h2 id='concerns'>Concerns</h2>
 
@@ -689,7 +809,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 </ul>
 
 <p>As always, hope someone found this helpful. Tchau.</p>
-]]></content:encoded></item><item><title>Why I Learn For Fun :)</title><link>https://camerondugan.com/blog/why-i-learn-for-fun.html</link><author>Cameron Dugan</author><pubDate>Mon, 29 Apr 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='why_i_learn_for_fun_:)'>Why I learn for fun :)</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Why I Learn For Fun :)</title><link>https://camerondugan.com/blog/why-i-learn-for-fun.html</link><author>Cameron Dugan</author><pubDate>Mon, 29 Apr 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 332 words</p>
+
+<h1 id='why_i_learn_for_fun_:)'>Why I learn for fun :)</h1>
 
 <p>Learning is hard. Anyone who tells you otherwise is lying. This post is more of a reminder to myself about why challenging yourself is important.</p>
 
@@ -712,7 +838,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>The best skill I have is being able to look past the difficulties of learning and fully appreciate the other feelings that come with it.</p>
 
 <p>Like everything, this too needs a balance. Some things are better not learned, some partially learned, and others fully learned. The important thing is to learn to know the difference. More of the time a broader picture is better, not deeper.</p>
-]]></content:encoded></item><item><title>Baking Configs</title><link>https://camerondugan.com/blog/config-habit.html</link><author>Cameron Dugan</author><pubDate>Tue, 23 Apr 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='baking_configs'>Baking Configs</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Baking Configs</title><link>https://camerondugan.com/blog/config-habit.html</link><author>Cameron Dugan</author><pubDate>Tue, 23 Apr 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 3 minutes you can read this article with 545 words</p>
+
+<h1 id='baking_configs'>Baking Configs</h1>
 
 <p>I can&#8217;t stop changing my configs (help me)</p>
 
@@ -745,7 +877,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>There are special kinds of git repos that you can use for managing files in different folders. I don&#8217;t use those, I write a bash script that copy the files from my git repo into the right spots on my system.</p>
 
 <p>I also started using <a href='https://nixos.org/'>NixOS</a>, which is perfect for making sure my configurations do what I expect. My workflow is more about editing my one <a href='https://nixos.org/'>NixOS</a> repo to configure my configs. It&#8217;s nifty when editing configs that are more complex than helpful because <a href='https://nixos.org'>NixOS</a> has a lot of great defaults you can toggle.</p>
-]]></content:encoded></item><item><title>Simple NeoVim Config</title><link>https://camerondugan.com/blog/neovim.html</link><author>Cameron Dugan</author><pubDate>Sun, 03 Mar 2024 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='simple-nvim-config'>Simple-Nvim-Config</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Simple NeoVim Config</title><link>https://camerondugan.com/blog/neovim.html</link><author>Cameron Dugan</author><pubDate>Sun, 03 Mar 2024 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 3 minutes you can read this article with 688 words</p>
+
+<h1 id='simple-nvim-config'>Simple-Nvim-Config</h1>
 
 <p>More updates on my neovim journey</p>
 
@@ -801,7 +939,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>I&#8217;m certain I&#8217;ve done this the wrong way, but I like to think that I&#8217;m not that far off, as the solution was small, and I now have snippets for all the languages that I use, including Markdown. (Which is what I use to write this)</p>
 
 <p>Hope that you learned something? Not sure, I&#8217;ll try to cover more issues/fixes that I have. I&#8217;m sure that I&#8217;ll have some.</p>
-]]></content:encoded></item><item><title>Neovim Setup</title><link>https://camerondugan.com/blog/neovim-setup.html</link><author>Cameron Dugan</author><pubDate>Wed, 24 May 2023 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='configuring_a_blazingly_fast_code_editor'>Configuring a Blazingly Fast Code Editor</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Neovim Setup</title><link>https://camerondugan.com/blog/neovim-setup.html</link><author>Cameron Dugan</author><pubDate>Wed, 24 May 2023 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 517 words</p>
+
+<h1 id='configuring_a_blazingly_fast_code_editor'>Configuring a Blazingly Fast Code Editor</h1>
 
 <p>Neovim</p>
 
@@ -842,7 +986,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>My journey into configuring Neovim as a blazingly fast code editor, inspired by a Primagen video, was both exciting and rewarding. By customizing the configuration, leveraging essential plugins, and integrating language servers, I created a highly customized coding environment tailored to my needs. Neovim&#8217;s flexibility, along with plugins like Harpoon, lsp-zero, tree-sitter, and packer, contributed to a remarkable coding experience. Whether you discovered Neovim through a video or another source, I encourage you to embark on your own journey, explore the vast customization options, and witness the incredible difference Neovim can make in your coding workflow. There is great power in knowing what happens in the background of your IDE, and switching to neovim will definitely help show you.</p>
 
 <p>Have a great day!</p>
-]]></content:encoded></item><item><title>Defaults</title><link>https://camerondugan.com/blog/defaults.html</link><author>Cameron Dugan</author><pubDate>Sun, 30 Apr 2023 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='your_software_is_only_as_good_as_it's_defaults'>Your Software Is Only As Good As It&#8217;s Defaults</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Defaults</title><link>https://camerondugan.com/blog/defaults.html</link><author>Cameron Dugan</author><pubDate>Sun, 30 Apr 2023 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 482 words</p>
+
+<h1 id='your_software_is_only_as_good_as_it's_defaults'>Your Software Is Only As Good As It&#8217;s Defaults</h1>
 
 <p>How Default Behavior Changes Everything</p>
 
@@ -867,7 +1017,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>(This has also been a note to my future self not to do the things I dislike in other software products.)</p>
 
 <p>Thanks for reading, have a great day!</p>
-]]></content:encoded></item><item><title>Bottles Stuck Fix</title><link>https://camerondugan.com/blog/bottles-stuck-fix.html</link><author>Cameron Dugan</author><pubDate>Sun, 12 Mar 2023 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='bottles_error_fix'>Bottles Error Fix</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Bottles Stuck Fix</title><link>https://camerondugan.com/blog/bottles-stuck-fix.html</link><author>Cameron Dugan</author><pubDate>Sun, 12 Mar 2023 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 220 words</p>
+
+<h1 id='bottles_error_fix'>Bottles Error Fix</h1>
 
 <p>Commenting Out a Line Of Code Fixes The Problem</p>
 
@@ -890,7 +1046,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Also, if you have the same issue but this doesn&#8217;t work, in my case this was just a graphical/gtk issue and could have been avoided by using the <code>bottles-cli</code> commands to run applications and interact with your bottles.</p>
 
 <p>I hope this helped!</p>
-]]></content:encoded></item><item><title>Serverless Applications</title><link>https://camerondugan.com/blog/serverless-applications.html</link><author>Cameron Dugan</author><pubDate>Sat, 11 Mar 2023 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='serverless_applications'>Serverless Applications</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Serverless Applications</title><link>https://camerondugan.com/blog/serverless-applications.html</link><author>Cameron Dugan</author><pubDate>Sat, 11 Mar 2023 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 253 words</p>
+
+<h1 id='serverless_applications'>Serverless Applications</h1>
 
 <p>Using Cloudflare for Applications</p>
 
@@ -911,7 +1073,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>With success there I&#8217;ll probably attempt a much bigger project involving this cheap online storage hosting method.</p>
 
 <p>I hope this was interesting, have a great week!</p>
-]]></content:encoded></item><item><title>The Slow Road</title><link>https://camerondugan.com/blog/the-slow-road.html</link><author>Cameron Dugan</author><pubDate>Sun, 05 Mar 2023 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='taking_the_slow_road'>Taking The Slow Road</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>The Slow Road</title><link>https://camerondugan.com/blog/the-slow-road.html</link><author>Cameron Dugan</author><pubDate>Sun, 05 Mar 2023 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 201 words</p>
+
+<h1 id='taking_the_slow_road'>Taking The Slow Road</h1>
 
 <p>Min/Maxing Decisions</p>
 
@@ -926,7 +1094,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>It&#8217;s all about lining up dominos for the future instead of worrying about how many dominos you can knock down today.</p>
 
 <p>Have a great week!</p>
-]]></content:encoded></item><item><title>You Are Not A Clone</title><link>https://camerondugan.com/blog/you-are-not-a-clone.html</link><author>Cameron Dugan</author><pubDate>Wed, 22 Feb 2023 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='game_jams'>Game Jams</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>You Are Not A Clone</title><link>https://camerondugan.com/blog/you-are-not-a-clone.html</link><author>Cameron Dugan</author><pubDate>Wed, 22 Feb 2023 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 3 minutes you can read this article with 587 words</p>
+
+<h1 id='game_jams'>Game Jams</h1>
 
 <p>What I Did During My Last Game Jam</p>
 
@@ -957,7 +1131,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>And here&#8217;s the links to the games other teams made: <a href='https://itch.io/jam/wgdc-spring-game-jam/entries'>Game Jam</a></p>
 
 <p>If you want to participate in a game jam yourself, there&#8217;s always game jams happening, and I encourage pretty much anyone interested to at least try it once. Here&#8217;s a list of featured game jams coming up soon: <a href='https://itch.io/jams/upcoming/sort-date/featured'>Itch Featured Jams</a>.</p>
-]]></content:encoded></item><item><title>Android Setup 2023</title><link>https://camerondugan.com/blog/android-setup-2023.html</link><author>Cameron Dugan</author><pubDate>Thu, 15 Dec 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='my_2023_android_setup'>My 2023 Android Setup</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Android Setup 2023</title><link>https://camerondugan.com/blog/android-setup-2023.html</link><author>Cameron Dugan</author><pubDate>Thu, 15 Dec 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 349 words</p>
+
+<h1 id='my_2023_android_setup'>My 2023 Android Setup</h1>
 
 <p>What I&#8217;m Using on My Phone This Upcoming Year</p>
 
@@ -988,7 +1168,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <h2 id='conclusion'>Conclusion</h2>
 
 <p>I have no monetary incentive to share these specific applications. I&#8217;m sharing them because I think that they can be helpful to anyone. If you found any of this helpful, feel free to reach out to me on Mastodon or by email, would love to hear from you. If there&#8217;s software that you think I should have talked about, feel free to send me a message. Have a great day!</p>
-]]></content:encoded></item><item><title>Godot Rant</title><link>https://camerondugan.com/blog/godot-rant.html</link><author>Cameron Dugan</author><pubDate>Tue, 16 Aug 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='my_development_experience_with_godot_3_in_vr'>My Development Experience With Godot 3 in VR</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Godot Rant</title><link>https://camerondugan.com/blog/godot-rant.html</link><author>Cameron Dugan</author><pubDate>Tue, 16 Aug 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 369 words</p>
+
+<h1 id='my_development_experience_with_godot_3_in_vr'>My Development Experience With Godot 3 in VR</h1>
 
 <p>My Recent Development Shenanigans</p>
 
@@ -1033,7 +1219,11 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 </blockquote>
 </li>
 </ol>
-]]></content:encoded></item><item><title>Being An Arch User</title><link>https://camerondugan.com/blog/arch-raspbian.html</link><author>Cameron Dugan</author><pubDate>Mon, 02 May 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='being_an_arch_user'>Being An Arch User</h1>
+
+<hr><p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Being An Arch User</title><link>https://camerondugan.com/blog/arch-raspbian.html</link><author>Cameron Dugan</author><pubDate>Mon, 02 May 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 492 words</p>
+
+<h1 id='being_an_arch_user'>Being An Arch User</h1>
 
 <p>An Unexpected Consequence</p>
 
@@ -1058,7 +1248,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>That&#8217;s my weird story for today, thanks for sticking around :)</p>
 
 <p>P.S. I do know that I can install ARM based Arch distros onto the pi, but I&#8217;m lazy and it&#8217;s already setup. Maybe another day, I&#8217;ve been looking into <a href='https://nixos.org/'>NIXOS</a>, maybe that&#8217;s a good choice, we&#8217;ll see...</p>
-]]></content:encoded></item><item><title>Wave Function Collapse</title><link>https://camerondugan.com/blog/wave-function-collapse.html</link><author>Cameron Dugan</author><pubDate>Thu, 28 Apr 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='wave_function_collapse'>Wave Function Collapse</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Wave Function Collapse</title><link>https://camerondugan.com/blog/wave-function-collapse.html</link><author>Cameron Dugan</author><pubDate>Thu, 28 Apr 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 311 words</p>
+
+<h1 id='wave_function_collapse'>Wave Function Collapse</h1>
 
 <p>Programming Something That Already Exists Without Knowing it Exists</p>
 
@@ -1089,7 +1285,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Here&#8217;s the links to the videos that reminded me of it:</p>
 
 <p><a href='https://www.youtube.com/watch?v=2SuvO4Gi7uY'>Youtube Video #1</a> <a href='https://www.youtube.com/watch?v=20KHNA9jTsE'>Youtube Video #2</a></p>
-]]></content:encoded></item><item><title>Things Lead to Their Opposites</title><link>https://camerondugan.com/blog/opposites.html</link><author>Cameron Dugan</author><pubDate>Sat, 02 Apr 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='things_lead_to_their_opposites'>Things Lead to Their Opposites</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Things Lead to Their Opposites</title><link>https://camerondugan.com/blog/opposites.html</link><author>Cameron Dugan</author><pubDate>Sat, 02 Apr 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 272 words</p>
+
+<h1 id='things_lead_to_their_opposites'>Things Lead to Their Opposites</h1>
 
 <p>A Generalization That&#8217;s Generally True</p>
 
@@ -1108,7 +1310,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>And if you re-learn anything from this post: Don&#8217;t believe every thought that you think.</p>
 
 <p>Also, human behavior change mainly starts with habits, not a state of mind, and especially not a list of strange sentences.</p>
-]]></content:encoded></item><item><title>Why Don&apos;t People Code</title><link>https://camerondugan.com/blog/people-dont-code.html</link><author>Cameron Dugan</author><pubDate>Tue, 29 Mar 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='why_people_don't_code'>Why People Don&#8217;t Code</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Why Don&apos;t People Code</title><link>https://camerondugan.com/blog/people-dont-code.html</link><author>Cameron Dugan</author><pubDate>Tue, 29 Mar 2022 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 377 words</p>
+
+<h1 id='why_people_don't_code'>Why People Don&#8217;t Code</h1>
 
 <p>Thoughts and Updates</p>
 
@@ -1133,7 +1341,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Being able to better work with our machine friends is going to be a key part of our future, and learning to speak some of their language is a great start.</p>
 
 <p>And that&#8217;s what&#8217;s been on my mind recently, thanks for reading! I&#8217;ll post more stuff soon (probably about that AI I&#8217;m working on).</p>
-]]></content:encoded></item><item><title>Op1 Mini Synthesizer</title><link>https://camerondugan.com/blog/op1.html</link><author>Cameron Dugan</author><pubDate>Mon, 28 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='the_op-1_synth'>The OP-1 Synth</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Op1 Mini Synthesizer</title><link>https://camerondugan.com/blog/op1.html</link><author>Cameron Dugan</author><pubDate>Mon, 28 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 249 words</p>
+
+<h1 id='the_op-1_synth'>The OP-1 Synth</h1>
 
 <p>A Hardware Digital Audio Workstation</p>
 
@@ -1154,7 +1368,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>That&#8217;s about all I have to say, I&#8217;ve been enjoying using it for making short songs and unique sounds.</p>
 
 <p>Hope you found it as interesting as I did.</p>
-]]></content:encoded></item><item><title>Expectations</title><link>https://camerondugan.com/blog/expectations.html</link><author>Cameron Dugan</author><pubDate>Sat, 19 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='the_cost_of_expectations'>The Cost of Expectations</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Expectations</title><link>https://camerondugan.com/blog/expectations.html</link><author>Cameron Dugan</author><pubDate>Sat, 19 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 7 minutes you can read this article with 1328 words</p>
+
+<h1 id='the_cost_of_expectations'>The Cost of Expectations</h1>
 
 <p>Why Gifted Individuals Tend to Burnout</p>
 
@@ -1199,7 +1419,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Humans are addicted to consistency. When outcomes are unpredictable, there is some amount of wear and tear on the psyche. Too much unpredictability, and humans will do anything to claw some amount of consistency back. Even if this means intentionally losing, perusing inaction, or enforce a restricted set of actions.</p>
 
 <p>Only after I let go of my need for predictable or specific outcomes. Letting go of the need for a specific result really helped me. Years of failed attempts has allowed me to understand what I need to do to learn. There is always going to be room for improvement, and at the end of the day the effort put in is more important than being &quot;smart&quot; or &quot;talented&quot;. If anything, being &quot;smart&quot; or &quot;talented&quot; is a result of a lot of unseen effort in that specific thing or a closely related thing. And that&#8217;s pretty much the trap I put myself in by having a too high expectations on a specific result with so little direct and effective work put in to ensure that outcome.</p>
-]]></content:encoded></item><item><title>I&apos;ve Found It</title><link>https://camerondugan.com/blog/i-found-it.html</link><author>Cameron Dugan</author><pubDate>Sat, 12 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='i've_found_it'>I&#8217;ve Found It</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>I&apos;ve Found It</title><link>https://camerondugan.com/blog/i-found-it.html</link><author>Cameron Dugan</author><pubDate>Sat, 12 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 299 words</p>
+
+<h1 id='i've_found_it'>I&#8217;ve Found It</h1>
 
 <p>Something Incredibly Close to a Personal Database</p>
 
@@ -1222,7 +1448,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Now I don&#8217;t have to complete my project where I probably would have spent a good week or so figuring out how to use gtk to make my own version of this.</p>
 
 <p>See ya!</p>
-]]></content:encoded></item><item><title>Companion Databases</title><link>https://camerondugan.com/blog/companion-databases.html</link><author>Cameron Dugan</author><pubDate>Tue, 01 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='companion_databases'>Companion Databases</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Companion Databases</title><link>https://camerondugan.com/blog/companion-databases.html</link><author>Cameron Dugan</author><pubDate>Tue, 01 Feb 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 3 minutes you can read this article with 570 words</p>
+
+<h1 id='companion_databases'>Companion Databases</h1>
 
 <p>Hyper Personalized Databases for Everyday People.</p>
 
@@ -1265,7 +1497,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>I know I&#8217;m probably over-hyping the system, but I think it&#8217;s relatively novel and incredibly flexible. (just realized you could keep track of things in fridge and set an expire date etc). If plain-text companion databases don&#8217;t already exist, I want to make this happen.</p>
 
 <p>If they do exist in a similar way to what I&#8217;m describing, please contact me, I&#8217;d love to know.</p>
-]]></content:encoded></item><item><title>End Of Thinking</title><link>https://camerondugan.com/blog/end-of-thinking.html</link><author>Cameron Dugan</author><pubDate>Tue, 25 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='the_end_of_thinking'>The End of Thinking</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>End Of Thinking</title><link>https://camerondugan.com/blog/end-of-thinking.html</link><author>Cameron Dugan</author><pubDate>Tue, 25 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 393 words</p>
+
+<h1 id='the_end_of_thinking'>The End of Thinking</h1>
 
 <p>An Attempt at a Short Narrative</p>
 
@@ -1298,7 +1536,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>It seems that our fascination with such trivial problems seemed to be a lack of willingness to accept the duality of truth. That everything is either true and false entirely dependent on a given context.</p>
 
 <p>The only thing we know is nothing, and that truly is something.</p>
-]]></content:encoded></item><item><title>Qr Codes</title><link>https://camerondugan.com/blog/qrcodes.html</link><author>Cameron Dugan</author><pubDate>Sun, 23 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='observations_about_qr_codes'>Observations about QR codes</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Qr Codes</title><link>https://camerondugan.com/blog/qrcodes.html</link><author>Cameron Dugan</author><pubDate>Sun, 23 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 203 words</p>
+
+<h1 id='observations_about_qr_codes'>Observations about QR codes</h1>
 
 <p>Thinking About Usability</p>
 
@@ -1313,7 +1557,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Maybe QR codes should just link to a well chosen search for the thing the QR code is trying to show, that way when the url the QR code stored becomes invalid, it doesn&#8217;t matter because the search engine automatically provides alternatives.</p>
 
 <p>But that&#8217;s just how I think, nobody has to agree.</p>
-]]></content:encoded></item><item><title>Pine Phone</title><link>https://camerondugan.com/blog/pine-phone.html</link><author>Cameron Dugan</author><pubDate>Sat, 22 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='pine_phone'>Pine Phone</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Pine Phone</title><link>https://camerondugan.com/blog/pine-phone.html</link><author>Cameron Dugan</author><pubDate>Sat, 22 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 293 words</p>
+
+<h1 id='pine_phone'>Pine Phone</h1>
 
 <p>A Linux Phone.</p>
 
@@ -1324,7 +1574,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>Idk, this decision is keeping me up at night with the insane possibility of running Linux on a phone that I would actually use.</p>
 
 <p>Update before published: Pre-ordered the Pine Phone Pro, wish me luck :)</p>
-]]></content:encoded></item><item><title>Quantum Internet</title><link>https://camerondugan.com/blog/quantum-internet.html</link><author>Cameron Dugan</author><pubDate>Fri, 21 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='quantum_internet'>Quantum Internet</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Quantum Internet</title><link>https://camerondugan.com/blog/quantum-internet.html</link><author>Cameron Dugan</author><pubDate>Fri, 21 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 197 words</p>
+
+<h1 id='quantum_internet'>Quantum Internet</h1>
 
 <p>The Internet is Never Finished.</p>
 
@@ -1349,7 +1605,11 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <ul>
 <li>Quantum Entaglement on purpose at the moment requires close proximity to be established, and it doesn&#8217;t last long</li>
 </ul>
-]]></content:encoded></item><item><title>Podcasts</title><link>https://camerondugan.com/blog/podcasts.html</link><author>Cameron Dugan</author><pubDate>Thu, 20 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='podcasts'>Podcasts</h1>
+
+<hr><p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Podcasts</title><link>https://camerondugan.com/blog/podcasts.html</link><author>Cameron Dugan</author><pubDate>Thu, 20 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 0 minutes you can read this article with 167 words</p>
+
+<h1 id='podcasts'>Podcasts</h1>
 
 <p>Podcasts Exist, and if You Somehow Haven&#8217;t Heard, Now You Have!</p>
 
@@ -1390,7 +1650,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 </ul>
 
 <p>All of these podcasts I have on auto-download using: <a href='https://antennapod.org/'>Antenna Pod</a> on Android. You don&#8217;t have to try them all, but I highly recommend checking out at least one that you find interesting.</p>
-]]></content:encoded></item><item><title>Website Improvements</title><link>https://camerondugan.com/blog/website-improvements.html</link><author>Cameron Dugan</author><pubDate>Sun, 16 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='my_website_is_improving!'>My Website Is Improving!</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Website Improvements</title><link>https://camerondugan.com/blog/website-improvements.html</link><author>Cameron Dugan</author><pubDate>Sun, 16 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 405 words</p>
+
+<h1 id='my_website_is_improving!'>My Website Is Improving!</h1>
 
 <p>Working with Liquid HTML</p>
 
@@ -1458,7 +1724,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 {% endraw %}</code></pre>
 
 <p>I knew how to do none of this a month ago, but now I can edit my website to statically generate a ton of stuff.</p>
-]]></content:encoded></item><item><title>Happy New Year</title><link>https://camerondugan.com/blog/happy-new-year.html</link><author>Cameron Dugan</author><pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='happy_new_year'>Happy New Year</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Happy New Year</title><link>https://camerondugan.com/blog/happy-new-year.html</link><author>Cameron Dugan</author><pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 434 words</p>
+
+<h1 id='happy_new_year'>Happy New Year</h1>
 
 <p>Software I Use and Will Use More</p>
 
@@ -1483,7 +1755,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p><strong>Tor Browser on Everything</strong> : I&#8217;ve known the Tor Browser has existed for a while now, but only recently I found out that bridges exist, and can easily be requested from the tor settings tab. Bridges can and often do speed up tor by quite a bit. I always assumed that Tor was just super slow. I will be using Tor a whole lot more with what I&#8217;m experiencing as about 4-10x the speed without bridges.</p>
 
 <p>Thanks for reading, let&#8217;s have a great 2022!</p>
-]]></content:encoded></item><item><title>Why isn&apos;t RSS Mainstream</title><link>https://camerondugan.com/blog/rss-mainstream.html</link><author>Cameron Dugan</author><pubDate>Sun, 26 Dec 2021 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='why_rss_isn't_mainstream'>Why RSS isn&#8217;t Mainstream</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Why isn&apos;t RSS Mainstream</title><link>https://camerondugan.com/blog/rss-mainstream.html</link><author>Cameron Dugan</author><pubDate>Sun, 26 Dec 2021 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 282 words</p>
+
+<h1 id='why_rss_isn't_mainstream'>Why RSS isn&#8217;t Mainstream</h1>
 
 <p>What is it Missing?</p>
 
@@ -1498,7 +1776,13 @@ environment.etc.&quot;libinput/local-overrides.quirks&quot;.text = &#8217;&#8217
 <p>If you also want to see this happen or if you know of a website that already does this, please <a href='../contact.md'>contact me</a>.</p>
 
 <p>\*\[RSS\]: Really Simple Sindication</p>
-]]></content:encoded></item><item><title>Linux Scripting</title><link>https://camerondugan.com/blog/linux-scripting.html</link><author>Cameron Dugan</author><pubDate>Mon, 20 Dec 2021 00:00:00 -0500</pubDate><content:encoded><![CDATA[<h1 id='linux_scripting'>Linux Scripting</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Linux Scripting</title><link>https://camerondugan.com/blog/linux-scripting.html</link><author>Cameron Dugan</author><pubDate>Mon, 20 Dec 2021 00:00:00 -0500</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 325 words</p>
+
+<h1 id='linux_scripting'>Linux Scripting</h1>
 
 <p>Removing Repetitive Tasks</p>
 
@@ -1530,7 +1814,13 @@ alias longscript=&#8217;bash ~/Scripts/LongScript.sh&#8217;</code></pre>
 <p>Install a package from your package manager called cronie or cron. If you can&#8217;t find one of those, look up what your distribution uses, and install that. Next is to make cron run at startup through systemd. The command is <code>systemctl enable --now cronie</code> (or crond).</p>
 
 <p>Now that crond is setup, running <code>crontab -e</code> will open a text editor that will allow you to add scripts that run automatically.</p>
-]]></content:encoded></item><item><title>Using Flutter</title><link>https://camerondugan.com/blog/using-flutter.html</link><author>Cameron Dugan</author><pubDate>Wed, 29 Sep 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='using_flutter'>Using Flutter</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Using Flutter</title><link>https://camerondugan.com/blog/using-flutter.html</link><author>Cameron Dugan</author><pubDate>Wed, 29 Sep 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 243 words</p>
+
+<h1 id='using_flutter'>Using Flutter</h1>
 
 <p>Making a Cross Platform App with Flutter</p>
 
@@ -1589,7 +1879,13 @@ parentWidget(){
 </ul>
 
 <p>I&#8217;ll add binaries to this page shortly, see you next time!</p>
-]]></content:encoded></item><item><title>Weekly Challenge 2</title><link>https://camerondugan.com/blog/weekly-challenge-2.html</link><author>Cameron Dugan</author><pubDate>Mon, 23 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='weekly_programming_-_week_2'>Weekly Programming - Week 2</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Weekly Challenge 2</title><link>https://camerondugan.com/blog/weekly-challenge-2.html</link><author>Cameron Dugan</author><pubDate>Mon, 23 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 313 words</p>
+
+<h1 id='weekly_programming_-_week_2'>Weekly Programming - Week 2</h1>
 
 <p>Programming a Game Player</p>
 
@@ -1640,7 +1936,13 @@ parentWidget(){
 <p>Take your time, I&#8217;m excited to see what we can do!</p>
 
 <p>If you liked this also check out: <a href='./weekly-challenge-1.md'>Last Week&#8217;s Challenge</a> and <a href='../projects/dream-bot.md'>My Result From Last Week</a></p>
-]]></content:encoded></item><item><title>Weekly Challenge 1</title><link>https://camerondugan.com/blog/weekly-challenge-1.html</link><author>Cameron Dugan</author><pubDate>Mon, 16 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='weekly_programming_-_week_1'>Weekly Programming - Week 1</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Weekly Challenge 1</title><link>https://camerondugan.com/blog/weekly-challenge-1.html</link><author>Cameron Dugan</author><pubDate>Mon, 16 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 241 words</p>
+
+<h1 id='weekly_programming_-_week_1'>Weekly Programming - Week 1</h1>
 
 <p>Programming Art Generators</p>
 
@@ -1675,7 +1977,13 @@ parentWidget(){
 <p>Scoring will be entirely done on the honor system. Feel free to include your current score along with your post. Example: My current score is 1.</p>
 
 <p>Take your time, I&#8217;m excited to see what we can do!</p>
-]]></content:encoded></item><item><title>Costs Bot</title><link>https://camerondugan.com/blog/costs-bot.html</link><author>Cameron Dugan</author><pubDate>Mon, 16 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='costs-bot'>costs-bot</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Costs Bot</title><link>https://camerondugan.com/blog/costs-bot.html</link><author>Cameron Dugan</author><pubDate>Mon, 16 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 4 minutes you can read this article with 857 words</p>
+
+<h1 id='costs-bot'>costs-bot</h1>
 
 <p>of programming</p>
 
@@ -1726,7 +2034,13 @@ parentWidget(){
 </ol>
 
 <p>Generated by Cameron Dugan&#8217;s Jekyll Post Generator</p>
-]]></content:encoded></item><item><title>Bee</title><link>https://camerondugan.com/blog/bee.html</link><author>Cameron Dugan</author><pubDate>Thu, 12 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='bee_movie'>Bee Movie</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Bee</title><link>https://camerondugan.com/blog/bee.html</link><author>Cameron Dugan</author><pubDate>Thu, 12 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 226 words</p>
+
+<h1 id='bee_movie'>Bee Movie</h1>
 
 <p>Bee</p>
 
@@ -1755,7 +2069,11 @@ parentWidget(){
 
 <li>Hi, Jock. This could you see pollen that? Maybe they nevery funny. If you wants to that ever see? Folds ourjob every small the law number seven, lint where. More honey, bees, ho</li>
 </ul>
-]]></content:encoded></item><item><title>Weekly Challenge</title><link>https://camerondugan.com/blog/weekly-challenge.html</link><author>Cameron Dugan</author><pubDate>Mon, 09 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='weekly_programming_-_week_0'>Weekly Programming - Week 0</h1>
+
+<hr><p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Weekly Challenge</title><link>https://camerondugan.com/blog/weekly-challenge.html</link><author>Cameron Dugan</author><pubDate>Mon, 09 Aug 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 239 words</p>
+
+<h1 id='weekly_programming_-_week_0'>Weekly Programming - Week 0</h1>
 
 <p>Programming for the Sake of Programming</p>
 
@@ -1788,7 +2106,13 @@ parentWidget(){
 <p>Scoring will be entirely done on the honor system. Feel free to include your current score along with your post.</p>
 
 <p>Take your time, quality is way better than quantity, and I&#8217;m excited to see what we can do!</p>
-]]></content:encoded></item><item><title>Complexity</title><link>https://camerondugan.com/blog/complexity.html</link><author>Cameron Dugan</author><pubDate>Sat, 22 May 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='complexity'>Complexity</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Complexity</title><link>https://camerondugan.com/blog/complexity.html</link><author>Cameron Dugan</author><pubDate>Sat, 22 May 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 404 words</p>
+
+<h1 id='complexity'>Complexity</h1>
 
 <p>How Complexity Influences People.</p>
 
@@ -1819,7 +2143,13 @@ parentWidget(){
 </ul>
 
 <p>Sometimes I think that information just moves too fast with no filters for quality. As the complexity of the world increases, the skills required to discern between quality information and garbage information disappears. Quality information now has to desguise itself as fluff to be seen by anyone. Kind of makes me think that disconnecting entirely is becoming the only option. Hopefully there will be a new service that restricts both speed and quantity of information to insure a reasonable quality of information. Just enough to start a conversation, but not too much as to give people headaches.</p>
-]]></content:encoded></item><item><title>Hidden Costs</title><link>https://camerondugan.com/blog/hidden-costs.html</link><author>Cameron Dugan</author><pubDate>Fri, 21 May 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='hidden_costs'>Hidden Costs</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Hidden Costs</title><link>https://camerondugan.com/blog/hidden-costs.html</link><author>Cameron Dugan</author><pubDate>Fri, 21 May 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 389 words</p>
+
+<h1 id='hidden_costs'>Hidden Costs</h1>
 
 <p>Examples and Generalizations of How Systems Disguise Their Motives.</p>
 
@@ -1832,7 +2162,13 @@ parentWidget(){
 <p>Each industry has its dirty secrets. These secrets can either be critical to business or a big enough PR disaster to heavily cripple that business. Hopefully most of these secrets are nothing to worry about. To protect future business and the better interest in future human civilization, I herby heavily promote whistle-blowing in areas where secrets are worse-off being kept rather than freed. This doesn&#8217;t mean that people should throw company or government secrets into the public spotlight just to spite their bureaucratic overlords. Instead only when information that is exposed directly and continually benefits humanity as a whole while dealing minimal damage to the organization in question.</p>
 
 <p>Those have been my thoughts for today. Went off on a tangent, but hopefully it was still interesting.</p>
-]]></content:encoded></item><item><title>Overwhelm</title><link>https://camerondugan.com/blog/overwhelm.html</link><author>Cameron Dugan</author><pubDate>Sun, 18 Apr 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='the_overwhelm'>The Overwhelm</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Overwhelm</title><link>https://camerondugan.com/blog/overwhelm.html</link><author>Cameron Dugan</author><pubDate>Sun, 18 Apr 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 330 words</p>
+
+<h1 id='the_overwhelm'>The Overwhelm</h1>
 
 <p>Conquering the Unknown</p>
 
@@ -1847,7 +2183,13 @@ parentWidget(){
 <p>I&#8217;m not saying I&#8217;m an expert, or even good at managing the <code>overwhelm</code>. It&#8217;s just that I have a lot of experience with it. It&#8217;s one of those things that build while you don&#8217;t manage it. Do yourself a favor and ask yourself where you see it appearing or growing and make that battle plan.</p>
 
 <p>Have a better day :)</p>
-]]></content:encoded></item><item><title>Procrastination</title><link>https://camerondugan.com/blog/procrastination.html</link><author>Cameron Dugan</author><pubDate>Sat, 17 Apr 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='procrastination_and_motivation'>Procrastination and Motivation</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>Procrastination</title><link>https://camerondugan.com/blog/procrastination.html</link><author>Cameron Dugan</author><pubDate>Sat, 17 Apr 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 458 words</p>
+
+<h1 id='procrastination_and_motivation'>Procrastination and Motivation</h1>
 
 <p>A Note to Self</p>
 
@@ -1890,7 +2232,13 @@ parentWidget(){
 <p>To ensure I don&#8217;t go completely insane, I think I&#8217;ll throw on music while I work to help my morale last long enough to get everything done.</p>
 
 <p>Alrighty, I guess it&#8217;s time for me to go do the things I don&#8217;t want to do. Cya, have a great day!</p>
-]]></content:encoded></item><item><title>My Crypto Adventures</title><link>https://camerondugan.com/blog/my-crypto-adventures.html</link><author>Cameron Dugan</author><pubDate>Mon, 05 Apr 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='my_crypto_adventures'>My Crypto Adventures</h1>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>My Crypto Adventures</title><link>https://camerondugan.com/blog/my-crypto-adventures.html</link><author>Cameron Dugan</author><pubDate>Mon, 05 Apr 2021 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 221 words</p>
+
+<h1 id='my_crypto_adventures'>My Crypto Adventures</h1>
 
 <p>Misadventures in Crypto</p>
 
@@ -1903,4 +2251,8 @@ parentWidget(){
 <p>It was really unpleasant looking at that 0 balance for a month.</p>
 
 <p>Anyways hope you enjoyed and have a wonderful day.</p>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
 ]]></content:encoded></item></channel></rss>

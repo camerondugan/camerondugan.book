@@ -2,6 +2,8 @@
 pub_date: Sun, 18 Apr 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # The Overwhelm
 
 Conquering the Unknown
@@ -17,3 +19,5 @@ Take the flipside of `overwhelm`. Instead of something that you wish wouldn't ha
 I'm not saying I'm an expert, or even good at managing the `overwhelm`. It's just that I have a lot of experience with it. It's one of those things that build while you don't manage it. Do yourself a favor and ask yourself where you see it appearing or growing and make that battle plan.
 
 Have a better day :)
+
+{{#include ../footer.md}}

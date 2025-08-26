@@ -2,6 +2,8 @@
 pub_date: Thu, 01 Jun 2023 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Developing a PC + VR game with Godot
 
 A long Journey
@@ -31,3 +33,5 @@ To leverage the full potential of Oculus VR hardware, I utilized a dedicated God
 In conclusion, this post explored the exciting journey of developing an immersive VR game using open source technologies and the powerful Godot game engine. By embracing the potential of open source and harnessing the capabilities of Godot, I brought my vision to life, creating a VR experience. This project exemplifies the endless possibilities and creative freedom that open source game development offers in the world of virtual reality.
 
 [My Code](https://gitlab.com/cameron.dugan/vr)
+
+{{#include ../footer.md}}

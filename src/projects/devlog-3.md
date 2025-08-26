@@ -2,6 +2,8 @@
 pub_date: Wed, 09 Jun 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Dev Log 3
 
 Another Devlog for My Unnamed Game.
@@ -33,3 +35,5 @@ I think the game could be quite interesting with a time mechanic tied into the c
 My idea is to have corruption stay if the player doesn't finish the room in a certain amount of time. Otherwise, the corruption will get reset by "the system". This should allow for some nuance between completing the rooms fast and strategizing when to slow down.
 
 I also plan to have more rooms added into the game.
+
+{{#include ../footer.md}}

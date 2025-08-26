@@ -2,6 +2,8 @@
 pub_date: Tue, 15 Oct 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}} 
+
 # Wizard Workshop
 
 Progress announcement for my card game
@@ -43,3 +45,5 @@ of this game as it is developed, feel free to shoot me an email. I love hearing
 back from the community about what I write.
 
 **I want your craziest card ideas!**
+
+{{#include ../footer.md}} 

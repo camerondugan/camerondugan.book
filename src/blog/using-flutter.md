@@ -2,6 +2,8 @@
 pub_date: Wed, 29 Sep 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Using Flutter
 
 Making a Cross Platform App with Flutter
@@ -48,3 +50,5 @@ parentWidget(){
 - When using the scaffold widget to make the app, you want to use an indexed stack if you want to also use an animated navigation bar, to let the animation play out, instead of getting cut off when switching contexts.
 
 I'll add binaries to this page shortly, see you next time!
+
+{{#include ../footer.md}}

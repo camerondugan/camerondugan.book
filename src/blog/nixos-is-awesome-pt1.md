@@ -2,6 +2,8 @@
 pub_date: Sun, 21 Jul 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Why NixOS is Awesome!
 
 When did computing become scary? NixOS is here to the rescue!
@@ -41,3 +43,5 @@ If you thought this was interesting, there is going to be a part 2!
 If you made it this far and you haven't given NixOS a shot, maybe try installing it next time you switch your OS!
 
 I promise it can be worth it :)
+
+{{#include ../footer.md}}

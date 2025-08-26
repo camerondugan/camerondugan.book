@@ -2,6 +2,8 @@
 pub_date: Sat, 22 Jan 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Pine Phone
 
 A Linux Phone.
@@ -13,3 +15,5 @@ The Pine Phone has been on my radar for a while now. But only recently have I st
 Idk, this decision is keeping me up at night with the insane possibility of running Linux on a phone that I would actually use.
 
 Update before published: Pre-ordered the Pine Phone Pro, wish me luck :)
+
+{{#include ../footer.md}}

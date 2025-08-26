@@ -2,6 +2,8 @@
 pub_date: Wed, 11 Aug 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Arbidor
 
 A Very Short Puzzle Game That Crashes When You Win
@@ -21,3 +23,5 @@ Controls
 <button onclick="window.location.href='../../arbidor/arbidor.html';">Click To Play Arbidor</button>
 
 Compiles to web, Windows, Mac, and Linux
+
+{{#include ../footer.md}}

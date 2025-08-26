@@ -2,6 +2,8 @@
 pub_date: Sat, 17 Apr 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Procrastination and Motivation
 
 A Note to Self
@@ -35,3 +37,5 @@ Maybe I can avoid procrastination by forcing a habit of doing everything as earl
 To ensure I don't go completely insane, I think I'll throw on music while I work to help my morale last long enough to get everything done.
 
 Alrighty, I guess it's time for me to go do the things I don't want to do. Cya, have a great day!
+
+{{#include ../footer.md}}

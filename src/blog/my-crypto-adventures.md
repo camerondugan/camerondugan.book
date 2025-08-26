@@ -2,6 +2,8 @@
 pub_date: Mon, 05 Apr 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # My Crypto Adventures
 
 Misadventures in Crypto
@@ -16,3 +18,5 @@ I had decided that I didn't want to spend more than 1 USD to make the transactio
 It was really unpleasant looking at that 0 balance for a month.
 
 Anyways hope you enjoyed and have a wonderful day.
+
+{{#include ../footer.md}}

@@ -2,6 +2,8 @@
 pub_date: Sat, 22 May 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Complexity
 
 How Complexity Influences People.
@@ -32,3 +34,5 @@ Other industries that I'm aware of similar practices:
 
 Sometimes I think that information just moves too fast with no filters for quality. As the complexity of the world increases, the skills required to discern between quality information and garbage information disappears. Quality information now has to desguise itself as fluff to be seen by anyone. Kind of makes me think that disconnecting entirely is becoming the only option.
 Hopefully there will be a new service that restricts both speed and quantity of information to insure a reasonable quality of information. Just enough to start a conversation, but not too much as to give people headaches.
+
+{{#include ../footer.md}}

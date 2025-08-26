@@ -2,6 +2,8 @@
 pub_date: Sun, 30 Apr 2023 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Your Software Is Only As Good As It's Defaults
 
 How Default Behavior Changes Everything
@@ -27,3 +29,5 @@ So, there you have it. This has been a short rant, on why I think software, open
 (This has also been a note to my future self not to do the things I dislike in other software products.)
 
 Thanks for reading, have a great day!
+
+{{#include ../footer.md}}

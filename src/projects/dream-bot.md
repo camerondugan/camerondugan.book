@@ -2,6 +2,8 @@
 pub_date: Wed, 18 Aug 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Python Dream Bot
 
 Intentionally Bad Image Manipulation
@@ -32,3 +34,5 @@ The previous image was exaggerated to better show the process:
 [![original2](../assets/images/dream-bot/original2.jpg)](../assets/images/dream-bot/original2.jpg)
 
 [![dream2](../assets/images/dream-bot/dream2.png)](../assets/images/dream-bot/dream2.png)
+
+{{#include ../footer.md}}

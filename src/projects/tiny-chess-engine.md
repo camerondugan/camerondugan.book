@@ -2,6 +2,8 @@
 pub_date: Sat, 29 Jul 2023 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # A Tiny Chess Engine
 
 A Delightfully Strong Nemises
@@ -29,3 +31,5 @@ I should probably mention that there are very fast ways for counting 256 bit lon
 If you want to take a look at my code: [MyBot.cs](https://gitlab.com/cameron.dugan/chess-challenge/-/blob/main/Chess-Challenge/src/My%20Bot/MyBot.cs?ref_type=heads)
 
 Have a great rest of your day, thanks for being curious.
+
+{{#include ../footer.md}}

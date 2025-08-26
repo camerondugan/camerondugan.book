@@ -2,6 +2,8 @@
 pub_date: Sun, 26 Dec 2021 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Why RSS isn't Mainstream
 
 What is it Missing?
@@ -17,3 +19,5 @@ Honestly, since the idea isn't crazy big, and if this doesn't already exist, I t
 If you also want to see this happen or if you know of a website that already does this, please [contact me](../contact.md).
 
 \*\[RSS\]: Really Simple Sindication
+
+{{#include ../footer.md}}

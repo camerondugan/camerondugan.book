@@ -2,6 +2,8 @@
 pub_date: Wed, 24 Jul 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Cosmic Desktop Environment is Awesome!
 
 Why I'm excited even when daily driving it before release.
@@ -37,3 +39,5 @@ cosmic desktop to use [catppuccin](https://github.com/catppuccin/cosmic-desktop)
 
 Hope you are as excited about the future of the Linux desktop as I am. Even if
 not, have a great day! Thank you for reading!
+
+{{#include ../footer.md}}

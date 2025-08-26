@@ -2,6 +2,8 @@
 pub_date: Tue, 25 Jan 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # The End of Thinking
 
 An Attempt at a Short Narrative
@@ -35,3 +37,5 @@ We've determined that the sentence is categorically both true and false. Halting
 It seems that our fascination with such trivial problems seemed to be a lack of willingness to accept the duality of truth. That everything is either true and false entirely dependent on a given context.
 
 The only thing we know is nothing, and that truly is something.
+
+{{#include ../footer.md}}

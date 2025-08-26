@@ -2,6 +2,8 @@
 pub_date: Mon, 09 Aug 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Weekly Programming - Week 0
 
 Programming for the Sake of Programming
@@ -26,3 +28,5 @@ There will be scoring as follows:
 Scoring will be entirely done on the honor system. Feel free to include your current score along with your post.
 
 Take your time, quality is way better than quantity, and I'm excited to see what we can do!
+
+{{#include ../footer.md}}

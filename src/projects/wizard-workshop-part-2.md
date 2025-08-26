@@ -2,6 +2,8 @@
 pub_date: Wed, 02 Oct 2024 00:00:00 -0400
 ---
 
+{{ #include ../header.md }}
+
 # Wizard Workshop Part 2
 
 Progress and cool in-engine gifs
@@ -38,3 +40,5 @@ if you create a new node outside of the \_ready(): method, you can easily leak
 memory. Even if you declare in your \_ready() add_child(your_node), there's a
 chance that your code outside of ready runs and \_ready() never runs, making a
 node that isn't tracked and never gets freed.
+
+{{ #include ../footer.md }}

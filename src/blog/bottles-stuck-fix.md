@@ -2,6 +2,8 @@
 pub_date: Sun, 12 Mar 2023 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Bottles Error Fix
 
 Commenting Out a Line Of Code Fixes The Problem
@@ -25,3 +27,5 @@ Open the file that has the error and add a # in front of the line creating the p
 Also, if you have the same issue but this doesn't work, in my case this was just a graphical/gtk issue and could have been avoided by using the `bottles-cli` commands to run applications and interact with your bottles.
 
 I hope this helped!
+
+{{#include ../footer.md}}

@@ -2,6 +2,8 @@
 pub_date: Sun, 16 Jan 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # My Website Is Improving!
 
 Working with Liquid HTML
@@ -60,3 +62,5 @@ I've been working on improving the styling and layout for a little bit now, and 
 ```
 
 I knew how to do none of this a month ago, but now I can edit my website to statically generate a ton of stuff.
+
+{{#include ../footer.md}}

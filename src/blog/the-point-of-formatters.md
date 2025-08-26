@@ -2,6 +2,8 @@
 pub_date: Wed, 01 May 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # The Point of Formatters
 
 ## Concerns
@@ -30,3 +32,5 @@ want to use a formatter:
   their code, it's formatted "correctly" for that use case every time.
 
 As always, hope someone found this helpful. Tchau.
+
+{{#include ../footer.md}}

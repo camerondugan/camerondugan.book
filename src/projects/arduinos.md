@@ -2,6 +2,8 @@
 pub_date: Thu, 02 Dec 2021 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Arduinos
 
 Tiny Computers that You Can Program
@@ -13,3 +15,5 @@ Turns out, it can be very difficult to get a good image projected into your eye 
 The key is pointing the display through a magnifying lens at the correct distance to get the image to be in focus. The image passes from the display to the mirror onto the glass, getting flipped horizontally or vertically twice keeping the original intended image.
 
 Since it's an Arduino, you could get the glasses to do anything an Arduino could do. Some examples: connect to wifi/bluetooth, send radio/infrared signals, use buttons/switches and LEDs. The limitations are mainly with how much information the Arduino can process when rendering the display, the Arduino libraries allow for mainly drawing individual pixels, lines and text. Nothing too fancy, but enough to make a useful AR gadget.
+
+{{#include ../footer.md}}

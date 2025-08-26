@@ -2,6 +2,8 @@
 pub_date: Wed, 22 Feb 2023 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Game Jams
 
 What I Did During My Last Game Jam
@@ -35,3 +37,5 @@ And here's the links to the games other teams made:
 [Game Jam](https://itch.io/jam/wgdc-spring-game-jam/entries)
 
 If you want to participate in a game jam yourself, there's always game jams happening, and I encourage pretty much anyone interested to at least try it once. Here's a list of featured game jams coming up soon: [Itch Featured Jams](https://itch.io/jams/upcoming/sort-date/featured).
+
+{{#include ../footer.md}}

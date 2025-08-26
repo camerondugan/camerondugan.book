@@ -2,6 +2,8 @@
 pub_date: Sun, 21 Jul 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # My Old Keyboard is Basically Cheating
 
 A snippet of code for qmk users everywhere.
@@ -64,3 +66,5 @@ of keymap.c, then follow <https://docs.qmk.fm/newbs_building_firmware>
 
 Please be cautious and considerate of others, I am not responsible for bans
 made against you.
+
+{{#include ../footer.md}}

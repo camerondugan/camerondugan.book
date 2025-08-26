@@ -2,6 +2,8 @@
 pub_date: Mon, 04 Aug 2025 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Gleaderboard
 
 Over this past weekend I created an online real time multiplayer "leader-board" over ssh in gleam.
@@ -40,3 +42,5 @@ You can also check out the code on github.
 Known limitations:
 
 My implementation of the server state updates synchronously because actors are designed that way.
+
+{{#include ../footer.md}}

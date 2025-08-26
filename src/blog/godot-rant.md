@@ -2,6 +2,8 @@
 pub_date: Tue, 16 Aug 2022 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # My Development Experience With Godot 3 in VR
 
 My Recent Development Shenanigans
@@ -29,3 +31,5 @@ I'm currently working on converting my game from VR back into a normal flat scre
 1. Setting up all of the Android SDK requirements is too tedious.
 
    > Every time I reset my computer, or try to develop on a different one, I needed to setup the Android SDK to interface with the Oculus Quest. The SDK works, but setting it up with all of the required tools can be slow and confusing. I'm glad for now I'm saying goodbye Android SDK.
+
+{{#include ../footer.md}}

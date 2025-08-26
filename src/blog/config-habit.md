@@ -2,6 +2,8 @@
 pub_date: Tue, 23 Apr 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Baking Configs
 
 I can't stop changing my configs (help me)
@@ -64,3 +66,5 @@ sure my configurations do what I expect. My workflow is more about editing my
 one [NixOS](https://nixos.org/) repo to configure my configs. It's nifty when
 editing configs that are more complex than helpful because [NixOS](https://nixos.org)
 has a lot of great defaults you can toggle.
+
+{{#include ../footer.md}}

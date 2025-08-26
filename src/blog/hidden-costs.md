@@ -2,6 +2,8 @@
 pub_date: Fri, 21 May 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Hidden Costs
 
 Examples and Generalizations of How Systems Disguise Their Motives.
@@ -15,3 +17,5 @@ That last point extends past software or a single industry. Every industry has a
 Each industry has its dirty secrets. These secrets can either be critical to business or a big enough PR disaster to heavily cripple that business. Hopefully most of these secrets are nothing to worry about. To protect future business and the better interest in future human civilization, I herby heavily promote whistle-blowing in areas where secrets are worse-off being kept rather than freed. This doesn't mean that people should throw company or government secrets into the public spotlight just to spite their bureaucratic overlords. Instead only when information that is exposed directly and continually benefits humanity as a whole while dealing minimal damage to the organization in question.
 
 Those have been my thoughts for today. Went off on a tangent, but hopefully it was still interesting.
+
+{{#include ../footer.md}}

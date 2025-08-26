@@ -5,6 +5,8 @@ src = "src"
 title = "CameronDugan.com"
 description = "A Personal Website by Cameron Dugan"
 
+[preprocessor.reading-time]
+words-per-minute = 180
 [preprocessor.external-links]
 after = ["rss"]
 renderers = ["html"]
@@ -15,7 +17,7 @@ files-glob = "*/*.md" # blog/*.md or projects/*.md
 url-base = "https://camerondugan.com/"
 
 [build]
-create-missing = false
+create-missing = false # my editor can create the file from md ref
 
 [output.linkcheck]
 

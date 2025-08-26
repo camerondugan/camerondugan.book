@@ -2,6 +2,8 @@
 pub_date: Mon, 20 Dec 2021 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Linux Scripting
 
 Removing Repetitive Tasks
@@ -38,3 +40,5 @@ Aliases are great, but automatically running scripts don't have to be typed on a
 Install a package from your package manager called cronie or cron. If you can't find one of those, look up what your distribution uses, and install that. Next is to make cron run at startup through systemd. The command is `systemctl enable --now cronie` (or crond).
 
 Now that crond is setup, running `crontab -e` will open a text editor that will allow you to add scripts that run automatically.
+
+{{#include ../footer.md}}

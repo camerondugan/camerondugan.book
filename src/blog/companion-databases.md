@@ -2,6 +2,8 @@
 pub_date: Tue, 01 Feb 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Companion Databases
 
 Hyper Personalized Databases for Everyday People.
@@ -45,3 +47,5 @@ Ideally the system would work great with folder syncing software like SyncThing 
 I know I'm probably over-hyping the system, but I think it's relatively novel and incredibly flexible. (just realized you could keep track of things in fridge and set an expire date etc). If plain-text companion databases don't already exist, I want to make this happen.
 
 If they do exist in a similar way to what I'm describing, please contact me, I'd love to know.
+
+{{#include ../footer.md}}

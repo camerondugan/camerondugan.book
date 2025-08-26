@@ -2,6 +2,8 @@
 pub_date: Mon, 16 Aug 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Weekly Programming - Week 1
 
 Programming Art Generators
@@ -29,3 +31,5 @@ Scoring will be entirely done on the honor system. Feel free to include your cur
 Example: My current score is 1.
 
 Take your time, I'm excited to see what we can do!
+
+{{#include ../footer.md}}

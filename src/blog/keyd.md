@@ -2,6 +2,8 @@
 pub_date: Sun, 20 Oct 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Keyd is Awesome!
 
 Why keyd will change the way you think about your keyboard.
@@ -78,3 +80,5 @@ I should also mention there is experimental custom application keybind support.
 Thanks to keyd, my laptop keyboard is easier to use with vim and
 behaves closer to my qmk keyboards. I could even setup [home row
 mods](https://mattgemmell.scot/home-row-mods/) if I go down that road.
+
+{{#include ../footer.md}}

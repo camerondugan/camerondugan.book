@@ -2,6 +2,8 @@
 pub_date: Sun, 23 Jun 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Using AI for learning to code better
 
 More updates on my neovim journey
@@ -62,3 +64,5 @@ think about your use of technology and to have you double-check that your use
 is beneficial or if it's more out of habit, or it could be the easy way out. My
 hope is that you keep on thinking, and that your machines keep doing the menial
 work. As for me, I think I'll stay behind the wheel of my own destiny.
+
+{{#include ../footer.md}}

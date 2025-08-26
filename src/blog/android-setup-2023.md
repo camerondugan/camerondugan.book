@@ -2,6 +2,8 @@
 pub_date: Thu, 15 Dec 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # My 2023 Android Setup
 
 What I'm Using on My Phone This Upcoming Year
@@ -30,3 +32,5 @@ Postbox pro can be found on the PlayStore [here](https://play.google.com/store/a
 ## Conclusion
 
 I have no monetary incentive to share these specific applications. I'm sharing them because I think that they can be helpful to anyone. If you found any of this helpful, feel free to reach out to me on Mastodon or by email, would love to hear from you. If there's software that you think I should have talked about, feel free to send me a message. Have a great day!
+
+{{#include ../footer.md}}

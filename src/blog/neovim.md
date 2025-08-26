@@ -2,6 +2,8 @@
 pub_date: Sun, 03 Mar 2024 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Simple-Nvim-Config
 
 More updates on my neovim journey
@@ -97,3 +99,5 @@ the languages that I use, including Markdown. (Which is what I use to write this
 
 Hope that you learned something? Not sure, I'll try to cover more issues/fixes
 that I have. I'm sure that I'll have some.
+
+{{#include ../footer.md}}

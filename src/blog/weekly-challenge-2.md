@@ -2,6 +2,8 @@
 pub_date: Mon, 23 Aug 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Weekly Programming - Week 2
 
 Programming a Game Player
@@ -41,3 +43,5 @@ Take your time, I'm excited to see what we can do!
 If you liked this also check out: [Last Week's Challenge](./weekly-challenge-1.md)
 and
 [My Result From Last Week](../projects/dream-bot.md)
+
+{{#include ../footer.md}}

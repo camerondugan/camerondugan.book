@@ -2,6 +2,8 @@
 pub_date: Mon, 07 Jun 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Dev Log 2
 
 A Devlog for My Unnamed Game.
@@ -23,3 +25,5 @@ Things to do tomorrow:
 
 1. Creatures move in different ways when player moves
 1. Start making some starting levels that will hopefully make it into the final game
+
+{{#include ../footer.md}}

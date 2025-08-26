@@ -2,6 +2,8 @@
 pub_date: Sat, 29 Jan 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Automatic Lightswitch
 
 Servo + Arduino + 3d Printer = Magic
@@ -32,3 +34,5 @@ This is the plan in my head:
 ![picture](../assets/images/projects/switch.jpg)
 
 And there you have it, a working Arduino powerd lightswitch that people can also interact with.
+
+{{#include ../footer.md}}

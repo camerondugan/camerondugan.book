@@ -2,6 +2,8 @@
 pub_date: Sat, 01 Jan 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Happy New Year
 
 Software I Use and Will Use More
@@ -35,3 +37,5 @@ To start of the new year, I want to review the software I'm using this year, and
 : I've known the Tor Browser has existed for a while now, but only recently I found out that bridges exist, and can easily be requested from the tor settings tab. Bridges can and often do speed up tor by quite a bit. I always assumed that Tor was just super slow. I will be using Tor a whole lot more with what I'm experiencing as about 4-10x the speed without bridges.
 
 Thanks for reading, let's have a great 2022!
+
+{{#include ../footer.md}}

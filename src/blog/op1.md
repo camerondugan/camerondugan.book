@@ -2,6 +2,8 @@
 pub_date: Mon, 28 Feb 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # The OP-1 Synth
 
 A Hardware Digital Audio Workstation
@@ -24,3 +26,5 @@ It manages to be understandable with very few instructions through conventional 
 That's about all I have to say, I've been enjoying using it for making short songs and unique sounds.
 
 Hope you found it as interesting as I did.
+
+{{#include ../footer.md}}

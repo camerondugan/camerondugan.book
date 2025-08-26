@@ -2,6 +2,8 @@
 pub_date: Sat, 12 Feb 2022 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # I've Found It
 
 Something Incredibly Close to a Personal Database
@@ -25,3 +27,5 @@ Another note: if you happen to like using vim, don't worry, it's got a good enou
 Now I don't have to complete my project where I probably would have spent a good week or so figuring out how to use gtk to make my own version of this.
 
 See ya!
+
+{{#include ../footer.md}}

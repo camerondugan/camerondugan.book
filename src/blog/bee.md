@@ -2,6 +2,8 @@
 pub_date: Thu, 12 Aug 2021 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Bee Movie
 
 Bee
@@ -50,3 +52,5 @@ t Honex, we're bee.
   nevery funny. If you wants to that ever see? Folds ourjob every small the law number seven,
   lint where. More honey,
   bees, ho
+
+{{#include ../footer.md}}

@@ -2,6 +2,8 @@
 pub_date: Thu, 28 Apr 2022 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Wave Function Collapse
 
 Programming Something That Already Exists Without Knowing it Exists
@@ -31,3 +33,5 @@ Here's the links to the videos that reminded me of it:
 
 [Youtube Video #1](https://www.youtube.com/watch?v=2SuvO4Gi7uY)
 [Youtube Video #2](https://www.youtube.com/watch?v=20KHNA9jTsE)
+
+{{#include ../footer.md}}

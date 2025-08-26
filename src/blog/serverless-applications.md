@@ -2,6 +2,8 @@
 pub_date: Sat, 11 Mar 2023 00:00:00 -0500
 ---
 
+{{#include ../header.md}}
+
 # Serverless Applications
 
 Using Cloudflare for Applications
@@ -23,3 +25,5 @@ The next thing I'll be doing is attempting a high-score system for my succulent 
 With success there I'll probably attempt a much bigger project involving this cheap online storage hosting method.
 
 I hope this was interesting, have a great week!
+
+{{#include ../footer.md}}

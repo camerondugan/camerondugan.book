@@ -2,6 +2,8 @@
 pub_date: Tue, 29 Mar 2022 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Why People Don't Code
 
 Thoughts and Updates
@@ -27,3 +29,5 @@ Students could code like they're still using a calculator to gain no benefit and
 Being able to better work with our machine friends is going to be a key part of our future, and learning to speak some of their language is a great start.
 
 And that's what's been on my mind recently, thanks for reading! I'll post more stuff soon (probably about that AI I'm working on).
+
+{{#include ../footer.md}}

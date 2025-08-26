@@ -2,6 +2,8 @@
 pub_date: Tue, 15 Jul 2025 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Savage Worlds
 
 Have you ever played D&D? No?
@@ -40,3 +42,5 @@ You can now play Savage Worlds, you are welcome :)
 
 Other rules offer ways to simplify/complicate the game, its up to you to choose how/when
 to apply these extra rules to make the game more fun.
+
+{{#include ../footer.md}}

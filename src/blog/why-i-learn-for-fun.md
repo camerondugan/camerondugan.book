@@ -2,6 +2,8 @@
 pub_date: Mon, 29 Apr 2024 00:00:00 -0400
 ---
 
+{{#include ../header.md}}
+
 # Why I learn for fun :)
 
 Learning is hard. Anyone who tells you otherwise is lying. This post is more of
@@ -40,3 +42,5 @@ Like everything, this too needs a balance. Some things are better not learned,
 some partially learned, and others fully learned. The important thing is to
 learn to know the difference. More of the time a broader picture is better, not
 deeper.
+
+{{#include ../footer.md}}
