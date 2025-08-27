@@ -1,47 +1,71 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light sidebar-visible" dir="ltr">
+<html lang="{{ language }}" class="{{ default_theme }} sidebar-visible" dir="{{ text_direction }}">
     <head>
         <meta name="fediverse:creator" content="@TheCam@fosstodon.org">
         <meta property="og:image" content="https://camerondugan.com/assets/images/dream-bot/dream1.png"
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Tiny Chess Engine - CameronDugan.com</title>
+        <title>{{ title }}</title>
+        {{#if is_print }}
+        <meta name="robots" content="noindex">
+        {{/if}}
+        {{#if base_url}}
+        <base href="{{ base_url }}">
+        {{/if}}
 
 
         <!-- Custom HTML head -->
+        {{> head}}
 
-        <meta name="description" content="A Personal Website by Cameron Dugan">
+        <meta name="description" content="{{ description }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../favicon.svg">
-        <link rel="shortcut icon" href="../favicon.png">
-        <link rel="stylesheet" href="../css/variables.css">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/chrome.css">
-        <link rel="stylesheet" href="../css/print.css" media="print">
+        {{#if favicon_svg}}
+        <link rel="icon" href="{{ resource "favicon.svg" }}">
+        {{/if}}
+        {{#if favicon_png}}
+        <link rel="shortcut icon" href="{{ resource "favicon.png" }}">
+        {{/if}}
+        <link rel="stylesheet" href="{{ resource "css/variables.css" }}">
+        <link rel="stylesheet" href="{{ resource "css/general.css" }}">
+        <link rel="stylesheet" href="{{ resource "css/chrome.css" }}">
+        {{#if print_enable}}
+        <link rel="stylesheet" href="{{ resource "css/print.css" }}" media="print">
+        {{/if}}
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="../fonts/fonts.css">
+        <link rel="stylesheet" href="{{ resource "FontAwesome/css/font-awesome.css" }}">
+        {{#if copy_fonts}}
+        <link rel="stylesheet" href="{{ resource "fonts/fonts.css" }}">
+        {{/if}}
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="{{ resource "highlight.css" }}">
+        <link rel="stylesheet" id="tomorrow-night-css" href="{{ resource "tomorrow-night.css" }}">
+        <link rel="stylesheet" id="ayu-highlight-css" href="{{ resource "ayu-highlight.css" }}">
 
         <!-- Custom theme stylesheets -->
+        {{#each additional_css}}
+        <link rel="stylesheet" href="{{ resource this }}">
+        {{/each}}
 
+        {{#if mathjax_support}}
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        {{/if}}
 
         <!-- Provide site root and default themes to javascript -->
         <script>
-            const path_to_root = "../";
-            const default_light_theme = "light";
-            const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex.js";
+            const path_to_root = "{{ path_to_root }}";
+            const default_light_theme = "{{ default_theme }}";
+            const default_dark_theme = "{{ preferred_dark_theme }}";
+        {{#if search_js}}
+            window.path_to_searchindex_js = "{{ resource "searchindex.js" }}";
+        {{/if}}
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc.js"></script>
+        <script src="{{ resource "toc.js" }}"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -49,7 +73,9 @@
             <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
             <div>
                 <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                {{#if search_enabled}}
                 <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                {{/if}}
                 <p>Press <kbd>?</kbd> to show this help</p>
                 <p>Press <kbd>Esc</kbd> to hide this help</p>
             </div>
@@ -79,7 +105,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
-            html.classList.remove('light')
+            html.classList.remove('{{ default_theme }}')
             html.classList.add(theme);
             html.classList.add("js");
         </script>
@@ -108,7 +134,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="{{ path_to_root }}toc.html"></iframe>
             </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -118,6 +144,7 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
+                {{> header}}
                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
@@ -135,24 +162,36 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
+                        {{#if search_enabled}}
                         <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
+                        {{/if}}
                     </div>
 
-                    <h1 class="menu-title">CameronDugan.com</h1>
+                    <h1 class="menu-title">{{ book_title }}</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                        {{#if print_enable}}
+                        <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        <a href="https://github.com/camerondugan/camerondugan.book" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
+                        {{/if}}
+                        {{#if git_repository_url}}
+                        <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa {{git_repository_icon}}"></i>
                         </a>
+                        {{/if}}
+                        {{#if git_repository_edit_url}}
+                        <a href="{{git_repository_edit_url}}" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                        {{/if}}
 
                     </div>
                 </div>
 
+                {{#if search_enabled}}
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
@@ -168,6 +207,7 @@
                         </ul>
                     </div>
                 </div>
+                {{/if}}
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
@@ -180,36 +220,22 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>Stats -&gt; In 2 minutes you can read this article with 400 words</p>
-<h1 id="a-tiny-chess-engine"><a class="header" href="#a-tiny-chess-engine">A Tiny Chess Engine</a></h1>
-<p>A Delightfully Strong Nemises</p>
-<p>I’m planning on participating in <a href="https://www.youtube.com/@SebastianLague" title="" target="_blank">SebLague’s</a> <a href="https://github.com/SebLague/Chess-Challenge" title="" target="_blank">Chess-Challenge (C#)</a></p>
-<p>I’ve been writing a chess engine for this challenge for the past few days, and I’m pretty happy with what I’ve been able to do.</p>
-<p>Gif Missing :(</p>
-<p>What I’m doing:</p>
-<p>I’ve written a recursive min-max algorithm including alpha-beta pruning and board value caching.</p>
-<p>I search all possible moves, ignoring moves that opponents/I will never take. Anytime I calculate a board value, I store that value for future use.</p>
-<p>I’m using Sebastian Lague’s Board C# object to grab bitboards of the current position for each type of piece and color. I use this information to quickly evaluate the board state and get a “value” which we can look for with our min-max search.</p>
-<p>I also have some code that mitigates losses from time-outs. Ideally, we wouldn’t run out of time, but if we start to run low, I start to make my chess bot make very quick judgements only about 2 layers deep.</p>
-<p>There was a bug that I had with the caching where 3-fold repetitions became super common because I was using cached values of board states. When I returned: to a previous position in the search, it would show the old non-draw state instead of the new one, causing my algorithm to think that it could move there without a draw, which would cause a sad sudden drop in advantage, costing some games.</p>
-<p>I should probably mention that there are very fast ways for counting 256 bit longs, which I am using. It’s from a stack overflow post I’ve lost track of, can’t seem to find it, but it mentioned hamming weights and fast ways to calculate them. <a href="https://en.wikipedia.org/wiki/Hamming_weight" title="" target="_blank">More Info About Hamming Weights</a>. This greatly reduces the number of steps in some of the most performance critical sections of my code.</p>
-<p>If you want to take a look at my code: <a href="https://gitlab.com/cameron.dugan/chess-challenge/-/blob/main/Chess-Challenge/src/My%20Bot/MyBot.cs?ref_type=heads" title="" target="_blank">MyBot.cs</a></p>
-<p>Have a great rest of your day, thanks for being curious.</p>
-<hr />
-<p><a href="https://camerondugan.com/rss.xml" title="" target="_blank">Subscribe for updates via rss</a> or
-<a href="mailto:blog@camerondugan.com">Send me an email</a></p>
-
+                        {{{ content }}}
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../projects/my-old-keyboard-is-basically-cheating.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        {{#previous}}
+                            <a rel="prev" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
+                        {{/previous}}
 
-                            <a rel="next prefetch" href="../projects/vr-game.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        {{#next}}
+                            <a rel="next prefetch" href="{{ path_to_root }}{{link}}" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
+                        {{/next}}
 
                         <div style="clear: both"></div>
                     </nav>
@@ -217,36 +243,126 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../projects/my-old-keyboard-is-basically-cheating.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                {{#previous}}
+                    <a rel="prev" href="{{ path_to_root }}{{link}}" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
+                {{/previous}}
 
-                    <a rel="next prefetch" href="../projects/vr-game.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                {{#next}}
+                    <a rel="next prefetch" href="{{ path_to_root }}{{link}}" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
+                {{/next}}
             </nav>
 
         </div>
 
+        {{#if live_reload_endpoint}}
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "{{{live_reload_endpoint}}}";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
 
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        {{/if}}
 
+        {{#if google_analytics}}
+        <!-- Google Analytics Tag -->
+        <script>
+            const localAddrs = ["localhost", "127.0.0.1", ""];
 
+            // make sure we don't activate google analytics if the developer is
+            // inspecting the book locally...
+            if (localAddrs.indexOf(document.location.hostname) === -1) {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', '{{google_analytics}}', 'auto');
+                ga('send', 'pageview');
+            }
+        </script>
+        {{/if}}
+
+        {{#if playground_line_numbers}}
+        <script>
+            window.playground_line_numbers = true;
+        </script>
+        {{/if}}
+
+        {{#if playground_copyable}}
         <script>
             window.playground_copyable = true;
         </script>
+        {{/if}}
 
+        {{#if playground_js}}
+        <script src="{{ resource "ace.js" }}"></script>
+        <script src="{{ resource "mode-rust.js" }}"></script>
+        <script src="{{ resource "editor.js" }}"></script>
+        <script src="{{ resource "theme-dawn.js" }}"></script>
+        <script src="{{ resource "theme-tomorrow_night.js" }}"></script>
+        {{/if}}
 
-        <script src="../elasticlunr.min.js"></script>
-        <script src="../mark.min.js"></script>
-        <script src="../searcher.js"></script>
+        {{#if search_js}}
+        <script src="{{ resource "elasticlunr.min.js" }}"></script>
+        <script src="{{ resource "mark.min.js" }}"></script>
+        <script src="{{ resource "searcher.js" }}"></script>
+        {{/if}}
 
-        <script src="../clipboard.min.js"></script>
-        <script src="../highlight.js"></script>
-        <script src="../book.js"></script>
+        <script src="{{ resource "clipboard.min.js" }}"></script>
+        <script src="{{ resource "highlight.js" }}"></script>
+        <script src="{{ resource "book.js" }}"></script>
 
         <!-- Custom JS scripts -->
+        {{#each additional_js}}
+        <script src="{{ resource this}}"></script>
+        {{/each}}
 
+        {{#if is_print}}
+        {{#if mathjax_support}}
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+        {{else}}
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        {{/if}}
+        {{/if}}
 
+        {{#if fragment_map}}
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const fragmentMap =
+                    {{{fragment_map}}}
+                ;
+                const target = fragmentMap[window.location.hash];
+                if (target) {
+                    let url = new URL(target, window.location.href);
+                    window.location.replace(url.href);
+                }
+            });
+        </script>
+        {{/if}}
 
     </div>
     </body>
