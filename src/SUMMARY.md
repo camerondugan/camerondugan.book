@@ -1,5 +1,6 @@
 # Summary
 
+- [Getting Started](getting-started.md)
 - [Contact Me](contact.md)
 
 ------------------------------------ 
@@ -63,7 +64,7 @@
     - [I've Found It](blog/i-found-it.md)
     - [Companion Databases](blog/companion-databases.md)
     - [End Of Thinking](blog/end-of-thinking.md)
-    - [Qr Codes](blog/qrcodes.md)
+    - [QR Codes](blog/qrcodes.md)
     - [Pine Phone](blog/pine-phone.md)
     - [Quantum Internet](blog/quantum-internet.md)
     - [Podcasts](blog/podcasts.md)
