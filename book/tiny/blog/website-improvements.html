@@ -1,0 +1,65 @@
+<!doctype html>
+<head><title>Website Improvements - CameronDugan.com</title><meta name="title" content="CameronDugan.com"><meta name="description" content="A Personal Website by Cameron Dugan"><link rel="stylesheet" href="../css/pico.classless.jade.min.css"></head><body><header><a href="../index.html">Home</a>~<a href="../blog.html">Blog</a></header><main><h1>CameronDugan.com</h1><p>Stats -&gt; In 2 minutes you can read this article with 405 words</p>
+<h1>My Website Is Improving!</h1>
+<p>Working with Liquid HTML</p>
+<p>You might have noticed that posts now has a few extra little widgets and layout enhancements, and that's because you're right!</p>
+<p>I've been working on improving the styling and layout for a little bit now, and I'm glad to be able to show them off.</p>
+<ul>
+<li>
+<p>Because liquid html doesn't naturally have random number generators, I've created some code that very strongly mimics random. (Although reading the code it doesn't look like it should be random). It must be a bug in the generator, maybe it's pulling variables in the wrong order and getting modulo of null? Not sure, I'm just glad that it works.</p>
+</li>
+<li>
+<p>I've also changed the color scheme to work for both dark and light themes, (I had a bug with my navbar on light mode).</p>
+</li>
+<li>
+<p>The home page is no longer a blerb about myself, but a hub to recent posts</p>
+</li>
+<li>
+<p>Posts have links to other related posts! Adapted from <a href="https://www.mishacreatrix.com/jekyll-related-posts">mishacreatix.com</a>.</p>
+<ul>
+<li>The following liquid html gets posts from the blog, and returns only unique links to blog posts sorted first by common tags, then by date</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-liquid">{% raw %}
+&lt;h2&gt;🪧 Enjoy Reading This?&lt;/h2&gt;
+&lt;p&gt;Here are some more you might like to read next:&lt;/p&gt;
+
+{% assign maxRelated = 5 %}
+{% assign maxCommonTags = 20 %}
+{% assign seenPostsString = "" %}
+{% assign maxRelatedCounter = 0 %}
+{% for thisCommonTag in (0..maxCommonTags) %}
+	{% for post in site.posts %}
+    	{% assign sameTagCount = 0 %}
+    	{% assign commonTags = '' %}
+		{% for tag in post.tags %}
+			{% if post.url != page.url %}
+            	{% if page.tags contains tag %}
+            		{% assign sameTagCount = sameTagCount | plus: 1 %}
+            	{% endif %}
+        	{% endif %}
+		{% endfor %}
+		{% assign thisCommonTagLimit = maxCommonTags | minus: thisCommonTag %}
+		{% if seenPosts contains post.url %}
+		{% else %}
+    		{% if sameTagCount &gt;= thisCommonTagLimit and post.url != page.url %}
+        		{% if maxRelatedCounter &gt;= maxRelated %}
+            		{% break %}
+        		{% endif %}
+				&lt;li&gt;&lt;p&gt;&lt;a href="{{ site.baseurl }}{{ post.url }}"&gt;{{ post.title }}&lt;/a&gt; - 📅 {% assign d = post.date | date: "%d" | plus:'0' %}{{ post.date | date: "%b" }} {% case d %}{% when 1 or 21 or 31 %}{{ d }}st{% when 2 or 22 %}{{ d }}nd{% when 3 or 23 %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ post.date | date: "%Y" }}
+        		{% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+				{% assign seenPostsString = seenPostsString | append: ',' | append: post.url %}
+				{% assign seenPosts = seenPostsString | removeFirst: ',' | split: ',' %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+&lt;/ul&gt;
+{% endraw %}
+</code></pre>
+<p>I knew how to do none of this a month ago, but now I can edit my website to statically generate a ton of stuff.</p>
+<hr />
+<p><a href="https://camerondugan.com/rss.xml">Subscribe for updates via rss</a> or
+<a href="mailto:blog@camerondugan.com">Send me an email</a></p>
+</main><footer><a href="../index.html">Home</a> ~ <a href="../blog.html">Blog</a></footer></body></html>

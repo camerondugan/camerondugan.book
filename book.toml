@@ -7,13 +7,14 @@ description = "A Personal Website by Cameron Dugan"
 
 [preprocessor.reading-time]
 words-per-minute = 180
+renderers = ["html", "tiny"]
 
 [preprocessor.external-links]
 after = ["rss"]
 renderers = ["html"]
 
 [preprocessor.rss]
-renderers = ["html"]
+renderers = ["html", "tiny"]
 files-glob = "*/*.md" # blog/*.md or projects/*.md
 url-base = "https://camerondugan.com/"
 
@@ -30,3 +31,5 @@ git-repository-url = "https://github.com/camerondugan/camerondugan.book"
 # edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main/{path}"
 
 [output.html.redirect]
+
+[output.tiny]

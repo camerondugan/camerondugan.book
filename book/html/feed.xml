@@ -578,7 +578,7 @@
 <h2 id=''></h2>
 
 <p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
-]]></content:encoded></item><item><title>Keyd</title><link>https://camerondugan.com/blog/keyd.html</link><author>Cameron Dugan</author><pubDate>Sun, 20 Oct 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 364 words</p>
+]]></content:encoded></item><item><title>Keyd</title><link>https://camerondugan.com/blog/keyd.html</link><author>Cameron Dugan</author><pubDate>Sun, 20 Oct 2024 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 2 minutes you can read this article with 363 words</p>
 
 <h1 id='keyd_is_awesome!'>Keyd is Awesome!</h1>
 
@@ -586,7 +586,7 @@
 
 <p>Keyd is a daemon written by <a href='https://github.com/rvaiya'>rvaiya</a> that lets you customize how your Linux computer listens to your keyboard. It gives normal keyboards plugged into your computer only qmk or custom firmware keyboards get.</p>
 
-<p>I have a qmk keyboard, which was mentioned in this post: [My old keyboard isbasically cheating](https://camerondugan.com/blog/my-old-keyboard-is-basically-cheating)</p>
+<p>I have a qmk keyboard, which was mentioned in this post: [My old keyboard is basically cheating](../projects/my-old-keyboard-is-basically-cheating.md)</p>
 
 <p>This is what a non-Nix, normal keyd config looks like.</p>
 

@@ -1,0 +1,47 @@
+<!doctype html>
+<head><title>Devenv - CameronDugan.com</title><meta name="title" content="CameronDugan.com"><meta name="description" content="A Personal Website by Cameron Dugan"><link rel="stylesheet" href="../css/pico.classless.jade.min.css"></head><body><header><a href="../index.html">Home</a>~<a href="../blog.html">Blog</a></header><main><h1>CameronDugan.com</h1><p>Stats -&gt; In 1 minute you can read this article with 336 words</p>
+<h1>Devenv is Awesome!</h1>
+<p>Why devenv will change the way you think about developing software.</p>
+<p>I'm finding that I'm using <a href="https://devenv.sh">devenv</a> far more often in my
+projects, including my blog!</p>
+<p>Devenv allows me to reliably build my projects across my Linux computers. I get
+to declare which command line tools the project expects. Once I've setup devenv,
+all my tools are in one spot. I don't have to have everything for every project
+installed on my computers, I need to have <a href="https://nixos.org">nix</a> and devenv.</p>
+<h2>Devenv is nix</h2>
+<p>If you are familiar with shell.nix, then you will be familiar with devenv.
+Devenv uses nix to create declarative shells, but with the bonus of hiding the
+complexity of nix flakes. Devenv uses nix flakes as a back-end, and if you run a
+Linux system that isn't nix with flakes, you could greatly enjoy reproducible
+developer environments, specifically if you come back to projects years later.</p>
+<h2>Direnv is magic</h2>
+<p>Devenv is integrated with <a href="https://direnv.net/">direnv</a>, which can
+automatically activate your devenv when you enter your project folder.
+In short, <code>cd project_folder</code> and having all of the project specific tools
+there is awesome.</p>
+<h2>Jekyll Example</h2>
+<pre><code class="language-nix">{ pkgs, lib, config, inputs, ... }:
+{
+  # https://devenv.sh/packages/
+  packages = with pkgs; [
+    git
+    optipng
+    jpegoptim
+  ];
+  # https://devenv.sh/languages/
+  languages.ruby.enable = true;
+  languages.ruby.version = "3.2";
+}
+</code></pre>
+<p>The above example defines the environment I use for this blog. I use Jekyll
+which runs on ruby. I need ruby version 3.2 or greater, 3.1 doesn't work
+anymore. And switching between theses is as easy as changing 3.2 to 3.1 and
+reloading the env.</p>
+<h2>Getting started</h2>
+<p>If you found this interesting, you can find everything I used to get started at
+<a href="https://devenv.sh/getting-started">devenv.sh/getting-started</a>. There's more to
+devenv than just getting software, but I'll leave that for another day.</p>
+<hr />
+<p><a href="https://camerondugan.com/rss.xml">Subscribe for updates via rss</a> or
+<a href="mailto:blog@camerondugan.com">Send me an email</a></p>
+</main><footer><a href="../index.html">Home</a> ~ <a href="../blog.html">Blog</a></footer></body></html>

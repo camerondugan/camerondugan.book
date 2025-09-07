@@ -12,8 +12,8 @@ Keyd is a daemon written by [rvaiya](https://github.com/rvaiya) that lets you
 customize how your Linux computer listens to your keyboard. It gives normal
 keyboards plugged into your computer only qmk or custom firmware keyboards get.
 
-I have a qmk keyboard, which was mentioned in this post: [My old keyboard isbasically
-cheating](https://camerondugan.com/blog/my-old-keyboard-is-basically-cheating)
+I have a qmk keyboard, which was mentioned in this post: [My old keyboard is basically
+cheating](../projects/my-old-keyboard-is-basically-cheating.md)
 
 This is what a non-Nix, normal keyd config looks like.
 

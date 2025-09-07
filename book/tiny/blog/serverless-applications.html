@@ -1,0 +1,17 @@
+<!doctype html>
+<head><title>Serverless Applications - CameronDugan.com</title><meta name="title" content="CameronDugan.com"><meta name="description" content="A Personal Website by Cameron Dugan"><link rel="stylesheet" href="../css/pico.classless.jade.min.css"></head><body><header><a href="../index.html">Home</a>~<a href="../blog.html">Blog</a></header><main><h1>CameronDugan.com</h1><p>Stats -&gt; In 1 minute you can read this article with 253 words</p>
+<h1>Serverless Applications</h1>
+<p>Using Cloudflare for Applications</p>
+<p>I've been looking into CloudFlare's other options, currently I'm using it for my DNS and this website's hosting, but I've been thinking about doing more.</p>
+<p>I've realized that it's entirely possible to cheaply host something they call durable objects and program them to be used in replacement of a vps.</p>
+<h2>Potential Upsides</h2>
+<p>My plan involves using durable objects to host data for an online multiplayer game. I don't know how far I will get, but at least I can use this to super cheaply host and update high-scores. My understanding right now is that durable objects are variants of cloudflare workers that guarantees only one is running and changing data. Traditional workers exist in multiple places and would cause problems when trying to keep everything in sync between two players.</p>
+<h2>Potential Downsides</h2>
+<p>The costs can stack up, so I need to be smart about how many durable objects I make and how many times I update the data in storage.</p>
+<p>The next thing I'll be doing is attempting a high-score system for my succulent game, as well as addressing some bugs in that game.</p>
+<p>With success there I'll probably attempt a much bigger project involving this cheap online storage hosting method.</p>
+<p>I hope this was interesting, have a great week!</p>
+<hr />
+<p><a href="https://camerondugan.com/rss.xml">Subscribe for updates via rss</a> or
+<a href="mailto:blog@camerondugan.com">Send me an email</a></p>
+</main><footer><a href="../index.html">Home</a> ~ <a href="../blog.html">Blog</a></footer></body></html>
