@@ -12,7 +12,6 @@
   # https://devenv.sh/packages/
   packages = with pkgs; [
     git
-    pre-commit
   ];
 
   # https://devenv.sh/languages/

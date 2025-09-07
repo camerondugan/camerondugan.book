@@ -26,7 +26,7 @@
 
 - [Blog](blog.md)
 
-  - [2025]()
+  - [2025](2025.md)
 
     - [Savage Worlds](blog/savage-worlds.md)
 
