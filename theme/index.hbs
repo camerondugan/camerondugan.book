@@ -46,9 +46,6 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="{{ resource "FontAwesome/css/font-awesome.css" }}">
-        {{#if copy_fonts}}
-        <link rel="stylesheet" href="{{ resource "fonts/fonts.css" }}">
-        {{/if}}
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" id="highlight-css" href="{{ resource "highlight.css" }}">
@@ -78,19 +75,6 @@
         <script src="{{ resource "toc.js" }}"></script>
     </head>
     <body>
-    <div id="mdbook-help-container">
-        <div id="mdbook-help-popup">
-            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
-            <div>
-                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
-                {{#if search_enabled}}
-                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
-                {{/if}}
-                <p>Press <kbd>?</kbd> to show this help</p>
-                <p>Press <kbd>Esc</kbd> to hide this help</p>
-            </div>
-        </div>
-    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -332,9 +316,9 @@
         <script src="{{ resource "searcher.js" }}"></script>
         {{/if}}
 
-        <script src="{{ resource "clipboard.min.js" }}"></script>
+        <script defer src="{{ resource "clipboard.min.js" }}"></script>
         <script src="{{ resource "highlight.js" }}"></script>
-        <script src="{{ resource "book.js" }}"></script>
+        <script defer src="{{ resource "book.js" }}"></script>
 
         <!-- Custom JS scripts -->
         {{#each additional_js}}

@@ -28,24 +28,5 @@
 
   # https://devenv.sh/tests/
 
-  # https://devenv.sh/git-hooks/
-  # https://devenv.sh/reference/options/#git-hooks
-  git-hooks.hooks = {
-    shellcheck.enable = true;
-    build-mdbook = {
-      name = "Build MDBook";
-      enable = true;
-      entry = "mdbook build";
-      pass_filenames = false;
-      files = "src/.*";
-      stages = [
-        "pre-commit"
-        "pre-merge-commit"
-        "pre-push"
-        "manual"
-      ];
-    };
-  };
-
   # See full reference at https://devenv.sh/reference/options/
 }

@@ -28,8 +28,16 @@ smart-punctuation = true
 preferred-dark-theme = "ayu"
 no-section-label = true
 git-repository-url = "https://github.com/camerondugan/camerondugan.book"
+git-repository-icon = "fa-code-fork"
 # edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main/{path}"
 
 [output.html.redirect]
 
 [output.tiny]
+# # relative to your src folder
+css-path = "css/pico.classless.min.css"
+nav-separator = " - "
+index = "getting-started.md"
+extra-nav.Blog = "blog.md"
+extra-nav.Projects = "projects.md"
+# extra-nav.Contact= "contact.md"

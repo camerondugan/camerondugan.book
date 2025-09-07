@@ -34,7 +34,6 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" id="highlight-css" href="highlight.css">
@@ -55,17 +54,6 @@
         <script src="toc.js"></script>
     </head>
     <body>
-    <div id="mdbook-help-container">
-        <div id="mdbook-help-popup">
-            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
-            <div>
-                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
-                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
-                <p>Press <kbd>?</kbd> to show this help</p>
-                <p>Press <kbd>Esc</kbd> to hide this help</p>
-            </div>
-        </div>
-    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -158,7 +146,7 @@
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/camerondugan/camerondugan.book" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
+                            <i id="git-repository-button" class="fa fa-code-fork"></i>
                         </a>
 
                     </div>
@@ -1957,9 +1945,9 @@ I had saved up a bunch of crypto that I had mined in my free time over the cours
         <script src="mark.min.js"></script>
         <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
+        <script defer src="clipboard.min.js"></script>
         <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script defer src="book.js"></script>
 
         <!-- Custom JS scripts -->
 
