@@ -7,6 +7,7 @@
     cargo install mdbook-external-links
     cargo install mdbook-linkcheck
     cargo install mdbook-reading-time
+    cargo install mdbook-tiny
   '';
 
   # https://devenv.sh/packages/
