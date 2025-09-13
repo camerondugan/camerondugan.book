@@ -35,7 +35,7 @@ git-repository-icon = "fa-code-fork"
 
 [output.tiny]
 # # relative to your src folder
-css-path = "css/pico.classless.min.css"
+css-paths = ["css/pico.classless.min.css", "css/custom.css"]
 nav-separator = " - "
 index = "getting-started.md"
 extra-nav.Blog = "blog.md"
