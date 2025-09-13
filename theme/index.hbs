@@ -46,6 +46,9 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="{{ resource "FontAwesome/css/font-awesome.css" }}">
+        {{#if copy_fonts}}
+        <link rel="stylesheet" href="{{ resource "fonts/fonts.css" }}">
+        {{/if}}
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" id="highlight-css" href="{{ resource "highlight.css" }}">
@@ -329,9 +332,9 @@
         <script src="{{ resource "searcher.js" }}"></script>
         {{/if}}
 
-        <script defer src="{{ resource "clipboard.min.js" }}"></script>
+        <script src="{{ resource "clipboard.min.js" }}"></script>
         <script src="{{ resource "highlight.js" }}"></script>
-        <script defer src="{{ resource "book.js" }}"></script>
+        <script src="{{ resource "book.js" }}"></script>
 
         <!-- Custom JS scripts -->
         {{#each additional_js}}

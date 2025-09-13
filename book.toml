@@ -11,7 +11,7 @@ renderers = ["html", "tiny"]
 
 [preprocessor.external-links]
 after = ["rss"]
-renderers = ["html"]
+renderers = ["html", "tiny"]
 
 [preprocessor.rss]
 renderers = ["html", "tiny"]
