@@ -16,15 +16,15 @@ I've tried using it on and off for a few months now.
 
 ## Here's the issues I've encountered:
 
-- Clicking down a key into the desk for chording is not good.
+- Clicking down a key towards the desk for chording does not feel good.
 - Your computer going to sleep or turning on/off too fast causes the keyboard to
 be completely unresponsive. The reboot bind doesn't fix this.  
-- Rubber rings breaking, so far 4. I come home and find that they have snapped
+- Rubber rings on keys break on their own -- so far 4. I come home and find that they have snapped
 to the floor.
 - Lack of layers. You get 3 layers. And in my brief testing, you can't move
-from layer 1 to 2 to 3. You just get stuck at 3.
+from layer 1 to 2 to 3. You just get stuck at 2. the layer three modifier(mod) was on layer 2
 - Lack of wrist ergonomics. It's like it was designed to have my wrists.
-in parallel, when in reality it would likely benefit from being turned inwards a tad.
+in parallel. In reality it would likely benefit from being turned inwards a tad.
   - Yes, you can separate them, but then character chording becomes difficult as it
   becomes more likely to slide.
   - Yes, you can purchase a rig to connect to the screws underneath, which I did,
@@ -32,9 +32,9 @@ in parallel, when in reality it would likely benefit from being turned inwards a
 - In line with the above point: it's already in a custom chassis, so why not make the
   two halves more vertical to better match what the human body wants?
   - I'm only harping on this, since there are plenty of videos of the CEO saying
-    its ergonomic. Which compared to standard, yes. Compared to ergo keyboards, eh.
-- You have to ask for the source code. But they might decide you can have it.
-  - I would have liked to work on the sleep issue or the lack of custom word ending modifiers,
+    its ergonomic. Which compared to standard keyboard, yes. Compared to any ergo keyboard, debatable.
+- You have to ask for the source code.  They decide if you can have it.
+  - I would have liked to work on the sleep issue or the lack of custom word ending mods,
 but as a rule, I don't contribute to closed source outside of work.
 - Chording with modifiers, backspace can randomly cause unexpected results
 - The library management software always tells you that that chord you entered will override a 
