@@ -6,21 +6,39 @@ in modal editing environments like helix, which I use almost exclusively.
 This is coming from the guy who spent countless hours experimenting with dvorak,
 customizing my QMK Firmware in C, and hand soldered my split corne keyboard.
 
-I've tried using it on and off for a few months now.
+I've tried using it on and off for a few months now, and I just wish it was a bit
+more polished.
 
-## Here's what I do like:
+## What I wish I understood more before my purchase
+
+- Rare words are the enemy of the CharaChorder
+- More combinations are hard to press than you might think
+  - You want most of your active fingers heading in the same or similar direction
+- It's a lot of memorization. You will have chords that don't map well for the reason
+above, in addition to anagram words like stop, post, no, on
+- You probably won't want to separate the halves because of the added
+ sliding that occurs when you chord. You generally are pressing the device sideways
+in some direction.
+
+## What I like
 
 - Chording feels great when I remember what and how to press
 - <https://adventure.charachorder.io> is a massive improvement over their last attempt with <https://www.iq-eq.io/#/>
 - Impulse chording makes adding words easy
+- The word modifiers -- things you press during a word to change the ending -- that are present
+work great, just with they had options for ly or tion.
+  - Currently, you can do er, ed, ing, s. All which work great.
+- Dynamic libraries make it possible to override chords for specific contexts
 
-## Here's the issues I've encountered:
+## Issues Encountered
 
+- It really does take a long time to pick up this device and use it effectively.
+  - You are learning a new layout, and afterwards relearning every single word you want to chord.
 - Clicking down a key towards the desk for chording does not feel good.
 - Your computer going to sleep or turning on/off too fast causes the keyboard to
 be completely unresponsive. The reboot bind doesn't fix this.  
-- Rubber rings on keys break on their own -- so far 4. I come home and find that they have snapped
-to the floor.
+- Rubber rings on keys break on their own --- so far 4. I usually find that they have snapped
+to the floor while I'm away.
 - Lack of layers. You get 3 layers. And in my brief testing, you can't move
 from layer 1 to 2 to 3. You just get stuck at 2. the layer three modifier(mod) was on layer 2
 - Lack of wrist ergonomics. It's like it was designed to have my wrists.
@@ -40,16 +58,17 @@ but as a rule, I don't contribute to closed source outside of work.
 - The library management software always tells you that that chord you entered will override a 
 chord, but often that chord is the one you are trying to add. 
 
-## Non Issues, just eh:
+## Non Issues
 
+- Chording, by nature is going to be hit or miss, compared to character by character
 - Discord communities are a non internet index-able forum, making searching for information
 a headache.
 - Have not found a good use for dynamic libraries
-- The "key caps" are 3d printed in two colors
+- The "key caps" are 3D printed in two colors
 - There is no usable "default" or suggested initial word library
 - The default layout is lacking in the following ways
   - Symbols are accessed with two modifiers
-  - Missing easy access to ({[]})
+  - Missing easy access to `({[]})`
   - Bottom thumb keys useless to me, which might explain why the premium version of this 
   device just didn't bother having them.
     - I set them to play/pause and other, "I'm not really using my keyboard right now" buttons.
@@ -57,4 +76,17 @@ a headache.
 
 ## Final thoughts 
 
-I'll keep posting about my experience with this rarely documented device.
+For coding at the moment, it feels out of place, since a lot of my workflows are
+built around rapid sequential single key commands. For example, `space f` finds
+files, `space /` finds words in those files, `space ?` finds shortcuts. There
+are a ton of highly combinatorial commands I run, here's what I mean. I use
+m for match, then s for surround, then any character, and my editor surrounds
+my selection with that character. `ma'` surrounds `this` like `'this'` when
+`this` was the thing I selected. There isn't a way that I'm aware of to easily
+setup chords for this kind of command with numbers of potential combination,
+especially if the varying character is in the middle of the sequence. In
+addition, since a lot of these sequences involve special characters, it becomes
+another layer of difficulty. I need to further explore making those common
+symbols even more accessible on the main layer.
+
+I'll keep posting about my experience with this device.
