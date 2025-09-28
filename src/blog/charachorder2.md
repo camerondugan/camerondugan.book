@@ -1,4 +1,10 @@
+---
+pub_date: Sat, 27 Sep 2025 00:00:00 -0400
+---
+
 # CharaChorder 2 (CC2)
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/tYLHPH9uBXU?si=yHCgm4MPBCXgtVOO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I am not typing this on the CC2, as I find it difficult to use. Especially
 in modal editing environments like helix, which I use almost exclusively.

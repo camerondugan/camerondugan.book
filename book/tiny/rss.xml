@@ -499,6 +499,137 @@
 <h2 id=''></h2>
 
 <p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
+]]></content:encoded></item><item><title>CharaChorder 2</title><link>https://camerondugan.com/blog/charachorder2.html</link><author>Cameron Dugan</author><pubDate>Sat, 27 Sep 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='charachorder_2_(cc2)'>CharaChorder 2 (CC2)</h1>
+
+<p>&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/tYLHPH9uBXU?si=yHCgm4MPBCXgtVOO&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;/iframe&gt;</p>
+
+<p>I am not typing this on the CC2, as I find it difficult to use. Especially in modal editing environments like helix, which I use almost exclusively.</p>
+
+<p>This is coming from the guy who spent countless hours experimenting with dvorak, customizing my QMK Firmware in C, and hand soldered my split corne keyboard.</p>
+
+<p>I&#8217;ve tried using it on and off for a few months now, and I just wish it was a bit more polished.</p>
+
+<h2 id='what_i_wish_i_understood_more_before_my_purchase'>What I wish I understood more before my purchase</h2>
+
+<ul>
+<li>Rare words are the enemy of the CharaChorder</li>
+
+<li>
+<p>More combinations are hard to press than you might think</p>
+
+<ul>
+<li>You want most of your active fingers heading in the same or similar direction</li>
+</ul>
+</li>
+
+<li>It&#8217;s a lot of memorization. You will have chords that don&#8217;t map well for the reason above, in addition to anagram words like stop, post, no, on</li>
+
+<li>You probably won&#8217;t want to separate the halves because of the added sliding that occurs when you chord. You generally are pressing the device sideways in some direction.</li>
+</ul>
+
+<h2 id='what_i_like'>What I like</h2>
+
+<ul>
+<li>Chording feels great when I remember what and how to press</li>
+
+<li>&lt;https://adventure.charachorder.io&gt; is a massive improvement over their last attempt with &lt;https://www.iq-eq.io/#/&gt;</li>
+
+<li>Impulse chording makes adding words easy</li>
+
+<li>
+<p>The word modifiers -- things you press during a word to change the ending -- that are present work great, just with they had options for ly or tion.</p>
+
+<ul>
+<li>Currently, you can do er, ed, ing, s. All which work great.</li>
+</ul>
+</li>
+
+<li>Dynamic libraries make it possible to override chords for specific contexts</li>
+</ul>
+
+<h2 id='issues_encountered'>Issues Encountered</h2>
+
+<ul>
+<li>
+<p>It really does take a long time to pick up this device and use it effectively.</p>
+
+<ul>
+<li>You are learning a new layout, and afterwards relearning every single word you want to chord.</li>
+</ul>
+</li>
+
+<li>Clicking down a key towards the desk for chording does not feel good.</li>
+
+<li>Your computer going to sleep or turning on/off too fast causes the keyboard to be completely unresponsive. The reboot bind doesn&#8217;t fix this.<br /></li>
+
+<li>Rubber rings on keys break on their own --- so far 4. I usually find that they have snapped to the floor while I&#8217;m away.</li>
+
+<li>Lack of layers. You get 3 layers. And in my brief testing, you can&#8217;t move from layer 1 to 2 to 3. You just get stuck at 2. the layer three modifier(mod) was on layer 2</li>
+
+<li>
+<p>Lack of wrist ergonomics. It&#8217;s like it was designed to have my wrists. in parallel. In reality it would likely benefit from being turned inwards a tad.</p>
+
+<ul>
+<li>Yes, you can separate them, but then character chording becomes difficult as it becomes more likely to slide.</li>
+
+<li>Yes, you can purchase a rig to connect to the screws underneath, which I did, but ideally the product would take ergonomics more seriously.</li>
+</ul>
+</li>
+
+<li>
+<p>In line with the above point: it&#8217;s already in a custom chassis, so why not make the two halves more vertical to better match what the human body wants?</p>
+
+<ul>
+<li>I&#8217;m only harping on this, since there are plenty of videos of the CEO saying its ergonomic. Which compared to standard keyboard, yes. Compared to any ergo keyboard, debatable.</li>
+</ul>
+</li>
+
+<li>
+<p>You have to ask for the source code.  They decide if you can have it.</p>
+
+<ul>
+<li>I would have liked to work on the sleep issue or the lack of custom word ending mods, but as a rule, I don&#8217;t contribute to closed source outside of work.</li>
+</ul>
+</li>
+
+<li>Chording with modifiers, backspace can randomly cause unexpected results</li>
+
+<li>The library management software always tells you that that chord you entered will override a chord, but often that chord is the one you are trying to add.</li>
+</ul>
+
+<h2 id='non_issues'>Non Issues</h2>
+
+<ul>
+<li>Chording, by nature is going to be hit or miss, compared to character by character</li>
+
+<li>Discord communities are a non internet index-able forum, making searching for information a headache.</li>
+
+<li>Have not found a good use for dynamic libraries</li>
+
+<li>The &quot;key caps&quot; are 3D printed in two colors</li>
+
+<li>There is no usable &quot;default&quot; or suggested initial word library</li>
+
+<li>
+<p>The default layout is lacking in the following ways</p>
+
+<ul>
+<li>Symbols are accessed with two modifiers</li>
+
+<li>Missing easy access to <code>({[]})</code></li>
+
+<li>Bottom thumb keys useless to me, which might explain why the premium version of this device just didn&#8217;t bother having them.</li>
+
+<li>I set them to play/pause and other, &quot;I&#8217;m not really using my keyboard right now&quot; buttons.</li>
+</ul>
+</li>
+</ul>
+
+<h2 id='final_thoughts'>Final thoughts</h2>
+
+<p>For coding at the moment, it feels out of place, since a lot of my workflows are built around rapid sequential single key commands. For example, <code>space f</code> finds files, <code>space /</code> finds words in those files, <code>space ?</code> finds shortcuts. There are a ton of highly combinatorial commands I run, here&#8217;s what I mean. I use m for match, then s for surround, then any character, and my editor surrounds my selection with that character. <code>ma&#8217;</code> surrounds <code>this</code> like <code>&#8217;this&#8217;</code> when <code>this</code> was the thing I selected. There isn&#8217;t a way that I&#8217;m aware of to easily setup chords for this kind of command with numbers of potential combination, especially if the varying character is in the middle of the sequence. In addition, since a lot of these sequences involve special characters, it becomes another layer of difficulty. I need to further explore making those common symbols even more accessible on the main layer.</p>
+
+<p>I&#8217;ll keep posting about my experience with this device.</p>
 ]]></content:encoded></item><item><title>Savage Worlds</title><link>https://camerondugan.com/blog/savage-worlds.html</link><author>Cameron Dugan</author><pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 287 words</p>
 
 <h1 id='savage_worlds'>Savage Worlds</h1>
@@ -590,7 +721,7 @@
 
 <p>This is what a non-Nix, normal keyd config looks like.</p>
 
-<pre><code class="language-nix">[ids]
+<pre><code class="language-toml">[ids]
 
 *
 

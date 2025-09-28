@@ -17,7 +17,7 @@ cheating](../projects/my-old-keyboard-is-basically-cheating.md)
 
 This is what a non-Nix, normal keyd config looks like.
 
-```nix
+```toml
 [ids]
 
 *
