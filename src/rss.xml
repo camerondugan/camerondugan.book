@@ -499,7 +499,9 @@
 <h2 id=''></h2>
 
 <p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
-]]></content:encoded></item><item><title>CharaChorder 2</title><link>https://camerondugan.com/blog/charachorder2.html</link><author>Cameron Dugan</author><pubDate>Sat, 27 Sep 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='charachorder_2_(cc2)'>CharaChorder 2 (CC2)</h1>
+]]></content:encoded></item><item><title>CharaChorder 2</title><link>https://camerondugan.com/blog/charachorder2.html</link><author>Cameron Dugan</author><pubDate>Sat, 27 Sep 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 5 minutes you can read this article with 955 words</p>
+
+<h1 id='charachorder_2_(cc2)'>CharaChorder 2 (CC2)</h1>
 
 <p>&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/tYLHPH9uBXU?si=yHCgm4MPBCXgtVOO&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;/iframe&gt;</p>
 
@@ -630,6 +632,10 @@
 <p>For coding at the moment, it feels out of place, since a lot of my workflows are built around rapid sequential single key commands. For example, <code>space f</code> finds files, <code>space /</code> finds words in those files, <code>space ?</code> finds shortcuts. There are a ton of highly combinatorial commands I run, here&#8217;s what I mean. I use m for match, then s for surround, then any character, and my editor surrounds my selection with that character. <code>ma&#8217;</code> surrounds <code>this</code> like <code>&#8217;this&#8217;</code> when <code>this</code> was the thing I selected. There isn&#8217;t a way that I&#8217;m aware of to easily setup chords for this kind of command with numbers of potential combination, especially if the varying character is in the middle of the sequence. In addition, since a lot of these sequences involve special characters, it becomes another layer of difficulty. I need to further explore making those common symbols even more accessible on the main layer.</p>
 
 <p>I&#8217;ll keep posting about my experience with this device.</p>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe for updates via rss</a> or <a href='mailto:blog@camerondugan.com'>Send me an email</a></p>
 ]]></content:encoded></item><item><title>Savage Worlds</title><link>https://camerondugan.com/blog/savage-worlds.html</link><author>Cameron Dugan</author><pubDate>Tue, 15 Jul 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; In 1 minute you can read this article with 287 words</p>
 
 <h1 id='savage_worlds'>Savage Worlds</h1>

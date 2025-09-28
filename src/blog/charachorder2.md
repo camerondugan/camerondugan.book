@@ -2,6 +2,8 @@
 pub_date: Sat, 27 Sep 2025 00:00:00 -0400
 ---
 
+{{#include ../header.md}} 
+
 # CharaChorder 2 (CC2)
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/tYLHPH9uBXU?si=yHCgm4MPBCXgtVOO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -96,3 +98,5 @@ another layer of difficulty. I need to further explore making those common
 symbols even more accessible on the main layer.
 
 I'll keep posting about my experience with this device.
+
+{{#include ../footer.md}} 
