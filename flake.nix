@@ -13,12 +13,12 @@
         buildInputs = with pkgs; [
           git
           cargo
+          mdbook
+          mdbook-linkcheck
         ];
         shellHook = ''
-          cargo install mdbook
           cargo install mdbook-rss
           cargo install mdbook-external-links
-          cargo install mdbook-linkcheck
           cargo install mdbook-reading-time
           cargo install mdbook-tiny
         '';
