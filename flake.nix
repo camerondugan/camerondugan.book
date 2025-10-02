@@ -53,6 +53,7 @@
         buildInputs = with pkgs; [
           git
           cargo
+          rustc
           mdbook
           mdbook-linkcheck
           mdbook-external-links 
@@ -60,6 +61,8 @@
           mdbook-tiny 
           # mdbook-rss
         ];
+        RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
+
         # mdbook-rss needs to be installed without respecting lock because lock is outdated and breaks build
         shellHook = ''
           cargo install mdbook-rss
