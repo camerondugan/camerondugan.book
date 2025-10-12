@@ -35,7 +35,7 @@ edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main
 
 [output.tiny]
 # # relative to your src folder
-css-paths = ["css/pico.classless.min.css", "css/custom.css"]
+css-paths = ["css/custom.css", "css/pico.classless.min.css"]
 nav-separator = " - "
 index = "getting-started.md"
 extra-nav.Blog = "blog.md"
