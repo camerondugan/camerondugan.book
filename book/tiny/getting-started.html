@@ -3,6 +3,40 @@
   padding: 20px;
 }
 
+body {
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    background-image: linear-gradient(45deg, #94FFB8, #9785FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    background-image: linear-gradient(45deg, #5FD988, #7160D1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+  }
+}
+
 @media (min-width: 1000px) {
 
   footer,
@@ -26,13 +60,13 @@ links, and generating an rss feed.</p>
 This is achieved with a shortcut created via <code>ln -s</code> picked up by mdBook and
 built into the html somehow.</p>
 <p>You can also <a href="projects/arbidor.html">play a game on this website</a>!</p>
-<h2>Good Blog Posts:</h2>
+<h2>Blog Posts:</h2>
 <ul>
 <li><a href="blog/keyd.html">Keyd</a></li>
 <li><a href="blog/devenv.html">Devenv</a></li>
 <li><a href="blog/neovim.html">Simple NeoVim Config</a></li>
 </ul>
-<h2>Good Project Posts:</h2>
+<h2>Project Posts:</h2>
 <ul>
 <li><a href="projects/wizard-workshop-part-2.html">Wizard Workshop Part 2</a></li>
 <li><a href="projects/chess-ai.html">Chess AI</a></li>

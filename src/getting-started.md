@@ -15,12 +15,12 @@ built into the html somehow.
 
 You can also [play a game on this website](projects/arbidor.md)!
 
-## Good Blog Posts:
+## Blog Posts:
 - [Keyd](blog/keyd.md)
 - [Devenv](blog/devenv.md)
 - [Simple NeoVim Config](blog/neovim.md)
 
-## Good Project Posts:
+## Project Posts:
 - [Wizard Workshop Part 2](projects/wizard-workshop-part-2.md)
 - [Chess AI](projects/chess-ai.md)
 - [Python Dream Bot](projects/dream-bot.md)
