@@ -2,10 +2,6 @@ pre {
   padding: 20px;
 }
 
-body {
-  min-height: 100vh;
-}
-
 @media (prefers-color-scheme: dark) {
 
   h1,
