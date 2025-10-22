@@ -28,6 +28,7 @@
 
   - [2025](2025.md)
 
+    - [CharaChorder 2 Update 1](blog/charachorder2.1.md)
     - [CharaChorder 2](blog/charachorder2.md)
     - [Savage Worlds](blog/savage-worlds.md)
 
