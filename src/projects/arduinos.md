@@ -2,9 +2,9 @@
 pub_date: Thu, 02 Dec 2021 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Arduinos
+
+{{#include ../header.md}}
 
 Tiny Computers that You Can Program
 

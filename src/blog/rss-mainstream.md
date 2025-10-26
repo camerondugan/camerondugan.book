@@ -2,9 +2,9 @@
 pub_date: Sun, 26 Dec 2021 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Why RSS isn't Mainstream
+
+{{#include ../header.md}}
 
 What is it Missing?
 

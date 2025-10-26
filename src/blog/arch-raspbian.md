@@ -2,9 +2,9 @@
 pub_date: Mon, 02 May 2022 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Being An Arch User
+
+{{#include ../header.md}}
 
 An Unexpected Consequence
 

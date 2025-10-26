@@ -2,9 +2,9 @@
 pub_date: Sun, 23 Jan 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Observations about QR codes
+
+{{#include ../header.md}}
 
 Thinking About Usability
 

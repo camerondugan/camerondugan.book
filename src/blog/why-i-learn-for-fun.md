@@ -2,9 +2,9 @@
 pub_date: Mon, 29 Apr 2024 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Why I learn for fun :)
+
+{{#include ../header.md}}
 
 Learning is hard. Anyone who tells you otherwise is lying. This post is more of
 a reminder to myself about why challenging yourself is important.

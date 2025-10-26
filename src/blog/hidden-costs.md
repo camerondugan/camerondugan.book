@@ -2,9 +2,9 @@
 pub_date: Fri, 21 May 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Hidden Costs
+
+{{#include ../header.md}}
 
 Examples and Generalizations of How Systems Disguise Their Motives.
 

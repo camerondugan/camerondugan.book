@@ -2,9 +2,9 @@
 pub_date: Sun, 05 Mar 2023 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Taking The Slow Road
+
+{{#include ../header.md}}
 
 Min/Maxing Decisions
 

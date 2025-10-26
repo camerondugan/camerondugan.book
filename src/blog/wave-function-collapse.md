@@ -2,9 +2,9 @@
 pub_date: Thu, 28 Apr 2022 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Wave Function Collapse
+
+{{#include ../header.md}}
 
 Programming Something That Already Exists Without Knowing it Exists
 

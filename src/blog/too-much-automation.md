@@ -2,9 +2,9 @@
 pub_date: Sun, 23 Jun 2024 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Using AI for learning to code better
+
+{{#include ../header.md}}
 
 More updates on my neovim journey
 

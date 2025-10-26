@@ -2,9 +2,9 @@
 pub_date: Tue, 16 Aug 2022 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # My Development Experience With Godot 3 in VR
+
+{{#include ../header.md}}
 
 My Recent Development Shenanigans
 

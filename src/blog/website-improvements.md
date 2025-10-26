@@ -2,9 +2,9 @@
 pub_date: Sun, 16 Jan 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # My Website Is Improving!
+
+{{#include ../header.md}}
 
 Working with Liquid HTML
 

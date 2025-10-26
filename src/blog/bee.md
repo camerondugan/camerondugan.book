@@ -2,9 +2,9 @@
 pub_date: Thu, 12 Aug 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Bee Movie
+
+{{#include ../header.md}}
 
 Bee
 

@@ -2,9 +2,9 @@
 pub_date: Sat, 29 Jan 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Automatic Lightswitch
+
+{{#include ../header.md}}
 
 Servo + Arduino + 3d Printer = Magic
 

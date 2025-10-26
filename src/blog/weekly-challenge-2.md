@@ -2,9 +2,9 @@
 pub_date: Mon, 23 Aug 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Weekly Programming - Week 2
+
+{{#include ../header.md}}
 
 Programming a Game Player
 

@@ -2,9 +2,9 @@
 pub_date: Wed, 29 Sep 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Using Flutter
+
+{{#include ../header.md}}
 
 Making a Cross Platform App with Flutter
 

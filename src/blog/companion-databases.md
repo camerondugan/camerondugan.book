@@ -2,9 +2,9 @@
 pub_date: Tue, 01 Feb 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Companion Databases
+
+{{#include ../header.md}}
 
 Hyper Personalized Databases for Everyday People.
 

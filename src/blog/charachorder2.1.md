@@ -2,9 +2,9 @@
 pub_date: Tue, 21 Oct 2025 00:00:00 -0400
 ---
 
-{{#include ../header.md}} 
-
 # CharaChorder 2 Update
+
+{{#include ../header.md}} 
 
 ## Bugged
 I've hit a terrible bug, and I ran out of ways to debug on my own.

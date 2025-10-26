@@ -2,9 +2,9 @@
 pub_date: Thu, 20 Jan 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Podcasts
+
+{{#include ../header.md}}
 
 Podcasts Exist, and if You Somehow Haven't Heard, Now You Have!
 

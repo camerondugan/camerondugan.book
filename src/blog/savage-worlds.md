@@ -2,9 +2,9 @@
 pub_date: Tue, 15 Jul 2025 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Savage Worlds
+
+{{#include ../header.md}}
 
 Have you ever played D&D? No?
 

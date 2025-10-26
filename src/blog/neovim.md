@@ -2,9 +2,9 @@
 pub_date: Sun, 03 Mar 2024 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Simple-Nvim-Config
+
+{{#include ../header.md}}
 
 More updates on my neovim journey
 

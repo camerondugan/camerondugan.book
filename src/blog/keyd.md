@@ -2,9 +2,9 @@
 pub_date: Sun, 20 Oct 2024 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Keyd is Awesome!
+
+{{#include ../header.md}}
 
 Why keyd will change the way you think about your keyboard.
 

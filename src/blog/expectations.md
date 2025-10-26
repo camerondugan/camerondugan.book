@@ -2,9 +2,9 @@
 pub_date: Sat, 19 Feb 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # The Cost of Expectations
+
+{{#include ../header.md}}
 
 Why Gifted Individuals Tend to Burnout
 

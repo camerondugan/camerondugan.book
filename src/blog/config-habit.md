@@ -2,9 +2,9 @@
 pub_date: Tue, 23 Apr 2024 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Baking Configs
+
+{{#include ../header.md}}
 
 I can't stop changing my configs (help me)
 

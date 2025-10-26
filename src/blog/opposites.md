@@ -2,9 +2,9 @@
 pub_date: Sat, 02 Apr 2022 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Things Lead to Their Opposites
+
+{{#include ../header.md}}
 
 A Generalization That's Generally True
 

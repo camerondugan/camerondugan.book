@@ -2,9 +2,9 @@
 pub_date: Thu, 15 Dec 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # My 2023 Android Setup
+
+{{#include ../header.md}}
 
 What I'm Using on My Phone This Upcoming Year
 

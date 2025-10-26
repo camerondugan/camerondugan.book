@@ -2,9 +2,9 @@
 pub_date: Sun, 21 Jul 2024 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Why NixOS is Awesome!
+
+{{#include ../header.md}}
 
 When did computing become scary? NixOS is here to the rescue!
 

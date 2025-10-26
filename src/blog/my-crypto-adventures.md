@@ -2,9 +2,9 @@
 pub_date: Mon, 05 Apr 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # My Crypto Adventures
+
+{{#include ../header.md}}
 
 Misadventures in Crypto
 

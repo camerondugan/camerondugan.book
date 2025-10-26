@@ -2,9 +2,9 @@
 pub_date: Fri, 21 Jan 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Quantum Internet
+
+{{#include ../header.md}}
 
 The Internet is Never Finished.
 

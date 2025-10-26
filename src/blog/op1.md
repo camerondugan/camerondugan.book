@@ -2,9 +2,9 @@
 pub_date: Mon, 28 Feb 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # The OP-1 Synth
+
+{{#include ../header.md}}
 
 A Hardware Digital Audio Workstation
 

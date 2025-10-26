@@ -2,9 +2,9 @@
 pub_date: Tue, 25 Jan 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # The End of Thinking
+
+{{#include ../header.md}}
 
 An Attempt at a Short Narrative
 

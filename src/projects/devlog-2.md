@@ -2,9 +2,9 @@
 pub_date: Mon, 07 Jun 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Dev Log 2
+
+{{#include ../header.md}}
 
 A Devlog for My Unnamed Game.
 

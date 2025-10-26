@@ -2,9 +2,9 @@
 pub_date: Sun, 30 Apr 2023 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Your Software Is Only As Good As It's Defaults
+
+{{#include ../header.md}}
 
 How Default Behavior Changes Everything
 

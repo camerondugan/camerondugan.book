@@ -2,9 +2,9 @@
 pub_date: Sat, 22 May 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Complexity
+
+{{#include ../header.md}}
 
 How Complexity Influences People.
 

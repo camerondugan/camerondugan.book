@@ -2,9 +2,9 @@
 pub_date: Sat, 11 Mar 2023 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Serverless Applications
+
+{{#include ../header.md}}
 
 Using Cloudflare for Applications
 

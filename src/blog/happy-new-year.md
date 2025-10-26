@@ -2,9 +2,9 @@
 pub_date: Sat, 01 Jan 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Happy New Year
+
+{{#include ../header.md}}
 
 Software I Use and Will Use More
 

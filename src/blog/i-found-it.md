@@ -2,9 +2,9 @@
 pub_date: Sat, 12 Feb 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # I've Found It
+
+{{#include ../header.md}}
 
 Something Incredibly Close to a Personal Database
 

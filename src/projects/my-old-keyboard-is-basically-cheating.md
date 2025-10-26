@@ -2,9 +2,9 @@
 pub_date: Sun, 21 Jul 2024 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # My Old Keyboard is Basically Cheating
+
+{{#include ../header.md}}
 
 A snippet of code for qmk users everywhere.
 

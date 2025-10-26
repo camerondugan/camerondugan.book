@@ -2,9 +2,9 @@
 pub_date: Wed, 01 May 2024 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # The Point of Formatters
+
+{{#include ../header.md}}
 
 ## Concerns
 

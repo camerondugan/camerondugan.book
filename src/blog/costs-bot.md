@@ -2,9 +2,9 @@
 pub_date: Mon, 16 Aug 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # costs-bot
+
+{{#include ../header.md}}
 
 of programming
 

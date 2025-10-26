@@ -2,9 +2,9 @@
 pub_date: Tue, 24 Sep 2024 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Devenv is Awesome!
+
+{{#include ../header.md}}
 
 Why devenv will change the way you think about developing software.
 

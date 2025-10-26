@@ -2,9 +2,9 @@
 pub_date: Mon, 20 Dec 2021 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Linux Scripting
+
+{{#include ../header.md}}
 
 Removing Repetitive Tasks
 

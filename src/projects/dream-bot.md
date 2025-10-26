@@ -2,9 +2,9 @@
 pub_date: Wed, 18 Aug 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Python Dream Bot
+
+{{#include ../header.md}}
 
 Intentionally Bad Image Manipulation
 

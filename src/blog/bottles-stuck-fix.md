@@ -2,9 +2,9 @@
 pub_date: Sun, 12 Mar 2023 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Bottles Error Fix
+
+{{#include ../header.md}}
 
 Commenting Out a Line Of Code Fixes The Problem
 

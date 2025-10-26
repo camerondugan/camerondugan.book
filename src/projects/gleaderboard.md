@@ -2,9 +2,9 @@
 pub_date: Mon, 04 Aug 2025 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Gleaderboard
+
+{{#include ../header.md}}
 
 Over this past weekend I created an online real time multiplayer "leader-board" over ssh in gleam.
 

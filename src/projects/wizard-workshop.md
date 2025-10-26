@@ -2,9 +2,9 @@
 pub_date: Tue, 15 Oct 2024 00:00:00 -0400
 ---
 
-{{#include ../header.md}} 
-
 # Wizard Workshop
+
+{{#include ../header.md}} 
 
 Progress announcement for my card game
 

@@ -2,9 +2,9 @@
 pub_date: Wed, 22 Feb 2023 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Game Jams
+
+{{#include ../header.md}}
 
 What I Did During My Last Game Jam
 

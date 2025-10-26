@@ -2,9 +2,9 @@
 pub_date: Tue, 29 Mar 2022 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Why People Don't Code
+
+{{#include ../header.md}}
 
 Thoughts and Updates
 

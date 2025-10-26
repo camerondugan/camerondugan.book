@@ -2,9 +2,9 @@
 pub_date: Sat, 22 Jan 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Pine Phone
+
+{{#include ../header.md}}
 
 A Linux Phone.
 

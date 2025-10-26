@@ -2,9 +2,9 @@
 pub_date: Mon, 21 Nov 2022 00:00:00 -0500
 ---
 
-{{#include ../header.md}}
-
 # Programming A Chess AI
+
+{{#include ../header.md}}
 
 A Fun Self Challenge
 

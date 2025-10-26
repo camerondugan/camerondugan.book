@@ -2,9 +2,9 @@
 pub_date: Wed, 11 Aug 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Arbidor
+
+{{#include ../header.md}}
 
 A Very Short Puzzle Game That Crashes When You Win
 

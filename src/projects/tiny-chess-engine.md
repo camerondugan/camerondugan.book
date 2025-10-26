@@ -2,9 +2,9 @@
 pub_date: Sat, 29 Jul 2023 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # A Tiny Chess Engine
+
+{{#include ../header.md}}
 
 A Delightfully Strong Nemises
 

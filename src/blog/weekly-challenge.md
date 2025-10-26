@@ -2,9 +2,9 @@
 pub_date: Mon, 09 Aug 2021 00:00:00 -0400
 ---
 
-{{#include ../header.md}}
-
 # Weekly Programming - Week 0
+
+{{#include ../header.md}}
 
 Programming for the Sake of Programming
 
