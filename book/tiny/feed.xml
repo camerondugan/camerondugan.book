@@ -527,6 +527,140 @@
 <h2 id=''></h2>
 
 <p><a href='https://camerondugan.com/rss.xml'>Subscribe via rss</a> or <a href='mailto:blog@camerondugan.com'>Reply by email</a></p>
+]]></content:encoded></item><item><title>Helix</title><link>https://camerondugan.com/blog/helix.html</link><author>Cameron Dugan</author><pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='helix'>Helix</h1>
+
+<p>Stats -&gt; In 4 minutes you can read this article with 856 words</p>
+
+<p>---</p>
+
+<p>The modern post-modern modal editor as my go-to development tool of choice.</p>
+
+<p>I recently made some new additions to my helix config and I have to say that it has grown on me far beyond what I ever thought possible for something so minimal.</p>
+
+<p>I started using <a href='https://helix-editor.com/'>helix</a> not thinking it could actually replace my carefully curated, <a href='https://github.com/folke/snacks.nvim'>snacks</a> using, and <a href='https://github.com/tpope'>tpope</a> loving <a href='https://neovim.io/'>nvim</a> config.</p>
+
+<p>It isn&#8217;t as different from vim motions as I would expect. I can generally switch between them with minimal pain.</p>
+
+<h2 id='benefits'>Benefits</h2>
+
+<p>The following is based on the out of box experience excluding things you get from customization, terminal multiplexers, or other time investments.</p>
+
+<ul>
+<li>
+<p>Defaults with the key features I add to other editors through plugins or &#8217;distro&#8217; choice</p>
+
+<ul>
+<li>Fuzzy search &#8217;pickers&#8217; for files, buffers, text, language symbols, diagnostics, recent/saved cursor locations, and changed files.</li>
+</ul>
+</li>
+
+<li>
+<p>LSP just works for most languages</p>
+
+<ul>
+<li><code>hx --health &lt;lang&gt;</code> and install any missing tools</li>
+
+<li>What&#8217;s an LSP? Who better than nvim core contributor: TJ DeVries &lt;iframe width=&quot;280&quot; height=&quot;157&quot; src=&quot;https://www.youtube.com/embed/LaS32vctfOY?si=fxiOKuDaGDjW5boG&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;/iframe&gt;</li>
+</ul>
+</li>
+
+<li>Directly pipe text into cli programs with |</li>
+
+<li>Robust kakoune inspired selection system for advanced users once you get used to the main motions.</li>
+
+<li>Too simple to break where other modal editors can. Only weakness is if the LSP itself crashes (happened to me today, thanks java; remember to clear your JDTLS cache folder when it inevitably corrupts)</li>
+
+<li>I&#8217;m a big fan of the select then modify approach in scenarios where within a region of text I need to make changes to only specific sections.</li>
+</ul>
+
+<h2 id='downsides'>Downsides</h2>
+
+<ul>
+<li>Ctrl + Z is the best you can do for watching long terminal commands</li>
+
+<li>No plugin eco system, makes it super stable</li>
+
+<li>
+<p>No spellcheck out of the box</p>
+
+<ul>
+<li>
+<p>No way to specify spellchecker -&gt; <a href='https://github.com/blopker/codebook'>codebook lsp</a> runs on every language</p>
+</li>
+
+<li>
+<p>Yes, I manually configured it for the common languages independently</p>
+</li>
+</ul>
+</li>
+</ul>
+
+<h2 id='customization_precursor'>Customization precursor</h2>
+
+<p>I will tell you right now, that nothing I do at my job requires any of the following configuration. I have it simply to make the tasks I do the most easier. Helix is basically complete in my mind out of the box.</p>
+
+<blockquote>
+<p>Do not be scared away by the config files, you simply don&#8217;t need them to be highly proficient/fluent in this editor.</p>
+
+<pre><code></code></pre>
+
+<h2 id='customization'>Customization</h2>
+</blockquote>
+
+<p>The above has intentionally left out customization. A lot of the customization of helix feels tertiary to the main idea, and outside of setting your favorite builtin theme will feel silly. At first.</p>
+
+<p>The keybinding system makes this editor quite powerful when used to integrate with the tools you commonly use.</p>
+
+<pre><code class="language-toml">[keys.normal.space]
+# Official suggestion on how to have git blame show in the bottom status bar
+# Since I run helix in Zellij, I can spawn new panes from any key
+B = &quot;:echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}&quot;
+# These run some common build tools
+m = &quot;:sh zellij run -d right -- make&quot;
+j = &quot;:sh zellij run -d right -- just&quot;
+# This one switches the hx session pane with a git ui pane
+l = &quot;:sh zellij run -i -c -- lazygit&quot;</code></pre>
+
+<p>I also have configuration for quickly swapping lines in normal mode</p>
+
+<pre><code class="language-toml">[keys.normal]
+C-j = [&quot;extend_to_line_bounds&quot;, &quot;delete_selection&quot;, &quot;paste_after&quot;, &quot;goto_line_start&quot;]
+C-k = [&quot;extend_to_line_bounds&quot;, &quot;delete_selection&quot;, &quot;move_line_up&quot;, &quot;paste_before&quot;, &quot;goto_line_start&quot;]</code></pre>
+
+<p>My home config has autoformatting turned on by default, since I mostly live in my own codebases. At work, autoformat is off, but I do have custom toggle keybinds to get access to these very quickly.</p>
+
+<pre><code class="language-toml">[keys.normal.space.t]
+b = &quot;:toggle bufferline never multiple&quot;
+f = &quot;:toggle auto-format&quot; # the one I mentioned
+g = &quot;:toggle indent-guides.render&quot;
+h = &quot;:toggle file-picker.git-ignore&quot;
+i = &quot;:toggle lsp.display-inlay-hints&quot;
+s = &quot;:toggle soft-wrap.enable&quot;
+w = &quot;:toggle soft-wrap.wrap-at-text-width&quot;</code></pre>
+
+<h2 id='something_else_i_learned_today:'>Something else I learned today:</h2>
+
+<p>The auto-format editor setting doesn&#8217;t impact the LSP&#8217;s auto-formatting behavior. This means if you have auto-format turned on in your editor, it won&#8217;t actually auto format for whichever lanugage through the lsp unless it is turned on for that language.</p>
+
+<p>This makes sense in the vast majority of cases, since most languages never bothered to set a standard for what their code should must look like.</p>
+
+<p>For newerish languages, helix by default will have the setting on where it makes sense.</p>
+
+<p>If you want to enable auto format in your projects, you can make use of the workspace config feature:</p>
+
+<p>in path from workspace root, in a new folder .helix/</p>
+
+<p>you can put overrides exactly the same way you define the default in your config. So you can use config.toml and language.toml just the same, and for that workspace, you can override any setting.</p>
+
+<p>For example, a ./.helix/languages.toml for turning on LSP auto formatting:</p>
+
+<pre><code class="language-toml">[[language]]
+name = &lt;language&gt;
+auto-format = true</code></pre>
+
+<h2 id=''></h2>
+
+<p><a href='https://camerondugan.com/rss.xml'>Subscribe via rss</a> or <a href='mailto:blog@camerondugan.com'>Reply by email</a></p>
 ]]></content:encoded></item><item><title>CharaChorder 2 Update 1</title><link>https://camerondugan.com/blog/charachorder2.1.html</link><author>Cameron Dugan</author><pubDate>Tue, 21 Oct 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='charachorder_2_update'>CharaChorder 2 Update</h1>
 
 <p>Stats -&gt; In 2 minutes you can read this article with 398 words</p>

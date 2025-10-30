@@ -3,11 +3,11 @@
     <head>
         <!-- Thanks to BearBlog for showing me what the metadata should look like :) -->
         <!-- Data for robots -->
-        <meta name="title" content="CharaChorder 2 Update 1 - CameronDugan.com">
+        <meta name="title" content="Helix - CameronDugan.com">
         <meta name="description" content="A Personal Website by Cameron Dugan">
         <!-- OpenGraph -->
         <meta property="og:site_name" content="CameronDugan.com">
-        <meta property="og:title" content="CharaChorder 2 Update 1 - CameronDugan.com">
+        <meta property="og:title" content="Helix - CameronDugan.com">
         <meta property="og:description" content="A Personal Website by Cameron Dugan">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://camerondugan.com/assets/images/dream-bot/dream1.png">
@@ -15,7 +15,7 @@
         <meta name="fediverse:creator" content="@TheCam@fosstodon.org">
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>CharaChorder 2 Update 1 - CameronDugan.com</title>
+        <title>Helix - CameronDugan.com</title>
 
 
         <!-- Custom HTML head -->
@@ -159,7 +159,7 @@
                         <a href="https://github.com/camerondugan/camerondugan.book" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-code-fork"></i>
                         </a>
-                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/blog/charachorder2.1.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                        <a href="https://github.com/camerondugan/camerondugan.book/edit/main/src/blog/helix.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -193,31 +193,107 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="charachorder-2-update"><a class="header" href="#charachorder-2-update">CharaChorder 2 Update</a></h1>
-<p>Stats -&gt; In 2 minutes you can read this article with 398 words</p>
+                        <h1 id="helix"><a class="header" href="#helix">Helix</a></h1>
+<p>Stats -&gt; In 4 minutes you can read this article with 856 words</p>
 <hr />
-<h2 id="bugged"><a class="header" href="#bugged">Bugged</a></h2>
-<p>I’ve hit a terrible bug, and I ran out of ways to debug on my own.</p>
-<p>My CharaChorder started typing the word ‘tunnel’, over and over at the speed of thought.
-At least, fast enough that my laptop freezes and my desktop feels the pain.</p>
-<p>There is no physical “get to the bootloader” button, which most of my other similarly complicated keyboards tend to have.
-Having one, would have made fixing this as easy as pushing a button and copying a file over usb.</p>
-<p>Instead, I’ve contacted support over the course of a week, who eventually agreed to let me send back the CC2 for them to reset.</p>
-<p>I’ve sent it to them, at my own expense hoping they have a computer that doesn’t get overwhelmed by the sheer might of bandwidth that device can output.
-That’s one thing I won’t fault them for: it can output text very fast.
-Too bad that in this case it’s a bad thing.</p>
-<h2 id="tangent"><a class="header" href="#tangent">Tangent</a></h2>
-<p>What do you think about hard word wrapping in md files?
-For this post, I’m trying: <a href="https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line" title="" target="_blank">one sentence per line</a>.</p>
-<p>I’m not sure if I like it just yet.
-In my fantasy world, everyone’s editor in md files would just hard wrap at 80 lines or so.
-That way, no matter who looks at the file, it will be easy to read.
-Only issue is that with this is that not everyone likes editing on files that are hard wrapped at 80.
-Sometimes you want to delete a sentence, but it’s buried in a paragraph.</p>
-<p>Another alternative, is I can set my own soft-wrap in markdown files so that from my perspective, it’s like everyone else has hard-wrap turned on.
-The only issue is that even helix has some feature regressions when soft-wrap is turned on.</p>
-<p>The biggest pain point for me at least, is relative line mode doesn’t actually match with the number I have to press to get to that line.</p>
-<p>I could use <code>gw</code> instead, but my monkey brain wants to keep old habits that line up with other modal editors like <code>nvim</code> or <code>kakoune</code>.</p>
+<p>The modern post-modern modal editor as my go-to development tool of choice.</p>
+<p>I recently made some new additions to my helix config and I have to say that it has grown on me far beyond what I ever thought possible for something so minimal.</p>
+<p>I started using <a href="https://helix-editor.com/" title="" target="_blank">helix</a> not thinking it could actually replace my carefully curated, <a href="https://github.com/folke/snacks.nvim" title="" target="_blank">snacks</a> using, and <a href="https://github.com/tpope" title="" target="_blank">tpope</a> loving <a href="https://neovim.io/" title="" target="_blank">nvim</a> config.</p>
+<p>It isn’t as different from vim motions as I would expect.
+I can generally switch between them with minimal pain.</p>
+<h2 id="benefits"><a class="header" href="#benefits">Benefits</a></h2>
+<p>The following is based on the out of box experience excluding things you get from customization, terminal multiplexers, or other time investments.</p>
+<ul>
+<li>
+<p>Defaults with the key features I add to other editors through plugins or ‘distro’ choice</p>
+<ul>
+<li>Fuzzy search ‘pickers’ for files, buffers, text, language symbols, diagnostics, recent/saved cursor locations, and changed files.</li>
+</ul>
+</li>
+<li>
+<p>LSP just works for most languages</p>
+<ul>
+<li><code>hx --health &lt;lang&gt;</code> and install any missing tools</li>
+<li>What’s an LSP? Who better than nvim core contributor: TJ DeVries<iframe width="280" height="157" src="https://www.youtube.com/embed/LaS32vctfOY?si=fxiOKuDaGDjW5boG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+</ul>
+</li>
+<li>
+<p>Directly pipe text into cli programs with |</p>
+</li>
+<li>
+<p>Robust kakoune inspired selection system for advanced users once you get used to the main motions.</p>
+</li>
+<li>
+<p>Too simple to break where other modal editors can. Only weakness is if the LSP itself crashes (happened to me today, thanks java; remember to clear your JDTLS cache folder when it inevitably corrupts)</p>
+</li>
+<li>
+<p>I’m a big fan of the select then modify approach in scenarios where within a region of text I need to make changes to only specific sections.</p>
+</li>
+</ul>
+<h2 id="downsides"><a class="header" href="#downsides">Downsides</a></h2>
+<ul>
+<li>Ctrl + Z is the best you can do for watching long terminal commands</li>
+<li>No plugin eco system, makes it super stable</li>
+<li>No spellcheck out of the box
+<ul>
+<li>
+<p>No way to specify spellchecker -&gt; <a href="https://github.com/blopker/codebook" title="" target="_blank">codebook lsp</a> runs on every language</p>
+<ul>
+<li>Yes, I manually configured it for the common languages independently</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="customization-precursor"><a class="header" href="#customization-precursor">Customization precursor</a></h2>
+<p>I will tell you right now, that nothing I do at my job requires any of the following configuration.
+I have it simply to make the tasks I do the most easier.
+Helix is basically complete in my mind out of the box.</p>
+<blockquote>
+<p>Do not be scared away by the config files, you simply don’t need them to be highly proficient/fluent in this editor.</p>
+</blockquote>
+<h2 id="customization"><a class="header" href="#customization">Customization</a></h2>
+<p>The above has intentionally left out customization.
+A lot of the customization of helix feels tertiary to the main idea, and outside of setting your favorite builtin theme will feel silly. At first.</p>
+<p>The keybinding system makes this editor quite powerful when used to integrate with the tools you commonly use.</p>
+<pre><code class="language-toml">[keys.normal.space]
+# Official suggestion on how to have git blame show in the bottom status bar
+# Since I run helix in Zellij, I can spawn new panes from any key
+B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
+# These run some common build tools
+m = ":sh zellij run -d right -- make"
+j = ":sh zellij run -d right -- just"
+# This one switches the hx session pane with a git ui pane
+l = ":sh zellij run -i -c -- lazygit"
+</code></pre>
+<p>I also have configuration for quickly swapping lines in normal mode</p>
+<pre><code class="language-toml">[keys.normal]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after", "goto_line_start"]
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before", "goto_line_start"]
+</code></pre>
+<p>My home config has autoformatting turned on by default, since I mostly live in my own codebases.
+At work, autoformat is off, but I do have custom toggle keybinds to get access to these very quickly.</p>
+<pre><code class="language-toml">[keys.normal.space.t]
+b = ":toggle bufferline never multiple"
+f = ":toggle auto-format" # the one I mentioned
+g = ":toggle indent-guides.render"
+h = ":toggle file-picker.git-ignore"
+i = ":toggle lsp.display-inlay-hints"
+s = ":toggle soft-wrap.enable"
+w = ":toggle soft-wrap.wrap-at-text-width"
+</code></pre>
+<h2 id="something-else-i-learned-today"><a class="header" href="#something-else-i-learned-today">Something else I learned today:</a></h2>
+<p>The auto-format editor setting doesn’t impact the LSP’s auto-formatting behavior. This means if you have auto-format turned on in your editor, it won’t actually auto format for whichever lanugage through the lsp unless it is turned on for that language.</p>
+<p>This makes sense in the vast majority of cases, since most languages never bothered to set a standard for what their code should must look like.</p>
+<p>For newerish languages, helix by default will have the setting on where it makes sense.</p>
+<p>If you want to enable auto format in your projects, you can make use of the workspace config feature:</p>
+<p>in path from workspace root, in a new folder .helix/</p>
+<p>you can put overrides exactly the same way you define the default in your config. So you can use config.toml and language.toml just the same, and for that workspace, you can override any setting.</p>
+<p>For example, a ./.helix/languages.toml for turning on LSP auto formatting:</p>
+<pre><code class="language-toml">[[language]]
+name = &lt;language&gt;
+auto-format = true
+</code></pre>
 <hr />
 <p><a href="https://camerondugan.com/rss.xml" title="" target="_blank">Subscribe via rss</a> or
 <a href="mailto:blog@camerondugan.com">Reply by email</a></p>
@@ -226,11 +302,11 @@ The only issue is that even helix has some feature regressions when soft-wrap is
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../blog/helix.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../2025.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../blog/charachorder2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../blog/charachorder2.1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -240,11 +316,11 @@ The only issue is that even helix has some feature regressions when soft-wrap is
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../blog/helix.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../2025.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../blog/charachorder2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../blog/charachorder2.1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
