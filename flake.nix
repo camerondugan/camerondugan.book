@@ -32,14 +32,14 @@
         };
         mdbook-tiny = pkgs.rustPlatform.buildRustPackage {
           name = "mdbook-tiny";
-          version = "0.1.5";
+          version = "0.1.6";
           src = pkgs.fetchFromGitHub {
             owner = "camerondugan";
             repo = "mdbook-tiny";
-            tag = "0.1.5";
-            hash = "sha256-eSkoet1EDXOCLX+R5Dt17BnadZxh7RETtl5iRTETQZU=";
+            tag = "0.1.6";
+            hash = "sha256-R/IrtZtZjCep69FIq/1q9xgXDvGVOjM4I4YjLGZvtMg=";
           };
-          cargoHash = "sha256-rXiGco0UP+xzzfS0Zg80LsFcLNxy1ec+0dUR7PP6/EQ=";
+          cargoHash = "sha256-FU4k41qbZ9XAXq2bJA4pYKzuyNoKMLCbJZR3IKc7WfE=";
           # src = pkgs.fetchCrate {
           #   pname = "mdbook-tiny";
           #   version = "0.1.3";
