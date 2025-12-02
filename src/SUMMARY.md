@@ -28,6 +28,7 @@
 
   - [2025](2025.md)
 
+    - [False Dichotomies](blog/false-dichotomies.md)
     - [Helix](blog/helix.md)
     - [CharaChorder 2 Update 1](blog/charachorder2.1.md)
     - [CharaChorder 2](blog/charachorder2.md)

@@ -1,3 +1,3 @@
-Stats -> In {{ #reading_time }} you can read this article with {{ #word_count }} words
+Stats -> The average person can read this {{ #word_count }} word page in {{ #reading_time }}.
 
 ---
