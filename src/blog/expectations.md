@@ -12,7 +12,7 @@ I tend to spend some of my time browsing YouTube looking for memes and cool comp
 
 ### The Setup
 
-I'm not gifted, I'm not even going to say I'm normal amounts of smart, I'm very dumb a lot of the time in many ways. But, I fit the description of being gifted from the video. The following is a paraphrase of the definition: not needing to study in school until suddenly hitting a brick wall of complete ruination. This is a huge part of why my middle to early high school experience was not a good time.
+I'm not gifted, I'm not even going to say I'm normal amounts of smart, I'm very dumb a lot of the time in many ways. But, I fit the description of being gifted from the video (*note from future me: I believe I intended to say I match the symptoms without the benefits). The following is a paraphrase of the definition: not needing to study in school until suddenly hitting a brick wall of complete ruination. This is a huge part of why my middle to early high school experience was not a good time.
 
 For context... in elementary school, there was optional homework that was very much too difficult for me at the time, but my parents me attempt to do all of them. All I can remember is that the paper was always on brightly colored and it always made me come up with my own way of solving those problems (because none of it was explicitly taught). I also did extra math and english lessons outside of school because my parents thought it would be a good idea.
 
