@@ -10,6 +10,7 @@
       system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
+        # Compile the crates we depend on ourselves :)
         mdbook-external-links = pkgs.rustPlatform.buildRustPackage {
           name = "mdbook-external-links";
           version = "0.1.2";
