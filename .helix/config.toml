@@ -1,0 +1,2 @@
+[keys.normal.space]
+i = "@c---<ret><esc>:insert-output date +'pub_date: %%a, %%d %%b %%Y %%H:%%M:%%S %%z'<ret>A<ret>---<esc>"

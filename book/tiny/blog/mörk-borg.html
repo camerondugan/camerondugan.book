@@ -1,0 +1,226 @@
+<!doctype html>
+<head><title>MÖRK BORG - CameronDugan.com</title><meta name="title" content="CameronDugan.com"><meta name="description" content="A Personal Website by Cameron Dugan"><meta charset="utf8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>:root {
+  /* Default (Light Mode) Color Scheme */
+  --paper-color: #fdfdfd;
+  --desk-color: #7d6d6d;
+  --ink-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  /* black, but for use at different opacities*/
+  --texture-color: 0, 0, 0;
+  --hyprlink-color: #3040ff;
+  --hyprlink-visited-color: #8000d0;
+  --mark-highlight-color: rgba(255, 255, 45, 0.2);
+  /* animation constants */
+  --paper-slide-start: translateX(10vw) translateY(-100vh) rotate(10deg);
+  --desk-stripe-size: 55px;
+}
+
+/* desk/all */
+html {
+  font-size: clamp(1rem, 1rem + 2vw, 1.25rem);
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* background-color: var(--desk-color); */
+  background: repeating-linear-gradient(45deg,
+      var(--desk-color),
+      var(--desk-color) var(--desk-stripe-size),
+      var(--shadow-color) var(--desk-stripe-size),
+      var(--shadow-color) calc(2 * var(--desk-stripe-size)));
+}
+
+/* Links */
+a:not(:has(img)),
+a:visited:not(:has(img)),
+mark {
+  padding: 0em 0.2em;
+  /* Reduced vertical padding further */
+  margin: 0.1em 0;
+  /* Increased vertical margin to compensate */
+  border-radius: 0.2em 0.05em 0.15em 0.25em;
+  /* Irregular border-radius */
+  box-shadow: 1px 1px 0 var(--shadow-color);
+  /* Slanted effect with rotation */
+  transform: rotate(-1deg);
+  /* Allow transform to apply correctly */
+  display: inline-block;
+}
+
+a {
+  color: var(--hyprlink-color);
+  text-decoration-line: none;
+  background-color: color-mix(in srgb, var(--hyprlink-color) 10%, transparent);
+}
+
+a:visited {
+  color: var(--hyprlink-visited-color);
+  background-color: color-mix(in srgb, var(--hyprlink-visited-color) 10%, transparent);
+}
+
+a:hover {
+  text-decoration-line: underline;
+  background-color: color-mix(in srgb, var(--hyprlink-color) 15%, transparent);
+  /* Slightly more opaque on hover */
+  box-shadow: 2px 2px 0 var(--shadow-color);
+  /* More pronounced shadow on hover, reusing existing variable */
+}
+
+a:visited:hover {
+  text-decoration-line: underline;
+  background-color: color-mix(in srgb, var(--hyprlink-visited-color) 15%, transparent);
+  /* Slightly more opaque on hover */
+  box-shadow: 2px 2px 0 var(--shadow-color);
+  /* More pronounced shadow on hover, reusing existing variable */
+}
+
+/* code blocks */
+code {
+  font-family: 'SFMono-Regular', Menlo,
+    Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+:not(pre)>code {
+  background-color: var(--code-bg-color);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: var(--code-bg-color);
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* mark */
+mark {
+  background-color: var(--mark-highlight-color);
+}
+
+/* img */
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Paper */
+body {
+  color: var(--ink-color);
+  background-color: var(--paper-color);
+  box-shadow: 0 2vh 2vw var(--shadow-color);
+  padding: 2rem clamp(1rem, 5vw, 4rem);
+  max-width: 800px;
+  margin: clamp(2rem, 4vw, 2rem) auto;
+  border-radius: 1.5px;
+  line-height: 1.7;
+
+  background-image:
+    radial-gradient(circle, rgba(var(--texture-color), 0.05) 1px, transparent 1px),
+    radial-gradient(circle, rgba(var(--texture-color), 0.06) 1px, transparent 1px),
+    radial-gradient(circle, rgba(var(--texture-color), 0.07) 1px, transparent 1px),
+    radial-gradient(circle, rgba(var(--texture-color), 0.08) 1px, transparent 1px);
+  background-size:
+    157px 157px,
+    101px 101px,
+    191px 191px,
+    131px 131px;
+  background-position:
+    0 0,
+    80px 80px,
+    23px 101px,
+    65px 65px;
+}
+
+/* Mobile Overrides */
+@media (max-width: 900px) {
+  body {
+    margin: 0 auto;
+  }
+}
+
+/* Desktop Only */
+@media (min-width: 901px) {
+  body {
+    /* Apply the animation */
+    animation: slideInFromTop 0.35s ease-out 0.0s forwards;
+    transform: var(--paper-slide-start);
+    will-change: transform;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: var(--paper-slide-start);
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper-color: #4a4a4a;
+    --desk-color: #191819;
+    --ink-color: #f0f0f0;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --texture-color: 50, 50, 50;
+    --hyprlink-color: #8d8eff;
+    --hyprlink-visited-color: #dd99ff;
+    --mark-highlight-color: rgba(200, 200, 10, 0.3);
+  }
+}</style></head><body><header><h1>CameronDugan.com</h1><a href="../../">Home</a> - <a href="../../blog">Blog</a> - <a href="https://book.camerondugan.com">Mirror</a> - <a href="../../projects">Projects</a><hr></header><main><p>Stats -&gt; The average person can read this 516 word page in 2 minutes.</p>
+<hr />
+<h2 id="you-should-play-mörk-borg-or-something-like-it"><a href="#you-should-play-m%C3%B6rk-borg-or-something-like-it">You should play Mörk Borg! (or something like it)</a></h2>
+<p>Ever been interested in playing DND? Ever worry that it’s too many rules or that you wouldn’t know what you are doing?</p>
+<p>DND isn’t the only system around, other games exist and are just as awesome. First a quick glance at my qualifications for this topic:</p>
+<ul>
+<li>DM/GM’d a few sessions of DaggerHeart TTRPG</li>
+<li>Watched a bunch of videos on the internet</li>
+<li>Read a few books</li>
+</ul>
+<p>So, yeah… I’m basically an expert on every game in existence and you must discard your own opinions and supplant them with my own… Nah, just kidding that was a test, and I think you passed :)</p>
+<p>Always take my advice with large grains of salt and keep in mind what your group of friends/family/neighbors/strangers would enjoy.</p>
+<h2 id="why-mörk-borg"><a href="#why-m%C3%B6rk-borg">Why Mörk Borg?</a></h2>
+<h3 id="you-can-play-for-free"><a href="#you-can-play-for-free">You can play for free</a></h3>
+<p><a href="https://morkborg.com/content/" target="_blank">https://morkborg.com/content/</a> has a ton of free resources for running the game without paying a cent.
+It also has GM/DM resources like starting adventures, dungeon generators and for players it has more classes (an optional game mechanic)</p>
+<h4 id="tons-of-3rd-party-content"><a href="#tons-of-3rd-party-content">Tons of 3rd party content:</a></h4>
+<p><a href="https://morkborg.exlibrisrpg.com" target="_blank">https://morkborg.exlibrisrpg.com</a></p>
+<p>Some notable ones I’m interested in trying out:</p>
+<ul>
+<li><a href="https://urizenic.itch.io/slash-hack" target="_blank">https://urizenic.itch.io/slash-hack</a>, even faster combat rules</li>
+</ul>
+<h3 id="simple-rules"><a href="#simple-rules">Simple Rules</a></h3>
+<p>The rules reference fits onto one page, see rules reference on <a href="https://morkborg.com/content/" target="_blank">https://morkborg.com/content/</a></p>
+<p>Mörk Borg is a distillation of what makes TTRPGs good, I actually really enjoy the core ideas behind some other games I’ll list below where eliminating rules allows referees/Dungeon Masters/Game Masters to make the game their own. Players also benefit from lower complexity because they also can optionally participate in the creativity and can be onboarded to the game quicker.</p>
+<h4 id="list-of-other-games-that-have-easier-rules"><a href="#list-of-other-games-that-have-easier-rules">List of Other Games that have easier rules</a></h4>
+<p>Maybe you don’t like the flavor of Mörk Borg, but you like some of the principals, there’s plenty of systems that are relatively similar:</p>
+<ul>
+<li>Vagabond</li>
+<li>Into The Odd</li>
+<li>Electric/Mythic Bastionland</li>
+<li>ShadowDark?</li>
+</ul>
+<p>Or maybe you like Mörk Borg, but wished it came flavored for different settings?</p>
+<h4 id="-borg"><a href="#-borg">* Borg</a></h4>
+<ul>
+<li>Fe Borg, a fairy tale horror inspired variant where you are trapped in a dark mirrored world</li>
+<li>CY_BORG, a cyberpunk corporate dystopian setting with all that Mörk Borg goodness</li>
+<li>Pirate Borg, don’t like computers, maybe you like pirates?</li>
+<li>Orc Borg, or orcs?</li>
+</ul>
+<h3 id="heavy-metal-art-and-setting"><a href="#heavy-metal-art-and-setting">Heavy Metal Art and setting</a></h3>
+<p>Just scroll on <a href="https://morkborg.com/" target="_blank">https://morkborg.com/</a>, it’s quite fun :)</p>
+<h3 id="lowmid-level-combat-is-fun-high-level-combat-is-a-slog"><a href="#lowmid-level-combat-is-fun-high-level-combat-is-a-slog">Low/Mid level combat is fun, high level combat is a slog</a></h3>
+<p>One major complaint about DND (I’ve never played even a single session) I’ve seen online is that higher level play tends to overpower the players. It makes combat super complicated when you have to throw world ending threats at your friends in order for the game to be interesting?</p>
+<p>Why even make leveling up a good thing? In Mörk Borg, when you level up, some of your stats can go down!</p>
+<hr />
+<footer>
+<a href="https://camerondugan.com/rss.xml">Subscribe with RSS</a> or
+<a href="mailto:blog@camerondugan.com">Reply by email</a>
+</footer>
+</main><footer></footer></body></html>

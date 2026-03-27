@@ -26,6 +26,9 @@
 
 - [Blog](blog.md)
 
+  - [2026](2026.md)
+    - [MÖRK BORG](blog/mörk-borg.md)
+
   - [2025](2025.md)
 
     - [False Dichotomies](blog/false-dichotomies.md)
