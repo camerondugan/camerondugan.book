@@ -24,6 +24,7 @@ html {
       var(--desk-color) var(--desk-stripe-size),
       var(--shadow-color) var(--desk-stripe-size),
       var(--shadow-color) calc(2 * var(--desk-stripe-size)));
+  min-height: 100%;
 }
 
 /* Links */

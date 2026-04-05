@@ -37,8 +37,8 @@ edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main
 # # relative to your src folder
 css-paths = ["css/simple.css"]
 nav-separator = " - "
-index = "getting-started.md"
-extra-nav.Blog = "blog.md"
+index = "blog.md" # Home tab
+extra-nav.contact = "contact.md"
 extra-nav.Projects = "projects.md"
-extra-nav.Mirror = "https://book.camerondugan.com"
+# extra-nav.Mirror = "https://book.camerondugan.com"
 # extra-nav.Contact= "contact.md"
