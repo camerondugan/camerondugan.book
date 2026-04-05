@@ -2,7 +2,8 @@
 <head><title>CharaChorder 2 - CameronDugan.com</title><meta name="title" content="CameronDugan.com"><meta name="description" content="A Personal Website by Cameron Dugan"><meta charset="utf8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>:root {
   /* Default (Light Mode) Color Scheme */
   --paper-color: #fdfdfd;
-  --desk-color: #7d6d6d;
+  --desk-color: #8d6d6d;
+  --desk-color-2: #5a3a3a;
   --ink-color: #333;
   --shadow-color: rgba(0, 0, 0, 0.3);
   /* black, but for use at different opacities*/
@@ -23,8 +24,8 @@ html {
   background: repeating-linear-gradient(45deg,
       var(--desk-color),
       var(--desk-color) var(--desk-stripe-size),
-      var(--shadow-color) var(--desk-stripe-size),
-      var(--shadow-color) calc(2 * var(--desk-stripe-size)));
+      var(--desk-color-2) var(--desk-stripe-size),
+      var(--desk-color-2) calc(2 * var(--desk-stripe-size)));
   min-height: 100%;
 }
 
@@ -161,8 +162,9 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper-color: #4a4a4a;
-    --desk-color: #191819;
+    --paper-color: #2a2a2a;
+    --desk-color: #392829;
+    --desk-color-2: #3f2829;
     --ink-color: #f0f0f0;
     --shadow-color: rgba(0, 0, 0, 0.5);
     --texture-color: 50, 50, 50;
@@ -172,7 +174,7 @@ body {
   }
 }
 
-/* Custom to my website in particular, you probably don't want this */
+/* Custom to my website, you probably don't want this */
 .bottom_right {
   position: fixed;
   float: right;
@@ -205,7 +207,7 @@ body {
 
 .click_wiggle:active {
   animation: wiggle .1s linear both infinite alternate-reverse;
-}</style></head><body><header><h1>CameronDugan.com</h1><a href="../../">Home</a> - <a href="../../projects">Projects</a> - <a href="../../contact">contact</a> - <a href="../../blog">Blog</a><hr></header><main><h1 id="charachorder-2-cc2"><a href="#charachorder-2-cc2">CharaChorder 2 (CC2)</a></h1>
+}</style></head><body><header><h1>CameronDugan.com</h1><a href="../../">Home</a> - <a href="../../blog">Blog</a> - <a href="../../contact">Contact</a> - <a href="../../projects">Projects</a><hr></header><main><h1 id="charachorder-2-cc2"><a href="#charachorder-2-cc2">CharaChorder 2 (CC2)</a></h1>
 <p>Stats -&gt; The average person can read this 981 word page in 5 minutes.</p>
 <img class="top_right click_wiggle" src="../assets/images/cool-graphics/mouse.webp"/>
 <img class="bottom_right click_wiggle" src="../assets/images/cool-graphics/pencil.webp"/>
