@@ -28,6 +28,7 @@
 
   - [2026](2026.md)
     - [MÖRK BORG](blog/mörk-borg.md)
+    - [U.V.S. Nirmana](blog/uvs-nirmana.md)
 
   - [2025](2025.md)
 

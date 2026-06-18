@@ -642,6 +642,53 @@
 <h2 id=''></h2>
 
 <p>&lt;footer&gt; &lt;a href=&quot;https://camerondugan.com/rss.xml&quot;&gt;Subscribe with RSS&lt;/a&gt; or &lt;a href=&quot;mailto:blog@camerondugan.com&quot;&gt;Reply by email&lt;/a&gt; &lt;/footer&gt;</p>
+]]></content:encoded></item><item><title>U.V.S. Nirmana</title><link>https://camerondugan.com/blog/uvs-nirmana.html</link><author>Cameron Dugan</author><pubDate>Mon, 27 Oct 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<p>Stats -&gt; The average person can read this 285 word page in 1 minute.</p>
+
+<p>&lt;img class=&quot;top<em>right click</em>wiggle&quot; src=&quot;../assets/images/cool-graphics/mouse.webp&quot;/&gt; &lt;img class=&quot;bottom<em>right click</em>wiggle&quot; src=&quot;../assets/images/cool-graphics/pencil.webp&quot;/&gt;</p>
+
+<h2 id=''></h2>
+
+<h1 id='u.v.s._nirmana'>U.V.S. Nirmana</h1>
+
+<p>I still prefer Opus Magnum&#8217;s scoring system, over Nirmana&#8217;s.</p>
+
+<p>I feel like factoring in wire cost or some other out of the box metric would have made this game even better than just doing &#8217;width&#8217;, or &#8217;height&#8217;.</p>
+
+<p>The last metric makes sense, number of logic blocks placed on the bottom board to redirect signals to other modules is a decent goal to reduce complexity there.</p>
+
+<p>I like how it incentives multiple solutions to the same problem to hit the best marker on each of the metrics.</p>
+
+<h2 id='warning:_spoilers/solutions'>Warning: Spoilers/Solutions</h2>
+
+<p>Somewhat optimized solutions:</p>
+
+<h3 id='mathura_nova'>Mathura Nova</h3>
+
+<p>Redirect random same colored input and have the output channels always have one dedicated color.</p>
+
+<p><img src='https://files.camerondugan.com/U.V.S.%20Nirmana%20-%20Mathura%20Nova%20%287%2C%204%2C%203%29.gif' alt='files4' /></p>
+
+<h3 id='k.n._uda'>K.N. Uda</h3>
+
+<p>Take two signal sources and dynamically directing them into up to two of three outputs.</p>
+
+<p><img src='https://files.camerondugan.com/U.V.S.%20Nirmana%20-%20K.N.%20Uda%20%284%2C%204%2C%209%29.gif' alt='files' /></p>
+
+<h3 id='smo'>SMO</h3>
+
+<p>Toggle at two different frequencies only during input signal high/low at different speeds.</p>
+
+<p><img src='https://files.camerondugan.com/U.V.S.%20Nirmana%20-%20SMO%20%2811%2C%208%2C%206%29.gif' alt='files3' /></p>
+
+<h3 id='invakan-3'>Invakan-3</h3>
+
+<p>Identify ways to redirect output to different channels based on timing resetting on some unknown signal.</p>
+
+<p><img src='https://files.camerondugan.com/U.V.S.%20Nirmana%20-%20Invakan-3%20%2811%2C%204%2C%2011%29.gif' alt='files2' /></p>
+
+<h2 id=''></h2>
+
+<p>&lt;footer&gt; &lt;a href=&quot;https://camerondugan.com/rss.xml&quot;&gt;Subscribe with RSS&lt;/a&gt; or &lt;a href=&quot;mailto:blog@camerondugan.com&quot;&gt;Reply by email&lt;/a&gt; &lt;/footer&gt;</p>
 ]]></content:encoded></item><item><title>False Dichotomies</title><link>https://camerondugan.com/blog/false-dichotomies.html</link><author>Cameron Dugan</author><pubDate>Tue, 2 Dec 2025 00:00:00 -0400</pubDate><content:encoded><![CDATA[<h1 id='false_dichotomies'>False Dichotomies</h1>
 
 <p>Stats -&gt; The average person can read this 1255 word page in 6 minutes.</p>
