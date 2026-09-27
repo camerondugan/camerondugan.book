@@ -35,7 +35,7 @@ edit-url-template = "https://github.com/camerondugan/camerondugan.book/edit/main
 
 [output.tiny]
 # # relative to your src folder
-css-paths = ["css/simple.css"]
+css-paths = ["css/custom.css", "css/pico.min.css"]
 nav-separator = " - "
 index = "getting-started.md" # Home tab
 extra-nav.Contact = "contact.md"

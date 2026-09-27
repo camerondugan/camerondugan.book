@@ -2,39 +2,47 @@ pre {
   padding: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    background-image: linear-gradient(45deg, #94DDB8, #0785FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    width: fit-content;
-  }
+body {
+  padding: 40px;
 }
 
-@media (prefers-color-scheme: light) {
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    background-image: linear-gradient(45deg, #5FD988, #7160D1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    width: fit-content;
-  }
+html, p, h1, h2, h3 {
+  
+  vertical-align: middle;
 }
+
+/* @media (prefers-color-scheme: dark) { */
+
+  /* h1, */
+  /* h2, */
+  /* h3, */
+  /* h4 { */
+    /* background-image: linear-gradient(45deg, #94DDB8, #0785FF); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* background-clip: text; */
+    /* color: transparent; */
+    /* width: fit-content; */
+  /* } */
+/* } */
+
+/* @media (prefers-color-scheme: light) { */
+
+  /* h1, */
+  /* h2, */
+  /* h3, */
+  /* h4 { */
+    /* background-image: linear-gradient(45deg, #5FD988, #7160D1); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* background-clip: text; */
+    /* color: transparent; */
+    /* width: fit-content; */
+  /* } */
+/* } */
 
 /* Adjust font size on smaller screens */
 @media (min-width: 0px) {
-
   footer,
   main,
   header {
@@ -44,7 +52,6 @@ pre {
 
 /* Ajust font size on wide screens */
 @media (min-width: 750px) {
-
   footer,
   main,
   header {
